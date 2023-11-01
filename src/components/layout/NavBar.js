@@ -49,7 +49,7 @@ const Navbar = () => {
         </Link>
 
         {/*Portfolio*/}
-        <a
+        <Link
           id="strike"
           href="/Portfolio"
           className={`text-white hover:text-gray-300 ${
@@ -58,10 +58,10 @@ const Navbar = () => {
           onClick={() => handleLinkClick("Portfolios")}
         >
           Portfolio
-        </a>
+        </Link>
 
         {/*Services*/}
-        <a
+        <Link
           id="strike"
           href="/Services"
           className={`text-white hover:text-gray-300 ${
@@ -70,10 +70,10 @@ const Navbar = () => {
           onClick={() => handleLinkClick("Services")}
         >
           Services
-        </a>
+        </Link>
 
         {/*Blogs*/}
-        <a
+        <Link
           id="strike"
           href="/Blogs"
           className={`text-white hover:text-gray-300 ${
@@ -82,11 +82,11 @@ const Navbar = () => {
           onClick={() => handleLinkClick("Blogs")}
         >
           Blogs
-        </a>
+        </Link>
 
         {/*Gallery*/}
         {/* Add the link to Gallery here under href*/}
-        <a
+        <Link
           id="strike"
           href="/Gallery"
           className={`text-white hover:text-gray-300 ${
@@ -95,7 +95,7 @@ const Navbar = () => {
           onClick={() => handleLinkClick("Gallery")}
         >
           Gallery
-        </a>
+        </Link>
 
         {/*Contact Us Button*/}
         <div className="flex justify-center lg:mt-0">
@@ -126,7 +126,7 @@ const Navbar = () => {
 
           {/* Portfolio */}
           <div className="relative">
-            <a
+            <Link
               href="/Portfolio"
               className={`text-white hover:text-blue-400 ${
                 selectedLink === "Portfolio" ? "selected" : ""
@@ -137,12 +137,12 @@ const Navbar = () => {
               }}
             >
               Portfolio
-            </a>
+            </Link>
           </div>
 
           {/* Services */}
           <div className="relative">
-            <a
+            <Link
               href="/Services"
               className={`text-white hover:text-blue-400 ${
                 selectedLink === "Services" ? "selected" : ""
@@ -152,12 +152,12 @@ const Navbar = () => {
               }}
             >
               Services
-            </a>
+            </Link>
           </div>
 
           {/* Blogs */}
           <div className="relative">
-            <a
+            <Link
               href="/Blogs"
               className={`text-white hover:text-blue-400 ${
                 selectedLink === "Blogs" ? "selected" : ""
@@ -168,12 +168,12 @@ const Navbar = () => {
               }}
             >
               Blogs
-            </a>
+            </Link>
           </div>
 
           {/* Gallery */}
           <div className="relative">
-            <a
+            <Link
               href="/Gallery"
               className={`text-white hover:text-blue-400 ${
                 selectedLink === "Gallery" ? "selected" : ""
@@ -184,7 +184,7 @@ const Navbar = () => {
               }}
             >
               Gallery
-            </a>
+            </Link>
           </div>
         </div>
       )}
