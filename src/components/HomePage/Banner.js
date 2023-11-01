@@ -5,7 +5,7 @@ import textualData from "@/data/textual-data.json";
 const Banner = () => {
   return (
     <div className="home-container">
-      <div className="container mx-auto px-20">
+      <div className="container mx-auto px-10">
         {/*Banner Goes Here*/}
         <div className=" py-16 md:py-24 lg:py-32 xl:py-48 text-black">
           <div className="max-w-7xl mx-auto">
@@ -15,7 +15,7 @@ const Banner = () => {
                 Borneel Bikash Phukan
               </span>
             </h1>
-            <h1 className="text-5xl font-semibold text-white">
+            <h1 className="md:text-5xl lg:text-5xl xl:text-5xl font-semibold  text-5xl mb-4 text-white">
               {textualData.role1}{" "}
               <span className="text-6xl font-bold text-blue-400">&</span>
             </h1>
