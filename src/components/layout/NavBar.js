@@ -6,6 +6,8 @@ import Link from "next/link";
 const Navbar = () => {
   const [selectedLink, setSelectedLink] = useState(null);
   const [showMobileMenu, setShowMobileMenu] = useState(false);
+  const [showBlogNav, setShowBlogNav] = useState(false);
+  const [showMobileBlogNav, setMobileBlogNav] = useState(false);
 
   const handleLinkClick = (linkText) => {
     setSelectedLink(linkText);
@@ -17,6 +19,10 @@ const Navbar = () => {
 
   const toggleMobileMenu = () => {
     setShowMobileMenu((prevShowMobileMenu) => !prevShowMobileMenu);
+  };
+
+  const toggleBlogNav = () => {
+    setMobileBlogNav(!showMobileBlogNav);
   };
 
   return (
@@ -73,16 +79,63 @@ const Navbar = () => {
         </Link>
 
         {/*Blogs*/}
-        <Link
-          id="strike"
-          href="/Blogs"
-          className={`text-white hover:text-gray-300 ${
-            selectedLink === "Blogs" ? "selected" : ""
-          }`}
-          onClick={() => handleLinkClick("Blogs")}
+        <div
+          className="relative"
+          onMouseEnter={() => setShowBlogNav(true)}
+          onMouseLeave={() => setShowBlogNav(false)}
         >
-          Blogs
-        </Link>
+          <Link
+            id="strike"
+            href="/Blogs/Blogs"
+            className={`text-white hover:text-gray-300 ${
+              selectedLink === "Blogs" ? "selected" : ""
+            }`}
+            onClick={() => handleLinkClick("Blogs")}
+          >
+            Blogs
+          </Link>
+          {showBlogNav && (
+            <ul
+              className="absolute left-0 mt-1 text-sm px-5 bg-slate-100 border rounded border-white w-52"
+              onMouseEnter={() => setShowBlogNav(true)} // Keep the dropdown open when the user hovers over the dropdown list
+              onMouseLeave={() => setShowBlogNav(false)} // Close the dropdown when the user stops hovering over both the link and the dropdown list
+              style={{ top: "80%" }}
+            >
+              <li className="py-2">
+                <Link
+                  className="text-black hover:text-orange-500"
+                  href="/Blogs/ScamIndustry"
+                >
+                  Consultancy - Scam Industry
+                </Link>
+              </li>
+              <li className="py-2">
+                <Link
+                  className="text-black hover:text-orange-500"
+                  href="/Blogs/TravelBlogs"
+                >
+                  Travel Blogs
+                </Link>
+              </li>
+              <li className="py-2">
+                <Link
+                  className="text-black hover:text-orange-500"
+                  href="/Blogs/TechDigest"
+                >
+                  Tech Digest
+                </Link>
+              </li>
+              <li className="py-2">
+                <Link
+                  className="text-black hover:text-orange-500"
+                  href="/Blogs/MyStory"
+                >
+                  Story of My Life
+                </Link>
+              </li>
+            </ul>
+          )}
+        </div>
 
         {/*Gallery*/}
         {/* Add the link to Gallery here under href*/}
@@ -158,17 +211,53 @@ const Navbar = () => {
           {/* Blogs */}
           <div className="relative">
             <Link
-              href="/Blogs"
+              href="#"
               className={`text-white hover:text-blue-400 ${
                 selectedLink === "Blogs" ? "selected" : ""
               }`}
               onClick={() => {
                 handleLinkClick("Blogs");
-                toggleMobileMenu();
+                toggleBlogNav();
               }}
             >
               Blogs
             </Link>
+            {showMobileBlogNav && (
+              <ul className="relative left-0 mt-2 text-sm px-5 bg-black w-full">
+                <li className="py-2">
+                  <Link
+                    href="/ScamIndustry"
+                    className="text-white hover:text-orange-500"
+                  >
+                    Consultancy - Scam Industry
+                  </Link>
+                </li>
+                <li className="py-2">
+                  <Link
+                    href="/TravelBlogs"
+                    className="text-white hover:text-orange-500"
+                  >
+                    Travel Blogs
+                  </Link>
+                </li>
+                <li className="py-2">
+                  <Link
+                    href="/TechDigest"
+                    className="text-white hover:text-orange-500"
+                  >
+                    Tech Digest
+                  </Link>
+                </li>
+                <li className="py-2">
+                  <Link
+                    href="/MyStory"
+                    className="text-white hover:text-orange-500"
+                  >
+                    Story of My Life
+                  </Link>
+                </li>
+              </ul>
+            )}
           </div>
 
           {/* Gallery */}
