@@ -20,7 +20,7 @@ const GalleryComponent = ({ images }) => {
       {images.map((image, index) => (
         <div
           key={index}
-          className="relative group"
+          className="relative group cursor-pointer"
           onClick={() => openImage(index)}
         >
           <Image
