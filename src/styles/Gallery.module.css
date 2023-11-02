@@ -1,0 +1,8 @@
+/* styles/Gallery.module.css */
+.group:hover .transform {
+    transform: scale(1);
+}
+
+.group:hover .opacity {
+    opacity: 1;
+}
