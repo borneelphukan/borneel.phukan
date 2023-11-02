@@ -25,7 +25,7 @@ const Banner = () => {
             <p className="text-base md:text-lg lg:text-xl text-gray-300 w-[50%]">
               {textualData.description}
             </p>
-            <Button bgColor="black" textColor="white" text="View More" />
+            <Button bgColor="black" textColor="white" text="Download CV" />
           </div>
         </div>
       </div>
