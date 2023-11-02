@@ -3,7 +3,7 @@ import React from "react";
 import DefaultLayout from "@/layout/DefaultLayout";
 
 const Blogs = () => {
-  return <DefaultLayout>Main Blog Page</DefaultLayout>;
+  return <DefaultLayout>Topics Page</DefaultLayout>;
 };
 
 export default Blogs;

@@ -86,7 +86,7 @@ const Navbar = () => {
         >
           <Link
             id="strike"
-            href="/Blogs/Blogs"
+            href="/Blogs/Topics"
             className={`text-white hover:text-gray-300 ${
               selectedLink === "Blogs" ? "selected" : ""
             }`}
@@ -226,7 +226,7 @@ const Navbar = () => {
               <ul className="relative left-0 mt-2 text-sm px-5 bg-black w-full">
                 <li className="py-2">
                   <Link
-                    href="/ScamIndustry"
+                    href="/Blogs/ScamIndustry"
                     className="text-white hover:text-orange-500"
                   >
                     Consultancy - Scam Industry
@@ -234,7 +234,7 @@ const Navbar = () => {
                 </li>
                 <li className="py-2">
                   <Link
-                    href="/TravelBlogs"
+                    href="/Blogs/TravelBlogs"
                     className="text-white hover:text-orange-500"
                   >
                     Travel Blogs
@@ -242,7 +242,7 @@ const Navbar = () => {
                 </li>
                 <li className="py-2">
                   <Link
-                    href="/TechDigest"
+                    href="/Blogs/TechDigest"
                     className="text-white hover:text-orange-500"
                   >
                     Tech Digest
@@ -250,7 +250,7 @@ const Navbar = () => {
                 </li>
                 <li className="py-2">
                   <Link
-                    href="/MyStory"
+                    href="/Blogs/MyStory"
                     className="text-white hover:text-orange-500"
                   >
                     Story of My Life
