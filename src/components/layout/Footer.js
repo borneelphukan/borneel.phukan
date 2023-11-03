@@ -75,7 +75,7 @@ const Footer = () => {
               <li className="py-1">
                 <Link
                   className="text-sm text-slate-300 hover:text-blue-400"
-                  href="#"
+                  href="/ContactUs"
                 >
                   Contact Me
                 </Link>
