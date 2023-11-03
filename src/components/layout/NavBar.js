@@ -153,7 +153,7 @@ const Navbar = () => {
         {/*Contact Us Button*/}
         <div className="flex justify-center lg:mt-0">
           <a
-            href="#contact-us"
+            href="/ContactUs"
             className="bg-blue-400 text-white hover:bg-blue-800 ml-5 mb-3 p-2 rounded"
           >
             Contact Us
