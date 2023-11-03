@@ -30,7 +30,7 @@ const Education = () => {
               />
             </div>
 
-            <div className="w-full md:w-[calc(50%-2.5rem)] px-10 py-6 rounded border-2 bg-slate-200 shadow-lg">
+            <div className="w-full md:w-[calc(50%-2.5rem)] px-10 py-6 rounded border-1 bg-slate-100 shadow-lg">
               <div className="flex flex-col md:flex-row items-center justify-between space-x-2 mb-1">
                 <h1 className="font-bold max-w-sm justify-center text-slate-900">
                   {education.degree}
