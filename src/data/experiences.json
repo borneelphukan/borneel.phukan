@@ -1,0 +1,55 @@
+[
+  {
+    "image": "/experience/PTT.png",
+    "title": "Frontend Developer",
+    "date": "August 2023 - October 2023",
+    "company": "PropTechTools .GmbH (Contract)",
+    "location": "Munich, Germany",
+    "description": ["Point 1", "Point 2"]
+  },
+  {
+    "image": "/experience/V4C.png",
+    "title": "Full Stack Developer",
+    "date": "March 2023 - July 2023",
+    "company": "V4C Management Consulting .GmbH (Working Student)",
+    "location": "Munich, Germany",
+    "description": [
+      "Performed end-to-end design, development, and implementation of...",
+      "Mentored and guided a small team of working students...",
+      "Maintained the security, performance, and reliability...",
+      "Troubleshooting and bug fixing within custom plugins...",
+      "Implemented a dynamic working model to seamlessly integrate..."
+    ]
+  },
+  {
+    "image": "/experience/LeanERA.jpg",
+    "title": "Frontend Developer",
+    "date": "August 2022 - January 2023",
+    "company": "LeanERA .GmbH (Working Student)",
+    "location": "Leipzig, Germany",
+    "description": [
+      "Supported Frontend Dev team by working on design, development...",
+      "Interacted with Design, Project Management, and QA Team...",
+      "Implemented pair programming to develop a Nuxt based...",
+      "Accomplished customer requirements by maintaining and developing...",
+      "Created and tested a video chat API for customer application...",
+      "Leveraged Typescript to maximize scalability, refactoring..."
+    ]
+  },
+  {
+    "image": "/experience/Codepth.jpeg",
+    "title": "Frontend Developer",
+    "date": "July 2019 - July 2020",
+    "company": "Codepth .LLC (Co-Founding Member)",
+    "location": "Bhubaneswar, India",
+    "description": [
+      "Built responsive web applications for small businesses...",
+      "Lead a team of student developers in developing, testing...",
+      "Demonstrated the ability to create visually appealing and...",
+      "Interacted with users and implemented components based on...",
+      "Bug fixing and new features implementation.",
+      "Created and maintained technical documentations and user manuals..."
+    ]
+  }
+]
+
