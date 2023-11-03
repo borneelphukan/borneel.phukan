@@ -16,11 +16,11 @@ const GalleryComponent = ({ images }) => {
   };
 
   return (
-    <div className="grid grid-cols-1 lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 gap-1 p-4 my-20">
+    <div className="grid grid-cols-1 lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 gap-1 p-4 mt-10 mb-20">
       {images.map((image, index) => (
         <div
           key={index}
-          className="relative group cursor-pointer"
+          className="relative group cursor-zoom-in"
           onClick={() => openImage(index)}
         >
           <Image
@@ -38,7 +38,7 @@ const GalleryComponent = ({ images }) => {
 
       {enlargedIndex !== null && (
         <div className="fixed top-0 left-0 w-full h-full bg-black bg-opacity-80 flex items-center justify-center">
-          <div className="relative" onClick={closeImage}>
+          <div className="relative cursor-zoom-out" onClick={closeImage}>
             <Image
               width={imageWidth}
               height={imageHeight}

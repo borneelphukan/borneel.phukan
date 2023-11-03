@@ -3,7 +3,8 @@
     "image": "/experience/PTT.png",
     "title": "Frontend Developer",
     "date": "August 2023 - October 2023",
-    "company": "PropTechTools .GmbH (Contract)",
+    "company": "PropTechTools .GmbH",
+    "type":"Contract",
     "location": "Munich, Germany",
     "description": ["Point 1", "Point 2"]
   },
@@ -11,44 +12,47 @@
     "image": "/experience/V4C.png",
     "title": "Full Stack Developer",
     "date": "March 2023 - July 2023",
-    "company": "V4C Management Consulting .GmbH (Working Student)",
+    "company": "V4C Management Consulting .GmbH",
+    "type":"Working Student",
     "location": "Munich, Germany",
     "description": [
-      "Performed end-to-end design, development, and implementation of...",
-      "Mentored and guided a small team of working students...",
-      "Maintained the security, performance, and reliability...",
-      "Troubleshooting and bug fixing within custom plugins...",
-      "Implemented a dynamic working model to seamlessly integrate..."
+      "Performed end-to-end design, development and implementation of UI components, hooks, API integration and debugging in the relaunching of a new company website.",
+      "Mentored and guided a small team of working students in the design, development and deployment of the new company website.",
+      "Maintained the security, performance, and reliability of company website’s hosting services and database while providing SEO analytics reports to drive greater engagement.",
+      "Troubleshooting and bug fixing within custom plugins of an existing company website using PHP.",
+      "Implemented a dynamic working model to seamlessly integrate developers and management, fostering enhanced teamwork, cooperation, and engagement."
     ]
   },
   {
     "image": "/experience/LeanERA.jpg",
     "title": "Frontend Developer",
     "date": "August 2022 - January 2023",
-    "company": "LeanERA .GmbH (Working Student)",
+    "company": "LeanERA .GmbH",
+    "type":"Working Student",
     "location": "Leipzig, Germany",
     "description": [
-      "Supported Frontend Dev team by working on design, development...",
-      "Interacted with Design, Project Management, and QA Team...",
-      "Implemented pair programming to develop a Nuxt based...",
-      "Accomplished customer requirements by maintaining and developing...",
-      "Created and tested a video chat API for customer application...",
-      "Leveraged Typescript to maximize scalability, refactoring..."
+      "Supported Frontend Dev team by working on design, development, and implementation of Progressive Web Application (PWA) using Vue, TailwindCSS and Ionic Framework.",
+      "Interacted with Design, Project Management and QA Team via Groom meetings to develop and implement components based on customer needs.",
+      "Implement pair programming to develop a Nuxt based responsive web application and dynamically fetch data from the CDN using Typescript.",
+      "Accomplished customer requirements by maintaining and developing features for responsive web applications using Nuxt framework.",
+      "Created and tested a video chat API for customer application using cross-platform mobile device emulators.",
+      "Leveraged Typescript to maximise scalability, refactoring, team collaboration, developer experience and code maintainability."
     ]
   },
   {
     "image": "/experience/Codepth.jpeg",
     "title": "Frontend Developer",
     "date": "July 2019 - July 2020",
-    "company": "Codepth .LLC (Co-Founding Member)",
+    "company": "Codepth .LLC",
+    "type":"Co-Founding Member",
     "location": "Bhubaneswar, India",
     "description": [
-      "Built responsive web applications for small businesses...",
-      "Lead a team of student developers in developing, testing...",
-      "Demonstrated the ability to create visually appealing and...",
-      "Interacted with users and implemented components based on...",
+      "Built responsive web applications for small businesses with React.js, Next.js, HTML/CSS, Vanilla JS, and Bootstrap.",
+      "Lead a team of student developers in developing, testing and maintaining the startup’s official website.",
+      "Demonstrated the ability to create visually appealing and user-friendly websites that drive engagement and meet client requirements.",
+      "Interacted with users and implemented components based on their feedbacks.",
       "Bug fixing and new features implementation.",
-      "Created and maintained technical documentations and user manuals..."
+      "Created and maintained technical documentations and user manuals for junior developers and users respectively."
     ]
   }
 ]
