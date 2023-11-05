@@ -45,6 +45,26 @@ const images = [
     alt: "Streets in Autumn, Chemnitz, Germany (October, 2023)",
     caption: "Streets in Autumn, Chemnitz, Germany (October, 2023)",
   },
+  {
+    src: "/gallery/NeusweinsteinCastle.webp",
+    alt: "Neuschwanstein Castle, Bavaria, Germany (October, 2023)",
+    caption: "Neuschwanstein Castle, Bavaria, Germany (October, 2023)",
+  },
+  {
+    src: "/gallery/UFOBridge.webp",
+    alt: "Slovak UFO Bridge, Bratislava, Slovakia (May, 2023)",
+    caption: "Slovak UFO Bridge, Bratislava, Slovakia (May, 2023)",
+  },
+  {
+    src: "/gallery/UBahn.webp",
+    alt: "Hamburg UBahn, Hamburg, Germany (March, 2023)",
+    caption: "Hamburg UBahn, Hamburg, Germany (March, 2023)",
+  },
+  {
+    src: "/gallery/Salzburg.webp",
+    alt: "Street of Salzburg, Salzburg, Austria (January, 2023)",
+    caption: "Street of Salzburg, Salzburg, Austria (January, 2023)",
+  },
 
   // Add more images as needed
 ];

@@ -25,7 +25,12 @@ const Banner = () => {
             <p className="text-base md:text-lg lg:text-xl text-gray-300 w-[50%]">
               {textualData.description}
             </p>
-            <Button bgColor="black" textColor="white" text="Download CV" />
+            <Button
+              bgColor="black"
+              textColor="white"
+              text="Download CV"
+              file={"docs/CV.pdf"}
+            />
           </div>
         </div>
       </div>

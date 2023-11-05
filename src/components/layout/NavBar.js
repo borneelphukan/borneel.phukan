@@ -275,6 +275,21 @@ const Navbar = () => {
               Gallery
             </Link>
           </div>
+
+          <div className="relative mx-auto bg-blue-400 rounded px-3 py-2 hover:bg-blue-600 ">
+            <Link
+              href="/ContactUs"
+              className={`text-white ${
+                selectedLink === "ContactUs" ? "selected" : ""
+              }`}
+              onClick={() => {
+                handleLinkClick("ContactUs");
+                toggleMobileMenu();
+              }}
+            >
+              Contact Us
+            </Link>
+          </div>
         </div>
       )}
 
