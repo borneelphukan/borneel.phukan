@@ -4,9 +4,13 @@
     "title": "Frontend Developer",
     "date": "August 2023 - October 2023",
     "company": "PropTechTools .GmbH",
-    "type":"Contract",
+    "type":"Short-term Contractual",
     "location": "Munich, Germany",
-    "description": ["Point 1", "Point 2"]
+    "description": [
+      "Developed an intuitive Figma Prototype of the order management module for an API-based real estate valuation platform, ensuring a user-friendly interface for order creation and editing within a data-intensive table.", 
+      "Implemented a functional frontend model for the web app using React.js and Tailwind CSS, significantly improving the user experience of the valuation platform.",
+      "Played a pivotal role in expediting the company's product release and supporting the development team in accelerating development processes."
+    ]
   },
   {
     "image": "/experience/V4C.png",
