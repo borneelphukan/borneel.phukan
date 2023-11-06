@@ -33,8 +33,8 @@ const ThemeSwitch = () => {
         checked={theme === "dark"}
         checkedIcon={
           <div
-            className={`flex items-center justify-center w-16 h-6 bg-black text-white rounded-full ${
-              theme === "light" ? "text-black" : "text-white"
+            className={`flex items-center justify-center w-10 h-6 bg-black text-white rounded-full ${
+              theme === "light" ? "&#127769;" : "text-white"
             }`}
           >
             <div className="px-2">Dark</div>
@@ -42,7 +42,7 @@ const ThemeSwitch = () => {
         }
         uncheckedIcon={
           <div
-            className={`flex items-center justify-center w-16 h-6 bg-slate-100 text-black rounded-full ${
+            className={`flex items-center justify-center w-12 h-6 bg-slate-100 text-black rounded-full ${
               theme === "dark" ? "text-white" : "text-black"
             }`}
           >
