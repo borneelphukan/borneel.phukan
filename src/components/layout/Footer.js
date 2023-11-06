@@ -4,6 +4,9 @@ import contactData from "@/data/contact-data.json";
 import Link from "next/link";
 import Image from "next/image";
 import textualData from "@/data/textual-data.json";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons";
+import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 
 const Footer = () => {
   return (
@@ -42,8 +45,8 @@ const Footer = () => {
         </div>
 
         {/* Column 2 */}
-        <div className="mb-8 md:mb-0">
-          <h2 className="text-xl font-semibold mb-2">Portfolio</h2>
+        <div className="mb-8">
+          <h2 className="text-xl font-semibold mb-2">Services</h2>
           {/* Your content for column 2 */}
           <ul className="text-left px-24">
             <li className="py-2">
@@ -51,60 +54,10 @@ const Footer = () => {
                 className="text-sm text-slate-300 hover:text-blue-400"
                 href="#"
               >
-                Documentation
+                My Services
               </Link>
             </li>
 
-            <li className="py-1">
-              <Link
-                className="text-sm text-slate-300 hover:text-blue-400"
-                href="#"
-              >
-                Privacy Policy
-              </Link>
-            </li>
-            <li className="py-1">
-              <Link
-                className="text-sm text-slate-300 hover:text-blue-400"
-                href="#"
-              >
-                Pricing
-              </Link>
-            </li>
-            <li className="py-1">
-              <li className="py-1">
-                <Link
-                  className="text-sm text-slate-300 hover:text-blue-400"
-                  href="/ContactUs"
-                >
-                  Contact Me
-                </Link>
-              </li>
-            </li>
-          </ul>
-        </div>
-
-        {/* Column 3 */}
-        <div className="mb-8 md:mb-0">
-          <h2 className="text-xl font-semibold mb-4">Company</h2>
-          {/* Your content for column 3 */}
-          <ul className="text-left px-24">
-            <li className="py-1">
-              <Link
-                className="text-sm text-slate-300 hover:text-blue-400"
-                href="/AboutUs"
-              >
-                About Us
-              </Link>
-            </li>
-            <li className="py-1">
-              <Link
-                className="text-sm text-slate-300 hover:text-blue-400"
-                href="#"
-              >
-                Career
-              </Link>
-            </li>
             <li className="py-1">
               <Link
                 className="text-sm text-slate-300 hover:text-blue-400"
@@ -118,7 +71,57 @@ const Footer = () => {
                 className="text-sm text-slate-300 hover:text-blue-400"
                 href="#"
               >
-                My Blogs
+                Testimonials
+              </Link>
+            </li>
+            <li className="py-1">
+              <li className="py-1">
+                <Link
+                  className="text-sm text-slate-300 hover:text-blue-400"
+                  href="#"
+                >
+                  Contact Me
+                </Link>
+              </li>
+            </li>
+          </ul>
+        </div>
+
+        {/* Column 3 */}
+        <div className="mb-8">
+          <h2 className="text-xl font-semibold mb-4">Legal</h2>
+          {/* Your content for column 3 */}
+          <ul className="text-left px-24">
+            <li className="py-1">
+              <Link
+                className="text-sm text-slate-300 hover:text-blue-400"
+                href="#"
+              >
+                Privacy Policy
+              </Link>
+            </li>
+            <li className="py-1">
+              <Link
+                className="text-sm text-slate-300 hover:text-blue-400"
+                href="#"
+              >
+                Terms of Service
+              </Link>
+            </li>
+            <li className="py-1">
+              <Link
+                className="text-sm text-slate-300 hover:text-blue-400"
+                href="#"
+              >
+                Disclaimer
+              </Link>
+            </li>
+            <li className="py-1">
+              <Link
+                className="text-sm text-slate-300 hover:text-blue-400"
+                href="#"
+              >
+                Documentation
               </Link>
             </li>
           </ul>
@@ -126,8 +129,36 @@ const Footer = () => {
 
         {/* Column 4 */}
         <div>
-          <h2 className="text-xl font-semibold mb-4">Our Location</h2>
-          {/* Your content for column 4 */}
+          <h2 className="text-xl font-semibold mb-4">Social</h2>
+          <div className="mt-10">
+            <a
+              href="https://www.linkedin.com/in/borneelphukan/"
+              target="_blank"
+            >
+              <FontAwesomeIcon
+                className="mx-3 hover:text-blue-400"
+                icon={faLinkedin}
+                target="_blank"
+                size="2x"
+              />
+            </a>
+            <a href="https://github.com/borneelphukan" target="_blank">
+              <FontAwesomeIcon
+                className="mx-3 hover:text-blue-400"
+                icon={faGithub}
+                target="_blank"
+                size="2x"
+              />
+            </a>
+            <a href="mailto:borneelphukan@gmail.com">
+              <FontAwesomeIcon
+                className="mx-3 hover:text-blue-400"
+                icon={faEnvelope}
+                target="_blank"
+                size="2x"
+              />
+            </a>
+          </div>
         </div>
       </div>
 
