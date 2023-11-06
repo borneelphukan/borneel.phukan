@@ -8,7 +8,7 @@ const AboutMe = () => {
     <div className="p-4 md:p-20 mx-4 md:mx-20 md:mb-20">
       <h1 className="text-3xl md:text-5xl mb-4 md:mb-10 text-center">About</h1>
 
-      <p className="text-lg md:text-xl text-justify">
+      <p className="text-base md:text-base text-justify">
         {textualData.aboutme[0]}
       </p>
 
@@ -24,7 +24,7 @@ const AboutMe = () => {
         </div>
         <div className="md:pl-20 flex-1">
           <p className="font-bold text-lg md:text-xl">Who am I?</p>
-          <p className="text-lg md:text-xl text-justify">
+          <p className="text-base md:text-base text-justify">
             {textualData.aboutme[1]}
           </p>
         </div>
@@ -34,7 +34,9 @@ const AboutMe = () => {
         <p className="font-bold text-lg md:text-xl">
           What is this website about?
         </p>
-        <p className="text-justify">{textualData.aboutme[2]}</p>
+        <p className="text-base md:text-base text-justify">
+          {textualData.aboutme[2]}
+        </p>
       </p>
     </div>
   );

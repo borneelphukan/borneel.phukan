@@ -73,10 +73,18 @@ body {
   /* Move up to the desired position when visible */
 }
 
-.home-container {
+.home-cover {
   background-image: url("/images/banner-background.png");
   background-size: cover;
   background-position: center;
   height: 100vh;
+  /* Adjust as needed */
+}
+
+.service-cover {
+  background-image: url("/images/banner-background.png");
+  background-size: cover;
+  background-position: center;
+  height: 50vh;
   /* Adjust as needed */
 }

@@ -4,7 +4,7 @@ import textualData from "@/data/textual-data.json";
 
 const Banner = () => {
   return (
-    <div className="home-container">
+    <div className="home-cover">
       <div className="container mx-auto px-10">
         {/*Banner Goes Here*/}
         <div className=" py-16 md:py-24 lg:py-32 xl:py-48 text-black">

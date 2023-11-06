@@ -9,13 +9,13 @@ const Card = ({ icon, title, content }) => {
       </div>
 
       <div className="px-6 py-4">
-        <h2 className="text-2xl font-semibold mb-2">{title}</h2>
+        <h2 className="text-2xl text-gray-700 font-semibold mb-2">{title}</h2>
         <p className="text-gray-700 text-base">{content}</p>
       </div>
       <div className="px-6 py-4">
         <a
           href="#"
-          className="font-bold hover:text-orange-500 transition-colors duration-300 underline underline-offset-8"
+          className="font-bold text-gray-700 hover:text-orange-500 transition-colors duration-300 underline underline-offset-8"
         >
           Read More
         </a>
