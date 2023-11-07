@@ -17,7 +17,7 @@ const CategoriesTab = () => {
   ];
 
   return (
-    <div className="py-1 px-10 md:p-10 my-5 md:mr-20 md:my-20 rounded-md shadow-md">
+    <div className="py-1 px-10 md:p-10 text-center my-5 md:mr-20 md:my-20 rounded-md shadow-md">
       <h2 className="text-lg font-semibold mb-4">Blog Categories</h2>
       <ul>
         {blogCategories.map((category) => (

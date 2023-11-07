@@ -15,7 +15,7 @@ const Card = ({ icon, title, content }) => {
       <div className="px-6 py-4">
         <a
           href="#"
-          className="font-bold text-gray-700 hover:text-orange-500 transition-colors duration-300 underline underline-offset-8"
+          className="font-bold text-gray-700 hover:text-blue-400 transition-colors duration-300 underline underline-offset-8"
         >
           Read More
         </a>

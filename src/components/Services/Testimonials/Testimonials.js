@@ -7,7 +7,7 @@ const Testimonials = () => {
     <div className="container mx-auto my-20">
       <div className="max-w-8xl mx-auto text-center text-lg p-5 my-10">
         <p className="text-base md:text-lg lg:text-neutral-500">
-          <span className="text-orange-500 font-semibold">3 </span>HAPPY CLIENTS
+          <span className="text-blue-400 font-semibold">3 </span>HAPPY CLIENTS
         </p>
         <h1 className="text-4xl font-semibold mb-3">Customer Reviews</h1>
 
