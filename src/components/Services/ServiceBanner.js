@@ -13,9 +13,9 @@ const ServiceBanner = () => {
             </h1>
 
             <p className="text-base md:text-lg lg:text-xl text-gray-300 w-[50%] text-center mx-auto">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
-              cursus turpis ac risus convallis rhoncus. Duis nec egestas justo,
-              ac ultrices lectus.
+              When I am not engaged in personal projects, I might be freelancing
+              for a reputable company or startup, and I could potentially
+              contribute to your project as well.
             </p>
           </div>
         </div>

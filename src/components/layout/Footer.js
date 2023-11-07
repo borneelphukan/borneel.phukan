@@ -44,7 +44,7 @@ const Footer = () => {
             </p>
             <p className="text-sm text-left my-1">
               Phone:{" "}
-              <span className="text-sm text-slate-300">{contactData.fax} </span>
+              <span className="text-sm text-slate-300">{contactData.phone} </span>
             </p>
           </div>
 

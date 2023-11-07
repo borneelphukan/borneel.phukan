@@ -12,7 +12,7 @@ const TestimonialsCard = ({ avatar, name, comment, stars, role }) => {
       <div className="px-6 py-4">
         <p className="text-gray-700 text-base">{comment}</p>
         <RatingStars numStars={stars} />
-        <h2 className="text-normal font-semibold pt-2">{name}</h2>
+        <h2 className="text-black text-normal font-semibold pt-2">{name}</h2>
         <p className="text-gray-700 text-sm">{role}</p>
       </div>
     </div>
