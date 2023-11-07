@@ -2,10 +2,14 @@ import DefaultLayout from "@/layout/DefaultLayout";
 import Banner from "@/components/HomePage/Banner";
 import AboutMe from "@/components/HomePage/AboutMe";
 import CategoriesTab from "@/components/HomePage/RightPanel";
+import Head from "next/head";
 
 const Home = () => {
   return (
     <DefaultLayout>
+      <Head>
+        <title>Welcome | Borneel Bikash Phukan</title>
+      </Head>
       <Banner />
       <div className="w-full flex flex-col md:flex-row lg:flex-row ">
         <div className="my-8 md:w-4/5 lg:w-4/5">
