@@ -4,6 +4,7 @@ import CircularProgressBar from "@/components/layout/CircularProgressBar";
 import Footer from "@/components/layout/Footer";
 import Loader from "@/components/layout/Loader";
 import {React, useState, useEffect} from "react"
+import Head from "next/head";
 
 const DefaultLayout = ({ children }) => {
   const [isLoading, setIsLoading] = useState(true);
@@ -16,6 +17,9 @@ const DefaultLayout = ({ children }) => {
 
   return (
     <div>
+      <Head>
+        <title>Welcome | Borneel Bikash Phukan</title>
+      </Head>
       {isLoading ? (
         <Loader />
       ) : (
