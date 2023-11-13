@@ -9,19 +9,23 @@ const Skills = () => {
     "/skills/Frameworks/vue.png",
     "/skills/Frameworks/node.jpg",
     "/skills/Frameworks/tailwind.png",
-    
     // Add more image URLs for frontend skills as needed
   ];
 
   const programming = [
+    "/skills/Programming/html5.jpeg",
+    "/skills/Programming/css3.webp",
     "/skills/Programming/typescript.png",
     "/skills/Programming/javascript.png",
+    "/skills/Programming/python.webp",
+    "/skills/Programming/java.png",
+    "/skills/Programming/mongodb.svg",
+    "/skills/Programming/postgresql.svg",
     // Add more image URLs for backend skills as needed
   ];
 
   const machineLearningImages = [
-    "/client/avatar-1.png",
-    "/client/avatar-1.png",
+    "/skills/MachineLearning/tensorflow.jpeg",
     // Add more image URLs for machine learning skills as needed
   ];
 
@@ -41,13 +45,13 @@ const Skills = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-5">
           <div className="col-span-1 mx-2">
             <h2 className="text-xl md:text-2xl font-semibold mb-3">
-              Frameworks & Libraries
+              Libraries & Frameworks
             </h2>
             <div className="grid grid-cols-5 gap-4">
               {frameworks.map((imageUrl, index) => (
                 <div
                   key={index}
-                  className="rounded-full w-20 md:w-20 h-20 md:h-20 shadow-xl bg-gray-100"
+                  className="rounded-full w-20 md:w-20 h-20 md:h-20"
                 >
                   <Image
                     height={100}
@@ -62,19 +66,19 @@ const Skills = () => {
           </div>
           <div className="col-span-1 mx-2">
             <h2 className="text-xl md:text-2xl font-semibold mb-3">
-              Programming
+              Programming & Databases
             </h2>
             <div className="grid grid-cols-5">
               {programming.map((imageUrl, index) => (
                 <div
                   key={index}
-                  className="rounded-full w-20 md:w-20 h-20 md:h-20 shadow-xl bg-gray-100"
+                  className="rounded-full w-20 md:w-20 h-20 md:h-20 mb-3"
                 >
                   <Image
                     height={100}
                     width={100}
                     src={imageUrl}
-                    alt="Backend Skill"
+                    alt="Programming & Database"
                     className="rounded-full w-full h-full"
                   />
                 </div>
@@ -89,7 +93,7 @@ const Skills = () => {
               {machineLearningImages.map((imageUrl, index) => (
                 <div
                   key={index}
-                  className="rounded-full w-20 md:w-20 h-20 md:h-20 shadow-xl bg-gray-100"
+                  className="rounded-full w-20 md:w-20 h-20 md:h-20 bg-gray-100"
                 >
                   <Image
                     height={100}

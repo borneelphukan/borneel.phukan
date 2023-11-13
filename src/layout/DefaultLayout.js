@@ -23,7 +23,7 @@ const DefaultLayout = ({ children }) => {
       {isLoading ? (
         <Loader />
       ) : (
-        <div className="bg-gray-100 min-h-screen">
+        <div className="min-h-screen">
           <Navbar />
           {/* Main content */}
           <main>
