@@ -86,7 +86,7 @@ const Navbar = () => {
         >
           <Link
             id="strike"
-            href="/Blogs/Topics"
+            href="/Blogs/Home"
             className={`text-white hover:text-gray-300 ${
               selectedLink === "Blogs" ? "selected" : ""
             }`}
@@ -102,34 +102,17 @@ const Navbar = () => {
               style={{ top: "80%" }}
             >
               <li className="py-2">
-                <Link
-                  className="text-black hover:text-orange-500"
-                  href="/Blogs/ScamIndustry"
-                >
-                  Consultancy - Scam Industry
-                </Link>
-              </li>
-              <li className="py-2">
-                <Link
-                  className="text-black hover:text-orange-500"
-                  href="/Blogs/TravelBlogs"
-                >
+                <Link className="text-black hover:text-orange-500" href="#">
                   Travel Blogs
                 </Link>
               </li>
               <li className="py-2">
-                <Link
-                  className="text-black hover:text-orange-500"
-                  href="/Blogs/TechDigest"
-                >
+                <Link className="text-black hover:text-orange-500" href="#">
                   Tech Digest
                 </Link>
               </li>
               <li className="py-2">
-                <Link
-                  className="text-black hover:text-orange-500"
-                  href="/Blogs/MyStory"
-                >
+                <Link className="text-black hover:text-orange-500" href="#">
                   Story of My Life
                 </Link>
               </li>
@@ -225,34 +208,17 @@ const Navbar = () => {
             {showMobileBlogNav && (
               <ul className="relative left-0 mt-2 text-sm px-5 bg-black w-full">
                 <li className="py-2">
-                  <Link
-                    href="/Blogs/ScamIndustry"
-                    className="text-white hover:text-orange-500"
-                  >
-                    Consultancy - Scam Industry
-                  </Link>
-                </li>
-                <li className="py-2">
-                  <Link
-                    href="/Blogs/TravelBlogs"
-                    className="text-white hover:text-orange-500"
-                  >
+                  <Link href="#" className="text-white hover:text-blue-400">
                     Travel Blogs
                   </Link>
                 </li>
                 <li className="py-2">
-                  <Link
-                    href="/Blogs/TechDigest"
-                    className="text-white hover:text-orange-500"
-                  >
+                  <Link href="#" className="text-white hover:text-blue-400">
                     Tech Digest
                   </Link>
                 </li>
                 <li className="py-2">
-                  <Link
-                    href="/Blogs/MyStory"
-                    className="text-white hover:text-orange-500"
-                  >
+                  <Link href="#" className="text-white hover:text-blue-400">
                     Story of My Life
                   </Link>
                 </li>

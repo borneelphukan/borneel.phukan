@@ -10,15 +10,14 @@ const CategoryLink = ({ slug, title }) => (
 
 const CategoriesTab = () => {
   const blogCategories = [
-    { slug: "scamindustry/ScamIndustry", title: "Consultancy - Scam Industry" },
-    { slug: "travelblogs/TravelBlogs", title: "Travel Blogs" },
-    { slug: "techdigest/TechDigest", title: "Tech Digest" },
-    { slug: "mystory/mystory", title: "Story of My Life" },
+    { slug: "travelblogs/TravelBlogs", title: "Travel Blogs (Coming Soon)" },
+    { slug: "techdigest/TechDigest", title: "Tech Digest (Coming Soon)" },
+    { slug: "mystory/mystory", title: "Story of My Life (Coming Soon)" },
   ];
 
   return (
     <div className="py-1 px-10 md:p-10 text-center my-5 md:mr-20 md:my-20 rounded-md shadow-md">
-      <h2 className="text-lg font-semibold mb-4">Blog Categories</h2>
+      <h2 className="text-lg font-semibold mb-4">My Blogs (Coming Soon)</h2>
       <ul>
         {blogCategories.map((category) => (
           <CategoryLink
