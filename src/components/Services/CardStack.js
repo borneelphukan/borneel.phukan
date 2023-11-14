@@ -7,8 +7,8 @@ const CardStack = () => {
       {/* First Card */}
       <Card
         icon="fa-light fa-code"
-        title="Web Development"
-        content="This was released more than 6 years ago and it is still one of the top selling themes, based on stable framework."
+        title="Development & Design"
+        content="Experienced web developer and designer with over 5 years in the field. Specializing in web design using Figma and proficient in development with React and Next.js. Expert in crafting visually appealing and functional websites, with a focus on sleek styling using TailwindCSS."
       />
 
       {/* Second Card */}

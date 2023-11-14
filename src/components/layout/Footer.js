@@ -6,6 +6,7 @@ import textualData from "@/data/textual-data.json";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import { faInstagram } from "@fortawesome/free-brands-svg-icons";
 
 const Footer = () => {
   return (
@@ -44,7 +45,9 @@ const Footer = () => {
             </p>
             <p className="text-sm text-left my-1">
               Phone:{" "}
-              <span className="text-sm text-slate-300">{contactData.phone} </span>
+              <span className="text-sm text-slate-300">
+                {contactData.phone}{" "}
+              </span>
             </p>
           </div>
 
@@ -135,6 +138,17 @@ const Footer = () => {
           <div>
             <h2 className="text-xl font-semibold mb-4">Social</h2>
             <div className="mt-10">
+              <a
+                href="https://www.instagram.com/borneel.phukan"
+                target="_blank"
+              >
+                <FontAwesomeIcon
+                  className="mx-3 hover:text-blue-400"
+                  icon={faInstagram}
+                  target="_blank"
+                  size="2x"
+                />
+              </a>
               <a
                 href="https://www.linkedin.com/in/borneelphukan/"
                 target="_blank"
