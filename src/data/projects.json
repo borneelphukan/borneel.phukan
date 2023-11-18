@@ -1,7 +1,7 @@
 [
   {
     "title": "My Personal Web App.",
-    "description": "Designed and developed a professional portfolio website using Next.js and Tailwind CSS. Powered by JavaScript for responsiveness, it includes key features like a dedicated blog, comprehensive portfolio display, client testimonials, and service descriptions. The user-centric design ensures a seamless experience, with an added dark theme option. The website serves as an effective platform for showcasing work, enhancing personal branding, and attracting potential clients.",
+    "description": "Created a professional portfolio with Next.js and Tailwind CSS, featuring a responsive design, blog, comprehensive portfolio, client testimonials, and services. User-centric with a dark theme, it's an effective platform for showcasing work and attracting clients.",
     "buttonText": "Open",
     "link":"https://github.com/borneelphukan/borneel.phukan"
   },
