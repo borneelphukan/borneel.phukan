@@ -1,0 +1,11 @@
+[
+  {
+    "paperName": "An Efficient Technique for Image Captioning using Deep Neural Network",
+    "publisherName": "Cognitive Informatics and Soft Computing, Springer 2020",
+    "publicationDate": "31 July 2021",
+    "description": "With the vast expansion of the Internet and the generation of trillions of gigabytes of data daily, the demand for tools is essential to ensure system adaptability to rapid changes. Image captioning is a crucial tool in identifying and managing entities online. This paper explores an efficient method for automatic image captioning, addressing strategies to enhance its performance and functionality on individual images.",
+    "showPublication": "Open",
+    "citations": 3,
+    "publicationLink":"https://link.springer.com/chapter/10.1007/978-981-16-1056-1_38"
+  }
+]

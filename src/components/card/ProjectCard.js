@@ -2,15 +2,7 @@ import React, { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faShareFromSquare } from "@fortawesome/free-solid-svg-icons";
 
-const PublicationCard = ({
-  paperName,
-  publisherName,
-  publicationDate,
-  description,
-  showPublication,
-  citations,
-  publicationLink,
-}) => {
+const ProjectCard = ({ title, description, buttonText, link }) => {
   const [expanded, setExpanded] = useState(false);
 
   const toggleDescription = () => {
@@ -18,21 +10,13 @@ const PublicationCard = ({
   };
 
   const openPublicationLink = () => {
-    window.open(publicationLink, "_blank");
+    window.open(link, "_blank");
   };
 
   return (
-    <div className="shadow-md border rounded-xl p-8 hover:shadow-xl transition duration-300 ease-in-out">
+    <div className="shadow-md border rounded-xl p-10 hover:shadow-xl transition duration-300 ease-in-out">
       {/* First Row */}
-      <div className="text-xl font-bold mb-2">{paperName}</div>
-
-      {/* Second Row */}
-      <div className="flex mb-4">
-        <div className="w-1/2">{publisherName}</div>
-        <time className="w-1/2 text-right font-caveat font-medium text-blue-400">
-          {publicationDate}
-        </time>
-      </div>
+      <div className="text-xl font-bold mb-2">{title}</div>
 
       {/* Third Row */}
       <div className="mb-4">
@@ -48,16 +32,15 @@ const PublicationCard = ({
       {/* Fourth Row */}
       <div className="flex mt-4">
         <button
-          className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-3xl"
+          className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-1 px-2 rounded-2xl"
           onClick={openPublicationLink}
         >
-          {showPublication}
+          {buttonText}
           <FontAwesomeIcon className="mx-3" icon={faShareFromSquare} />
         </button>
-        <div className="ml-auto">{citations} Citations</div>
       </div>
     </div>
   );
 };
 
-export default PublicationCard;
+export default ProjectCard;
