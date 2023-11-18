@@ -23,5 +23,10 @@
     { "name": "GitHub", "imageUrl": "/skills/tools/github.png" },
     { "name": "Jira", "imageUrl": "/skills/tools/jira.png" },
     { "name": "MS Office", "imageUrl": "/skills/tools/ms-office.png" }
+  ],
+  "machineLearning": [
+    { "name": "Tensorflow", "imageUrl": "/skills/MachineLearning/tensorflow.jpg" },
+    { "name": "OpenCV", "imageUrl": "/skills/MachineLearning/OpenCV.png" }
   ]
+
 }

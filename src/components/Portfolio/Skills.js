@@ -3,7 +3,7 @@ import Image from "next/image";
 import skillsData from "@/data/skills.json";
 
 const Skills = () => {
-  const { frameworks, programming, tools } = skillsData;
+  const { frameworks, programming, tools, machineLearning } = skillsData;
 
   return (
     <div className="max-w-8xl text-lg p-5">
@@ -65,7 +65,28 @@ const Skills = () => {
           <div className="col-span-1 mx-2">
             <h2 className="text-xl md:text-2xl font-semibold mb-3">Tools</h2>
             <div className="grid grid-cols-5 gap-4">
-              {programming.map(({ name, imageUrl }, index) => (
+              {tools.map(({ name, imageUrl }, index) => (
+                <div
+                  key={index}
+                  className="rounded-full w-20 md:w-20 h-20 md:h-20"
+                >
+                  <Image
+                    height={100}
+                    width={100}
+                    src={imageUrl}
+                    alt={name}
+                    className="rounded-full w-full h-full transform transition-transform hover:scale-110"
+                  />
+                </div>
+              ))}
+            </div>
+          </div>
+          <div className="col-span-1 mx-2">
+            <h2 className="text-xl md:text-2xl font-semibold mb-3">
+              Machine Learning
+            </h2>
+            <div className="grid grid-cols-5 gap-4">
+              {machineLearning.map(({ name, imageUrl }, index) => (
                 <div
                   key={index}
                   className="rounded-full w-20 md:w-20 h-20 md:h-20"
