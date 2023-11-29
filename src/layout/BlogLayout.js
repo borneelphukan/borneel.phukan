@@ -25,6 +25,7 @@ const BlogLayout = ({ children }) => {
       ) : (
         <div className="min-h-screen">
           <Navbar />
+         
           {/* Main content */}
           <main>
             {children}

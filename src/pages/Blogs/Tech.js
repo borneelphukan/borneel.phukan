@@ -2,13 +2,13 @@
 import React from "react";
 import BlogLayout from "@/layout/BlogLayout";
 import BlogBanner from "@/components/Blog/BlogBanner";
-import BlogHomeCrumb from "@/components/Blog/BlogHomeCrumb";
+import TechCrumbs from "@/components/Blog/TechCrumb";
 
 const Blogs = () => {
   return (
     <BlogLayout>
       <BlogBanner>
-        <BlogHomeCrumb />
+        <TechCrumbs />
       </BlogBanner>
     </BlogLayout>
   );

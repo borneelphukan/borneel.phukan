@@ -102,17 +102,26 @@ const Navbar = () => {
               style={{ top: "80%" }}
             >
               <li className="py-2">
-                <Link className="text-black hover:text-blue-400" href="#">
+                <Link
+                  className="text-black hover:text-blue-400"
+                  href="/Blogs/Travel"
+                >
                   Travel Blogs
                 </Link>
               </li>
               <li className="py-2">
-                <Link className="text-black hover:text-blue-400" href="#">
+                <Link
+                  className="text-black hover:text-blue-400"
+                  href="/Blogs/Tech"
+                >
                   Tech Digest
                 </Link>
               </li>
               <li className="py-2">
-                <Link className="text-black hover:text-blue-400" href="#">
+                <Link
+                  className="text-black hover:text-blue-400"
+                  href="/Blogs/Story"
+                >
                   Story of My Life
                 </Link>
               </li>

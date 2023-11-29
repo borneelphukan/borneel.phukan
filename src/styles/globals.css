@@ -73,6 +73,7 @@ body {
   /* Move up to the desired position when visible */
 }
 
+
 .home-cover {
   background-image: url("/banners/home-banner.png");
   background-size: cover;
@@ -86,5 +87,13 @@ body {
   background-size: cover;
   background-position: center;
   height: 60vh;
+  /* Adjust as needed */
+}
+
+.blog-cover {
+  background-image: url("/banners/blog-banner.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 45vh;
   /* Adjust as needed */
 }

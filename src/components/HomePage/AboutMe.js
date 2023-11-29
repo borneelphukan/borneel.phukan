@@ -13,13 +13,13 @@ const AboutMe = () => {
       </p>
 
       <div className="flex flex-col md:flex-row items-center pt-4 md:pt-10">
-        <div className="w-48 md:w-60 h-48 md:h-60 rounded-full overflow-hidden mb-4 md:mb-0">
+        <div className="h-60 w-60 mx-auto rounded-full flex items-center justify-center overflow-hidden">
           <Image
             src={Avatar}
             width={200}
             height={200}
             alt="Your Avatar"
-            className="w-full h-full object-cover"
+            className="hover:scale-125 transition-all duration-500 cursor-pointer w-full h-full object-cover"
           />
         </div>
         <div className="md:pl-20 flex-1">
