@@ -10,7 +10,7 @@ const Card = ({ icon, title, content }) => {
 
       <div className="px-6 py-4">
         <h2 className="text-2xl text-gray-700 font-semibold mb-2">{title}</h2>
-        <p className="text-gray-700 text-base">{content}</p>
+        <p className="text-gray-700 text-base text-justify">{content}</p>
       </div>
       <div className="px-6 py-4">
         <a

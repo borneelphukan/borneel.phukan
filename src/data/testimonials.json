@@ -1,6 +1,6 @@
 [
   {
-    "avatar": "/client/avatar-1.png",
+    "avatar": "/client/avatar.png",
     "name": "Roshan Raj Mishra",
     "comment": "Borneel is an excellent resource at Codepth. His all-round knowledge of data science and ability to present his research effectively by his writing prowess makes him a truly valuable asset in the team. I've been working with him for over a year now, and I vouch for his skills and believe in his potential.",
     "stars": 5,
@@ -14,10 +14,10 @@
     "role": "Software Engineer, FinanceOps"
   },
   {
-    "avatar": "/client/avatar-3.png",
+    "avatar": "/client/avatar.png",
     "name": "Abhishek Mondal",
     "comment": "I've worked closely with Borneel in Codepth. He is a very passionate learner, an enthusiastic coder and a self-motivated person. He can come up with unique ideas and solutions to problems presented before him. He's also very helpful towards his fellow colleagues and persons around him.",
     "stars": 5,
-    "role": "Software Developer"
+    "role": "Software Developer, Accenture"
   }
 ]
