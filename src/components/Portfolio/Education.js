@@ -1,23 +1,8 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import Image from "next/image";
+import educations from "@/data/education.json";
 
 const Education = () => {
-  const [educationData, setEducationData] = useState([]);
-
-  useEffect(() => {
-    const fetchData = async () => {
-      try {
-        const response = await fetch("/api/education"); // Assuming you have set up the API route as mentioned in the previous example
-        const data = await response.json();
-        setEducationData(data.educationData);
-      } catch (error) {
-        console.error("Error fetching data:", error);
-      }
-    };
-
-    fetchData();
-  }, []);
-
   return (
     <div className="max-w-8xl text-lg p-5 my-10">
       <p className="text-base text-center md:text-lg lg:text-neutral-500 py-2">
@@ -30,7 +15,7 @@ const Education = () => {
         vessel.&rdquo; <span className="font-semibold">~ Socrates</span>
       </p>
       <div className="mx-4 md:mx-20 px-4 md:px-20 my-10 space-y-8 relative before:absolute before:inset-0 before:mx-auto before:-translate-x-px md:before:mx-auto md:before:translate-x-0 before:h-full before:w-0.5 before:bg-gradient-to-b before:from-transparent before:via-slate-400 before:to-transparent">
-        {educationData.map((education, index) => (
+        {educations.map((education, index) => (
           <div
             key={index}
             className={`relative flex flex-col md:flex-row items-center justify-between md:justify-normal md:odd:flex-row-reverse group is-active transition-transform ease-in-out duration-300 transform hover:scale-105`}
