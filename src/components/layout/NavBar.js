@@ -217,17 +217,26 @@ const Navbar = () => {
             {showMobileBlogNav && (
               <ul className="relative left-0 mt-2 text-sm px-5 bg-black w-full">
                 <li className="py-2">
-                  <Link href="#" className="text-white hover:text-blue-400">
+                  <Link
+                    href="/Blogs/Travel"
+                    className="text-white hover:text-blue-400"
+                  >
                     Travel Blogs
                   </Link>
                 </li>
                 <li className="py-2">
-                  <Link href="#" className="text-white hover:text-blue-400">
+                  <Link
+                    href="/Blogs/Tech"
+                    className="text-white hover:text-blue-400"
+                  >
                     Tech Digest
                   </Link>
                 </li>
                 <li className="py-2">
-                  <Link href="#" className="text-white hover:text-blue-400">
+                  <Link
+                    href="Blogs/Story"
+                    className="text-white hover:text-blue-400"
+                  >
                     Story of My Life
                   </Link>
                 </li>

@@ -38,6 +38,7 @@ const BlogCard = ({ imageUrl, author, title, description }) => {
             {/* Description */}
             <p className="text-gray-700 justify-center">{description}</p>
           </div>
+          
         </div>
       </div>
     </div>
