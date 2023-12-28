@@ -2,6 +2,7 @@ import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faShare } from "@fortawesome/free-solid-svg-icons";
 import Image from "next/image";
+import Link from "next/link";
 
 const BlogCard = ({ imageUrl, author, title, description }) => {
   return (
@@ -33,12 +34,20 @@ const BlogCard = ({ imageUrl, author, title, description }) => {
             </div>
 
             {/* Title */}
-            <h1 className="text-2xl font-bold my-2 justify-center">{title}</h1>
+            <h1 className="text-2xl font-bold my-2 justify-center">
+              <Link href="#">{title}</Link>
+            </h1>
 
             {/* Description */}
-            <p className="text-gray-700 justify-center">{description}</p>
+            <p className="justify-center">
+              <Link
+                href="#"
+                className="inline-flex items-center text-sm font-normal"
+              >
+                {description}
+              </Link>
+            </p>
           </div>
-          
         </div>
       </div>
     </div>

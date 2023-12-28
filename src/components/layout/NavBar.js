@@ -86,7 +86,7 @@ const Navbar = () => {
         >
           <Link
             id="strike"
-            href="/Blogs/Home"
+            href="/Blogs/posts"
             className={`text-white hover:text-gray-300 ${
               selectedLink === "Blogs" ? "selected" : ""
             }`}
