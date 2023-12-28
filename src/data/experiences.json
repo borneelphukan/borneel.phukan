@@ -1,17 +1,5 @@
 [
-  {
-    "image": "/experience/PTT.png",
-    "title": "Frontend Developer",
-    "date": "August 2023 - October 2023",
-    "company": "PropTechTools .GmbH",
-    "type":"Freelance",
-    "location": "Munich, Germany",
-    "description": [
-      "Developed an intuitive Figma Prototype of the order management module for an API-based real estate valuation platform, ensuring a user-friendly interface for order creation and editing within a data-intensive table.", 
-      "Implemented a functional frontend model for the web application using Vue and Tailwind, significantly improving the user experience of the valuation platform.",
-      "Played a pivotal role in expediting the company's product release and supporting the development team in accelerating development processes."
-    ]
-  },
+
   {
     "image": "/experience/V4C.png",
     "title": "Full Stack Developer",
@@ -20,26 +8,25 @@
     "type":"Working Student",
     "location": "Munich, Germany",
     "description": [
-      "Performed end-to-end design, development and implementation of UI components, hooks, API integration and debugging in the relaunching of a new company website.",
-      "Mentored and guided a small team of working students in the design, development and deployment of the new company website.",
-      "Maintained the security, performance, and reliability of company website’s hosting services and database while providing SEO analytics reports to drive greater engagement.",
-      "Troubleshooting and bug fixing within custom plugins of an existing company website using PHP.",
-      "Implemented a dynamic working model to seamlessly integrate developers and management, fostering enhanced teamwork, cooperation, and engagement."
+      "Performed frontend design, development and implementation of UI components, hooks, API integration and debugging in the relaunching of a new company website.",
+      "Led a team of working students in the design, development and deployment of a new company portfolio website using Nex.js, TailwindCSS and Javascript.",
+      "Maintained the security, performance, and reliability of the company website’s hosting services and database while providing SEO analytics reports to drive greater engagement.",
+      "Played a pivotal role in data migration from a legacy WordPress site to a Next.js Framework-based website.",
+      "Designed an end-to-end Figma prototype for a management consulting mobile application."
     ]
   },
   {
-    "image": "/experience/LeanERA.jpg",
+    "image": "/experience/LeanERA.png",
     "title": "Frontend Developer",
     "date": "August 2022 - January 2023",
     "company": "LeanERA .GmbH",
     "type":"Working Student",
     "location": "Leipzig, Germany",
     "description": [
-      "Supported Frontend Dev team by working on design, development, and implementation of Progressive Web Application (PWA) using Vue, TailwindCSS and Ionic Framework.",
-      "Interacted with Design, Project Management and QA Team via Groom meetings to develop and implement components based on customer needs.",
-      "Implement pair programming to develop a Nuxt based responsive web application and dynamically fetch data from the CDN using Typescript.",
-      "Accomplished customer requirements by maintaining and developing features for responsive web applications using Nuxt framework.",
-      "Created and tested a video chat API for customer application using cross-platform mobile device emulators.",
+      "Supported Frontend Development team by working on design, development, and implementation of Progressive Web Application (PWA) and Mobile Applications using Vue, TailwindCSS and Ionic Framework.",
+      "Collaborated with Design, Project Management and QA Team during groom meetings to develop and implement components, functionalities, and features based on customer requirements.",
+      "Practiced pair programming to develop dynamic Nuxt-based responsive web applications, and fetch data from the CDN",
+      "Successfully developed and deployed a general-purpose customizable video chat module package for the company, compatible with mobile application projects built with Vue and Ionic.",
       "Leveraged Typescript to maximise scalability, refactoring, team collaboration, developer experience and code maintainability."
     ]
   },
@@ -51,12 +38,11 @@
     "type":"Co-Founder",
     "location": "Bhubaneswar, India",
     "description": [
-      "Built responsive web applications for small businesses with React.js, Next.js, HTML/CSS, Vanilla JS, and Bootstrap.",
-      "Lead a team of student developers in developing, testing and maintaining the startup’s official website.",
-      "Demonstrated the ability to create visually appealing and user-friendly websites that drive engagement and meet client requirements.",
-      "Interacted with users and implemented components based on their feedbacks.",
-      "Bug fixing and new features implementation.",
-      "Created and maintained technical documentations and user manuals for junior developers and users respectively."
+      "Built responsive web applications, for small businesses and individual clients with ReactJS, NextJS, NodeJS, MongoDB, Javascript, TailwindCSS, BootstrapCSS and HTML/CSS.",
+      "Designed and pitched Web and Mobile application prototypes to clients and developers using Figma.",
+      "Responsible for developing and maintaining the startup's digital infrastructures, including relational and non-relational database clusters using MongoDB and MySQL.",
+      "Interacted with end-users to analyse user feedback, fix production issues and add new technical features, based on customer feedback.",
+      "Created and maintained technical documentation and user manuals for junior developers and end-users respectively."
     ]
   }
 ]
