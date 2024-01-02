@@ -10,9 +10,7 @@ const CategoryLink = ({ slug, title }) => (
 
 const CategoriesTab = () => {
   const blogCategories = [
-    { slug: "/Tech", title: "Tech Digest (Coming Soon)" },
-    { slug: "/Travel", title: "Travel Blogs (Coming Soon)" },
-    { slug: "/Story", title: "Story of My Life (Coming Soon)" },
+    { slug: "/DeveloperBlogs", title: "Developer Blogs" },
   ];
 
   return (

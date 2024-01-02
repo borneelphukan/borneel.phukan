@@ -12,6 +12,7 @@ const Blogs = () => {
         <TechCrumbs />
       </BlogBanner>
       <BlogCard
+        link="/"
         imageUrl="/gallery/Hamburg.webp"
         author="Borneel Bikash Phukan"
         title="Blog Section Coming Soon"
