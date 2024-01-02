@@ -9,9 +9,7 @@ const CategoryLink = ({ slug, title }) => (
 );
 
 const CategoriesTab = () => {
-  const blogCategories = [
-    { slug: "/DeveloperBlogs", title: "Developer Blogs" },
-  ];
+  const blogCategories = [{ slug: "/Developer", title: "Developer Blogs" }];
 
   return (
     <div className="py-1 px-10 md:p-10 text-center my-5 md:mr-20 md:my-20">

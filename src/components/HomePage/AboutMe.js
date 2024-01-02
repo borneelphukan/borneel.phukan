@@ -5,7 +5,7 @@ import textualData from "@/data/textual-data.json";
 
 const AboutMe = () => {
   return (
-    <div className="p-4 md:p-20 mx-4 md:mx-20 md:mb-20">
+    <div className="p-4 md:p-10 mx-4 md:mx-10 md:mb-10">
       <h1 className="text-3xl md:text-5xl mb-4 md:mb-10 text-center">About</h1>
 
       <p className="text-base md:text-base text-justify">
