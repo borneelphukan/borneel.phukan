@@ -10,10 +10,9 @@ type Props = {
 const Button = ({ bgColor, textColor, text, file }: Props) => {
   const fileButtonClick = () => {
     if (file) {
-      // Create an anchor element to trigger the file download
       const a = document.createElement('a');
       a.href = file;
-      a.download = 'Curriculum Vitae - Borneel'; // Specify the file name here
+      a.download = 'Curriculum Vitae - Borneel';
       a.style.display = 'none';
       document.body.appendChild(a);
       a.click();
