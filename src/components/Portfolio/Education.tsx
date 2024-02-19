@@ -25,7 +25,7 @@ const Education = () => {
                 height={100}
                 width={100}
                 src={education.image}
-                alt={education.company}
+                alt={education.university}
                 className="rounded-full w-full h-full"
               />
             </div>
