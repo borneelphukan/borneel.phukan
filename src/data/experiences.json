@@ -1,0 +1,58 @@
+[
+    {
+    "image": "/experience/Brandheiss.png",
+    "title": "Frontend Developer",
+    "date": "February 2024 - Present",
+    "company": "Brandheiss GmbH",
+    "type":"Working Student",
+    "location": "Leipzig, Germany",
+    "description": [
+      "Working in the development and maintenance of reusable frontend components and functionalities for the company's trading application"
+    ]
+  },
+  {
+    "image": "/experience/V4C.png",
+    "title": "Fullstack Developer",
+    "date": "March 2023 - July 2023",
+    "company": "V4C Management Consulting.GmbH",
+    "type": "Working Student",
+    "location": "Munich, Germany",
+    "description": [
+        "Worked in the design, development and deployment of UI and a MySQL database for a new company website",
+        "Developed a REST API that fetches dynamic information from a headless CMS to populate important website contents",
+        "Worked in data migration from a legacy WordPress site to a Next.js web application, with a focus on microservice software architecture",
+        "Designed an end-to-end Figma prototype for a management consulting mobile application"
+    ]
+  },
+  {
+    "image": "/experience/LeanERA.png",
+    "title": "Frontend Developer",
+    "date": "August 2022 - January 2023",
+    "company": "LeanERA .GmbH",
+    "type":"Working Student",
+    "location": "Leipzig, Germany",
+    "description": [
+      "Supported Frontend Development team by working on design, development, and implementation of Progressive Web Application (PWA) and Mobile Applications using Vue, TailwindCSS and Ionic Framework.",
+      "Collaborated with Design, Project Management and QA Team during groom meetings to develop and implement components, functionalities, and features based on customer requirements.",
+      "Practiced pair programming to develop dynamic Nuxt-based responsive web applications, and fetch data from the CDN",
+      "Successfully developed and deployed a general-purpose customizable video chat module package for the company, compatible with mobile application projects built with Vue and Ionic.",
+      "Leveraged Typescript to maximise scalability, refactoring, team collaboration, developer experience and code maintainability."
+    ]
+  },
+  {
+    "image": "/experience/Codepth.jpeg",
+    "title": "Frontend Developer",
+    "date": "July 2019 - July 2020",
+    "company": "Codepth .LLC",
+    "type":"Co-Founder",
+    "location": "Bhubaneswar, India",
+    "description": [
+      "Built responsive web applications, for small businesses and individual clients with ReactJS, NextJS, NodeJS, MongoDB, Javascript, TailwindCSS, BootstrapCSS and HTML/CSS.",
+      "Designed and pitched Web and Mobile application prototypes to clients and developers using Figma.",
+      "Responsible for developing and maintaining the startup's digital infrastructures, including relational and non-relational database clusters using MongoDB and MySQL.",
+      "Interacted with end-users to analyse user feedback, fix production issues and add new technical features, based on customer feedback.",
+      "Created and maintained technical documentation and user manuals for junior developers and end-users respectively."
+    ]
+  }
+]
+

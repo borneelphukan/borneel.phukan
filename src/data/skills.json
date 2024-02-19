@@ -1,0 +1,32 @@
+{
+  "frameworks": [
+    { "name": "Next.js", "imageUrl": "/skills/Frameworks/next.webp" },
+    { "name": "Nuxt.js", "imageUrl": "/skills/Frameworks/nuxt.png" },
+    { "name": "React", "imageUrl": "/skills/Frameworks/react.png" },
+    { "name": "Vue.js", "imageUrl": "/skills/Frameworks/vue.png" },
+    { "name": "Node.js", "imageUrl": "/skills/Frameworks/node.jpg" },
+    { "name": "Tailwind CSS", "imageUrl": "/skills/Frameworks/tailwind.png" }
+  ],
+  "programming": [
+    { "name": "HTML5", "imageUrl": "/skills/Programming/html5.jpeg" },
+    { "name": "CSS3", "imageUrl": "/skills/Programming/css3.webp" },
+    { "name": "TypeScript", "imageUrl": "/skills/Programming/typescript.png" },
+    { "name": "JavaScript", "imageUrl": "/skills/Programming/javascript.png" },
+    { "name": "Python", "imageUrl": "/skills/Programming/python.webp" },
+    { "name": "Java", "imageUrl": "/skills/Programming/java.png" },
+    { "name": "MongoDB", "imageUrl": "/skills/Programming/mongodb.svg" },
+    { "name": "PostgreSQL", "imageUrl": "/skills/Programming/postgresql.svg" }
+  ],
+  "tools": [
+    { "name": "Figma", "imageUrl": "/skills/tools/figma.png" },
+    { "name": "Git", "imageUrl": "/skills/tools/git.webp" },
+    { "name": "GitHub", "imageUrl": "/skills/tools/github.png" },
+    { "name": "Jira", "imageUrl": "/skills/tools/jira.png" },
+    { "name": "MS Office", "imageUrl": "/skills/tools/ms-office.png" }
+  ],
+  "machineLearning": [
+    { "name": "Tensorflow", "imageUrl": "/skills/MachineLearning/tensorflow.jpg" },
+    { "name": "OpenCV", "imageUrl": "/skills/MachineLearning/OpenCV.png" }
+  ]
+
+}
