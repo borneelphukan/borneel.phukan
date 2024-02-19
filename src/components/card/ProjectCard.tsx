@@ -43,11 +43,10 @@ const ProjectCard: React.FC<Props> = ({
       {/* Fourth Row */}
       <div className="flex mt-4">
         <button
-          className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-1 px-2 rounded-2xl"
+          className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-1 px-5 rounded-xl"
           onClick={openPublicationLink}
         >
           {buttonText}
-          <FontAwesomeIcon className="mx-3" />
         </button>
       </div>
     </div>
