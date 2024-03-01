@@ -1,15 +1,4 @@
 [
-    {
-    "image": "/experience/Brandheiss.png",
-    "title": "Frontend Developer",
-    "date": "February 2024 - Present",
-    "company": "Brandheiss GmbH",
-    "type":"Working Student",
-    "location": "Leipzig, Germany",
-    "description": [
-      "Working in the development of reusable frontend components and functionalities for the company's trading application with references from the design prototypes"
-    ]
-  },
   {
     "image": "/experience/V4C.png",
     "title": "Fullstack Developer",
