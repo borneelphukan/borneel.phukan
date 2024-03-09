@@ -7,8 +7,8 @@ type ImageData = {
   caption: string;
 };
 
-const imageWidth = 700; // Set the desired constant width
-const imageHeight = 700; // Set the desired constant height
+const imageWidth = 700;
+const imageHeight = 700;
 
 type Props = {
   images: ImageData[];
@@ -59,7 +59,7 @@ const GalleryComponent = ({ images }: Props) => {
             <div className="absolute top-2 right-2">
               <button
                 onClick={closeImage}
-                className="bg-white text-black rounded-full p-2"
+                className="bg-white text-black rounded-full h-6 w-6"
               >
                 &#x2716;
               </button>

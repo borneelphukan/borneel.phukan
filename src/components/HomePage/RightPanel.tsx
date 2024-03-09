@@ -12,8 +12,8 @@ const CategoryLink: React.FC<Category> = ({ slug, title }) => (
   </li>
 );
 
-const CategoriesTab: React.FC = () => {
-  const blogCategories: Category[] = [{ slug: "/Developer", title: "Developer Blogs" }];
+export const CategoriesTab = () => {
+  const blogCategories: Category[] = [{ slug: "/Developer", title: "Tech Blogs" }];
 
   return (
     <div className="py-1 px-10 md:p-10 text-center my-5 md:mr-20 md:my-20">

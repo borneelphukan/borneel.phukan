@@ -4,16 +4,12 @@ import educations from "@/data/education.json";
 
 const Education = () => {
   return (
-    <div className="max-w-8xl text-lg p-5 my-10">
+    <div className="max-w-8xl text-lg p-5">
       <p className="text-base text-center md:text-lg lg:text-neutral-500 py-2">
         WONDERING IF I GOT A{" "}
         <span className="text-blue-400 font-semibold">RELEVANT DEGREE</span> ?
       </p>
       <h1 className="text-4xl text-center font-semibold mb-3">EDUCATION</h1>
-      <p className=" max-w-md mx-auto text-center text-base md:text-lg lg:text-neutral-400 mb-20">
-        &ldquo;Education is the kindling of a flame, not the filling of a
-        vessel.&rdquo; <span className="font-semibold">~ Socrates</span>
-      </p>
       <div className="mx-4 md:mx-20 px-4 md:px-20 my-10 space-y-8 relative before:absolute before:inset-0 before:mx-auto before:-translate-x-px md:before:mx-auto md:before:translate-x-0 before:h-full before:w-0.5 before:bg-gradient-to-b before:from-transparent before:via-slate-400 before:to-transparent">
         {educations.map((education, index) => (
           <div
@@ -32,7 +28,7 @@ const Education = () => {
 
             <div className="border bg-white w-full md:w-[calc(50%-2.5rem)] px-10 py-6 rounded-xl border-1 shadow-lg">
               <div className="flex flex-col md:flex-row items-center justify-between space-x-2 mb-1">
-                <h1 className="font-bold max-w-sm justify-center text-slate-600">
+                <h1 className="font-bold max-w-sm text-center text-slate-600 md:text-left">
                   {education.degree}
                 </h1>
                 <time className="font-caveat font-medium text-blue-400">
@@ -40,12 +36,10 @@ const Education = () => {
                 </time>
               </div>
               <div className="flex flex-col md:flex-row items-center justify-between space-x-2">
-                <h1 className="font-base text-slate-600">
-                  {education.university}{" "}
+                <h1 className="font-base text-slate-600 md:text-left text-center">
+                  {education.university}
                 </h1>
-                <h2 className="font-base text-slate-600">
-                  {education.location}
-                </h2>
+                <h2 className="font-base text-slate-600 whitespace-nowrap">{education.location}</h2>
               </div>
             </div>
           </div>

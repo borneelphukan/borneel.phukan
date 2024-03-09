@@ -11,13 +11,9 @@ const Skills = () => {
         DO I HAVE{" "}
         <span className="text-blue-400 font-semibold">RELEVANT SKILLS ?</span>
       </p>
-      <h1 className="text-4xl text-center font-semibold mb-3">SKILLS</h1>
-      <p className="max-w-md mx-auto text-center text-base md:text-lg lg:text-neutral-400 mb-10">
-        Here are all the skills that I learned from self-learning and industrial
-        experiences
-      </p>
+      <h1 className="text-4xl text-center font-semibold mb-10">SKILLS</h1>
 
-      <div className="container md:p-10 lg:p-20">
+      <div className="container md:p-10 lg:p-10">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-5">
           <div className="col-span-1 mx-2">
             <h2 className="text-xl md:text-2xl font-semibold mb-3">

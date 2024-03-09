@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import Avatar from "@/components/HomePage/assets/borneel.jpg";
+import Avatar from "../../../public/assets/borneel.png";
 import textualData from "@/data/textual-data.json";
 
 const AboutMe = () => {
@@ -19,7 +19,7 @@ const AboutMe = () => {
             width={200}
             height={200}
             alt="Your Avatar"
-            className="hover:scale-125 transition-all duration-500 cursor-pointer w-full h-full object-cover"
+            className="w-full h-full object-cover"
           />
         </div>
         <div className="md:pl-20 flex-1">

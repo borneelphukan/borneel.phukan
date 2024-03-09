@@ -1,9 +1,20 @@
 [
   {
+    "image": "/experience/Brandheiss.png",
+    "title": "Frontend Developer",
+    "date": "February 2024 - Present",
+    "company": "Brandheiss",
+    "type": "Working Student",
+    "location": "Leipzig, Germany",
+    "description": [
+        "Working in the design, development and deployment of UI and its functionalities for a trading called platform Traddle.io"
+    ]
+  },
+  {
     "image": "/experience/V4C.png",
     "title": "Fullstack Developer",
     "date": "March 2023 - July 2023",
-    "company": "V4C Management Consulting.GmbH",
+    "company": "V4C Management Consulting",
     "type": "Working Student",
     "location": "Munich, Germany",
     "description": [
@@ -17,7 +28,7 @@
     "image": "/experience/LeanERA.png",
     "title": "Frontend Developer",
     "date": "August 2022 - January 2023",
-    "company": "LeanERA .GmbH",
+    "company": "LeanERA",
     "type":"Working Student",
     "location": "Leipzig, Germany",
     "description": [
