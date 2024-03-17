@@ -1,5 +1,4 @@
-import React, { useState } from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { useState } from "react";
 
 type Props = {
   title: string;
@@ -8,12 +7,8 @@ type Props = {
   link: string;
 };
 
-const ProjectCard: React.FC<Props> = ({
-  title,
-  description,
-  buttonText,
-  link,
-}) => {
+const ProjectCard = (props: Props) => {
+  const { title, description, buttonText, link } = props;
   const [expanded, setExpanded] = useState(false);
 
   const toggleDescription = () => {
@@ -26,10 +21,7 @@ const ProjectCard: React.FC<Props> = ({
 
   return (
     <div className="shadow-md border rounded-xl p-10 hover:shadow-xl transition duration-300 ease-in-out">
-      {/* First Row */}
       <div className="text-xl font-bold mb-2">{title}</div>
-
-      {/* Third Row */}
       <div className="mb-4">
         {expanded ? description : `${description.slice(0, 150)}... `}
         <span
@@ -40,7 +32,6 @@ const ProjectCard: React.FC<Props> = ({
         </span>
       </div>
 
-      {/* Fourth Row */}
       <div className="flex mt-4">
         <button
           className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-1 px-5 rounded-xl"

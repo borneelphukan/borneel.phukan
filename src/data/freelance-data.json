@@ -1,0 +1,38 @@
+[
+  {
+    "avatar": "/experience/Brandheiss.png",
+    "role": "Frontend Developer",
+    "company": "Brandheiss, Leipzig 🇩🇪",
+    "project": "Traddle.io",
+    "duration": "February 2024 - March 2024",
+    "info":[
+        "Developed an intuitive Figma Prototype for an ongoing API-based real estate valuation platform, ensuring a user-friendly interface for order creation and editing within a data-intensive table",
+        "Collaborated with Design, Project Management and QA Team during groom meetings to develop and implement components, functionalities, and features based on customer requirements.",
+        "Implemented the prototype in an ongoing production environment"
+    ]
+  },
+  {
+    "avatar": "/experience/PTT.png",
+    "role": "UI/UX Designer",
+    "company": "Proptechtools, Munich 🇩🇪",
+    "project": "Contract Management System",
+    "duration": "August 2023 - October 2023",
+    "info":[
+        "Developed an intuitive Figma Prototype for an ongoing API-based real estate valuation platform, ensuring a user-friendly interface for order creation and editing within a data-intensive table",
+        "Collaborated with Design, Project Management and QA Team during groom meetings to develop and implement components, functionalities, and features based on customer requirements.",
+        "Implemented the prototype in an ongoing production environment"
+    ]
+  },
+  {
+    "avatar": "/experience/Upwork.png",
+    "role": "UI/UX Designer",
+    "company": "Proptechtools, Munich 🇩🇪",
+    "project": "Contract Management System",
+    "duration": "August 2023 - October 2023",
+    "info":[
+        "Developed an intuitive Figma Prototype for an ongoing API-based real estate valuation platform, ensuring a user-friendly interface for order creation and editing within a data-intensive table",
+        "Collaborated with Design, Project Management and QA Team during groom meetings to develop and implement components, functionalities, and features based on customer requirements.",
+        "Implemented the prototype in an ongoing production environment"
+    ]
+  }
+]

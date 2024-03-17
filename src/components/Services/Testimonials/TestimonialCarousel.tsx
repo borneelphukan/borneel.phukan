@@ -6,7 +6,7 @@ import TestimonialsCard from "./TestimonialsCard";
 import testimonialsData from "@/data/testimonials.json";
 
 export const TestimonialCarousel = () => {
-  const [clientCount, setClientCount] = useState(0); // State variable for counting clients
+  const [clientCount, setClientCount] = useState(0);
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -15,10 +15,10 @@ export const TestimonialCarousel = () => {
       } else {
         clearInterval(interval);
       }
-    }, 100); // Interval duration in milliseconds
+    }, 100);
 
-    return () => clearInterval(interval); // Cleanup function to clear interval
-  }, [clientCount]); // Run effect whenever clientCount changes
+    return () => clearInterval(interval);
+  }, [clientCount]);
 
   const settings = {
     dots: true,
@@ -48,7 +48,7 @@ export const TestimonialCarousel = () => {
     <div className="container mx-auto">
       <div className="max-w-8xl mx-auto text-center text-lg p-5 my-20">
         <p className="text-base md:text-lg lg:text-neutral-500">
-          <span className="text-blue-400 font-semibold">{clientCount} </span>HAPPY CLIENTS {/* Dynamic number */}
+          <span className="text-blue-400 font-semibold">{clientCount} </span>HAPPY CLIENTS
         </p>
         <h1 className="text-4xl font-semibold mb-3">Customer Reviews</h1>
 

@@ -10,13 +10,8 @@ type Props = {
   role: string;
 };
 
-const TestimonialsCard = ({
-  avatar,
-  name,
-  comment,
-  stars,
-  role,
-}: Props) => {
+const TestimonialsCard = (props: Props) => {
+  const { avatar, name, comment, stars, role } = props;
   const [expanded, setExpanded] = useState(false);
   const toggleComment = () => {
     setExpanded(!expanded);
