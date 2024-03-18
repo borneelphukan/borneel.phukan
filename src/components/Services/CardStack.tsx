@@ -3,7 +3,7 @@ import Card from "../card/Card";
 
 const CardStack = () => {
   return (
-    <div className="container px-auto overflow-hidden mx-auto -m-16 grid grid-cols-1 md:grid-cols-1 lg:grid-cols-3 gap-8 p-5">
+    <div className="container px-auto overflow-hidden mx-auto -m-16 grid grid-cols-1 md:grid-cols-1 lg:grid-cols-3 gap-8 p-5 mb-10">
       <Card
         icon="fa-light fa-code"
         title="Fullstack Developer"

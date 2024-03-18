@@ -203,7 +203,7 @@ const Footer = () => {
       {/* All Rights Reserved tagline */}
       <p className="mt-8 text-sm text-slate-400">
         Borneel Bikash Phukan &copy; {new Date().getFullYear()} All Rights
-        Reserved | Developed with Next.js & Tailwind
+        Reserved
       </p>
     </footer>
   );

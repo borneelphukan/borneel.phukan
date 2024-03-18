@@ -11,7 +11,7 @@ const Portfolio = () => {
   return (
     <DefaultLayout>
       <Experience />
-      {/* <FreelanceCarousel/> */}
+      <FreelanceCarousel/>
       <Education />
       <Skills />
       <Publications />

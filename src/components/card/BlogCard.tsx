@@ -4,12 +4,13 @@ import Image from 'next/image';
 type Props = {
   imageUrl: string;
   author: string;
+  date: string;
   title: string;
   description: string;
   link: string;
 };
 
-const BlogCard = ({ imageUrl, author, title, description, link }: Props) => {
+const BlogCard = ({ imageUrl, author, date, title, description, link }: Props) => {
   return (
     <div className="container mx-auto my-8 max-w-screen-lg">
       <a href={link}>
@@ -35,6 +36,7 @@ const BlogCard = ({ imageUrl, author, title, description, link }: Props) => {
 
               {/* Title */}
               <h1 className="text-2xl font-bold my-2 justify-center">{title}</h1>
+              <p className="text-sm font-semibold mb-2">{date}</p>
 
               {/* Description */}
               <p className="justify-center">

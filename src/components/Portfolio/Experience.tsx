@@ -43,7 +43,7 @@ const Experience = () => {
                 <div>
                   <h1 className="font-semibold text-slate-600 text-center md:text-left">{experience.title}</h1>
                   <h1 className="font-base text-slate-600 text-center md:text-left">{experience.company}<br />
-                    <span className="font-semibold text-slate-600">({experience.type})</span>
+                    <span className="font-semibold text-sm text-slate-600">({experience.type})</span>
                   </h1>
                 </div>
                 <div className="flex flex-col items-center md:items-end">

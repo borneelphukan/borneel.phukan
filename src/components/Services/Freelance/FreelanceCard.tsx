@@ -21,8 +21,8 @@ const FreelanceCard = (props: Props) => {
   const displayedInfo = showAll ? info : info.slice(0, 2);
 
   return (
-    <div className="testimonial-card-container mx-4 my-2">
-      <div className="max-w-md rounded overflow-hidden shadow-lg bg-white py-10 px-5"> {/* Changed max-w-xl to max-w-md */}
+    <div className="testimonial-card-container mx-4">
+      <div className="max-w-md rounded overflow-hidden shadow-lg bg-white py-10 px-5">
         <div className="mx-auto bg-white rounded-full flex items-center justify-center w-25 md:w-25 h-25 md:h-25">
           <Image
             src={avatar}

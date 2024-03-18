@@ -1,14 +1,12 @@
 [
   {
-    "image": "/experience/Brandheiss.png",
+    "image": "/experience/GolfPost.jpg",
     "title": "Frontend Developer",
-    "date": "February 2024 - Present",
-    "company": "Brandheiss",
+    "date": "April 2024 - Present",
+    "company": "GolfPost",
     "type": "Working Student",
-    "location": "Leipzig, Germany",
-    "description": [
-        "Working in the design, development and deployment of UI and its functionalities for a trading called platform Traddle.io"
-    ]
+    "location": "Cologne, Germany",
+    "description": []
   },
   {
     "image": "/experience/V4C.png",

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-type PublicationCardProps = {
+type Props = {
   paperName: string;
   publisherName: string;
   publicationDate: string;
@@ -11,15 +11,8 @@ type PublicationCardProps = {
   publicationLink: string;
 };
 
-const PublicationCard: React.FC<PublicationCardProps> = ({
-  paperName,
-  publisherName,
-  publicationDate,
-  description,
-  showPublication,
-  citations,
-  publicationLink,
-}) => {
+const PublicationCard = (props: Props) => {
+  const {paperName, publisherName, publicationDate, description, showPublication, citations, publicationLink} = props;
   const [expanded, setExpanded] = useState(false);
 
   const toggleDescription = () => {
@@ -29,7 +22,7 @@ const PublicationCard: React.FC<PublicationCardProps> = ({
   const openPublicationLink = () => {
     window.open(publicationLink, "_blank");
   };
-
+  
   return (
     <div className="shadow-md border rounded-xl p-8 hover:shadow-xl transition duration-300 ease-in-out">
       {/* First Row */}
