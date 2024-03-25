@@ -22,7 +22,7 @@ const Banner = () => {
             <h1 className="md:text-5xl lg:text-5xl xl:text-5xl font-semibold text-5xl mb-4 text-white">
               {textualData.role2}
             </h1>
-            <p className="text-base md:text-lg lg:text-xl text-gray-300 w-[50%]">
+            <p className="text-base md:text-lg lg:text-xl text-gray-300 max-w-[50%]">
               {textualData.description}
             </p>
             <Button

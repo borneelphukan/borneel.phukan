@@ -4,10 +4,9 @@ import Link from "next/link";
 import Image from "next/image";
 import textualData from "@/data/textual-data.json";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons";
+import { faLinkedin, faGithub, faUpwork } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { faInstagram } from "@fortawesome/free-brands-svg-icons";
-import { faDiscord } from "@fortawesome/free-brands-svg-icons";
 
 interface ContactData {
   email: string;
@@ -93,7 +92,7 @@ const Footer = () => {
                 <li className="py-1">
                   <Link
                     className="text-sm text-slate-300 hover:text-blue-400"
-                    href="#"
+                    href="/ContactUs"
                   >
                     Contact Me
                   </Link>
@@ -172,17 +171,6 @@ const Footer = () => {
                 <FontAwesomeIcon
                   className="mx-3 my-3 hover:text-blue-400"
                   icon={faGithub}
-                  target="_blank"
-                  size="2x"
-                />
-              </a>
-              <a
-                href="https://discord.com/users/1197608387253375007"
-                target="_blank"
-              >
-                <FontAwesomeIcon
-                  className="mx-3 my-3 hover:text-blue-400"
-                  icon={faDiscord}
                   target="_blank"
                   size="2x"
                 />

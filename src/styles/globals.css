@@ -34,7 +34,6 @@ body {
   --tw-bg-opacity: 1;
   background-color: rgba(1, 25, 41, var(--tw-bg-opacity));
   color: #ffffff;
-  /* Replace with dark mode text color */
 }
 
 .circular-progress {
@@ -63,7 +62,6 @@ body {
 .circular-progress-container {
   position: fixed;
   bottom: -80px;
-  /* Initial position off the screen */
   right: 20px;
   transition: bottom 0.3s;
   z-index: 999;
@@ -71,7 +69,6 @@ body {
 
 .circular-progress-container.visible {
   bottom: 60px;
-  /* Move up to the desired position when visible */
 }
 
 
@@ -79,8 +76,7 @@ body {
   background-image: url("/banners/home-banner.png");
   background-size: cover;
   background-position: center;
-  height: 100vh;
-  /* Adjust as needed */
+  height: 100%;
 }
 
 .service-cover {

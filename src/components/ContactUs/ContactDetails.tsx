@@ -16,13 +16,16 @@ const ContactDetails = () => {
           <ContactCard
             icon="fa-light fa-calendar"
             title="My Availability"
-            address="I am available 5 days a week from 9am to 6pm. Saturday & Sunday closed."
+            hoverDisabled={true}
+            address="Monday - Friday: 9am to 6pm Saturday - Sunday: Closed."
           />
           {/* Third Card */}
           <ContactCard
             icon="fa-light fa-phone"
             title="Let's Talk"
-            address="Phone Number: +49 176 7125 9396 Whatsapp: +91 943500 5619"
+            numbers={true}
+            number1="+49 176 7125 9396"
+            number2="+91 94350 05619"
           />
         </div>
       </div>

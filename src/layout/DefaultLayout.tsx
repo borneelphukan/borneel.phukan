@@ -10,7 +10,6 @@ const DefaultLayout = ({ children }: { children: React.ReactNode }) => {
   const [isLoading, setIsLoading] = useState(true);
   
   useEffect(() => {
-    // Simulate a loading delay
     const loadingTimeout = setTimeout(() => {
       setIsLoading(false);
     }, 2000);

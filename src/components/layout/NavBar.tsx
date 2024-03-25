@@ -26,9 +26,7 @@ const Navbar = () => {
 
   return (
     <nav className="relative top-0 left-0 w-full bg-gray-950 py-1 px-6 flex flex-col">
-      {/* Company Logo */}
       <div className="flex items-center mb-4 pt-2">
-        {/* Company Logo */}
         <div className="flex items-center pt-2">
           <Image
             src="/navbar-logo.svg"
@@ -125,13 +123,12 @@ const Navbar = () => {
           Gallery
         </Link>
 
-        {/*Contact Us Button*/}
-        <div className="flex justify-center lg:mt-0">
+        <div className="flex justify-center">
           <Link
             href="/ContactUs"
-            className="bg-blue-400 text-white hover:bg-blue-800 ml-5 mb-3 p-2 rounded"
+            className="bg-blue-400 text-white hover:bg-blue-800 ml-5 mb-3 px-3 py-1 rounded"
           >
-            Contact Us
+            Contact Me
           </Link>
         </div>
       </div>
