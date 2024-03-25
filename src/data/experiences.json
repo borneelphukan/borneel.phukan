@@ -9,6 +9,16 @@
     "description": []
   },
   {
+    "image": "/experience/PTT.png",
+    "title": "Frontend Developer",
+    "date": "Aug 2023 - Dec 2023",
+    "company": "PropTechTools",
+    "type": "Internship",
+    "skills": ["Vue.js, ", "TypeScript, ", "TailwindCSS, ", "Figma, ", "Git"],
+    "location": "Munich, Germany",
+    "description": []
+  },
+  {
     "image": "/experience/V4C.png",
     "title": "Fullstack Developer",
     "date": "March 2023 - July 2023",
@@ -26,7 +36,7 @@
   {
     "image": "/experience/LeanERA.png",
     "title": "Frontend Developer",
-    "date": "August 2022 - January 2023",
+    "date": "Aug 2022 - Jan 2023",
     "company": "LeanERA",
     "type":"Working Student",
     "skills": ["TypeScript, ", "Vue.js, ", "Nuxt.js, ", "Ionic, ", "TailwindCSS, ", "Pinia, ", "Git"],

@@ -5,13 +5,13 @@ import Education from "@/components/Portfolio/Education";
 import Skills from "@/components/Portfolio/Skills";
 import Publications from "@/components/Portfolio/Publications";
 import Projects from "@/components/Portfolio/Projects";
-import FreelanceCarousel from "@/components/Services/Freelance/FreelanceCarousel";
+import FreelanceStack from "@/components/Services/Freelance/FreelanceStack";
 
 const Portfolio = () => {
   return (
     <DefaultLayout>
       <Experience />
-      <FreelanceCarousel/>
+      <FreelanceStack/>
       <Education />
       <Skills />
       <Publications />

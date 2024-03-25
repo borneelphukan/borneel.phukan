@@ -8,25 +8,5 @@
     "info":[
         "Worked in the design and development of UI and its functionalities for an online trading platform named Traddle.io. Key features includes implementing the Sidebar and Avatar Selection."
     ]
-  },
-  {
-    "avatar": "/experience/PTT.png",
-    "role": "UI/UX Designer",
-    "company": "Proptechtools, Munich 🇩🇪",
-    "project": "Contract Management System",
-    "duration": "August 2023 - October 2023",
-    "info":[
-        "Developed an intuitive Figma Prototype for an ongoing real estate valuation platform, ensuring a user-friendly interface for order creation and editing within a data-intensive table"
-    ]
-  },
-  {
-    "avatar": "/experience/Upwork.png",
-    "role": "Web Developer",
-    "company": "Private Client",
-    "project": "Online Portfolio",
-    "duration": "April - Present",
-    "info":[
-        "Developing a burgeoning personal fashion branding online portfolio, ensuring seamless navigation and visual appeal for showcasing diverse collections and design aesthetics."
-    ]
   }
 ]
