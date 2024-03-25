@@ -27,7 +27,6 @@ const DefaultLayout = ({ children }: { children: React.ReactNode }) => {
       ) : (
         <div className="min-h-screen">
           <Navbar />
-          {/* Main content */}
           <main>
             {children}
             <CircularProgressBar />
@@ -35,7 +34,6 @@ const DefaultLayout = ({ children }: { children: React.ReactNode }) => {
           </main>
 
           <footer>
-            {/* Footer will go here */}
             <Footer />
           </footer>
         </div>

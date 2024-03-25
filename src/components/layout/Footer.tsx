@@ -20,7 +20,6 @@ interface textualData {
 
 const Footer = () => {
   const { footerText } = textualData as textualData;
-  const { email, address, phone } = contactData as ContactData;
 
   return (
     <footer className="bg-gray-950 text-white text-center py-8">
@@ -41,26 +40,13 @@ const Footer = () => {
             <p className="text-sm text-left text-slate-300 leading-6">
               {footerText}
             </p>
-            <h1 className="text-left text-xl font-semibold py-2">
-              Contact Info
-            </h1>
-            <p className="text-left text-sm">
-              Email:{" "}
-              <span className="text-sm text-slate-300">{email} </span>
-            </p>
-            <p className="text-sm text-left my-1">
-              Address:{" "}
-              <span className="text-sm text-slate-300">{address} </span>
-            </p>
-            <p className="text-sm text-left my-1">
-              Phone:{" "}
-              <span className="text-sm text-slate-300">{phone} </span>
-            </p>
+            
+            
           </div>
 
           {/* Column 2 */}
           <div className="mb-8">
-            <h2 className="text-xl font-semibold mb-2">Services</h2>
+            <h2 className="text-xl font-semibold mb-2">Portfolio</h2>
             {/* Your content for column 2 */}
             <ul className="text-left px-24">
               <li className="py-2">
@@ -68,18 +54,49 @@ const Footer = () => {
                   className="text-sm text-slate-300 hover:text-blue-400"
                   href="/Services"
                 >
-                  My Services
+                  Experiences
                 </Link>
               </li>
-
               <li className="py-1">
                 <Link
                   className="text-sm text-slate-300 hover:text-blue-400"
-                  href="/Portfolio#projects"
+                  href="#"
                 >
-                  Projects
+                  Education
                 </Link>
-              </li>
+              </li>    
+                <li className="py-1">
+                  <Link
+                    className="text-sm text-slate-300 hover:text-blue-400"
+                    href="/ContactUs"
+                  >
+                    Skills
+                  </Link>
+                </li>
+                <li className="py-1">
+                  <Link
+                    className="text-sm text-slate-300 hover:text-blue-400"
+                    href="/ContactUs"
+                  >
+                    Publication
+                  </Link>
+                </li>
+                <li className="py-1">
+                  <Link
+                    className="text-sm text-slate-300 hover:text-blue-400"
+                    href="/ContactUs"
+                  >
+                    Projects
+                  </Link>
+                </li>
+            </ul>
+          </div>
+
+          {/* Column 3 */}
+          <div className="mb-8">
+            <h2 className="text-xl font-semibold mb-4">Services</h2>
+            {/* Your content for column 3 */}
+            <ul className="text-left px-24">
               <li className="py-1">
                 <Link
                   className="text-sm text-slate-300 hover:text-blue-400"
@@ -89,29 +106,11 @@ const Footer = () => {
                 </Link>
               </li>
               <li className="py-1">
-                <li className="py-1">
-                  <Link
-                    className="text-sm text-slate-300 hover:text-blue-400"
-                    href="/ContactUs"
-                  >
-                    Contact Me
-                  </Link>
-                </li>
-              </li>
-            </ul>
-          </div>
-
-          {/* Column 3 */}
-          <div className="mb-8">
-            <h2 className="text-xl font-semibold mb-4">Legal</h2>
-            {/* Your content for column 3 */}
-            <ul className="text-left px-24">
-              <li className="py-1">
                 <Link
                   className="text-sm text-slate-300 hover:text-blue-400"
                   href="#"
                 >
-                  Privacy Policy
+                  Blogs
                 </Link>
               </li>
               <li className="py-1">
@@ -119,7 +118,7 @@ const Footer = () => {
                   className="text-sm text-slate-300 hover:text-blue-400"
                   href="#"
                 >
-                  Terms of Service
+                  Gallery
                 </Link>
               </li>
               <li className="py-1">
@@ -127,15 +126,7 @@ const Footer = () => {
                   className="text-sm text-slate-300 hover:text-blue-400"
                   href="#"
                 >
-                  Disclaimer
-                </Link>
-              </li>
-              <li className="py-1">
-                <Link
-                  className="text-sm text-slate-300 hover:text-blue-400"
-                  href="#"
-                >
-                  Documentation
+                  Contact Me
                 </Link>
               </li>
             </ul>

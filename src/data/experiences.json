@@ -14,6 +14,7 @@
     "date": "March 2023 - July 2023",
     "company": "V4C Management Consulting",
     "type": "Working Student",
+    "skills": ["Next.js, ", "Javascript, ", "TailwindCSS, ", "REST API, ", "Wordpress, ", "Microservices, ","MySQL, ", "Figma, ", "Git"],
     "location": "Munich, Germany",
     "description": [
         "Worked in the design, development and deployment of UI and a MySQL database for a new company website",
@@ -28,6 +29,7 @@
     "date": "August 2022 - January 2023",
     "company": "LeanERA",
     "type":"Working Student",
+    "skills": ["TypeScript, ", "Vue.js, ", "Nuxt.js, ", "Ionic, ", "TailwindCSS, ", "Pinia, ", "Git"],
     "location": "Leipzig, Germany",
     "description": [
       "Supported Frontend Development team by working on design, development, and implementation of Progressive Web Application (PWA) and Mobile Applications using Vue, TailwindCSS and Ionic Framework.",
@@ -43,6 +45,7 @@
     "date": "July 2019 - July 2020",
     "company": "Codepth .LLC",
     "type":"Co-Founder",
+    "skills": ["ReactJS, ", "NodeJS, ", "MongoDB, ", "MySQL, ", "Python, ", "JavaScript, ", "TailwindCSS, ", "BootstrapCSS, ", "HTML/CSS, ", "Figma, ", "Git"],
     "location": "Bhubaneswar, India",
     "description": [
       "Built responsive web applications, for small businesses and individual clients with ReactJS, NextJS, NodeJS, MongoDB, Javascript, TailwindCSS, BootstrapCSS and HTML/CSS.",

@@ -38,7 +38,7 @@ const Experience = () => {
               />
             </div>
 
-            <div className="border bg-white w-full md:w-[calc(50%-2.5rem)] px-10 py-6 rounded-xl border-1 shadow-lg">
+            <div className="border bg-white w-full md:w-[calc(50%-2.5rem)] px-10 py-6 rounded-xl border-1 shadow-md">
               <div className="flex flex-col md:flex-row items-center justify-between space-x-2 md:items-start md:justify-between">
                 <div>
                   <h1 className="font-semibold text-slate-600 text-center md:text-left">{experience.title}</h1>
@@ -51,6 +51,7 @@ const Experience = () => {
                   <h2 className="font-base text-slate-600 whitespace-nowrap">{experience.location}</h2>
                 </div>
               </div>
+              <div><p className="text-base font-bold">Skills: </p><p className="text-base">{experience.skills}</p></div>
               <ul className="list-disc m-2 md:m-5 text-base text-slate-600">
                 {experience.description.slice(0, 3).map((point, i) => (
                   <li key={i}>{point}</li>
