@@ -3,12 +3,6 @@ import Image from "next/image";
 import experiences from "@/data/experiences.json";
 
 const Experience = () => {
-  const [expandedCard, setExpandedCard] = useState<number | null>(null);
-
-  const toggleExpandCard = (index: number) => {
-    setExpandedCard(expandedCard === index ? null : index);
-  };
-
   return (
     <div className="max-w-8xl text-lg p-5 mt-10">
       <p className="text-base text-center md:text-lg lg:text-neutral-500 py-2">
@@ -53,22 +47,11 @@ const Experience = () => {
               </div>
               <div><p className="text-base font-bold">Skills: </p><p className="text-base">{experience.skills}</p></div>
               <ul className="list-disc m-2 md:m-5 text-base text-slate-600">
-                {experience.description.slice(0, 3).map((point, i) => (
+                {experience.description.map((point, i) => (
                   <li key={i}>{point}</li>
                 ))}
-                {expandedCard === index &&
-                  experience.description.slice(2).map((point, i) => (
-                    <li key={i + 3}>{point}</li>
-                  ))}
               </ul>
-              {experience.description.length > 3 && (
-                <button
-                  onClick={() => toggleExpandCard(index)}
-                  className="text-blue-400 cursor-pointer focus:outline-none"
-                >
-                  {expandedCard === index ? "Show Less" : "Show More"}
-                </button>
-              )}
+            
             </div>
           </div>
         ))}
