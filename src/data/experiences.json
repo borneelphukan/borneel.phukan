@@ -13,10 +13,15 @@
     "title": "Frontend Developer",
     "date": "Aug 2023 - Dec 2023",
     "company": "PropTechTools",
-    "type": "Internship",
+    "type": "Working Student",
     "skills": ["Vue.js, ", "TypeScript, ", "TailwindCSS, ", "Figma, ", "Git"],
     "location": "Munich, Germany",
-    "description": []
+    "description": [
+      "Designed an intuitive Figma Prototype for an API-based real estate valuation platform, enhancing user experience with streamlined order creation and editing",
+      "Assisted team in developing reusable Vue components, functionalities, and features to meet design and customer requirements effectively",
+      "Implemented complete prototype as a module in the development environment within short timeframe",
+      "Enhanced code readability and refactored legacy code to improve maintainability and scalability of the frontend architecture"
+    ]
   },
   {
     "image": "/experience/V4C.png",
