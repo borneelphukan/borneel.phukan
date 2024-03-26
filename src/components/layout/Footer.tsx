@@ -1,25 +1,14 @@
-import React from "react";
-import contactData from "@/data/contact-data.json";
 import Link from "next/link";
 import Image from "next/image";
-import textualData from "@/data/textual-data.json";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faLinkedin, faGithub, faUpwork } from "@fortawesome/free-brands-svg-icons";
+import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { faInstagram } from "@fortawesome/free-brands-svg-icons";
-
-interface ContactData {
-  email: string;
-  address: string;
-  phone: string;
-}
-
-interface textualData {
-    footerText: string;
-}
+import LanguageSelector from "./LanguageSelector";
+import { useTranslation } from "react-i18next";
 
 const Footer = () => {
-  const { footerText } = textualData as textualData;
+  const { t } = useTranslation();
 
   return (
     <footer className="bg-gray-950 text-white text-center py-8">
@@ -38,7 +27,7 @@ const Footer = () => {
             </h2>
             {/* Your content for column 1 */}
             <p className="text-sm text-left text-slate-300 leading-6">
-              {footerText}
+              {t('welcome')}
             </p>
             
             
@@ -180,10 +169,14 @@ const Footer = () => {
       </div>
 
       {/* All Rights Reserved tagline */}
-      <p className="mt-8 text-sm text-slate-400">
-        Borneel Bikash Phukan &copy; {new Date().getFullYear()} All Rights
-        Reserved
-      </p>
+      <div className="flex flex-col items-center">
+  <LanguageSelector />
+  <p className="mt-8 text-sm text-slate-400">
+    Borneel Bikash Phukan &copy; {new Date().getFullYear()} {t('rights')}
+  </p>
+</div>
+
+      
     </footer>
   );
 };

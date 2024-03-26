@@ -1,15 +1,16 @@
 import React from "react";
 import Image from "next/image";
 import Avatar from "../../../public/assets/borneel.png";
-import textualData from "@/data/textual-data.json";
+import { useTranslation } from "react-i18next";
 
 const AboutMe = () => {
+  const { t } = useTranslation();
   return (
     <div className="p-4 md:p-10 mx-4 md:mx-10 md:mb-10">
       <h1 className="text-3xl md:text-5xl mb-4 md:mb-10 text-center">About</h1>
 
       <p className="text-base md:text-base text-justify">
-        {textualData.aboutme[0]}
+        {t('aboutme0')}
       </p>
 
       <div className="flex flex-col md:flex-row items-center pt-4 md:pt-10">
@@ -25,7 +26,7 @@ const AboutMe = () => {
         <div className="md:pl-20 flex-1">
           <p className="font-bold text-lg md:text-xl">Who am I?</p>
           <p className="text-base md:text-base text-justify">
-            {textualData.aboutme[1]}
+            {t('aboutme1')}
           </p>
         </div>
       </div>
@@ -35,7 +36,7 @@ const AboutMe = () => {
           What is this website about?
         </p>
         <p className="text-base md:text-base text-justify">
-          {textualData.aboutme[2]}
+          {t('aboutme2')}
         </p>
       </div>
     </div>

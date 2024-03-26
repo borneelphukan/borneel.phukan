@@ -1,8 +1,10 @@
 import React from "react";
 import Button from "../buttons/Button";
-import textualData from "@/data/textual-data.json";
+import { useTranslation } from "react-i18next";
 
 const Banner = () => {
+  const { t } = useTranslation();
+  
   return (
     <div className="home-cover">
       <div className="container mx-auto px-10">
@@ -16,14 +18,14 @@ const Banner = () => {
               </span>
             </h1>
             <h1 className="md:text-5xl lg:text-5xl xl:text-5xl font-semibold text-5xl mb-4 text-white">
-              {textualData.role1}{" "}
+              {t('role1')}{" "}
               <span className="text-6xl font-bold text-blue-400">&</span>
             </h1>
             <h1 className="md:text-5xl lg:text-5xl xl:text-5xl font-semibold text-5xl mb-4 text-white">
-              {textualData.role2}
+              {t('role2')}
             </h1>
             <p className="text-base md:text-lg lg:text-xl text-gray-300 max-w-[50%]">
-              {textualData.description}
+              {t('introduction')}
             </p>
             <Button
               bgColor="black"
