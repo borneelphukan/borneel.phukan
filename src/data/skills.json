@@ -4,6 +4,7 @@
     { "name": "Nuxt.js", "imageUrl": "/skills/Frameworks/nuxt.png" },
     { "name": "React", "imageUrl": "/skills/Frameworks/react.png" },
     { "name": "Vue.js", "imageUrl": "/skills/Frameworks/vue.png" },
+    { "name": "Vue.js", "imageUrl": "/skills/Frameworks/svelte.png" },
     { "name": "Node.js", "imageUrl": "/skills/Frameworks/node.jpg" },
     { "name": "Tailwind CSS", "imageUrl": "/skills/Frameworks/tailwind.png" }
   ],
