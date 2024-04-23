@@ -1,5 +1,15 @@
 [
   {
+    "image": "/experience/GolfPost.jpg",
+    "title": "Frontend Developer",
+    "date": "April 2024 - Present",
+    "company": "GolfPost AG",
+    "type": "Working Student",
+    "skills": ["Svelte,", "Javascript, ", "TailwindCSS, ", "Figma, ", "Git"],
+    "location": "Cologne, Germany",
+    "description": []
+  },
+  {
     "image": "/experience/PTT.png",
     "title": "Frontend Developer",
     "date": "Aug 2023 - Nov 2023",
@@ -20,13 +30,23 @@
     "date": "March 2023 - July 2023",
     "company": "V4C Management Consulting",
     "type": "Working Student",
-    "skills": ["Next.js, ", "Javascript, ", "TailwindCSS, ", "REST API, ", "Wordpress, ", "Microservices, ","MySQL, ", "Figma, ", "Git"],
+    "skills": [
+      "Next.js, ",
+      "Javascript, ",
+      "TailwindCSS, ",
+      "REST API, ",
+      "Wordpress, ",
+      "Microservices, ",
+      "MySQL, ",
+      "Figma, ",
+      "Git"
+    ],
     "location": "Munich, Germany",
     "description": [
-        "Worked in the design, development and deployment of UI and a MySQL database for a new company website",
-        "Developed a REST API that fetches dynamic information from a headless CMS to populate important website contents",
-        "Worked in data migration from a legacy WordPress site to a Next.js web application, with a focus on microservice software architecture",
-        "Designed an end-to-end Figma prototype for a management consulting mobile application"
+      "Worked in the design, development and deployment of UI and a MySQL database for a new company website",
+      "Developed a REST API that fetches dynamic information from a headless CMS to populate important website contents",
+      "Worked in data migration from a legacy WordPress site to a Next.js web application, with a focus on microservice software architecture",
+      "Designed an end-to-end Figma prototype for a management consulting mobile application"
     ]
   },
   {
@@ -34,8 +54,16 @@
     "title": "Frontend Developer",
     "date": "Aug 2022 - Jan 2023",
     "company": "LeanERA",
-    "type":"Working Student",
-    "skills": ["TypeScript, ", "Vue.js, ", "Nuxt.js, ", "Ionic, ", "TailwindCSS, ", "Pinia, ", "Git"],
+    "type": "Working Student",
+    "skills": [
+      "TypeScript, ",
+      "Vue.js, ",
+      "Nuxt.js, ",
+      "Ionic, ",
+      "TailwindCSS, ",
+      "Pinia, ",
+      "Git"
+    ],
     "location": "Leipzig, Germany",
     "description": [
       "Supported Frontend Development team by working on design, development, and implementation of Progressive Web Application (PWA) and Mobile Applications using Vue, TailwindCSS and Ionic Framework.",
@@ -50,8 +78,20 @@
     "title": "Frontend Developer",
     "date": "July 2019 - July 2020",
     "company": "Codepth .LLC",
-    "type":"Co-Founder",
-    "skills": ["ReactJS, ", "NodeJS, ", "MongoDB, ", "MySQL, ", "Python, ", "JavaScript, ", "TailwindCSS, ", "BootstrapCSS, ", "HTML/CSS, ", "Figma, ", "Git"],
+    "type": "Co-Founder",
+    "skills": [
+      "ReactJS, ",
+      "NodeJS, ",
+      "MongoDB, ",
+      "MySQL, ",
+      "Python, ",
+      "JavaScript, ",
+      "TailwindCSS, ",
+      "BootstrapCSS, ",
+      "HTML/CSS, ",
+      "Figma, ",
+      "Git"
+    ],
     "location": "Bhubaneswar, India",
     "description": [
       "Built responsive web applications, for small businesses and individual clients with ReactJS, NextJS, NodeJS, MongoDB, Javascript, TailwindCSS, BootstrapCSS and HTML/CSS.",
@@ -62,4 +102,3 @@
     ]
   }
 ]
-

@@ -15,7 +15,7 @@ const Experience = () => {
       <p className=" max-w-md mx-auto text-center text-base md:text-lg lg:text-neutral-400 mb-10">
         Unlocking the Past, Present, and Future: My Professional Journey So Far!
       </p>
-      
+
       <div className="md:mx-20 md:px-20 my-10 space-y-8 relative before:absolute before:inset-0 before:mx-auto before:-translate-x-px md:before:mx-auto md:before:translate-x-0 before:h-full before:w-0.5 before:bg-gradient-to-b before:from-transparent before:via-slate-400 before:to-transparent">
         {experiences.map((experience, index) => (
           <div
@@ -35,23 +35,35 @@ const Experience = () => {
             <div className="border bg-white w-full md:w-[calc(50%-2.5rem)] px-10 py-6 rounded-xl border-1 shadow-md">
               <div className="flex flex-col md:flex-row items-center justify-between space-x-2 md:items-start md:justify-between">
                 <div>
-                  <h1 className="font-semibold text-slate-600 text-center md:text-left">{experience.title}</h1>
-                  <h1 className="font-base text-slate-600 text-center md:text-left">{experience.company}<br />
-                    <span className="font-semibold text-sm text-slate-600">({experience.type})</span>
+                  <h1 className="font-semibold text-slate-600 text-center md:text-left">
+                    {experience.title}
+                  </h1>
+                  <h1 className="font-base text-slate-600 text-center md:text-left">
+                    {experience.company}
+                    <br />
+                    <span className="font-semibold text-sm text-slate-600">
+                      ({experience.type})
+                    </span>
                   </h1>
                 </div>
                 <div className="flex flex-col items-center md:items-end">
-                  <time className="font-sm text-blue-400 text-right whitespace-nowrap">{experience.date}</time>
-                  <h2 className="font-base text-slate-600 whitespace-nowrap">{experience.location}</h2>
+                  <time className="font-sm text-blue-400 text-right whitespace-nowrap">
+                    {experience.date}
+                  </time>
+                  <h2 className="font-base text-slate-600 whitespace-nowrap">
+                    {experience.location}
+                  </h2>
                 </div>
               </div>
-              <div><p className="text-base font-bold">Skills: </p><p className="text-base">{experience.skills}</p></div>
+              <div>
+                <p className="text-base font-bold dark:text-black">Skills: </p>
+                <p className="text-base dark:text-black">{experience.skills}</p>
+              </div>
               <ul className="list-disc m-2 md:m-5 text-base text-slate-600">
                 {experience.description.map((point, i) => (
                   <li key={i}>{point}</li>
                 ))}
               </ul>
-            
             </div>
           </div>
         ))}
