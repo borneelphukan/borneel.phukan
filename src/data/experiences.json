@@ -5,23 +5,20 @@
     "date": "April 2024 - Present",
     "company": "GolfPost AG",
     "type": "Working Student",
-    "skills": ["Svelte,", "Javascript, ", "TailwindCSS, ", "Figma, ", "Git"],
+    "skills": [
+      "Svelte,",
+      "Javascript, ",
+      "TailwindCSS, ",
+      "REST API ",
+      "Figma, ",
+      "Git"
+    ],
     "location": "Cologne, Germany",
-    "description": []
-  },
-  {
-    "image": "/experience/PTT.png",
-    "title": "Frontend Developer",
-    "date": "Aug 2023 - Nov 2023",
-    "company": "PropTechTools",
-    "type": "Working Student",
-    "skills": ["Vue.js, ", "TypeScript, ", "TailwindCSS, ", "Figma, ", "Git"],
-    "location": "Munich, Germany",
     "description": [
-      "Designed an intuitive Figma Prototype for an API-based real estate valuation platform, enhancing user experience with streamlined order creation and editing",
-      "Assisted team in developing reusable Vue components, functionalities, and features to meet design and customer requirements effectively",
-      "Implemented complete prototype as a module in the development environment within short timeframe",
-      "Enhanced code readability and refactored legacy code to improve maintainability and scalability of the frontend architecture"
+      "Developed an end-to-end member’s exclusive company portfolio website with an special emphasis on user interface and language support",
+      "Designed an intuitive Figma Prototype for an API-based sports betting application, with features including responsive graphs and score tables",
+      "Working in the development of reusable Svelte components, functionalities, and features to meet design and customer requirements for the company's sports betting application",
+      "Enhanced code readability and refactored legacy code to improve maintainability of frontend architecture"
     ]
   },
   {
