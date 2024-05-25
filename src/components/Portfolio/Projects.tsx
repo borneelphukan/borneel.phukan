@@ -4,7 +4,7 @@ import projectsData from "@/data/projects.json";
 
 const Projects = () => {
   return (
-    <div className="max-w-8xl text-lg p-5">
+    <div className="max-w-8xl text-lg p-5" id="Projects">
       <p className="text-base text-center md:text-lg lg:text-neutral-500 py-2">
         HAVE A LOOK AT{" "}
         <span className="text-blue-400 font-semibold">MY PROJECTS ?</span>

@@ -7,7 +7,7 @@ const CardStack = () => {
       <Card
         icon="fa-light fa-code"
         title="Fullstack Developer"
-        content="2+ years of experience in building Web Applications, Application Programming Interfaces (API), Microservices, UI/UX prototypes, everything following Agile Methodologies."
+        content="3+ years of experience in building Web Applications, Application Programming Interfaces (API), Microservices, UI/UX prototypes, everything following Agile Methodologies."
         skills="Javascript, Typescript, React, Vue, TailwindCSS, Bootstrap, PHP, Python, Flask, MySQL, MongoDB, C, C++."
       />
       <Card

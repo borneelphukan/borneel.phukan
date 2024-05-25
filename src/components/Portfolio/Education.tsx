@@ -4,7 +4,7 @@ import educations from "@/data/education.json";
 
 const Education = () => {
   return (
-    <div className="max-w-8xl text-lg p-5">
+    <div className="max-w-8xl text-lg p-5" id="Education">
       <p className="text-base text-center md:text-lg lg:text-neutral-500 py-2">
         WONDERING IF I GOT A{" "}
         <span className="text-blue-400 font-semibold">RELEVANT DEGREE</span> ?
@@ -39,7 +39,9 @@ const Education = () => {
                 <h1 className="font-base text-slate-600 md:text-left text-center">
                   {education.university}
                 </h1>
-                <h2 className="font-base text-slate-600 whitespace-nowrap">{education.location}</h2>
+                <h2 className="font-base text-slate-600 whitespace-nowrap">
+                  {education.location}
+                </h2>
               </div>
             </div>
           </div>

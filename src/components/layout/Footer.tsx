@@ -27,10 +27,8 @@ const Footer = () => {
             </h2>
             {/* Your content for column 1 */}
             <p className="text-sm text-left text-slate-300 leading-6">
-              {t('welcome')}
+              {t("welcome")}
             </p>
-            
-            
           </div>
 
           {/* Column 2 */}
@@ -41,7 +39,7 @@ const Footer = () => {
               <li className="py-2">
                 <Link
                   className="text-sm text-slate-300 hover:text-blue-400"
-                  href="/Services"
+                  href="/Portfolio#Experience"
                 >
                   Experiences
                 </Link>
@@ -49,35 +47,35 @@ const Footer = () => {
               <li className="py-1">
                 <Link
                   className="text-sm text-slate-300 hover:text-blue-400"
-                  href="#"
+                  href="/Portfolio#Education"
                 >
                   Education
                 </Link>
-              </li>    
-                <li className="py-1">
-                  <Link
-                    className="text-sm text-slate-300 hover:text-blue-400"
-                    href="/ContactUs"
-                  >
-                    Skills
-                  </Link>
-                </li>
-                <li className="py-1">
-                  <Link
-                    className="text-sm text-slate-300 hover:text-blue-400"
-                    href="/ContactUs"
-                  >
-                    Publication
-                  </Link>
-                </li>
-                <li className="py-1">
-                  <Link
-                    className="text-sm text-slate-300 hover:text-blue-400"
-                    href="/ContactUs"
-                  >
-                    Projects
-                  </Link>
-                </li>
+              </li>
+              <li className="py-1">
+                <Link
+                  className="text-sm text-slate-300 hover:text-blue-400"
+                  href="/Portfolio#Skills"
+                >
+                  Skills
+                </Link>
+              </li>
+              <li className="py-1">
+                <Link
+                  className="text-sm text-slate-300 hover:text-blue-400"
+                  href="/Portfolio#Publication"
+                >
+                  Publication
+                </Link>
+              </li>
+              <li className="py-1">
+                <Link
+                  className="text-sm text-slate-300 hover:text-blue-400"
+                  href="/Portfolio#Projects"
+                >
+                  Projects
+                </Link>
+              </li>
             </ul>
           </div>
 
@@ -89,7 +87,7 @@ const Footer = () => {
               <li className="py-1">
                 <Link
                   className="text-sm text-slate-300 hover:text-blue-400"
-                  href="#"
+                  href="/Services#Testinomials"
                 >
                   Testimonials
                 </Link>
@@ -97,7 +95,7 @@ const Footer = () => {
               <li className="py-1">
                 <Link
                   className="text-sm text-slate-300 hover:text-blue-400"
-                  href="#"
+                  href="/Blogs/Developer"
                 >
                   Blogs
                 </Link>
@@ -105,7 +103,7 @@ const Footer = () => {
               <li className="py-1">
                 <Link
                   className="text-sm text-slate-300 hover:text-blue-400"
-                  href="#"
+                  href="/Gallery"
                 >
                   Gallery
                 </Link>
@@ -113,7 +111,7 @@ const Footer = () => {
               <li className="py-1">
                 <Link
                   className="text-sm text-slate-300 hover:text-blue-400"
-                  href="#"
+                  href="/Contact"
                 >
                   Contact Me
                 </Link>
@@ -170,13 +168,11 @@ const Footer = () => {
 
       {/* All Rights Reserved tagline */}
       <div className="flex flex-col items-center">
-  <LanguageSelector />
-  <p className="mt-8 text-sm text-slate-400">
-    Borneel Bikash Phukan &copy; {new Date().getFullYear()} {t('rights')}
-  </p>
-</div>
-
-      
+        <LanguageSelector />
+        <p className="mt-8 text-sm text-slate-400">
+          Borneel Bikash Phukan &copy; {new Date().getFullYear()} {t("rights")}
+        </p>
+      </div>
     </footer>
   );
 };

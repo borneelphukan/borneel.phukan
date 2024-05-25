@@ -30,15 +30,6 @@ const AboutMe = () => {
           </p>
         </div>
       </div>
-
-      <div className="mt-4 md:mt-10 text-lg md:text-xl">
-        <p className="font-bold text-lg md:text-xl">
-          What is this website about?
-        </p>
-        <p className="text-base md:text-base text-justify">
-          {t('aboutme2')}
-        </p>
-      </div>
     </div>
   );
 };

@@ -125,7 +125,7 @@ const Navbar = () => {
 
         <div className="flex justify-center">
           <Link
-            href="/ContactUs"
+            href="/Contact"
             className="bg-blue-400 text-white hover:bg-blue-800 ml-5 mb-3 px-3 py-1 rounded"
           >
             Contact Me
@@ -226,16 +226,16 @@ const Navbar = () => {
 
           <div className="relative mx-auto bg-blue-400 rounded px-3 py-2 hover:bg-blue-600 ">
             <Link
-              href="/ContactUs"
+              href="/Contact"
               className={`text-white ${
-                selectedLink === "ContactUs" ? "selected" : ""
+                selectedLink === "Contact" ? "selected" : ""
               }`}
               onClick={() => {
-                handleLinkClick("ContactUs");
+                handleLinkClick("Contact");
                 toggleMobileMenu();
               }}
             >
-              Contact Us
+              Contact Me
             </Link>
           </div>
         </div>

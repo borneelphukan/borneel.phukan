@@ -45,7 +45,7 @@ export const TestimonialCarousel = () => {
   };
 
   return (
-    <div className="container mx-auto">
+    <div className="container mx-auto" id="Testinomials">
       <div className="max-w-8xl mx-auto text-center text-lg p-5 my-20">
         <p className="text-base md:text-lg lg:text-neutral-500">
           <span className="text-blue-400 font-semibold">{clientCount} </span>HAPPY CLIENTS

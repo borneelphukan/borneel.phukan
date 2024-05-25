@@ -1,10 +1,10 @@
-import React, { useState } from "react";
+import React from "react";
 import Image from "next/image";
 import experiences from "@/data/experiences.json";
 
 const Experience = () => {
   return (
-    <div className="max-w-8xl text-lg p-5 mt-10">
+    <div className="max-w-8xl text-lg p-5 mt-10" id="Experience">
       <p className="text-base text-center md:text-lg lg:text-neutral-500 py-2">
         WHAT I HAVE{" "}
         <span className="text-blue-400 font-semibold">DONE SO FAR ?</span>
@@ -20,7 +20,7 @@ const Experience = () => {
         {experiences.map((experience, index) => (
           <div
             key={index}
-            className={`relative flex flex-col md:flex-row items-center justify-between md:justify-normal md:odd:flex-row-reverse group is-active transition-transform ease-in-out duration-300 transform hover:scale-105`}
+            className={`relative flex flex-col md:flex-row items-center justify-between md:justify-normal md:odd:flex-row-reverse group is-active transition-transform ease-in-out duration-300 transform `}
           >
             <div className="my-10 flex items-center justify-center w-20 h-20 md:w-10 md:h-10 rounded-full border-2 border-slate-400 shadow shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2">
               <Image

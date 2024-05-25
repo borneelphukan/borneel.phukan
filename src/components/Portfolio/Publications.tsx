@@ -4,7 +4,7 @@ import publicationsData from "@/data/publications.json";
 
 const Publications = () => {
   return (
-    <div className="max-w-8xl text-lg py-10">
+    <div className="max-w-8xl text-lg py-10" id="Publication">
       <p className="text-base text-center md:text-lg lg:text-neutral-500 py-2">
         INTERESTED IN{" "}
         <span className="text-blue-400 font-semibold">MY PUBLICATIONS ?</span>
