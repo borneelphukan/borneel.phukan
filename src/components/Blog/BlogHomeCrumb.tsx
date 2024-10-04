@@ -7,7 +7,7 @@ const BlogHomeCrumb = () => {
       <ol className="container inline-flex items-center space-x-1 md:space-x-3 md:pl-20 pl-4">
         <li className="inline-flex items-center">
           <Link
-            href="/Home"
+            href="/"
             className="inline-flex items-center text-sm font-normal hover:text-white dark:text-gray-400 dark:hover:text-orange"
           >
             Home

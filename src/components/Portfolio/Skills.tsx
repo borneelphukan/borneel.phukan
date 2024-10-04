@@ -3,14 +3,10 @@ import Image from "next/image";
 import skillsData from "@/data/skills.json";
 
 const Skills = () => {
-  const { frameworks, programming, tools, machineLearning } = skillsData;
+  const { frameworks, programming, tools } = skillsData;
 
   return (
     <div className="max-w-8xl text-lg p-5" id="Skills">
-      <p className="text-base text-center md:text-lg lg:text-neutral-500 py-2">
-        DO I HAVE{" "}
-        <span className="text-blue-400 font-semibold">RELEVANT SKILLS ?</span>
-      </p>
       <h1 className="text-4xl text-center font-semibold mb-10">SKILLS</h1>
 
       <div className="container md:p-10 lg:p-10">
@@ -77,7 +73,6 @@ const Skills = () => {
               ))}
             </div>
           </div>
-          
         </div>
       </div>
     </div>

@@ -3,19 +3,23 @@ import Image from 'next/image';
 
 type Props = {
   avatar: string;
-  role: string;
-  company: string;
   project: string;
+  company: string;
   duration: string;
   info: string[];
 };
 
 const FreelanceCard = (props: Props) => {
-  const { avatar, role, company, project, duration, info } = props;
+  const { avatar, project, company, duration, info } = props;
   const [showAll, setShowAll] = useState<boolean>(false);
+  const [expandedIndex, setExpandedIndex] = useState<number | null>(null);
 
   const toggleShowAll = () => {
     setShowAll(!showAll);
+  };
+
+  const toggleReadMore = (index: number) => {
+    setExpandedIndex(expandedIndex === index ? null : index);
   };
 
   const displayedInfo = showAll ? info : info.slice(0, 2);
@@ -34,24 +38,53 @@ const FreelanceCard = (props: Props) => {
         </div>
 
         <div className="px-6 py-2 flex flex-col items-center">
-          <h2 className="text-black text-normal font-semibold">{role}</h2>
+          <h2 className="text-black text-normal font-semibold">{project}</h2>
           <p className="text-gray-700 text-md">{company}</p>
-          <time className="font-sm text-blue-400 text-right whitespace-nowrap">{duration}</time>
+          <time className="font-sm text-blue-400 text-right whitespace-nowrap">
+            {duration}
+          </time>
         </div>
 
         <ul className="list-disc text-base text-slate-600 pl-6 mt-2">
-          <div className="flex flex-row">
-            <b className='mr-2 mb-1'>Project: </b>
-            <p>{project}</p>
-          </div>
-          <div className='p-2'>
-            {displayedInfo.map((point, index) => (
-              <li key={index}>{point}</li>
-            ))}
+          <div className="flex flex-row"></div>
+          <div className="p-2">
+            {displayedInfo.map((point, index) => {
+              const isExpanded = expandedIndex === index;
+              const shouldTruncate = point.length > 100; // Truncate after 100 characters
+              const truncatedText = point.substring(0, 100);
+
+              return (
+                <li
+                  key={index}
+                  className="transition-all duration-300 ease-in-out"
+                >
+                  {shouldTruncate && !isExpanded ? (
+                    <span className="block overflow-hidden max-h-[4.5rem] transition-all duration-300 ease-in-out">
+                      {truncatedText}...
+                    </span>
+                  ) : (
+                    <span className="block overflow-hidden max-h-full transition-all duration-300 ease-in-out">
+                      {point}
+                    </span>
+                  )}
+                  {shouldTruncate && (
+                    <button
+                      onClick={() => toggleReadMore(index)}
+                      className="text-blue-500 cursor-pointer focus:outline-none ml-2"
+                    >
+                      {isExpanded ? "Read Less" : "Read More"}
+                    </button>
+                  )}
+                </li>
+              );
+            })}
           </div>
           {info.length > 2 && (
-            <button onClick={toggleShowAll} className="text-blue-500 cursor-pointer focus:outline-none">
-              {showAll ? 'Show less' : 'Show more'}
+            <button
+              onClick={toggleShowAll}
+              className="text-blue-500 cursor-pointer focus:outline-none mt-2"
+            >
+              {showAll ? "Show less" : "Show more"}
             </button>
           )}
         </ul>

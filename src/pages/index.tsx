@@ -4,7 +4,7 @@ import Banner from "@/components/HomePage/Banner";
 import AboutMe from "@/components/HomePage/AboutMe";
 import CategoriesTab from "@/components/HomePage/RightPanel";
 
-const Home: React.FC = () => {
+const Home = () => {
   return (
     <DefaultLayout>
       <Banner />

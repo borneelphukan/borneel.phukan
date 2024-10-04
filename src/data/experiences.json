@@ -15,10 +15,10 @@
     ],
     "location": "Cologne, Germany",
     "description": [
-      "Developed an end-to-end member’s exclusive company portfolio website with an special emphasis on user interface and language support",
-      "Designed an intuitive Figma Prototype for an API-based sports betting application, with features including responsive graphs and score tables",
-      "Working in the development of reusable Svelte components, functionalities, and features to meet design and customer requirements for the company's sports betting application",
-      "Enhanced code readability and refactored legacy code to improve maintainability of frontend architecture"
+      "Developing a fantasy gaming web application using SvelteKit and Tailwind, creating components and modular functionalities, and integrating a RESTful API with live data",
+      "Developed core features for the fantasy application including Player and User dashboards, Player Picker, Tournament and League management tools and user authentication",
+      "Developed an end-to-end, members-exclusive company portfolio website, focusing on enhancing the user interface and integrating multi-language support",
+      "Collaborating with an agile team of developers, leveraging the Scrum methodology to ensure timely deployment of product"
     ]
   },
   {

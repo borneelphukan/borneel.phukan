@@ -5,10 +5,6 @@ import educations from "@/data/education.json";
 const Education = () => {
   return (
     <div className="max-w-8xl text-lg p-5" id="Education">
-      <p className="text-base text-center md:text-lg lg:text-neutral-500 py-2">
-        WONDERING IF I GOT A{" "}
-        <span className="text-blue-400 font-semibold">RELEVANT DEGREE</span> ?
-      </p>
       <h1 className="text-4xl text-center font-semibold mb-3">EDUCATION</h1>
       <div className="mx-4 md:mx-20 px-4 md:px-20 my-10 space-y-8 relative before:absolute before:inset-0 before:mx-auto before:-translate-x-px md:before:mx-auto md:before:translate-x-0 before:h-full before:w-0.5 before:bg-gradient-to-b before:from-transparent before:via-slate-400 before:to-transparent">
         {educations.map((education, index) => (

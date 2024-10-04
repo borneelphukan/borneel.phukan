@@ -1,12 +1,20 @@
 [
   {
     "avatar": "/experience/Brandheiss.png",
-    "role": "Frontend Developer",
-    "company": "Brandheiss, Leipzig 🇩🇪",
     "project": "Traddle.io",
+    "company": "Brandheiss, Leipzig 🇩🇪",
     "duration": "February 2024 - March 2024",
-    "info":[
-        "Worked in the design and development of UI and its functionalities for an online trading platform named Traddle.io. Key features includes implementing the Sidebar and Avatar Selection."
+    "info": [
+      "Worked in the design and development of UI and its functionalities for an online trading platform named Traddle.io. Key features includes implementing the Sidebar and Avatar Selection."
+    ]
+  },
+  {
+    "avatar": "/experience/Golfpost.jpg",
+    "project": "Golfpost Fantasy",
+    "company": "Golfpost AG, Cologne 🇩🇪",
+    "duration": "April 2024 - September 2024",
+    "info": [
+      "Developed Golf Fantasy, a fantasy gaming app using SvelteKit and Tailwind CSS, with reusable components and live API data; and developed core features such as Player and User dashboards, Player Picker, and tools for Tournament and League management with user authentication"
     ]
   }
 ]

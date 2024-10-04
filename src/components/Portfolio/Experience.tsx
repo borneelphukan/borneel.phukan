@@ -5,10 +5,6 @@ import experiences from "@/data/experiences.json";
 const Experience = () => {
   return (
     <div className="max-w-8xl text-lg p-5 mt-10" id="Experience">
-      <p className="text-base text-center md:text-lg lg:text-neutral-500 py-2">
-        WHAT I HAVE{" "}
-        <span className="text-blue-400 font-semibold">DONE SO FAR ?</span>
-      </p>
       <h1 className="text-4xl text-center font-semibold mb-3">
         WORK EXPERIENCES
       </h1>

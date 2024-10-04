@@ -1,11 +1,20 @@
 [
   {
     "paperName": "An Efficient Technique for Image Captioning using Deep Neural Network",
-    "publisherName": "Cognitive Informatics and Soft Computing, Springer 2020",
+    "publisherName": "Cognitive Informatics and Soft Computing 2020",
     "publicationDate": "31 July 2021",
-    "description": "With the vast expansion of the Internet and the generation of trillions of gigabytes of data daily, the demand for tools is essential to ensure system adaptability to rapid changes. Image captioning is a crucial tool in identifying and managing entities online. This paper explores an efficient method for automatic image captioning, addressing strategies to enhance its performance and functionality on individual images.",
+    "description": "With the huge expansion of Internet and trillions of gigabytes of data generated every single day, the needs for the development of various tools have become mandatory in order to maintain system adaptability to rapid changes. One of these tools is known as image captioning. Every entity in Internet must be properly identified and managed, and therefore in the case of image data, automatic captioning for identification is required. Similarly, content generation for missing labels, image classification and artificial languages all requires the process of image captioning. This paper discusses an efficient and unique way to perform automatic image captioning on individual image and discusses strategies to improve its performances and functionalities.",
     "showPublication": "Open",
     "citations": 3,
-    "publicationLink":"https://link.springer.com/chapter/10.1007/978-981-16-1056-1_38"
+    "publicationLink": "https://link.springer.com/chapter/10.1007/978-981-16-1056-1_38"
+  },
+  {
+    "paperName": "Content Analysis using LLMs for Trust Evaluations by ConTED",
+    "publisherName": "Distributed and Self-organizing Systems, TU Chemnitz",
+    "publicationDate": "1 October 2024",
+    "description": "The dominance of centralized web infrastructures by large tech corporations raises concerns over data security and user control, underscoring the need for a decentralized web. This thesis addresses trust evaluation in decentralized web applications using the ConTED framework, which assesses data trustworthiness through Content, Context, and Behavioral Analysis. Focusing on Content Analysis, it explores how Large Language Models (LLMs) can analyze third-party data by evaluating relevance, accuracy, and topic classification. The study aims to establish effective content analysis methods for trust awareness in decentralized systems, demonstrating feasibility through an implementation and evaluation with example use cases.",
+    "showPublication": "Open",
+    "citations": 0,
+    "publicationLink": "https://link.springer.com/chapter/10.1007/978-981-16-1056-1_38"
   }
 ]

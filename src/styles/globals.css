@@ -16,6 +16,20 @@
   }
 }
 
+.cursor-blink::after {
+  content: "_"; /* Horizontal cursor */
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
 
 /*
 body {
@@ -70,7 +84,6 @@ body {
 .circular-progress-container.visible {
   bottom: 60px;
 }
-
 
 .home-cover {
   background-image: url("/banners/home-banner.png");

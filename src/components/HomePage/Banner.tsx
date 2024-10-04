@@ -21,10 +21,7 @@ const Banner = () => {
               {t("role1")}{" "}
               <span className="text-6xl font-bold text-blue-400">&</span>
             </h1>
-            <h1 className="md:text-5xl lg:text-5xl xl:text-5xl font-semibold text-5xl mb-4 text-white">
-              <span className="text-base md:text-xl lg:text-xl xl:text-xl font-semibold mb-2 text-white uppercase">
-                pursuing
-              </span>{" "}
+            <h1 className="md:text-5xl lg:text-5xl xl:text-5xl font-semibold text-5xl mb-4 text-white cursor-blink">
               {t("role2")}
             </h1>
             <p className="text-md md:text-lg lg:text-xl text-gray-300 max-w-[50%]">
