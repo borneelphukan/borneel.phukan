@@ -6,10 +6,6 @@ const Projects = () => {
   return (
     <div className="max-w-8xl text-lg p-5" id="Projects">
       <h1 className="text-4xl text-center font-semibold mb-3">PROJECTS</h1>
-      <p className="max-w-md mx-auto text-center text-base md:text-lg lg:text-neutral-400">
-        I make a lot of personal projects in-line. Feel free to have a look.
-      </p>
-
       <div className="p-2">
         <div className="grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-8 mt-10 mb-10">
           {projectsData.map((project, index) => (

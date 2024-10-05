@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import emailjs from "emailjs-com";
+import MapWithLocation from "@/components/layout/MapWithLocation";
 
 const ContactForm = () => {
   const [formData, setFormData] = useState({
@@ -64,91 +65,100 @@ const ContactForm = () => {
 
   return (
     <div className=" justify-center my-3">
-      <div className="container px-6 py-10 mx-auto mt-8 flex flex-col lg:flex-row justify-between items-center space-y-8 lg:space-y-0 lg:space-x-8">
-        <div className="w-full lg:w-1/2">
-          <h2 className="text-3xl font-bold text-center lg:text-left mb-8">
-            Get In Touch
-          </h2>
-          <form
-            onSubmit={handleSubmit}
-            className="w-full bg-white shadow-lg rounded px-8 pt-6 pb-8 mb-4 mx-auto"
-          >
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
-              <div>
+      <div className="container px-6 py-10 mx-auto mt-8">
+        {/* Flex container for the form and the map */}
+        <div className="flex flex-col lg:flex-row justify-between items-center space-y-8 lg:space-y-0 lg:space-x-8">
+          {/* Contact Form */}
+          <div className="w-full lg:w-1/2">
+            <h2 className="text-3xl font-bold text-center lg:text-left mb-8">
+              Get In Touch
+            </h2>
+            <form
+              onSubmit={handleSubmit}
+              className="w-full border shadow-lg rounded px-8 pt-6 pb-8 mb-4 mx-auto"
+            >
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
+                <div>
+                  <label
+                    className="block text-sm font-bold mb-2"
+                    htmlFor="firstName"
+                  >
+                    First Name
+                  </label>
+                  <input
+                    className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                    id="firstName"
+                    type="text"
+                    value={formData.firstName}
+                    onChange={handleChange}
+                    placeholder="First Name"
+                  />
+                </div>
+                <div>
+                  <label
+                    className="block text-sm font-bold mb-2"
+                    htmlFor="lastName"
+                  >
+                    Last Name
+                  </label>
+                  <input
+                    className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                    id="lastName"
+                    type="text"
+                    value={formData.lastName}
+                    onChange={handleChange}
+                    placeholder="Last Name"
+                  />
+                </div>
+              </div>
+              <div className="mb-4">
                 <label
-                  className="block text-gray-700 text-sm font-bold mb-2"
-                  htmlFor="firstName"
+                  className="block  text-sm font-bold mb-2"
+                  htmlFor="email"
                 >
-                  First Name
+                  Email Address
                 </label>
                 <input
                   className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-                  id="firstName"
-                  type="text"
-                  value={formData.firstName}
+                  id="email"
+                  type="email"
+                  value={formData.email}
                   onChange={handleChange}
-                  placeholder="First Name"
+                  placeholder="Email Address"
                 />
               </div>
-              <div>
+              <div className="mb-6">
                 <label
-                  className="block text-gray-700 text-sm font-bold mb-2"
-                  htmlFor="lastName"
+                  className="block text-sm font-bold mb-2"
+                  htmlFor="message"
                 >
-                  Last Name
+                  Message
                 </label>
-                <input
+                <textarea
                   className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-                  id="lastName"
-                  type="text"
-                  value={formData.lastName}
+                  id="message"
+                  value={formData.message}
                   onChange={handleChange}
-                  placeholder="Last Name"
+                  placeholder="Your message here"
+                  rows={6}
                 />
               </div>
-            </div>
-            <div className="mb-4">
-              <label
-                className="block text-gray-700 text-sm font-bold mb-2"
-                htmlFor="email"
-              >
-                Email Address
-              </label>
-              <input
-                className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-                id="email"
-                type="email"
-                value={formData.email}
-                onChange={handleChange}
-                placeholder="Email Address"
-              />
-            </div>
-            <div className="mb-6">
-              <label
-                className="block text-gray-700 text-sm font-bold mb-2"
-                htmlFor="message"
-              >
-                Message
-              </label>
-              <textarea
-                className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-                id="message"
-                value={formData.message}
-                onChange={handleChange}
-                placeholder="Your message here"
-                rows={6}
-              />
-            </div>
-            <div className="flex items-center justify-between">
-              <button
-                className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
-                type="submit"
-              >
-                Send
-              </button>
-            </div>
-          </form>
-          <ToastContainer />
+              <div className="flex items-center justify-between">
+                <button
+                  className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+                  type="submit"
+                >
+                  Send
+                </button>
+              </div>
+            </form>
+            <ToastContainer />
+          </div>
+
+          {/* Map Section */}
+          <div className="w-full lg:w-1/2">
+            <MapWithLocation />
+          </div>
         </div>
       </div>
     </div>

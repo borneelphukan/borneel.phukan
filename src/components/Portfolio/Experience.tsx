@@ -8,10 +8,6 @@ const Experience = () => {
       <h1 className="text-4xl text-center font-semibold mb-3">
         WORK EXPERIENCES
       </h1>
-      <p className=" max-w-md mx-auto text-center text-base md:text-lg lg:text-neutral-400 mb-10">
-        Unlocking the Past, Present, and Future: My Professional Journey So Far!
-      </p>
-
       <div className="md:mx-20 md:px-20 my-10 space-y-8 relative before:absolute before:inset-0 before:mx-auto before:-translate-x-px md:before:mx-auto md:before:translate-x-0 before:h-full before:w-0.5 before:bg-gradient-to-b before:from-transparent before:via-slate-400 before:to-transparent">
         {experiences.map((experience, index) => (
           <div

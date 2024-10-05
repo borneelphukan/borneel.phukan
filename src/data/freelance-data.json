@@ -5,7 +5,7 @@
     "company": "Brandheiss, Leipzig 🇩🇪",
     "duration": "February 2024 - March 2024",
     "info": [
-      "Worked in the design and development of UI and its functionalities for an online trading platform named Traddle.io. Key features includes implementing the Sidebar and Avatar Selection."
+      "Contributed in the development of functional UI for the online trading platform Traddle.io. Key features includes the Sidebar and Avatar Selection."
     ]
   },
   {
@@ -14,7 +14,8 @@
     "company": "Golfpost AG, Cologne 🇩🇪",
     "duration": "April 2024 - September 2024",
     "info": [
-      "Developed Golf Fantasy, a fantasy gaming app using SvelteKit and Tailwind CSS, with reusable components and live API data; and developed core features such as Player and User dashboards, Player Picker, and tools for Tournament and League management with user authentication"
-    ]
+      "A fantasy gaming app made using SvelteKit and Tailwind, with reusable components and live API data; developed core features like Player and User dashboards, Player Picker, and tools for Tournament and League management with user authentication."
+    ],
+    "link": "https://fantasy.golfpost.com/"
   }
 ]

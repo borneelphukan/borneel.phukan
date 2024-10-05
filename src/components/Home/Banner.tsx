@@ -17,11 +17,11 @@ const Banner = () => {
                 Borneel Bikash Phukan
               </span>
             </h1>
-            <h1 className="md:text-5xl lg:text-5xl xl:text-5xl font-semibold text-5xl mb-4 text-white">
+            <h1 className="md:text-4xl lg:text-4xl xl:text-4xl font-semibold text-4xl mb-2 text-white">
               {t("role1")}{" "}
-              <span className="text-6xl font-bold text-blue-400">&</span>
+              <span className="text-4xl font-bold text-blue-400">&</span>
             </h1>
-            <h1 className="md:text-5xl lg:text-5xl xl:text-5xl font-semibold text-5xl mb-4 text-white cursor-blink">
+            <h1 className="md:text-4xl lg:text-4xl xl:text-4xl font-semibold text-4xl mb-4 text-white cursor-blink">
               {t("role2")}
             </h1>
             <p className="text-md md:text-lg lg:text-xl text-gray-300 max-w-[50%]">

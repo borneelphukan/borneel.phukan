@@ -2,7 +2,7 @@ import React from "react";
 import BlogBanner from "@/components/Blog/BlogBanner";
 import BlogHomeCrumb from "@/components/Blog/BlogHomeCrumb";
 import DefaultLayout from "@/layout/DefaultLayout";
-import CategoriesTab from "@/components/HomePage/RightPanel";
+import CategoriesTab from "@/components/Home/RightPanel";
 
 const Blogs = () => {
   return (

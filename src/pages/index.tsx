@@ -1,8 +1,8 @@
 import React from "react";
 import DefaultLayout from "@/layout/DefaultLayout";
-import Banner from "@/components/HomePage/Banner";
-import AboutMe from "@/components/HomePage/AboutMe";
-import CategoriesTab from "@/components/HomePage/RightPanel";
+import Banner from "@/components/Home/Banner";
+import AboutMe from "@/components/Home/AboutMe";
+import CategoriesTab from "@/components/Home/RightPanel";
 
 const Home = () => {
   return (

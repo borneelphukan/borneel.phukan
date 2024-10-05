@@ -7,10 +7,11 @@ type Props = {
   company: string;
   duration: string;
   info: string[];
+  link?: string; // Optional field for link
 };
 
 const FreelanceCard = (props: Props) => {
-  const { avatar, project, company, duration, info } = props;
+  const { avatar, project, company, duration, info, link } = props;
   const [showAll, setShowAll] = useState<boolean>(false);
   const [expandedIndex, setExpandedIndex] = useState<number | null>(null);
 
@@ -38,47 +39,52 @@ const FreelanceCard = (props: Props) => {
         </div>
 
         <div className="px-6 py-2 flex flex-col items-center">
-          <h2 className="text-black text-normal font-semibold">{project}</h2>
+          <h2 className="text-black text-normal font-semibold">
+            {link ? (
+              <a href={link} target="_blank" rel="noopener noreferrer">
+                {project}
+              </a>
+            ) : (
+              project
+            )}
+          </h2>
           <p className="text-gray-700 text-md">{company}</p>
           <time className="font-sm text-blue-400 text-right whitespace-nowrap">
             {duration}
           </time>
         </div>
 
-        <ul className="list-disc text-base text-slate-600 pl-6 mt-2">
-          <div className="flex flex-row"></div>
-          <div className="p-2">
-            {displayedInfo.map((point, index) => {
-              const isExpanded = expandedIndex === index;
-              const shouldTruncate = point.length > 100; // Truncate after 100 characters
-              const truncatedText = point.substring(0, 100);
+        <div className="text-base text-slate-600 pl-6 mt-2">
+          {displayedInfo.map((point, index) => {
+            const isExpanded = expandedIndex === index;
+            const shouldTruncate = point.length > 100;
+            const truncatedText = point.substring(0, 100);
 
-              return (
-                <li
-                  key={index}
-                  className="transition-all duration-300 ease-in-out"
-                >
-                  {shouldTruncate && !isExpanded ? (
-                    <span className="block overflow-hidden max-h-[4.5rem] transition-all duration-300 ease-in-out">
-                      {truncatedText}...
-                    </span>
-                  ) : (
-                    <span className="block overflow-hidden max-h-full transition-all duration-300 ease-in-out">
-                      {point}
-                    </span>
-                  )}
-                  {shouldTruncate && (
-                    <button
-                      onClick={() => toggleReadMore(index)}
-                      className="text-blue-500 cursor-pointer focus:outline-none ml-2"
-                    >
-                      {isExpanded ? "Read Less" : "Read More"}
-                    </button>
-                  )}
-                </li>
-              );
-            })}
-          </div>
+            return (
+              <div
+                key={index}
+                className="transition-all duration-300 ease-in-out mb-2"
+              >
+                {shouldTruncate && !isExpanded ? (
+                  <span className="block overflow-hidden max-h-[4.5rem] transition-all duration-300 ease-in-out">
+                    {truncatedText}...
+                  </span>
+                ) : (
+                  <span className="block overflow-hidden max-h-full transition-all duration-300 ease-in-out">
+                    {point}
+                  </span>
+                )}
+                {shouldTruncate && (
+                  <button
+                    onClick={() => toggleReadMore(index)}
+                    className="text-blue-500 cursor-pointer focus:outline-none ml-2"
+                  >
+                    {isExpanded ? "Read Less" : "Read More"}
+                  </button>
+                )}
+              </div>
+            );
+          })}
           {info.length > 2 && (
             <button
               onClick={toggleShowAll}
@@ -87,7 +93,7 @@ const FreelanceCard = (props: Props) => {
               {showAll ? "Show less" : "Show more"}
             </button>
           )}
-        </ul>
+        </div>
       </div>
     </div>
   );
