@@ -1,9 +1,9 @@
 import { useState, useEffect } from "react";
 import Head from "next/head";
-import Navbar from "@/layout/NavBar";
+import Navbar from "@/components/layout/NavBar";
 import ThemeSwitch from "@/components/layout/ThemeSwitch";
 import CircularProgressBar from "@/components/layout/CircularProgressBar";
-import Footer from "@/layout/Footer";
+import Footer from "@/components/layout/Footer";
 import Loader from "@/components/layout/Loader";
 
 const BlogLayout = ({ children }: { children: React.ReactNode }) => {
