@@ -4,10 +4,9 @@ import "slick-carousel/slick/slick-theme.css";
 import freelanceData from "@/data/freelance-data.json";
 
 import Slider from "react-slick";
-import FreelanceCard from "./FreelanceCard";
+import FreelanceCard from "../card/FreelanceCard";
 
 const FreelanceCarousel = () => {
-
   const settings = {
     dots: true,
     infinite: true,
@@ -34,22 +33,18 @@ const FreelanceCarousel = () => {
 
   return (
     <div className="container mx-auto p-10">
-      <h1 className="text-4xl text-center font-semibold mb-3">FREELANCE WORKS</h1>
+      <h1 className="text-4xl text-center font-semibold mb-3">
+        FREELANCE WORKS
+      </h1>
       <p className=" max-w-md mx-auto text-center text-base md:text-lg lg:text-neutral-400 mb-10">
         I am actively involved with freelance works as well
       </p>
       <div className="px-auto overflow-hidden">
         <Slider {...settings}>
-          {freelanceData.map(
-              (data, index) => (
-                <FreelanceCard
-                  key={index}
-                  {...data}
-                />
-              )
-            )}
+          {freelanceData.map((data, index) => (
+            <FreelanceCard key={index} {...data} />
+          ))}
         </Slider>
-
       </div>
     </div>
   );

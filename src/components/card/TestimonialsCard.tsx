@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Image from "next/image";
-import RatingStars from "./RatingStars";
+import RatingStars from "../common/RatingStars";
 
 type Props = {
   avatar: string;

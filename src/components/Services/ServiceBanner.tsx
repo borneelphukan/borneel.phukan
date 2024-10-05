@@ -1,6 +1,9 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
+
 
 const ServiceBanner = () => {
+  const { t } = useTranslation();
   return (
     <div className="service-cover">
       <div className="container mx-auto px-10">
@@ -13,9 +16,7 @@ const ServiceBanner = () => {
             </h1>
 
             <p className="text-base md:text-lg lg:text-xl text-gray-300 w-[50%] text-center mx-auto">
-              When I am not engaged in personal projects, I might be freelancing
-              for a reputable company or startup, and I could potentially
-              contribute to your project as well.
+              {t("serviceBanner")}
             </p>
           </div>
         </div>

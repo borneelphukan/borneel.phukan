@@ -7,7 +7,7 @@ type Props = {
   company: string;
   duration: string;
   info: string[];
-  link?: string; // Optional field for link
+  link?: string;
 };
 
 const FreelanceCard = (props: Props) => {

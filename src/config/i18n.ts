@@ -1,5 +1,5 @@
-import i18n from 'i18next';
-import { initReactI18next } from 'react-i18next';
+import i18n from "i18next";
+import { initReactI18next } from "react-i18next";
 
 i18n.use(initReactI18next).init({
   resources: {
@@ -17,12 +17,16 @@ i18n.use(initReactI18next).init({
         welcome:
           "Welcome to my personal website, where I proudly showcase my strengths and skills. Explore my journey, accomplishments, and occasional blog posts. Thank you for visiting!",
         rights: "All Rights Reserved",
+        serviceBanner:
+          "When I am not engaged in personal projects, I might be freelancing for a reputable company or startup, and I could potentially contribute to your project as well.",
+        clientProjectsBanner:
+          "Have a look at my contributions to client projects",
       },
     },
     de: {
       translation: {
         role1: "Software Entwickler",
-        role2: "ML/KI Liebhaber",
+        role2: "#Open_to_Work",
         aboutme0:
           "Hallo! Ich bin Borneel, ein Softwareentwickler, der sich der Entwicklung und Bereitstellung modernster Full-Stack-Web- und mobilen Anwendungen, sicherer APIs und sauberer Benutzeroberflächen verschrieben hat, alles unter Nutzung geeigneter agiler Methoden. Meine Leidenschaft für die Entwicklung wirkungsvoller Anwendungen und meinen Beitrag zum technologischen Fortschritt hat mich dazu bewegt, eine Karriere im Bereich Web-Engineering zu verfolgen. Meine Beiträge zur Open-Source-Entwicklung auf GitHub können Ihnen einen ersten Eindruck von meiner Arbeit und meinen bisherigen Beiträgen vermitteln.",
         aboutme1:
@@ -32,6 +36,10 @@ i18n.use(initReactI18next).init({
         welcome:
           "Willkommen auf meiner persönlichen Website, auf der ich mit Stolz meine Stärken und Fähigkeiten präsentiere. Entdecken Sie meinen Weg, meine Leistungen und meine gelegentlichen Blogbeiträge. Vielen Dank für Ihren Besuch!",
         rights: "Alle Rechte vorbehalten",
+        serviceBanner:
+          "Wenn ich nicht mit persönlichen Projekten beschäftigt bin, arbeite ich vielleicht freiberuflich für ein renommiertes Unternehmen oder Startup und könnte auch zu Ihrem Projekt beitragen.",
+        clientProjectsBanner:
+          "Schauen Sie sich meine Beiträge zu Kundenprojekten an.",
       },
     },
   },

@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
-import TestimonialsCard from "./TestimonialsCard";
+import TestimonialsCard from "../../components/card/TestimonialsCard";
 import testimonialsData from "@/data/testimonials.json";
 
 export const TestimonialCarousel = () => {
@@ -24,19 +24,19 @@ export const TestimonialCarousel = () => {
     dots: true,
     infinite: true,
     speed: 500,
-    slidesToShow: testimonialsData.length, // Dynamic number of cards
+    slidesToShow: testimonialsData.length,
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 5000,
     responsive: [
       {
-        breakpoint: 768, // Medium screens
+        breakpoint: 768,
         settings: {
           slidesToShow: 1,
         },
       },
       {
-        breakpoint: 1024, // Large screens
+        breakpoint: 1024,
         settings: {
           slidesToShow: 1,
         },
