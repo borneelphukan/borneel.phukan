@@ -1,14 +1,14 @@
 import { useState, useEffect } from "react";
 import Head from "next/head";
-import Navbar from "@/components/layout/NavBar";
+import Navbar from "@/layout/NavBar";
 import ThemeSwitch from "@/components/layout/ThemeSwitch";
 import CircularProgressBar from "@/components/layout/CircularProgressBar";
-import Footer from "@/components/layout/Footer";
+import Footer from "@/layout/Footer";
 import Loader from "@/components/layout/Loader";
 
 const DefaultLayout = ({ children }: { children: React.ReactNode }) => {
   const [isLoading, setIsLoading] = useState(true);
-  
+
   useEffect(() => {
     const loadingTimeout = setTimeout(() => {
       setIsLoading(false);

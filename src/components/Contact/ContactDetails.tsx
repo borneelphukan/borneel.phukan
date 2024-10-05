@@ -15,14 +15,13 @@ const ContactDetails = () => {
             icon="fa-light fa-calendar"
             title="My Availability"
             hoverDisabled
-            address="Monday - Friday: 9am to 6pm Saturday - Sunday: Closed."
+            address="Set up an appointment on Calendly"
           />
           <ContactCard
-            icon="fa-light fa-phone"
-            title="Let's Talk"
-            numbers
-            number1="+49 176 7125 9396"
-            number2="+91 94350 05619"
+            icon="fa-light fa-dollar"
+            title="Donate"
+            donateMode
+            paypal="https://www.paypal.com/paypalme/borneelphukan" // Update with your PayPal link
           />
         </div>
       </div>

@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import emailjs from "emailjs-com";
-import MapWithLocation from "@/components/layout/MapWithLocation";
+import MapWithLocation from "@/services/MapWithLocation";
 
 const ContactForm = () => {
   const [formData, setFormData] = useState({
@@ -155,10 +155,10 @@ const ContactForm = () => {
             <ToastContainer />
           </div>
 
-          {/* Map Section */}
-          <div className="w-full lg:w-1/2">
+          {/* Enable Map when card active */}
+          {/* <div className="w-full lg:w-1/2">
             <MapWithLocation />
-          </div>
+          </div> */}
         </div>
       </div>
     </div>
