@@ -4,8 +4,13 @@ import "react-toastify/dist/ReactToastify.css";
 import emailjs from "emailjs-com";
 import InputField from "../../components/common/InputField"; // Adjust the path based on where InputField is located
 import TextareaWithIcon from "../common/TextArea";
+import { useTranslation } from "react-i18next";
 
 const ContactForm = () => {
+  const { t } = useTranslation();
+  const contactFormHeader: string[] = t("contactFormHeader", {
+    returnObjects: true,
+  }) as string[];
   const [formData, setFormData] = useState({
     firstName: "",
     lastName: "",
@@ -72,7 +77,7 @@ const ContactForm = () => {
           {/* Contact Form */}
           <div className="w-full lg:w-1/2">
             <h2 className="text-3xl font-bold text-center lg:text-left mb-8">
-              Get In Touch
+              {contactFormHeader}
             </h2>
             <form
               onSubmit={handleSubmit}

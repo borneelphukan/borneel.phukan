@@ -1,6 +1,6 @@
 [
   {
-    "title": "Golfpost Fantasy Web Application",
+    "title": "Golfpost Fantasy",
     "description": "A fantasy gaming web application developed using SvelteKit and Tailwind CSS, featuring modular components, live data integration via a RESTful API, and core functionalities such as Player and User dashboards, Player Picker, Tournament and League management tools, and user authentication.",
     "buttonText": "Open",
     "link": "https://github.com/borneelphukan/borneel.phukan"

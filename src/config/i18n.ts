@@ -80,6 +80,15 @@ i18n.use(initReactI18next).init({
           "reach out",
           "if you would like a hard copy. If you do, you would be the pioneer to mention this, which would be quite remarkable!",
         ],
+
+        // Contact
+        contactCardHeader: ["My Address", "My Availability", "Donate"],
+        contactCardDescription: [
+          "Vettersstraße 70, Chemnitz 09126 Germany",
+          "Set up an appointment on Calendly",
+          "Like my work ? You can donate on Paypal",
+        ],
+        contactFormHeader: "Get in Touch",
       },
     },
     de: {
@@ -97,7 +106,7 @@ i18n.use(initReactI18next).init({
         role: ["Ich bin", "Software Entwickler", "#Open_to_Work"],
         panelHeader: "Meine Blogs",
         introduction:
-          "Ein Softwareentwickler und KI-Ingenieur, der sich auf die Entwicklung kundenorientierter Anwendungen, den Entwurf wirkungsvoller APIs, sauberer Benutzeroberflächen, Modelle für maschinelles Lernen und Deep Learning sowie die Durchführung erfolgreicher Projekte zur Förderung von Geschäftswachstum und Umsatz konzentriert.",
+          "Ein Softwareentwickler mit Schwerpunkt auf der Entwicklung kundenorientierter Anwendungen, dem Entwurf wirkungsvoller APIs, sauberer Benutzeroberflächen und der erfolgreichen Umsetzung von Projekten zur Förderung von Geschäftswachstum und Umsätzen.",
         aboutme: [
           "Über mich",
           "Hallo! Ich bin Borneel, ein Softwareentwickler, der sich der Entwicklung und Bereitstellung modernster Full-Stack-Web- und mobilen Anwendungen, sicherer APIs und sauberer Benutzeroberflächen verschrieben hat, alles unter Nutzung geeigneter agiler Methoden. Meine Leidenschaft für die Entwicklung wirkungsvoller Anwendungen und meinen Beitrag zum technologischen Fortschritt hat mich dazu bewegt, eine Karriere im Bereich Web-Engineering zu verfolgen. Meine Beiträge zur Open-Source-Entwicklung auf GitHub können Ihnen einen ersten Eindruck von meiner Arbeit und meinen bisherigen Beiträgen vermitteln.",
@@ -161,6 +170,15 @@ i18n.use(initReactI18next).init({
           "sich melden",
           "wenn Sie eine gedruckte Kopie möchten. Wenn ja, wären Sie der Erste, der dies erwähnt, was ziemlich bemerkenswert wäre!",
         ],
+
+        // Contact
+        contactCardHeader: ["Meine Adresse", "Meine Verfügbarkeit", "Spenden"],
+        contactCardDescription: [
+          "Vettersstraße 70, Chemnitz 09126 Deutschland",
+          "Vereinbare einen Termin auf Calendly",
+          "Gefällt dir meine Arbeit? Du kannst über PayPal spenden",
+        ],
+        contactFormHeader: "Kontakt aufnehmen",
       },
     },
   },
