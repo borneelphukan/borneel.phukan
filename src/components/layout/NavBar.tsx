@@ -44,7 +44,7 @@ const Navbar = () => {
       </div>
 
       {/* Navigation Links */}
-      <div className="hidden lg:flex justify-center space-x-8 mt-4">
+      <div className="hidden lg:flex justify-center space-x-8 my-4">
         <Link
           id="strike"
           href="/"
@@ -56,7 +56,7 @@ const Navbar = () => {
           {navItems[0]}
         </Link>
 
-        {/*Portfolio*/}
+        {/* Portfolio */}
         <Link
           id="strike"
           href="/Portfolio"
@@ -68,7 +68,7 @@ const Navbar = () => {
           {navItems[1]}
         </Link>
 
-        {/*Services*/}
+        {/* Services */}
         <Link
           id="strike"
           href="/Services"
@@ -80,7 +80,7 @@ const Navbar = () => {
           {navItems[2]}
         </Link>
 
-        {/*Blogs*/}
+        {/* Blogs */}
         <div
           className="relative"
           onMouseEnter={() => setShowBlogNav(true)}
@@ -99,8 +99,8 @@ const Navbar = () => {
           {showBlogNav && (
             <ul
               className="absolute left-0 mt-1 text-sm px-5 bg-slate-100 border rounded border-white w-52"
-              onMouseEnter={() => setShowBlogNav(true)} // Keep the dropdown open when the user hovers over the dropdown list
-              onMouseLeave={() => setShowBlogNav(false)} // Close the dropdown when the user stops hovering over both the link and the dropdown list
+              onMouseEnter={() => setShowBlogNav(true)}
+              onMouseLeave={() => setShowBlogNav(false)}
               style={{ top: "80%" }}
             >
               <li className="py-2">
@@ -115,8 +115,7 @@ const Navbar = () => {
           )}
         </div>
 
-        {/*Gallery*/}
-        {/* Add the link to Gallery here under href*/}
+        {/* Gallery */}
         <Link
           id="strike"
           href="/Gallery"
@@ -130,8 +129,12 @@ const Navbar = () => {
 
         <div className="flex justify-center">
           <Link
+            id="strike"
             href="/Contact"
-            className="bg-blue-400 text-white hover:bg-blue-800 ml-5 mb-3 px-3 py-1 rounded"
+            className={`text-white hover:text-gray-300 ${
+              selectedLink === "Contact" ? "selected" : ""
+            }`}
+            onClick={() => handleLinkClick("Contact")}
           >
             {navItems[5]}
           </Link>
@@ -139,112 +142,114 @@ const Navbar = () => {
       </div>
 
       {/* Mobile Menu (Dropdown) */}
-      {showMobileMenu && (
-        <div className="lg:hidden flex flex-col mt-1 space-y-2">
+      <div
+        className={`lg:hidden flex flex-col items-center justify-center mt-1 space-y-2 transition-max-height duration-1000 ease-in-out overflow-hidden ${
+          showMobileMenu ? "max-h-[1000px]" : "max-h-0"
+        }`}
+      >
+        <Link
+          href="/"
+          className={`text-white hover:text-gray-300 text-center ${
+            selectedLink === "Home" ? "selected" : ""
+          }`}
+          onClick={() => {
+            handleLinkClick("Home");
+            toggleMobileMenu();
+          }}
+        >
+          {navItems[0]}
+        </Link>
+
+        {/* Portfolio */}
+        <div className="relative">
           <Link
-            href="/"
-            className={`text-white hover:text-gray-300 ${
-              selectedLink === "Home" ? "selected" : ""
+            href="/Portfolio"
+            className={`text-white hover:text-blue-400 text-center ${
+              selectedLink === "Portfolio" ? "selected" : ""
             }`}
             onClick={() => {
-              handleLinkClick("Home");
+              handleLinkClick("Portfolio");
               toggleMobileMenu();
             }}
           >
-            {navItems[0]}
+            {navItems[1]}
           </Link>
-
-          {/* Portfolio */}
-          <div className="relative">
-            <Link
-              href="/Portfolio"
-              className={`text-white hover:text-blue-400 ${
-                selectedLink === "Portfolio" ? "selected" : ""
-              }`}
-              onClick={() => {
-                handleLinkClick("Portfolio");
-                toggleMobileMenu();
-              }}
-            >
-              {navItems[1]}
-            </Link>
-          </div>
-
-          {/* Services */}
-          <div className="relative">
-            <Link
-              href="/Services"
-              className={`text-white hover:text-blue-400 ${
-                selectedLink === "Services" ? "selected" : ""
-              }`}
-              onClick={() => {
-                handleLinkClick("Services");
-              }}
-            >
-              {navItems[2]}
-            </Link>
-          </div>
-
-          {/* Blogs */}
-          <div className="relative">
-            <Link
-              href="#"
-              className={`text-white hover:text-blue-400 ${
-                selectedLink === "Blogs" ? "selected" : ""
-              }`}
-              onClick={() => {
-                handleLinkClick("Blogs");
-                toggleBlogNav();
-              }}
-            >
-              {navItems[3]}
-            </Link>
-            {showMobileBlogNav && (
-              <ul className="relative left-0 mt-2 text-sm px-5 bg-black w-full">
-                <li className="py-2">
-                  <Link
-                    href="Blogs/Developer"
-                    className="text-white hover:text-blue-400"
-                  >
-                    Developer Blogs
-                  </Link>
-                </li>
-              </ul>
-            )}
-          </div>
-
-          {/* Gallery */}
-          <div className="relative">
-            <Link
-              href="/Gallery"
-              className={`text-white hover:text-blue-400 ${
-                selectedLink === "Gallery" ? "selected" : ""
-              }`}
-              onClick={() => {
-                handleLinkClick("Gallery");
-                toggleMobileMenu();
-              }}
-            >
-              {navItems[4]}
-            </Link>
-          </div>
-
-          <div className="relative mx-auto bg-blue-400 rounded px-3 py-2 hover:bg-blue-600 ">
-            <Link
-              href="/Contact"
-              className={`text-white ${
-                selectedLink === "Contact" ? "selected" : ""
-              }`}
-              onClick={() => {
-                handleLinkClick("Contact");
-                toggleMobileMenu();
-              }}
-            >
-              {navItems[5]}
-            </Link>
-          </div>
         </div>
-      )}
+
+        {/* Services */}
+        <div className="relative">
+          <Link
+            href="/Services"
+            className={`text-white hover:text-blue-400 text-center ${
+              selectedLink === "Services" ? "selected" : ""
+            }`}
+            onClick={() => {
+              handleLinkClick("Services");
+            }}
+          >
+            {navItems[2]}
+          </Link>
+        </div>
+
+        {/* Blogs */}
+        <div className="relative">
+          <Link
+            href="#"
+            className={`text-white hover:text-blue-400 text-center ${
+              selectedLink === "Blogs" ? "selected" : ""
+            }`}
+            onClick={() => {
+              handleLinkClick("Blogs");
+              toggleBlogNav();
+            }}
+          >
+            {navItems[3]}
+          </Link>
+          {showMobileBlogNav && (
+            <ul className="relative left-0 mt-2 text-sm px-5 bg-black w-full">
+              <li className="py-2">
+                <Link
+                  href="Blogs/Developer"
+                  className="text-white hover:text-blue-400 text-center"
+                >
+                  Developer Blogs
+                </Link>
+              </li>
+            </ul>
+          )}
+        </div>
+
+        {/* Gallery */}
+        <div className="relative">
+          <Link
+            href="/Gallery"
+            className={`text-white hover:text-blue-400 text-center ${
+              selectedLink === "Gallery" ? "selected" : ""
+            }`}
+            onClick={() => {
+              handleLinkClick("Gallery");
+              toggleMobileMenu();
+            }}
+          >
+            {navItems[4]}
+          </Link>
+        </div>
+
+        <div className="relative">
+          <Link
+            href="/Contact"
+            className={`text-white ${
+              selectedLink === "Contact" ? "selected" : ""
+            }`}
+            onClick={() => {
+              handleLinkClick("Contact");
+              toggleMobileMenu();
+            }}
+          >
+            {navItems[5]}
+          </Link>
+        </div>
+      </div>
 
       {/* Hamburger Icon (Mobile) */}
       <div className="lg:hidden flex items-center justify-end m-1">
