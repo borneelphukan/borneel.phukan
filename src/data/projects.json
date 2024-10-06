@@ -3,12 +3,12 @@
     "title": "Golfpost Fantasy",
     "description": "A fantasy gaming web application developed using SvelteKit and Tailwind CSS, featuring modular components, live data integration via a RESTful API, and core functionalities such as Player and User dashboards, Player Picker, Tournament and League management tools, and user authentication.",
     "buttonText": "Open",
-    "link": "https://github.com/borneelphukan/borneel.phukan"
+    "link": "https://fantasy.golfpost.com/"
   },
   {
     "title": "My Personal Website.",
     "description": "A professional portfolio with Next.js and Tailwind CSS, featuring a responsive design, blog, comprehensive portfolio, client testimonials, and services. User-centric with a dark theme, it's an effective platform for showcasing work and attracting clients.",
-    "buttonText": "Open",
+    "buttonText": "Open Code",
     "link": "https://github.com/borneelphukan/borneel.phukan"
   },
   {
@@ -26,13 +26,13 @@
   {
     "title": "Movie Database Management",
     "description": "Built with PHP and Postgresql, this user-friendly application features a personalized recommended movie section based on user preferences, along with comprehensive details about movies, cast, genres, and more. Explore movies with this intuitive interface tailored to enhance your movie- experience.",
-    "buttonText": "Open",
+    "buttonText": "Open Code",
     "link": "https://github.com/borneelphukan/Movie-Recommender-System.git"
   },
   {
     "title": "Facial Emotion Recognition",
     "description": "A Facial Emotion Recognition project, developed using Tensorflow and OpenCV with Python. This versatile application is trained using the FER2013 dataset and accurately identifies the 7 major emotions from the dataset. Working on its deployment as an API for seamless integration into various platforms and services.",
-    "buttonText": "Open",
+    "buttonText": "Open Code",
     "link": "https://github.com/borneelphukan/Facial-Emotion-Recognition.git"
   }
 ]
