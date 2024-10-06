@@ -4,9 +4,11 @@ import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 import TestimonialsCard from "../../components/card/TestimonialsCard";
 import testimonialsData from "@/data/testimonials.json";
+import { useTranslation } from "react-i18next";
 
 export const TestimonialCarousel = () => {
   const [clientCount, setClientCount] = useState(0);
+  const { t } = useTranslation();
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -48,13 +50,15 @@ export const TestimonialCarousel = () => {
     <div className="container mx-auto" id="Testinomials">
       <div className="max-w-8xl mx-auto text-center text-lg p-5 my-20">
         <p className="text-base md:text-lg lg:text-neutral-500">
-          <span className="text-blue-400 font-semibold">{clientCount} </span>HAPPY CLIENTS
+          <span className="text-blue-400 font-semibold uppercase">
+            {clientCount}{" "}
+          </span>
+          {t("reviewSuperHeader")}
         </p>
-        <h1 className="text-4xl font-semibold mb-3">Customer Reviews</h1>
+        <h1 className="text-4xl font-semibold mb-3">{t("reviewHeader")}</h1>
 
         <p className="max-w-md mx-auto text-base md:text-lg lg:text-neutral-400 mb-10">
-          Explore the testimonials of clients who have trusted us with their
-          needs
+          {t("reviewSubHeader")}
         </p>
 
         <div className="px-auto overflow-hidden">

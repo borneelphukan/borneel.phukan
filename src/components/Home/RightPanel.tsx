@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { useTranslation } from "react-i18next";
 
 type Category = {
   slug: string;
@@ -7,17 +8,21 @@ type Category = {
 
 const CategoryLink: React.FC<Category> = ({ slug, title }) => (
   <li className="my-2 mx-auto">
-    <Link href={`/Blogs/${slug}`} className="text-blue-400 hover:text-blue-600">{title}
+    <Link href={`/Blogs/${slug}`} className="text-blue-400 hover:text-blue-600">
+      {title}
     </Link>
   </li>
 );
 
 export const CategoriesTab = () => {
-  const blogCategories: Category[] = [{ slug: "/Developer", title: "Tech Blogs" }];
+  const blogCategories: Category[] = [
+    { slug: "/Developer", title: "Tech Blogs" },
+  ];
+  const { t } = useTranslation();
 
   return (
     <div className="py-1 px-10 md:p-10 text-center my-5 md:mr-20 md:my-20">
-      <h2 className="text-lg font-semibold mb-4">My Blogs</h2>
+      <h2 className="text-lg font-semibold mb-4">{t("panelHeader")}</h2>
       <ul>
         {blogCategories.map((category) => (
           <CategoryLink

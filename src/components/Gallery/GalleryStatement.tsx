@@ -1,25 +1,35 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
 
 const GalleryStatement = () => {
+  const { t } = useTranslation();
+
+  const galleryStatement: string[] = t("galleryStatement", {
+    returnObjects: true,
+  }) as string[];
+  const galleryHeader: string[] = t("galleryHeader", {
+    returnObjects: true,
+  }) as string[];
+
   return (
     <div className="mt-6 mx-auto">
-      <p className="text-base text-center md:text-lg lg:text-neutral-600 py-2">
-        INTERESTED IN{" "}
-        <span className="text-blue-400 font-semibold">PHOTOGRAPHY ?</span>
+      <p className="text-base text-center md:text-lg lg:text-neutral-600 py-2 uppercase">
+        {galleryHeader[0]}{" "}
+        <span className="text-blue-400 font-semibold uppercase">
+          {galleryHeader[1]}
+        </span>
       </p>
-      <h1 className="text-4xl text-center font-semibold mb-3">
-        THE WORLD THROUGH MY LENSES
+      <h1 className="text-4xl text-center font-semibold mb-3 uppercase">
+        {galleryHeader[2]}
       </h1>
       <p className="max-w-3xl mx-auto text-center text-base md:text-lg lg:text-neutral-400 mb-5 px-5">
-        Physical prints of photos can leave a stronger impression compared to
-        their digital counterparts. Feel free to{" "}
+        {galleryStatement[0]}{" "}
         <a href="mailto:borneelphukan@gmail.com">
           <span className="underline underline-offset-4 hover:text-blue-400">
-            reach out
+            {galleryStatement[1]}
           </span>
         </a>{" "}
-        if you would like a hard copy. If you do, you would be the pioneer to
-        mention this, which would be quite remarkable!
+        {galleryStatement[2]}
       </p>
     </div>
   );

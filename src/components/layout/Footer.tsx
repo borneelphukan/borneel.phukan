@@ -9,6 +9,9 @@ import { useTranslation } from "react-i18next";
 
 const Footer = () => {
   const { t } = useTranslation();
+  const links: string[] = t("links", {
+    returnObjects: true,
+  }) as string[];
 
   return (
     <footer className="bg-gray-950 text-white text-center py-8">
@@ -33,7 +36,7 @@ const Footer = () => {
 
           {/* Column 2 */}
           <div className="mb-8">
-            <h2 className="text-xl font-semibold mb-2">Portfolio</h2>
+            <h2 className="text-xl font-semibold mb-2">{links[0][0]}</h2>
             {/* Your content for column 2 */}
             <ul className="text-left px-24">
               <li className="py-2">
@@ -41,7 +44,7 @@ const Footer = () => {
                   className="text-sm text-slate-300 hover:text-blue-400"
                   href="/Portfolio#Experience"
                 >
-                  Experiences
+                  {links[0][1]}
                 </Link>
               </li>
               <li className="py-1">
@@ -49,7 +52,7 @@ const Footer = () => {
                   className="text-sm text-slate-300 hover:text-blue-400"
                   href="/Portfolio#Education"
                 >
-                  Education
+                  {links[0][2]}
                 </Link>
               </li>
               <li className="py-1">
@@ -57,7 +60,7 @@ const Footer = () => {
                   className="text-sm text-slate-300 hover:text-blue-400"
                   href="/Portfolio#Skills"
                 >
-                  Skills
+                  {links[0][3]}
                 </Link>
               </li>
               <li className="py-1">
@@ -65,7 +68,7 @@ const Footer = () => {
                   className="text-sm text-slate-300 hover:text-blue-400"
                   href="/Portfolio#Publication"
                 >
-                  Publication
+                  {links[0][4]}
                 </Link>
               </li>
               <li className="py-1">
@@ -73,7 +76,7 @@ const Footer = () => {
                   className="text-sm text-slate-300 hover:text-blue-400"
                   href="/Portfolio#Projects"
                 >
-                  Projects
+                  {links[0][5]}
                 </Link>
               </li>
             </ul>
@@ -81,7 +84,7 @@ const Footer = () => {
 
           {/* Column 3 */}
           <div className="mb-8">
-            <h2 className="text-xl font-semibold mb-4">Services</h2>
+            <h2 className="text-xl font-semibold mb-4">{links[1][0]}</h2>
             {/* Your content for column 3 */}
             <ul className="text-left px-24">
               <li className="py-1">
@@ -89,7 +92,7 @@ const Footer = () => {
                   className="text-sm text-slate-300 hover:text-blue-400"
                   href="/Services#Testinomials"
                 >
-                  Testimonials
+                  {links[1][1]}
                 </Link>
               </li>
               <li className="py-1">
@@ -97,7 +100,7 @@ const Footer = () => {
                   className="text-sm text-slate-300 hover:text-blue-400"
                   href="/Blogs/Developer"
                 >
-                  Blogs
+                  {links[1][2]}
                 </Link>
               </li>
               <li className="py-1">
@@ -105,7 +108,7 @@ const Footer = () => {
                   className="text-sm text-slate-300 hover:text-blue-400"
                   href="/Gallery"
                 >
-                  Gallery
+                  {links[1][3]}
                 </Link>
               </li>
               <li className="py-1">
@@ -113,7 +116,7 @@ const Footer = () => {
                   className="text-sm text-slate-300 hover:text-blue-400"
                   href="/Contact"
                 >
-                  Contact Me
+                  {links[1][4]}
                 </Link>
               </li>
             </ul>
@@ -121,7 +124,7 @@ const Footer = () => {
 
           {/* Column 4 */}
           <div>
-            <h2 className="text-xl font-semibold mb-4">Social</h2>
+            <h2 className="text-xl font-semibold mb-4">{links[2][0]}</h2>
             <div className="mt-10">
               <a
                 href="https://www.instagram.com/borneel.phukan"

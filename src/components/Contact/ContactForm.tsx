@@ -2,7 +2,8 @@ import React, { useState } from "react";
 import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import emailjs from "emailjs-com";
-import MapWithLocation from "@/services/MapWithLocation";
+import InputField from "../../components/common/InputField"; // Adjust the path based on where InputField is located
+import TextareaWithIcon from "../common/TextArea";
 
 const ContactForm = () => {
   const [formData, setFormData] = useState({
@@ -79,68 +80,52 @@ const ContactForm = () => {
             >
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
                 <div>
-                  <label
-                    className="block text-sm font-bold mb-2"
-                    htmlFor="firstName"
-                  >
-                    First Name
-                  </label>
-                  <input
-                    className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-                    id="firstName"
-                    type="text"
+                  {/* First Name Input */}
+                  <InputField
+                    label="First Name"
+                    placeholder="Enter your first name"
                     value={formData.firstName}
                     onChange={handleChange}
-                    placeholder="First Name"
+                    id="firstName"
                   />
                 </div>
                 <div>
-                  <label
-                    className="block text-sm font-bold mb-2"
-                    htmlFor="lastName"
-                  >
-                    Last Name
-                  </label>
-                  <input
-                    className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-                    id="lastName"
-                    type="text"
+                  {/* Last Name Input */}
+                  <InputField
+                    label="Last Name"
+                    placeholder="Enter your last name"
                     value={formData.lastName}
                     onChange={handleChange}
-                    placeholder="Last Name"
+                    id="lastName"
                   />
                 </div>
               </div>
               <div className="mb-4">
-                <label
-                  className="block  text-sm font-bold mb-2"
-                  htmlFor="email"
-                >
-                  Email Address
-                </label>
-                <input
-                  className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-                  id="email"
-                  type="email"
+                {/* Email Address Input */}
+                <InputField
+                  label="Email Address"
+                  placeholder="Enter your email"
                   value={formData.email}
                   onChange={handleChange}
-                  placeholder="Email Address"
+                  id="email"
+                  inputType="email"
                 />
               </div>
               <div className="mb-6">
+                {/* Message Input */}
                 <label
                   className="block text-sm font-bold mb-2"
                   htmlFor="message"
                 >
                   Message
                 </label>
-                <textarea
-                  className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-                  id="message"
+                <TextareaWithIcon
                   value={formData.message}
                   onChange={handleChange}
+                  id="message"
                   placeholder="Your message here"
-                  rows={6}
+                  icon="left" // You can change this to "right" or remove it
+                  type="" // Can be "success", "error", "disabled", or empty
                 />
               </div>
               <div className="flex items-center justify-between">

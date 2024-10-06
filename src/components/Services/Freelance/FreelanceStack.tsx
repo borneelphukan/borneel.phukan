@@ -8,7 +8,7 @@ const FreelanceStack = () => {
   return (
     <div className="max-w-8xl text-lg mt-20 mx-5">
       <h1 className="text-4xl text-center font-semibold mb-3">
-        CLIENT PROJECTS
+        {t("clientProjectHeader")}
       </h1>
       <p className="max-w-md mx-auto text-center text-base md:text-lg lg:text-neutral-400">
         {t("clientProjectsBanner")}

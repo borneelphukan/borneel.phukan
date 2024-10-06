@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { useTranslation } from "react-i18next";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -7,6 +8,10 @@ const Navbar = () => {
   const [showMobileMenu, setShowMobileMenu] = useState<boolean>(false);
   const [showBlogNav, setShowBlogNav] = useState<boolean>(false);
   const [showMobileBlogNav, setMobileBlogNav] = useState<boolean>(false);
+  const { t } = useTranslation();
+  const navItems: string[] = t("navItems", {
+    returnObjects: true,
+  }) as string[];
 
   const handleLinkClick = (linkText: string) => {
     setSelectedLink(linkText);
@@ -48,7 +53,7 @@ const Navbar = () => {
           }`}
           onClick={() => handleLinkClick("Home")}
         >
-          Home
+          {navItems[0]}
         </Link>
 
         {/*Portfolio*/}
@@ -60,7 +65,7 @@ const Navbar = () => {
           }`}
           onClick={() => handleLinkClick("Portfolios")}
         >
-          Portfolio
+          {navItems[1]}
         </Link>
 
         {/*Services*/}
@@ -72,7 +77,7 @@ const Navbar = () => {
           }`}
           onClick={() => handleLinkClick("Services")}
         >
-          Services
+          {navItems[2]}
         </Link>
 
         {/*Blogs*/}
@@ -89,7 +94,7 @@ const Navbar = () => {
             }`}
             onClick={() => handleLinkClick("Blogs")}
           >
-            Blogs
+            {navItems[3]}
           </Link>
           {showBlogNav && (
             <ul
@@ -120,7 +125,7 @@ const Navbar = () => {
           }`}
           onClick={() => handleLinkClick("Gallery")}
         >
-          Gallery
+          {navItems[4]}
         </Link>
 
         <div className="flex justify-center">
@@ -128,7 +133,7 @@ const Navbar = () => {
             href="/Contact"
             className="bg-blue-400 text-white hover:bg-blue-800 ml-5 mb-3 px-3 py-1 rounded"
           >
-            Contact Me
+            {navItems[5]}
           </Link>
         </div>
       </div>
@@ -146,7 +151,7 @@ const Navbar = () => {
               toggleMobileMenu();
             }}
           >
-            Home
+            {navItems[0]}
           </Link>
 
           {/* Portfolio */}
@@ -161,7 +166,7 @@ const Navbar = () => {
                 toggleMobileMenu();
               }}
             >
-              Portfolio
+              {navItems[1]}
             </Link>
           </div>
 
@@ -176,7 +181,7 @@ const Navbar = () => {
                 handleLinkClick("Services");
               }}
             >
-              Services
+              {navItems[2]}
             </Link>
           </div>
 
@@ -192,7 +197,7 @@ const Navbar = () => {
                 toggleBlogNav();
               }}
             >
-              Blogs
+              {navItems[3]}
             </Link>
             {showMobileBlogNav && (
               <ul className="relative left-0 mt-2 text-sm px-5 bg-black w-full">
@@ -220,7 +225,7 @@ const Navbar = () => {
                 toggleMobileMenu();
               }}
             >
-              Gallery
+              {navItems[4]}
             </Link>
           </div>
 
@@ -235,7 +240,7 @@ const Navbar = () => {
                 toggleMobileMenu();
               }}
             >
-              Contact Me
+              {navItems[5]}
             </Link>
           </div>
         </div>
