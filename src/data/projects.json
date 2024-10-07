@@ -3,36 +3,48 @@
     "title": "Golfpost Fantasy",
     "description": "A fantasy gaming web application developed using SvelteKit and Tailwind CSS, featuring modular components, live data integration via a RESTful API, and core functionalities such as Player and User dashboards, Player Picker, Tournament and League management tools, and user authentication.",
     "buttonText": "Open",
+    "start": "April 2024",
+    "end": "September 2024",
     "link": "https://fantasy.golfpost.com/"
   },
   {
     "title": "My Personal Website.",
     "description": "A professional portfolio with Next.js and Tailwind CSS, featuring a responsive design, blog, comprehensive portfolio, client testimonials, and services. User-centric with a dark theme, it's an effective platform for showcasing work and attracting clients.",
-    "buttonText": "Open Code",
+    "buttonText": "View Code",
+    "start": " January 2024",
+    "end": "Active",
     "link": "https://github.com/borneelphukan/borneel.phukan"
+  },
+  {
+    "title": "BFit Fitness App",
+    "description": "A cross-platform fitness mobile app currently being build with Nuxt.js, Typescript and Tailwind. Uses MongoDB and Nodejs for the backend functionalities, and currently under development",
+    "buttonText": "View Code",
+    "start": "August 2024",
+    "end": "Active",
+    "link": "https://github.com/borneelphukan/bfit-app.git"
   },
   {
     "title": "BDesign Corporate Theme Template",
     "description": "Introducing my Next.js and TailwindCSS powered BDesign Corporate Website Template: A dynamic and visually appealing solution for businesses of all sizes. With customizable components and Responsive web views, this template empowers you to create a professional online presence effortlessly.",
     "buttonText": "Open",
+    "start": "September 2023",
+    "end": "Active",
     "link": "https://bdesign-corporate.netlify.app/"
   },
   {
     "title": "BShop E-Commerce Website Template",
     "description": "Introducing BShop Ecommerce Template – the ultimate solution for your online store. Built with Next.js, TailwindCSS, and Typescript, it offers a sleek design and seamless performance. Elevate your E-Commerce game effortlessly, with BShop – where style meets functionality for a standout online shopping experience.",
     "buttonText": "Open",
+    "start": "May 2024",
+    "end": "Active",
     "link": "https://bshop-ecommerce.netlify.app/"
-  },
-  {
-    "title": "Movie Database Management",
-    "description": "Built with PHP and Postgresql, this user-friendly application features a personalized recommended movie section based on user preferences, along with comprehensive details about movies, cast, genres, and more. Explore movies with this intuitive interface tailored to enhance your movie- experience.",
-    "buttonText": "Open Code",
-    "link": "https://github.com/borneelphukan/Movie-Recommender-System.git"
   },
   {
     "title": "Facial Emotion Recognition",
     "description": "A Facial Emotion Recognition project, developed using Tensorflow and OpenCV with Python. This versatile application is trained using the FER2013 dataset and accurately identifies the 7 major emotions from the dataset. Working on its deployment as an API for seamless integration into various platforms and services.",
-    "buttonText": "Open Code",
+    "buttonText": "View Code",
+    "start": "October 2019",
+    "end": "January 2020",
     "link": "https://github.com/borneelphukan/Facial-Emotion-Recognition.git"
   }
 ]

@@ -2,13 +2,15 @@ import { useState } from "react";
 
 type Props = {
   title: string;
+  start: string;
+  end: string;
   description: string;
   buttonText: string;
   link: string;
 };
 
 const ProjectCard = (props: Props) => {
-  const { title, description, buttonText, link } = props;
+  const { title, start, end, description, buttonText, link } = props;
   const [expanded, setExpanded] = useState(false);
 
   const toggleDescription = () => {
@@ -21,8 +23,11 @@ const ProjectCard = (props: Props) => {
 
   return (
     <div className="shadow-md border rounded-xl p-10 hover:shadow-xl transition duration-300 ease-in-out">
-      <div className="text-xl font-bold mb-2">{title}</div>
-      <div className="mb-4">
+      <div className="text-md font-bold">{title}</div>
+      <time className="text-md font-sm text-blue-500">
+        {start} - {end}
+      </time>
+      <div className="mb-4 mt-2">
         {expanded ? description : `${description.slice(0, 150)}... `}
         <span
           className="text-blue-500 cursor-pointer"
