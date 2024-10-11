@@ -15,6 +15,6 @@
     "description": "The dominance of centralized web infrastructures by large tech corporations raises concerns over data security and user control, underscoring the need for a decentralized web. This thesis addresses trust evaluation in decentralized web applications using the ConTED framework, which assesses data trustworthiness through Content, Context, and Behavioral Analysis. Focusing on Content Analysis, it explores how Large Language Models (LLMs) can analyze third-party data by evaluating relevance, accuracy, and topic classification. The study aims to establish effective content analysis methods for trust awareness in decentralized systems, demonstrating feasibility through an implementation and evaluation with example use cases.",
     "showPublication": "Open",
     "citations": 0,
-    "publicationLink": "https://link.springer.com/chapter/10.1007/978-981-16-1056-1_38"
+    "publicationLink": "https://vsr.informatik.tu-chemnitz.de/edu/studentprojects/2024/020/"
   }
 ]
