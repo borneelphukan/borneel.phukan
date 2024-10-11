@@ -9,13 +9,12 @@
     ]
   },
   {
-    "avatar": "/experience/Golfpost.jpg",
-    "project": "Golfpost Fantasy",
-    "company": "Golfpost AG, Cologne 🇩🇪",
-    "duration": "April 2024 - September 2024",
+    "avatar": "/assets/icons/lab.svg",
+    "project": "Oyester - A Properietary Project",
+    "company": "Early Stage Startup, Bhubaneswar",
+    "duration": "October 2024 - Active",
     "info": [
-      "A fantasy gaming app made using SvelteKit and Tailwind, with reusable components and live API data; developed core features like Player and User dashboards, Player Picker, and tools for Tournament and League management with user authentication."
-    ],
-    "link": "https://fantasy.golfpost.com/"
+      "Developing the frontend of a B2C Data aggregration application, a properietary early stage startup project using the MERN stack."
+    ]
   }
 ]

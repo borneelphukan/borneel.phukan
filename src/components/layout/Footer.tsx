@@ -28,7 +28,6 @@ const Footer = () => {
                 className="h-10 w-auto"
               />
             </h2>
-            {/* Your content for column 1 */}
             <p className="text-sm text-left text-slate-300 leading-6">
               {t("welcome")}
             </p>
@@ -37,8 +36,7 @@ const Footer = () => {
           {/* Column 2 */}
           <div className="mb-8">
             <h2 className="text-xl font-semibold mb-2">{links[0][0]}</h2>
-            {/* Your content for column 2 */}
-            <ul className="text-left px-24">
+            <ul className="text-center md:text-left px-6 md:px-24">
               <li className="py-2">
                 <Link
                   className="text-sm text-slate-300 hover:text-blue-400"
@@ -85,8 +83,7 @@ const Footer = () => {
           {/* Column 3 */}
           <div className="mb-8">
             <h2 className="text-xl font-semibold mb-4">{links[1][0]}</h2>
-            {/* Your content for column 3 */}
-            <ul className="text-left px-24">
+            <ul className="text-center md:text-left px-6 md:px-24">
               <li className="py-1">
                 <Link
                   className="text-sm text-slate-300 hover:text-blue-400"
@@ -133,7 +130,6 @@ const Footer = () => {
                 <FontAwesomeIcon
                   className="mx-3 my-3 hover:text-blue-400"
                   icon={faInstagram}
-                  target="_blank"
                   size="2x"
                 />
               </a>
@@ -144,7 +140,6 @@ const Footer = () => {
                 <FontAwesomeIcon
                   className="mx-3 my-3 hover:text-blue-400"
                   icon={faLinkedin}
-                  target="_blank"
                   size="2x"
                 />
               </a>
@@ -152,7 +147,6 @@ const Footer = () => {
                 <FontAwesomeIcon
                   className="mx-3 my-3 hover:text-blue-400"
                   icon={faGithub}
-                  target="_blank"
                   size="2x"
                 />
               </a>
@@ -160,7 +154,6 @@ const Footer = () => {
                 <FontAwesomeIcon
                   className="mx-3 my-3 hover:text-blue-400"
                   icon={faEnvelope}
-                  target="_blank"
                   size="2x"
                 />
               </a>

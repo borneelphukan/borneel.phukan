@@ -1,8 +1,38 @@
-import React from "react";
+import "intersection-observer";
+import React, { useEffect, useRef } from "react";
 import Image from "next/image";
 import experiences from "@/data/experiences.json";
 
 const Experience = () => {
+  const cardsRef = useRef<HTMLDivElement[]>([]);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("opacity-100", "translate-y-0");
+            entry.target.classList.remove("opacity-0", "translate-y-10");
+          } else {
+            entry.target.classList.add("opacity-0", "translate-y-10");
+            entry.target.classList.remove("opacity-100", "translate-y-0");
+          }
+        });
+      },
+      { threshold: 0.1 }
+    );
+
+    cardsRef.current.forEach((card) => {
+      if (card) observer.observe(card); // Ensure card is not null
+    });
+
+    return () => {
+      cardsRef.current.forEach((card) => {
+        if (card) observer.unobserve(card); // Add null check here
+      });
+    };
+  }, []);
+
   return (
     <div className="max-w-8xl text-lg p-5 mt-10" id="Experience">
       <h1 className="text-4xl text-center font-semibold mb-3">
@@ -12,7 +42,8 @@ const Experience = () => {
         {experiences.map((experience, index) => (
           <div
             key={index}
-            className={`relative flex flex-col md:flex-row items-center justify-between md:justify-normal md:odd:flex-row-reverse group is-active transition-transform ease-in-out duration-300 transform `}
+            ref={(el) => (cardsRef.current[index] = el as HTMLDivElement)}
+            className="relative flex flex-col md:flex-row items-center justify-between md:justify-normal md:odd:flex-row-reverse group opacity-0 translate-y-10 transition-opacity transform duration-700 ease-in-out"
           >
             <div className="my-10 flex items-center justify-center w-20 h-20 md:w-10 md:h-10 rounded-full border-2 border-slate-400 shadow shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2">
               <Image
