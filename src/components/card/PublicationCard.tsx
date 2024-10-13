@@ -7,12 +7,20 @@ type Props = {
   publicationDate: string;
   description: string;
   showPublication: string;
-  citations: number;
+  citations?: number;
   publicationLink: string;
 };
 
 const PublicationCard = (props: Props) => {
-  const {paperName, publisherName, publicationDate, description, showPublication, citations, publicationLink} = props;
+  const {
+    paperName,
+    publisherName,
+    publicationDate,
+    description,
+    showPublication,
+    citations,
+    publicationLink,
+  } = props;
   const [expanded, setExpanded] = useState(false);
 
   const toggleDescription = () => {
@@ -22,7 +30,7 @@ const PublicationCard = (props: Props) => {
   const openPublicationLink = () => {
     window.open(publicationLink, "_blank");
   };
-  
+
   return (
     <div className="shadow-md border rounded-xl p-8 hover:shadow-xl transition duration-300 ease-in-out">
       {/* First Row */}
@@ -47,8 +55,8 @@ const PublicationCard = (props: Props) => {
         </span>
       </div>
 
-      {/* Fourth Row */}
-      <div className="flex mt-4">
+      {/* Fourth Row with Button and Citations */}
+      <div className="flex mt-4 items-center">
         <button
           className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-3xl"
           onClick={openPublicationLink}
@@ -56,9 +64,9 @@ const PublicationCard = (props: Props) => {
           {showPublication}
           <FontAwesomeIcon className="mx-3" icon={"function"} />
         </button>
-      </div>
-      <div className="flex mt-4">
-        <div className="ml-auto">{citations} Citations</div>
+        {citations !== undefined && (
+          <div className="ml-auto">{citations} Citations</div>
+        )}
       </div>
     </div>
   );

@@ -44,7 +44,7 @@ const Projects = () => {
               key={index}
               ref={(el) => (cardsRef.current[index] = el)}
               className="transform transition-opacity duration-700 ease-in-out opacity-0 translate-y-10"
-              style={{ transitionDelay: `${index * 0.3}s` }}
+              style={{ transitionDelay: `${index * 0.2}s` }}
             >
               <ProjectCard {...project} />
             </div>

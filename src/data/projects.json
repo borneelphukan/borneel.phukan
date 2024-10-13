@@ -10,7 +10,7 @@
   {
     "title": "My Personal Website.",
     "description": "A professional portfolio with Next.js and Tailwind CSS, featuring a responsive design, blog, comprehensive portfolio, client testimonials, and services. User-centric with a dark theme, it's an effective platform for showcasing work and attracting clients.",
-    "buttonText": "View Code",
+    "buttonText": "Code",
     "start": " January 2024",
     "end": "Active",
     "link": "https://github.com/borneelphukan/borneel.phukan"
@@ -18,7 +18,7 @@
   {
     "title": "BFit Fitness App",
     "description": "A cross-platform fitness mobile app currently being build with Nuxt.js, Typescript and Tailwind. Uses MongoDB and Nodejs for the backend functionalities, and currently under development",
-    "buttonText": "View Code",
+    "buttonText": "Code",
     "start": "August 2024",
     "end": "Active",
     "link": "https://github.com/borneelphukan/bfit-app.git"
@@ -42,7 +42,7 @@
   {
     "title": "Facial Emotion Recognition",
     "description": "A Facial Emotion Recognition project, developed using Tensorflow and OpenCV with Python. This versatile application is trained using the FER2013 dataset and accurately identifies the 7 major emotions from the dataset. Working on its deployment as an API for seamless integration into various platforms and services.",
-    "buttonText": "View Code",
+    "buttonText": "Code",
     "start": "October 2019",
     "end": "January 2020",
     "link": "https://github.com/borneelphukan/Facial-Emotion-Recognition.git"

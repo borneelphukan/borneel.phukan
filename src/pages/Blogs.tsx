@@ -1,6 +1,6 @@
 import React from "react";
 import BlogBanner from "@/components/Blog/BlogBanner";
-import BlogHomeCrumb from "@/components/Blog/BlogHomeCrumb";
+import HomeCrumb from "@/components/Blog/HomeCrumb";
 import DefaultLayout from "@/layout/DefaultLayout";
 import CategoriesTab from "@/components/Home/RightPanel";
 
@@ -8,7 +8,7 @@ const Blogs = () => {
   return (
     <DefaultLayout>
       <BlogBanner>
-        <BlogHomeCrumb />
+        <HomeCrumb />
       </BlogBanner>
       <CategoriesTab />
     </DefaultLayout>

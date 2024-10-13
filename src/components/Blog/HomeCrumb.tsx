@@ -1,7 +1,7 @@
 import React from "react";
 import Link from "next/link";
 
-const BlogHomeCrumb = () => {
+const HomeCrumb = () => {
   return (
     <nav className="flex" aria-label="Breadcrumb">
       <ol className="container inline-flex items-center space-x-1 md:space-x-3 md:pl-20 pl-4">
@@ -18,4 +18,4 @@ const BlogHomeCrumb = () => {
   );
 };
 
-export default BlogHomeCrumb;
+export default HomeCrumb;
