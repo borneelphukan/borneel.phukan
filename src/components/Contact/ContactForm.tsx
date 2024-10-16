@@ -2,9 +2,10 @@ import React, { useState } from "react";
 import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import emailjs from "emailjs-com";
-import InputField from "../../components/common/InputField"; // Adjust the path based on where InputField is located
+import InputField from "../../components/common/InputField";
 import TextareaWithIcon from "../common/TextArea";
 import { useTranslation } from "react-i18next";
+import MapWithLocation from "@/services/MapWithLocation";
 
 const ContactForm = () => {
   const { t } = useTranslation();
@@ -70,43 +71,41 @@ const ContactForm = () => {
   };
 
   return (
-    <div className=" justify-center my-3">
-      <div className="container px-6 py-10 mx-auto mt-8">
-        {/* Flex container for the form and the map */}
-        <div className="flex flex-col lg:flex-row justify-between items-center space-y-8 lg:space-y-0 lg:space-x-8">
-          {/* Contact Form */}
+    <div className="flex justify-center my-6 px-4">
+      <div className="container mx-auto">
+
+        <div className="flex flex-col lg:flex-row lg:space-x-8 space-y-8 lg:space-y-0">
+
           <div className="w-full lg:w-1/2">
-            <h2 className="text-3xl font-bold text-center lg:text-left mb-8">
+            <h2 className="text-3xl font-bold text-center lg:text-left mb-6">
               {contactFormHeader}
             </h2>
             <form
               onSubmit={handleSubmit}
-              className="w-full border shadow-lg rounded px-8 pt-6 pb-8 mb-4 mx-auto"
+              className="w-full bg-white border shadow-lg rounded px-6 py-8"
             >
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
-                <div>
-                  {/* First Name Input */}
-                  <InputField
-                    label="First Name"
-                    placeholder="Enter your first name"
-                    value={formData.firstName}
-                    onChange={handleChange}
-                    id="firstName"
-                  />
-                </div>
-                <div>
-                  {/* Last Name Input */}
-                  <InputField
-                    label="Last Name"
-                    placeholder="Enter your last name"
-                    value={formData.lastName}
-                    onChange={handleChange}
-                    id="lastName"
-                  />
-                </div>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                {/* First Name Input */}
+                <InputField
+                  label="First Name"
+                  placeholder="Enter your first name"
+                  value={formData.firstName}
+                  onChange={handleChange}
+                  id="firstName"
+                />
+
+                {/* Last Name Input */}
+                <InputField
+                  label="Last Name"
+                  placeholder="Enter your last name"
+                  value={formData.lastName}
+                  onChange={handleChange}
+                  id="lastName"
+                />
               </div>
-              <div className="mb-4">
-                {/* Email Address Input */}
+
+              {/* Email Address Input */}
+              <div className="mb-6">
                 <InputField
                   label="Email Address"
                   placeholder="Enter your email"
@@ -116,8 +115,9 @@ const ContactForm = () => {
                   inputType="email"
                 />
               </div>
+
+              {/* Message Input */}
               <div className="mb-6">
-                {/* Message Input */}
                 <label
                   className="block text-sm font-bold mb-2"
                   htmlFor="message"
@@ -129,13 +129,15 @@ const ContactForm = () => {
                   onChange={handleChange}
                   id="message"
                   placeholder="Your message here"
-                  icon="left" // You can change this to "right" or remove it
-                  type="" // Can be "success", "error", "disabled", or empty
+                  icon="left"
+                  type=""
                 />
               </div>
-              <div className="flex items-center justify-between">
+
+              {/* Submit Button */}
+              <div className="flex justify-center lg:justify-start">
                 <button
-                  className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+                  className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-6 rounded focus:outline-none focus:shadow-outline"
                   type="submit"
                 >
                   Send
@@ -144,11 +146,10 @@ const ContactForm = () => {
             </form>
             <ToastContainer />
           </div>
-
-          {/* Enable Map when card active */}
-          {/* <div className="w-full lg:w-1/2">
+          {/* Map Section */}
+          <div className="w-full lg:w-1/2">
             <MapWithLocation />
-          </div> */}
+          </div>
         </div>
       </div>
     </div>
