@@ -11,8 +11,9 @@ const fixedPosition = { lat: 50.8170964, lng: 12.9357714 };
 const MapWithLocation = () => {
   const { isLoaded, loadError } = useLoadScript({
     googleMapsApiKey: process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY as string,
+    language: "en",
+    region: "US",
   });
-  
 
   if (loadError) return <div>Error loading map</div>;
   if (!isLoaded) return <div>Loading...</div>;
@@ -24,6 +25,7 @@ const MapWithLocation = () => {
           mapContainerStyle={containerStyle}
           center={fixedPosition}
           zoom={15}
+          options={{ mapTypeControl: false, streetViewControl: false }}
         >
           <Marker position={fixedPosition} />
         </GoogleMap>
