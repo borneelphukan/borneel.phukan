@@ -1,17 +1,17 @@
 [
   {
-    "avatar": "/client/avatar-1.jpg",
-    "name": "Hartmut Wiehle",
-    "comment": " ''Mr. Phukan played an integral role in the development and relaunching of our new dynamic company website. He designed, developed and launched a fault-proof website with all its tools and databases within a short time-frame, all while keeping a close cooperation with the management. His agile way of working is indeed commendable and I highly recommend him to anyone looking for IT expertise ''",
+    "avatar": "/client/avatar-4.jpg",
+    "name": "Matthias Gräf",
+    "comment": " Mr Pukhan has exceptional abilities in the product development field which he provided during his tenure at Golf Post in an outstanding way. He helped us to find new approaches to our ongoing development tasks and practices. His dedicated performance and strong endurance were very important and a great benefit for the company.",
     "stars": 5,
-    "role": "CEO, V4C Management Consulting .GmbH"
+    "role": "CEO, Golfpost AG"
   },
   {
-    "avatar": "/client/avatar-2.jpeg",
-    "name": "Rahul Bordoloi",
-    "comment": "Borneel's exceptional talents have made a significant impact on our team's productivity. Whether in coding competitions, hackathons, or as a mentor in data science, he consistently stands out and ensures everyone's satisfaction. Borneel is my top recommendation, both as a team member and a leader.",
+    "avatar": "/client/avatar-1.jpg",
+    "name": "Hartmut Wiehle",
+    "comment": "Mr. Phukan played an integral role in developing and relaunching our new dynamic company website. From designing to deploying a fault-proof website with all its tools and databases within a short time-frame, he completed it all while keeping a close cooperation with the management. Borneel's skills are highly recommended.",
     "stars": 5,
-    "role": "Software Engineer, FinanceOps"
+    "role": "CEO, V4C Management Consulting .GmbH"
   },
   {
     "avatar": "/client/avatar-3.png",

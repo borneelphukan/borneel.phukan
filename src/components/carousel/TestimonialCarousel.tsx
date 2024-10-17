@@ -26,10 +26,10 @@ export const TestimonialCarousel = () => {
     dots: true,
     infinite: true,
     speed: 500,
-    slidesToShow: testimonialsData.length,
+    slidesToShow: 3,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 5000,
+    autoplaySpeed: 4000,
     responsive: [
       {
         breakpoint: 768,
