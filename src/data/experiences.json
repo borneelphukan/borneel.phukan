@@ -29,21 +29,23 @@
     "type": "Working Student",
     "skills": [
       "Next.js, ",
-      "Javascript, ",
+      "TypeScript, ",
       "TailwindCSS, ",
       "REST API, ",
+      "PostgreSQL, ",
+      "MOngoDB",
       "Wordpress, ",
-      "Microservices, ",
-      "MySQL, ",
+      "Docker, ",
+      "AWS, ",
       "Figma, ",
       "Git"
     ],
     "location": "Munich, Germany",
     "description": [
-      "Worked in the design, development and deployment of UI and a MySQL database for a new company website",
-      "Developed a REST API that fetches dynamic information from a headless CMS to populate important website contents",
-      "Worked in data migration from a legacy WordPress site to a Next.js web application, with a focus on microservice software architecture",
-      "Designed an end-to-end Figma prototype for a management consulting mobile application"
+      "Worked on the design and development of large scale dynamic company website, including blog features, user and admin dashboards, customer support, and user authentication",
+      "Designed database schemas, developed and hosted relational and non-relational databases on Amazon AWS for managing user and company data, each with a distinct REST API endpoint for accessibility",
+      "Leveraged a microservice architecture with Docker for containerising Frontend, APIs, and Databases for enhanced scalability and faster deployment of the company website and its features",
+      "Maintained and managed a legacy company website on Wordpress, in communication with management to deploy custom plugins, performance optimisation and regular updates"
     ]
   },
   {
