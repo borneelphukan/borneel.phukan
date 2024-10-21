@@ -33,6 +33,7 @@
       "Git"
     ],
     "location": "Cologne, Germany",
+    "reference": "/docs/Golfpost.pdf",
     "description": [
       "Developed a fantasy gaming web application using SvelteKit and Tailwind, creating components and modular functionalities, and integrating a RESTful API with live data",
       "Developed core features for the fantasy application including Player and User dashboards, Player Picker, Tournament and League management tools and user authentication",
@@ -42,7 +43,7 @@
   },
   {
     "image": "/experience/V4C.png",
-    "title": "Fullstack Developer",
+    "title": "Web Developer",
     "date": "March 2023 - July 2023",
     "company": "V4C Management Consulting",
     "type": "Working Student",
@@ -60,6 +61,7 @@
       "Git"
     ],
     "location": "Munich, Germany",
+    "reference": "/docs/V4C.pdf",
     "description": [
       "Worked on the design and development of large scale dynamic company website, including blog features, user and admin dashboards, customer support, and user authentication",
       "Designed database schemas, developed and hosted relational and non-relational databases on Amazon AWS for managing user and company data, each with a distinct REST API endpoint for accessibility",
@@ -83,6 +85,7 @@
       "Git"
     ],
     "location": "Leipzig, Germany",
+    "reference": "/docs/LeanERA.pdf",
     "description": [
       "Supported Frontend Development team by working on design, development, and implementation of Progressive Web Application (PWA) and Mobile Applications using Vue, TailwindCSS and Ionic Framework.",
       "Collaborated with Design, Project Management and QA Team during groom meetings to develop and implement components, functionalities, and features based on customer requirements.",

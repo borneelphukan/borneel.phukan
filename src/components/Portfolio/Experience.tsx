@@ -80,6 +80,13 @@ const Experience = () => {
                   <h2 className="font-base text-slate-600 whitespace-nowrap">
                     {experience.location}
                   </h2>
+                  <a
+                    href={experience.reference}
+                    className="font-semibold text-sm text-blue-600 text-right whitespace-nowrap underline underline-offset-4"
+                    target="_blank"
+                  >
+                    {experience.reference ? "Reference Letter" : ""}
+                  </a>
                 </div>
               </div>
               <div>
