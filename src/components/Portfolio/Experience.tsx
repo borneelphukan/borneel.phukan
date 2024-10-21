@@ -45,11 +45,15 @@ const Experience = () => {
             ref={(el) => (cardsRef.current[index] = el as HTMLDivElement)}
             className="relative flex flex-col md:flex-row items-center justify-between md:justify-normal md:odd:flex-row-reverse group opacity-0 translate-y-10 transition-opacity transform duration-700 ease-in-out"
           >
-            <div className="my-10 flex items-center justify-center w-20 h-20 md:w-10 md:h-10 rounded-full border-2 border-slate-400 shadow shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2">
+            <div className="my-10 flex items-center justify-center w-24 h-24 md:w-10 md:h-10 rounded-full border-2 border-slate-400 shadow shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2">
               <Image
                 height={100}
                 width={100}
-                src={experience.image}
+                src={
+                  experience.image
+                    ? experience.image
+                    : "/assets/icons/briefcase.svg"
+                }
                 alt={experience.company}
                 className="rounded-full w-full h-full"
               />
