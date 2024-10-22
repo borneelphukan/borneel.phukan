@@ -100,19 +100,25 @@ export const getStaticProps: GetStaticProps = async (context) => {
     `public/blogs/${categoryInfo.folder}`
   );
 
+  // Check if the directory exists
   if (!fs.existsSync(blogDir)) {
-    console.error(`Directory for category "${category}" not found: ${blogDir}`);
+    console.warn(
+      `Directory for category "${category}" does not exist: ${blogDir}`
+    );
     return {
-      notFound: true,
+      props: {
+        category: categoryInfo.display,
+        blogs: [], // Return an empty array if directory does not exist
+      },
     };
   }
 
   let blogs: {
     title: string;
     author: string;
+    slug: string;
     date: string;
     description: string;
-    slug: string;
   }[] = [];
 
   const files = fs.readdirSync(blogDir);
@@ -137,7 +143,7 @@ export const getStaticProps: GetStaticProps = async (context) => {
   return {
     props: {
       category: categoryInfo.display,
-      blogs: blogs || [], // Ensure an empty array is returned if no blogs are found
+      blogs: blogs || [],
     },
   };
 };
