@@ -123,6 +123,7 @@ export const getStaticProps: GetStaticProps = async (context) => {
 
   const files = fs.readdirSync(blogDir);
 
+  // Check if the directory contains files (i.e., it's not empty)
   if (files.length > 0) {
     blogs = files.map((filename) => {
       const filePath = path.join(blogDir, filename);
@@ -138,6 +139,8 @@ export const getStaticProps: GetStaticProps = async (context) => {
         slug: filename.replace(".md", ""),
       };
     });
+  } else {
+    console.warn(`Directory "${blogDir}" is empty.`);
   }
 
   return {
