@@ -8,7 +8,7 @@ const TechCrumbs = () => {
         <li className="inline-flex items-center">
           <Link
             href="/Blogs"
-            className="inline-flex items-center text-sm font-normal hover:text-white dark:text-gray-400 dark:hover:text-orange"
+            className="inline-flex items-center text-sm font-bold hover:text-white dark:text-gray-300 dark:hover:text-orange"
           >
             Home
           </Link>
@@ -30,9 +30,12 @@ const TechCrumbs = () => {
                 d="m1 9 4-4-4-4"
               />
             </svg>
-            <p className="ml-1 text-sm font-normal md:ml-2 dark:hover:text-orange">
+            <Link
+              href="/Blogs"
+              className="ml-1 text-sm font-bold md:ml-2 dark:hover:text-orange"
+            >
               Tech Blogs
-            </p>
+            </Link>
           </div>
         </li>
       </ol>

@@ -32,13 +32,17 @@ const GalleryComponent = ({ images }: Props) => {
           key={index}
           className="relative group cursor-zoom-in"
           onClick={() => openImage(index)}
+          style={{
+            animation: `fadeIn 1s ease-in-out forwards`,
+            animationDelay: `${index * 0.2}s`, // Staggered delay for each image
+          }}
         >
           <Image
             width={imageWidth}
             height={imageHeight}
             src={src}
             alt={alt}
-            className="object-cover w-full h-full transition-transform transform group-hover:scale-105 p-1 animate-fadeIn" // Added fadeIn animation
+            className="object-cover w-full h-full transition-transform transform group-hover:scale-105 p-1"
           />
           <div className="absolute bottom-0 left-0 right-0 bg-black bg-opacity-50 text-white p-2 transition-opacity opacity-0 group-hover:opacity-100">
             {caption}
@@ -48,8 +52,6 @@ const GalleryComponent = ({ images }: Props) => {
 
       {enlargedIndex !== null && (
         <div className="fixed top-0 left-0 w-full h-full bg-black bg-opacity-80 flex items-center justify-center animate-fadeIn">
-          {" "}
-          {/* Added fadeIn animation */}
           <div className="relative cursor-zoom-out" onClick={closeImage}>
             <Image
               width={imageWidth}
