@@ -19,8 +19,7 @@ type props = {
   }[];
 };
 
-const BlogCategoryPage = ({ category, blogs = [] }: props) => {
-  // If no blogs are available, return the fallback message without rendering BlogCard
+const BlogSection = ({ category, blogs = [] }: props) => {
   if (blogs.length === 0) {
     return (
       <DefaultLayout>
@@ -45,7 +44,6 @@ const BlogCategoryPage = ({ category, blogs = [] }: props) => {
     );
   }
 
-  // Render BlogCards if there are blogs
   return (
     <DefaultLayout>
       <BlogBanner>
@@ -108,7 +106,7 @@ export const getStaticProps: GetStaticProps = async (context) => {
     return {
       props: {
         category: categoryInfo.display,
-        blogs: [], // Return an empty array if directory does not exist
+        blogs: [],
       },
     };
   }
@@ -123,7 +121,6 @@ export const getStaticProps: GetStaticProps = async (context) => {
 
   const files = fs.readdirSync(blogDir);
 
-  // Check if the directory contains files (i.e., it's not empty)
   if (files.length > 0) {
     blogs = files.map((filename) => {
       const filePath = path.join(blogDir, filename);
@@ -151,4 +148,4 @@ export const getStaticProps: GetStaticProps = async (context) => {
   };
 };
 
-export default BlogCategoryPage;
+export default BlogSection;

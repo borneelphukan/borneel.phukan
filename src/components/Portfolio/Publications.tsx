@@ -1,5 +1,5 @@
 import "intersection-observer";
-import React, { useEffect, useRef } from "react";
+import { useEffect, useRef } from "react";
 import PublicationCard from "../card/PublicationCard";
 import publicationsData from "@/data/publications.json";
 

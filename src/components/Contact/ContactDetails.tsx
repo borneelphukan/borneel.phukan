@@ -1,4 +1,3 @@
-import React from "react";
 import ContactCard from "../card/ContactCard";
 import { useTranslation } from "react-i18next";
 

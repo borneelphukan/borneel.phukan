@@ -1,5 +1,5 @@
 import "intersection-observer"; // Import the polyfill for older browsers if needed
-import React, { useEffect, useRef } from "react";
+import { useEffect, useRef } from "react";
 import ProjectCard from "../card/ProjectCard";
 import projectsData from "@/data/projects.json";
 

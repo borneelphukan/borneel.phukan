@@ -1,24 +1,20 @@
-import React from "react";
 import Link from "next/link";
 import { useRouter } from "next/router";
 
 const BreadCrumbs = () => {
   const router = useRouter();
-  const { category } = router.query; // Extract the category from the URL
+  const { category } = router.query;
 
-  // Mapping category slug to display title
   const categoryMapping: Record<string, string> = {
     tech: "Tech Blogs",
     travel: "Travel Blogs",
     career: "Career Talks",
   };
 
-  // Ensure category is always lowercased to avoid case sensitivity issues
   const normalizedCategory = category
     ? (category as string).toLowerCase()
     : null;
 
-  // Get the title for the current category based on normalized category
   const categoryTitle = normalizedCategory
     ? categoryMapping[normalizedCategory] || "Blogs"
     : "";
@@ -29,8 +25,8 @@ const BreadCrumbs = () => {
         {/* Home Link */}
         <li className="inline-flex items-center">
           <Link
-            href="/blogs"
-            className="inline-flex items-center text-sm font-bold hover:text-white text-white dark:hover:text-orange"
+            href="/"
+            className="inline-flex items-center text-sm font-semibold hover:text-white text-white dark:hover:text-orange"
           >
             Home
           </Link>
@@ -56,7 +52,7 @@ const BreadCrumbs = () => {
             </svg>
             <Link
               href="/blogs"
-              className="ml-1 text-sm font-bold md:ml-2 text-white"
+              className="ml-1 text-sm font-semibold md:ml-2 text-white"
             >
               Blogs
             </Link>
@@ -83,7 +79,7 @@ const BreadCrumbs = () => {
             </svg>
             <Link
               href={`/blogs/${normalizedCategory}`}
-              className="ml-1 text-sm font-bold md:ml-2 text-white"
+              className="ml-1 text-sm font-semibold md:ml-2 text-white"
             >
               {categoryTitle}
             </Link>

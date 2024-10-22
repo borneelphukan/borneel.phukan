@@ -1,8 +1,7 @@
-import React from "react";
 import DefaultLayout from "@/layout/DefaultLayout";
 import Banner from "@/components/Home/Banner";
 import AboutMe from "@/components/Home/AboutMe";
-import CategoriesTab from "@/components/Home/RightPanel";
+import Categories from "@/components/Home/RightPanel";
 
 const Home = () => {
   return (
@@ -13,7 +12,7 @@ const Home = () => {
           <AboutMe />
         </div>
         <div className="mb-10 mx-auto md:w-1/5 lg:w-1/5 md:ml-5 lg:ml-5 ">
-          <CategoriesTab />
+          <Categories />
         </div>
       </div>
     </DefaultLayout>

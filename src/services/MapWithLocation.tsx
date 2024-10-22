@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from "react";
+import { useEffect, useRef } from "react";
 import { GoogleMap, useLoadScript } from "@react-google-maps/api";
 import CircularScrollProgressBar from "@/components/common/CircularProgressBar";
 

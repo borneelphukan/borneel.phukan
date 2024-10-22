@@ -1,5 +1,5 @@
 import "intersection-observer"; // Import the polyfill for older browsers if needed
-import React, { useEffect, useRef } from "react";
+import { useEffect, useRef } from "react";
 import Card from "../card/Card";
 import { useTranslation } from "react-i18next";
 

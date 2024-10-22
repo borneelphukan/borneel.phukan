@@ -1,22 +1,21 @@
-import React, { FC } from "react";
 import Head from "next/head";
 import BreadCrumbs from "@/components/BreadCrumb";
 
-type props = {
+type Props = {
   coverImage: string;
   title: string;
   author: string;
-  postedOn: string;
+  date: string;
   content: string;
 };
 
-const BlogLayout: FC<props> = ({
+const BlogLayout = ({
   coverImage,
   title,
   author,
-  postedOn,
+  date,
   content,
-}) => {
+}: Props) => {
   return (
     <div className="min-h-screen relative z-0">
       <Head>
@@ -60,7 +59,7 @@ const BlogLayout: FC<props> = ({
               {author}
             </h4>
             <p className="text-gray-500 text-sm sm:text-base px-10">
-              Posted on {postedOn}
+              Posted on {date}
             </p>
           </div>
 

@@ -1,5 +1,5 @@
 import "intersection-observer"; // Import the polyfill for older browsers if needed
-import React, { useEffect, useRef } from "react";
+import { useEffect, useRef } from "react";
 import FreelanceCard from "../../card/FreelanceCard";
 import freelanceData from "@/data/freelance-data.json";
 import { useTranslation } from "react-i18next";

@@ -1,4 +1,3 @@
-import React from "react";
 import DefaultLayout from "@/layout/DefaultLayout";
 import Experience from "@/components/Portfolio/Experience";
 import Education from "@/components/Portfolio/Education";

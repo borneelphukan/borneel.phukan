@@ -1,4 +1,3 @@
-import React from "react";
 import DefaultLayout from "@/layout/DefaultLayout";
 import GalleryComponent from "@/components/Gallery/GalleryComponent";
 import GalleryStatement from "@/components/Gallery/GalleryStatement";

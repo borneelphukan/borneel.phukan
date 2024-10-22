@@ -1,5 +1,5 @@
 import "intersection-observer";
-import React, { useEffect, useRef } from "react";
+import { useEffect, useRef } from "react";
 import Image from "next/image";
 import educations from "@/data/education.json";
 

@@ -8,23 +8,16 @@ import BlogLayout from "@/layout/BlogLayout";
 import { GetStaticProps, GetStaticPaths } from "next";
 import { useRouter } from "next/router";
 
-type props = {
+type Props = {
   coverImage: string;
   title: string;
   author: string;
-  postedOn: string;
+  date: string;
   content: string;
   category: string;
 };
 
-const BlogPost = ({
-  coverImage,
-  title,
-  author,
-  postedOn,
-  content,
-  category,
-}: props) => {
+const BlogPost = ({ coverImage, title, author, date, content }: Props) => {
   const router = useRouter();
 
   if (router.isFallback) {
@@ -37,7 +30,7 @@ const BlogPost = ({
         coverImage={coverImage}
         title={title}
         author={author}
-        postedOn={postedOn}
+        date={date}
         content={content}
       />
     </DefaultLayout>
@@ -50,7 +43,6 @@ export const getStaticPaths: GetStaticPaths = async () => {
 
   let paths: { params: { category: string; slug: string } }[] = [];
 
-  // Generate paths for each markdown file in each category
   categories.forEach((category) => {
     const blogDir = path.join(process.cwd(), `public/blogs/${category}`);
     const files = fs.readdirSync(blogDir);
@@ -58,7 +50,7 @@ export const getStaticPaths: GetStaticPaths = async () => {
     const categoryPaths = files.map((file) => ({
       params: {
         category,
-        slug: file.replace(".md", ""), // Remove .md extension to generate the slug
+        slug: file.replace(".md", ""),
       },
     }));
 
@@ -82,19 +74,18 @@ export const getStaticProps: GetStaticProps = async (context) => {
   }
 
   const fileContents = fs.readFileSync(filePath, "utf8");
-  const { data, content } = matter(fileContents); // Extract front matter and content using gray-matter
+  const { data, content } = matter(fileContents);
 
-  // Convert markdown content to HTML
   const processedContent = await remark().use(html).process(content);
   const contentHtml = processedContent.toString();
 
   return {
     props: {
-      coverImage: `/thumbnails/${slug}.jpg`, // Assuming you store images by slug name
+      coverImage: `/thumbnails/${slug}.jpg`,
       title: data.title,
       author: data.author,
-      postedOn: data.date,
-      content: contentHtml, // Pass the converted HTML content
+      date: data.date,
+      content: contentHtml,
       category,
     },
   };
