@@ -1,6 +1,0 @@
----
-author: ""
-title: ""
-date: ""
-description: ""
----

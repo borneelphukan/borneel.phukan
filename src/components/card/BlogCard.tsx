@@ -1,5 +1,5 @@
-import React from 'react';
-import Image from 'next/image';
+import React from "react";
+import Image from "next/image";
 
 type Props = {
   imageUrl: string;
@@ -10,7 +10,14 @@ type Props = {
   link: string;
 };
 
-const BlogCard = ({ imageUrl, author, date, title, description, link }: Props) => {
+const BlogCard = ({
+  imageUrl,
+  author,
+  date,
+  title,
+  description,
+  link,
+}: Props) => {
   return (
     <div className="container mx-auto my-8 max-w-screen-lg">
       <a href={link}>
@@ -35,12 +42,16 @@ const BlogCard = ({ imageUrl, author, date, title, description, link }: Props) =
               </div>
 
               {/* Title */}
-              <h1 className="text-2xl font-bold my-2 justify-center">{title}</h1>
+              <h1 className="text-2xl font-bold my-2 justify-center">
+                {title}
+              </h1>
               <p className="text-sm font-semibold mb-2">{date}</p>
 
               {/* Description */}
               <p className="justify-center">
-                <div className="inline-flex items-center text-sm font-normal">{description}</div>
+                <div className="inline-flex items-center text-sm font-normal">
+                  {description}
+                </div>
               </p>
             </div>
           </div>

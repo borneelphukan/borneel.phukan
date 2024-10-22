@@ -5,38 +5,61 @@ import matter from "gray-matter";
 import DefaultLayout from "@/layout/DefaultLayout";
 import BlogBanner from "@/components/Blog/BlogBanner";
 import BlogCrumbs from "@/components/BreadCrumb";
-import BlogCard from "@/components/card/BlogCard"; // Import your BlogCard component
+import BlogCard from "@/components/card/BlogCard";
+import Image from "next/image";
 
 type props = {
   category: string;
-  blogs: { author: string; title: string; date: string; description: string; slug: string }[];
+  blogs: {
+    author: string;
+    title: string;
+    date: string;
+    description: string;
+    slug: string;
+  }[];
 };
 
 const BlogCategoryPage = ({ category, blogs = [] }: props) => {
+  // If no blogs are available, return the fallback message without rendering BlogCard
   if (blogs.length === 0) {
     return (
-      <div>
-        <h1>{category} Blogs</h1>
-        <p>No blogs available for this category.</p>
-      </div>
+      <DefaultLayout>
+        <BlogBanner>
+          <BlogCrumbs />
+        </BlogBanner>
+        <div className="container mx-auto text-center p-32">
+          <div className="flex justify-center m-5">
+            <Image
+              src={"/assets/icons/nothing.webp"}
+              alt="Blog Image"
+              width={800}
+              height={800}
+              className="w-32 h-32"
+            />
+          </div>
+          <p className="font-semibold text-base">
+            No blogs available for this category at the moment.
+          </p>
+        </div>
+      </DefaultLayout>
     );
   }
 
+  // Render BlogCards if there are blogs
   return (
     <DefaultLayout>
       <BlogBanner>
         <BlogCrumbs />
       </BlogBanner>
 
-      {/* Replace the <ul> with dynamic BlogCard components */}
       {blogs.map((blog) => (
         <BlogCard
           key={blog.slug}
-          link={`/blogs/${category}/${blog.slug}`} // Dynamically generate the blog link
-          imageUrl={`/thumbnails/${blog.slug}.jpg`} // Assuming your image is stored by slug
+          link={`/blogs/${category.toLowerCase()}/${blog.slug}`}
+          imageUrl={`/thumbnails/${blog.slug}.jpg`}
           author={blog.author}
-          date={blog.date} // Replace with actual date if available
-          title={blog.title} // Title from the blog's metadata
+          date={blog.date}
+          title={blog.title}
           description={blog.description}
         />
       ))}
@@ -59,8 +82,8 @@ export const getStaticProps: GetStaticProps = async (context) => {
 
   const categoryMapping: Record<string, { folder: string; display: string }> = {
     tech: { folder: "tech", display: "Tech" },
-    // travel: { folder: "travel", display: "Travel" },
-    // career: { folder: "career", display: "Career" },
+    travel: { folder: "travel", display: "Travel" },
+    career: { folder: "career", display: "Career" },
   };
 
   const categoryInfo = categoryMapping[category];
@@ -84,7 +107,13 @@ export const getStaticProps: GetStaticProps = async (context) => {
     };
   }
 
-  let blogs: { title: string; author: string; slug: string }[] = [];
+  let blogs: {
+    title: string;
+    author: string;
+    date: string;
+    description: string;
+    slug: string;
+  }[] = [];
 
   const files = fs.readdirSync(blogDir);
 
@@ -96,10 +125,10 @@ export const getStaticProps: GetStaticProps = async (context) => {
       const { data } = matter(fileContents);
 
       return {
-        author: data.author || "Unknown Author",
-        title: data.title || filename.replace(".md", ""),
-        date: data.date || "Unknown Date",
-        description: data.description || "No description",
+        author: data.author || "Borneel Bikash Phukan",
+        title: data.title || "Title to be declared...",
+        date: data.date || "Release date to be declared...",
+        description: data.description || "Blog releasing soon...",
         slug: filename.replace(".md", ""),
       };
     });
@@ -108,7 +137,7 @@ export const getStaticProps: GetStaticProps = async (context) => {
   return {
     props: {
       category: categoryInfo.display,
-      blogs: blogs || [],
+      blogs: blogs || [], // Ensure an empty array is returned if no blogs are found
     },
   };
 };

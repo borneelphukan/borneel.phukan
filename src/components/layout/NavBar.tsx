@@ -104,8 +104,27 @@ const Navbar = () => {
               style={{ top: "80%" }}
             >
               <li className="py-2">
-                <Link className="text-black hover:text-blue-400" href="#">
-                  Developer Blogs
+                <Link
+                  className="text-black hover:text-blue-400"
+                  href="/blogs/tech"
+                >
+                  Tech Blogs
+                </Link>
+              </li>
+              <li className="py-2">
+                <Link
+                  className="text-black hover:text-blue-400"
+                  href="/blogs/travel"
+                >
+                  Travel Blogs
+                </Link>
+              </li>
+              <li className="py-2">
+                <Link
+                  className="text-black hover:text-blue-400"
+                  href="/blogs/career"
+                >
+                  Career Talks
                 </Link>
               </li>
             </ul>
@@ -192,7 +211,7 @@ const Navbar = () => {
         {/* Blogs */}
         <div className="relative">
           <Link
-            href="#"
+            href="/blogs"
             className={`text-white hover:text-blue-400 text-center ${
               selectedLink === "Blogs" ? "selected" : ""
             }`}
@@ -204,13 +223,29 @@ const Navbar = () => {
             {navItems[3]}
           </Link>
           {showMobileBlogNav && (
-            <ul className="relative left-0 mt-2 text-sm px-5 bg-black w-full">
+            <ul className="relative left-0 mt-2 text-sm px-5  w-full">
               <li className="py-2">
                 <Link
-                  href="#"
+                  href="/blogs/tech"
                   className="text-white hover:text-blue-400 text-center"
                 >
-                  Developer Blogs
+                  Tech Blogs
+                </Link>
+              </li>
+              <li className="py-2">
+                <Link
+                  href="/blogs/travel"
+                  className="text-white hover:text-blue-400 text-center"
+                >
+                  Travel Blogs
+                </Link>
+              </li>
+              <li className="py-2">
+                <Link
+                  href="/blogs/career"
+                  className="text-white hover:text-blue-400 text-center"
+                >
+                  Career Talks
                 </Link>
               </li>
             </ul>
