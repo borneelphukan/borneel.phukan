@@ -68,7 +68,8 @@ const BlogCategoryPage = ({ category, blogs = [] }: props) => {
 };
 
 export const getStaticPaths: GetStaticPaths = async () => {
-  const categories = ["tech", "travel", "career"];
+  const categories = ["tech"];
+  // const categories = ["tech", "travel", "career"];
 
   const paths = categories.map((category) => ({
     params: { category },
@@ -82,8 +83,8 @@ export const getStaticProps: GetStaticProps = async (context) => {
 
   const categoryMapping: Record<string, { folder: string; display: string }> = {
     tech: { folder: "tech", display: "Tech" },
-    travel: { folder: "travel", display: "Travel" },
-    career: { folder: "career", display: "Career" },
+    // travel: { folder: "travel", display: "Travel" },
+    // career: { folder: "career", display: "Career" },
   };
 
   const categoryInfo = categoryMapping[category];
@@ -100,7 +101,6 @@ export const getStaticProps: GetStaticProps = async (context) => {
     `public/blogs/${categoryInfo.folder}`
   );
 
-  // Check if the directory exists
   if (!fs.existsSync(blogDir)) {
     console.warn(
       `Directory for category "${category}" does not exist: ${blogDir}`

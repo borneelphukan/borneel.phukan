@@ -45,7 +45,8 @@ const BlogPost = ({
 };
 
 export const getStaticPaths: GetStaticPaths = async () => {
-  const categories = ["tech", "travel", "career"];
+  const categories = ["tech"];
+  // const categories = ["tech", "travel", "career"];
 
   let paths: { params: { category: string; slug: string } }[] = [];
 
