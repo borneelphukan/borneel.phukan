@@ -111,7 +111,7 @@ const Navbar = () => {
                   Tech Blogs
                 </Link>
               </li>
-              <li className="py-2">
+              {/* <li className="py-2">
                 <Link
                   className="text-black hover:text-blue-400"
                   href="/blogs/travel"
@@ -126,7 +126,7 @@ const Navbar = () => {
                 >
                   Career Talks
                 </Link>
-              </li>
+              </li> */}
             </ul>
           )}
         </div>
@@ -232,7 +232,7 @@ const Navbar = () => {
                   Tech Blogs
                 </Link>
               </li>
-              <li className="py-2">
+              {/* <li className="py-2">
                 <Link
                   href="/blogs/travel"
                   className="text-white hover:text-blue-400 text-center"
@@ -247,7 +247,7 @@ const Navbar = () => {
                 >
                   Career Talks
                 </Link>
-              </li>
+              </li> */}
             </ul>
           )}
         </div>
