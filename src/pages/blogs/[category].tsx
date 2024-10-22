@@ -59,8 +59,8 @@ export const getStaticProps: GetStaticProps = async (context) => {
 
   const categoryMapping: Record<string, { folder: string; display: string }> = {
     tech: { folder: "tech", display: "Tech" },
-    travel: { folder: "travel", display: "Travel" },
-    career: { folder: "career", display: "Career" },
+    // travel: { folder: "travel", display: "Travel" },
+    // career: { folder: "career", display: "Career" },
   };
 
   const categoryInfo = categoryMapping[category];

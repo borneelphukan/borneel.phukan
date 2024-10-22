@@ -17,8 +17,8 @@ const CategoryLink: React.FC<Category> = ({ slug, title }) => (
 export const CategoriesTab = () => {
   const blogCategories: Category[] = [
     { slug: "tech", title: "Tech Blogs" },
-    { slug: "travel", title: "Travel Blogs" },
-    { slug: "career", title: "Career Talks" },
+    // { slug: "travel", title: "Travel Blogs" },
+    // { slug: "career", title: "Career Talks" },
   ];
   const { t } = useTranslation();
 
