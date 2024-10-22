@@ -44,22 +44,22 @@ const BlogLayout: FC<BlogLayoutProps> = ({
       </div>
 
       {/* Blog Content */}
-      <div className="container mx-auto z-0 px-4 sm:px-6 md:px-8">
+      <div className="container mx-auto z-0 sm:px-6 md:px-8">
         {/* Blog Texts */}
         <div className="py-10">
           {/* Author and Date */}
           <div className="mb-4">
-            <h4 className="text-xl sm:text-2xl md:text-3xl font-semibold">
+            <h4 className="text-xl sm:text-2xl md:text-3xl font-semibold px-10">
               {author}
             </h4>
-            <p className="text-gray-500 text-sm sm:text-base">
+            <p className="text-gray-500 text-sm sm:text-base px-10">
               Posted on {postedOn}
             </p>
           </div>
 
           {/* Blog Content */}
           <div
-            className="prose max-w-none text-base sm:text-lg md:text-lg lg:text-2xl text-justify"
+            className="container mx-auto px-10 text-base sm:text-lg md:text-lg lg:text-2xl text-justify"
             dangerouslySetInnerHTML={{ __html: content }}
           ></div>
         </div>

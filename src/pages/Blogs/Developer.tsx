@@ -19,7 +19,7 @@ const Blogs = () => {
         description="Uncover the essentials of software architectures in this blog post! As a developer, learn about four key architectures – Monolithic, Service-Oriented, Microservices, and Client-Server. Break down their pros, cons, and ideal scenarios, helping you make informed decisions for your projects. Whether it's a small app or a big IT system, this straightforward analysis will guide you in selecting the perfect architecture for success in software development."
       />
       <BlogCard
-        link="/Blogs/Developer/9_React_Hooks_that_you_should_be_aware_of_as_a_Frontend_Developer"
+        link="https://dev.to/borneelphukan/9-react-hooks-that-you-should-be-aware-of-as-a-frontend-developer-4c2m"
         imageUrl="/thumbnails/hooks.jpeg"
         author="Borneel Bikash Phukan"
         date="1st April, 2024"
