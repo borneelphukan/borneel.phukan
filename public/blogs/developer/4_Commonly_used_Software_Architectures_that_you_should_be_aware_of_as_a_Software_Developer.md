@@ -1,7 +1,7 @@
 ---
 title: "4 Commonly used Software Architectures that you should be aware of as a Software Developer"
 author: "Borneel Bikash Phukan"
-postedOn: "October 22, 2024"
+postedOn: "5th January, 2024"
 coverImage: "/thumbnails/architecture.jpg"
 ---
 
