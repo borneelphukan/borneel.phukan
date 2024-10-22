@@ -1,6 +1,8 @@
 import React, { FC } from "react";
 import Head from "next/head";
-type BlogLayoutProps = {
+import BreadCrumbs from "@/components/BreadCrumb";
+
+type props = {
   coverImage: string;
   title: string;
   author: string;
@@ -8,7 +10,7 @@ type BlogLayoutProps = {
   content: string;
 };
 
-const BlogLayout: FC<BlogLayoutProps> = ({
+const BlogLayout: FC<props> = ({
   coverImage,
   title,
   author,
@@ -40,6 +42,11 @@ const BlogLayout: FC<BlogLayoutProps> = ({
               {title}
             </h1>
           </div>
+
+          {/* Centering the BreadCrumbs component */}
+          <div className="flex justify-center mt-5">
+            <BreadCrumbs />
+          </div>
         </div>
       </div>
 
@@ -59,7 +66,7 @@ const BlogLayout: FC<BlogLayoutProps> = ({
 
           {/* Blog Content */}
           <div
-            className="container mx-auto px-10 text-base sm:text-lg md:text-lg lg:text-2xl text-justify"
+            className="container mx-auto px-10 text-base sm:text-lg md:text-lg lg:text-2xl text-justify space-y-6"
             dangerouslySetInnerHTML={{ __html: content }}
           ></div>
         </div>

@@ -88,7 +88,7 @@ const Navbar = () => {
         >
           <Link
             id="strike"
-            href="/Blogs"
+            href="/blogs"
             className={`text-white hover:text-gray-300 ${
               selectedLink === "Blogs" ? "selected" : ""
             }`}
@@ -104,10 +104,7 @@ const Navbar = () => {
               style={{ top: "80%" }}
             >
               <li className="py-2">
-                <Link
-                  className="text-black hover:text-blue-400"
-                  href="/Blogs/Developer"
-                >
+                <Link className="text-black hover:text-blue-400" href="#">
                   Developer Blogs
                 </Link>
               </li>
@@ -210,7 +207,7 @@ const Navbar = () => {
             <ul className="relative left-0 mt-2 text-sm px-5 bg-black w-full">
               <li className="py-2">
                 <Link
-                  href="/Blogs/Developer"
+                  href="#"
                   className="text-white hover:text-blue-400 text-center"
                 >
                   Developer Blogs

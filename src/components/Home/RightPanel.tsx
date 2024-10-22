@@ -8,7 +8,7 @@ type Category = {
 
 const CategoryLink: React.FC<Category> = ({ slug, title }) => (
   <li className="my-2 mx-auto">
-    <Link href={`/Blogs/${slug}`} className="text-blue-400 hover:text-blue-600">
+    <Link href={`/blogs/${slug}`} className="text-blue-400 hover:text-blue-600">
       {title}
     </Link>
   </li>
@@ -16,7 +16,9 @@ const CategoryLink: React.FC<Category> = ({ slug, title }) => (
 
 export const CategoriesTab = () => {
   const blogCategories: Category[] = [
-    { slug: "/Developer", title: "Tech Blogs" },
+    { slug: "tech", title: "Tech Blogs" },
+    { slug: "travel", title: "Travel Blogs" },
+    { slug: "career", title: "Career Talks" },
   ];
   const { t } = useTranslation();
 
