@@ -18,9 +18,6 @@ const BlogLayout = ({
 }: Props) => {
   return (
     <div className="min-h-screen relative z-0">
-      <Head>
-        <title>Blogs | Borneel Bikash Phukan</title>
-      </Head>
       {/* Cover Image with Title */}
       <div
         className="blog-cover flex items-center justify-center relative"
@@ -50,7 +47,7 @@ const BlogLayout = ({
       </div>
 
       {/* Blog Content */}
-      <div className="container mx-auto z-0 sm:px-6 md:px-8">
+      <div className="container mx-auto z-0 sm:px-20 md:px-20">
         {/* Blog Texts */}
         <div className="py-10">
           {/* Author and Date */}

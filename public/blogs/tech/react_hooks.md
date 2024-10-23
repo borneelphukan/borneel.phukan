@@ -9,7 +9,10 @@ React is perhaps the most popular frontend framework as of 2024, and also the mo
 
 **useState**: This is the most basic react Hook function that allows state management in functional components. This hook declares a state variable, which is preserved after the component exits, unlike normal variables which disappear after the functional component exits. The only argument that it holds is the initial state which can be a number, string or a boolean. This hook returns a pair of values, which are the current state, and the function updating it. Hence it is defined as:
 
+```
 const [counter, setCounter] = useState(0);
+```
+
 Here counter is the current state, setCounter is the function that will update the value of the current state, when the user performs some activity and 0 despite being the initial state, also defines what type of state it will be. To give an idea of how it looks like in code, here is an example:
 
 ```
@@ -101,8 +104,11 @@ export default const Counter = () => {
 **useContext**: Before we go ahead learning about this important hook, we need to understand what is a Context in React. A context is a feature that permits passing of data through the component tree without having to pass component props manually at every level. It prevents code duplication and better code readability. When Context is used within a React functional component, useContext hook is used to access the values within this context. useContext allows components to subscribe to a context created by a React.createContext provider component and access its current value within the component tree.
 Let us see how it is used. First, we need to create a React context in the following way:
 
+```
 import React, { createContext } from "react";
 const MyContext = createContext();
+```
+
 This function returns a Context object, which consists of a Provider component and a Consumer component. The Provider component is used to wrap the part of the component tree where you want to share the context, while the Consumer component is used to consume the context value. Let's presume, the Context has a provider which is defined in the following way:
 
 ```
