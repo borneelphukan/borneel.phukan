@@ -2,6 +2,7 @@ import "intersection-observer";
 import { useEffect, useRef } from "react";
 import Image from "next/image";
 import experiences from "@/data/experiences.json";
+import ExperienceCard from "../card/ExperienceCard";
 
 const Experience = () => {
   const cardsRef = useRef<HTMLDivElement[]>([]);
@@ -59,46 +60,17 @@ const Experience = () => {
               />
             </div>
 
-            <div className="border bg-white w-full md:w-[calc(50%-2.5rem)] px-10 py-6 rounded-xl border-1 shadow-md">
-              <div className="flex flex-col md:flex-row items-center justify-between space-x-2 md:items-start md:justify-between">
-                <div>
-                  <h1 className="font-semibold text-slate-600 text-center md:text-left">
-                    {experience.title}
-                  </h1>
-                  <h1 className="font-base text-slate-600 text-center md:text-left">
-                    {experience.company}
-                    <br />
-                    <span className="font-semibold text-sm text-slate-600">
-                      ({experience.type})
-                    </span>
-                  </h1>
-                </div>
-                <div className="flex flex-col items-center md:items-end">
-                  <time className="font-sm text-blue-400 text-right whitespace-nowrap">
-                    {experience.date}
-                  </time>
-                  <h2 className="font-base text-slate-600 whitespace-nowrap">
-                    {experience.location}
-                  </h2>
-                  <a
-                    href={experience.reference}
-                    className="font-semibold text-sm text-blue-600 text-right whitespace-nowrap underline underline-offset-4"
-                    target="_blank"
-                  >
-                    {experience.reference ? "Reference Letter" : ""}
-                  </a>
-                </div>
-              </div>
-              <div>
-                <p className="text-base font-bold dark:text-black">Skills: </p>
-                <p className="text-base dark:text-black">{experience.skills}</p>
-              </div>
-              <ul className="list-disc m-2 md:m-5 text-base text-slate-600">
-                {experience.description.map((point, i) => (
-                  <li key={i}>{point}</li>
-                ))}
-              </ul>
-            </div>
+            <ExperienceCard
+              title={experience.title}
+              company={experience.company}
+              type={experience.type}
+              date={experience.date}
+              location={experience.location}
+              reference={experience.reference}
+              skills={experience.skills}
+              description={experience.description}
+              image={experience.image}
+            />
           </div>
         ))}
       </div>

@@ -1,24 +1,5 @@
 [
   {
-    "image": "",
-    "title": "Frontend Developer",
-    "date": "October 2024 - Present",
-    "company": "Early-stage Fintech Startup",
-    "type": "Freelance Developer",
-    "skills": [
-      "ReactJS, ",
-      "Typescript, ",
-      "TailwindCSS, ",
-      "REST API, ",
-      "Figma, ",
-      "Git"
-    ],
-    "location": "Bhubaneswar, India",
-    "description": [
-      "Developing a properietary B2C Data aggregation web application for an early stage startup"
-    ]
-  },
-  {
     "image": "/experience/GolfPost.jpg",
     "title": "Frontend Developer",
     "date": "April 2024 - September 2024",

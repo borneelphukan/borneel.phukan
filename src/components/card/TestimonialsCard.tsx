@@ -18,7 +18,7 @@ const TestimonialsCard = (props: Props) => {
   };
 
   return (
-    <div className="testimonial-card-container mx-4 my-2">
+    <div className=" mx-4 my-2">
       <div className="max-w-xl rounded overflow-hidden shadow-lg bg-white py-10 px-5">
         <div className="mx-auto bg-white rounded-full flex items-center justify-center w-25 md:w-25 h-25 md:h-25">
           <Image
