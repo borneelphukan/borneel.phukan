@@ -8,7 +8,7 @@ type Props = {
   description: string;
   showPublication: string;
   citations?: number;
-  publicationLink: string;
+  publicationLink?: string;
 };
 
 const PublicationCard = (props: Props) => {
