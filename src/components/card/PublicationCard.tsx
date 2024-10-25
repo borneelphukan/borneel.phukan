@@ -56,18 +56,22 @@ const PublicationCard = (props: Props) => {
       </div>
 
       {/* Fourth Row with Button and Citations */}
-      <div className="flex mt-4 items-center">
-        <button
-          className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-3xl"
-          onClick={openPublicationLink}
-        >
-          {showPublication}
-          <FontAwesomeIcon className="mx-3" icon={"function"} />
-        </button>
-        {citations !== undefined && (
-          <div className="ml-auto">{citations} Citations</div>
-        )}
-      </div>
+      {publicationLink ? (
+        <div className="flex mt-4 items-center">
+          <button
+            className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-3xl"
+            onClick={openPublicationLink}
+          >
+            {showPublication}
+            <FontAwesomeIcon className="mx-3" icon={"function"} />
+          </button>
+          {citations !== undefined && (
+            <div className="ml-auto">{citations} Citations</div>
+          )}
+        </div>
+      ) : (
+        ""
+      )}
     </div>
   );
 };

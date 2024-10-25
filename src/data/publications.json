@@ -18,10 +18,9 @@
   },
   {
     "paperName": "Efficient State Management for Large Scale Web Application: Comparative Analysis of Redux, MobX and Recoil",
-    "publisherName": "Currently in Progress...",
-    "publicationDate": "11 October 2024 - Active",
+    "publisherName": "Work in Progress...",
+    "publicationDate": "",
     "description": "In modern web development, managing application state efficiently is essential, especially for large-scale applications that demand high performance and scalability. This paper presents a comparative analysis of three popular state management libraries: Redux, MobX, and Recoil in the React ecosystem. The study evaluates these libraries based on five critical factors: performance, scalability, ease of use, debugging, and maintainability. By testing each library in a large-scale web application context, the paper aims to identify the strengths and weaknesses of each tool, offering insights into their suitability for managing complex state in diverse application environments. This research provides valuable guidance for developers in setting the groundwork for a new and more efficient state management solution.",
-    "showPublication": "Open",
-    "publicationLink": "https://vsr.informatik.tu-chemnitz.de/edu/studentprojects/2024/020/"
+    "showPublication": "Open"
   }
 ]
