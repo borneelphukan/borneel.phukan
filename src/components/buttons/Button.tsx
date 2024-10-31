@@ -10,7 +10,7 @@ const Button = ({ bgColor, textColor, text, file }: Props) => {
     if (file) {
       const a = document.createElement('a');
       a.href = file;
-      a.download = 'Curriculum Vitae - Borneel';
+      a.download = 'CV - Borneel';
       a.style.display = 'none';
       document.body.appendChild(a);
       a.click();
