@@ -15,7 +15,7 @@ i18n.use(initReactI18next).init({
           "Contact Me",
         ],
         // Home Page
-        role: ["I am", "Software Developer", "#Freelancing"],
+        role: ["I am", "Software Developer", "#Open_to_Work"],
         panelHeader: "My Blogs",
         introduction:
           "A Software Developer focusing on developing customer-oriented applications, designing impactful APIs, clean User Interfaces, and delivering successful projects to drive business growth and revenues.",
@@ -103,7 +103,7 @@ i18n.use(initReactI18next).init({
           "Kontakt",
         ],
         // Home Page
-        role: ["Ich bin", "Software Entwickler", "#Freelancer"],
+        role: ["Ich bin", "Software Entwickler", "#Offen_für_Arbeit"],
         panelHeader: "Meine Blogs",
         introduction:
           "Ein Softwareentwickler mit Schwerpunkt auf der Entwicklung kundenorientierter Anwendungen, dem Entwurf wirkungsvoller APIs, sauberer Benutzeroberflächen und der erfolgreichen Umsetzung von Projekten zur Förderung von Geschäftswachstum und Umsätzen.",

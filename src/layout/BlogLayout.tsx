@@ -60,9 +60,16 @@ const BlogLayout = ({
             <p className="text-gray-500 text-sm sm:text-base px-10">
               Posted on {date}
             </p>
-            <a href={link} className="text-blue-500 text-sm sm:text-base px-10">
-              View Original Post
-            </a>
+            {link ? (
+              <a
+                href={link}
+                className="text-blue-500 text-sm sm:text-base px-10"
+              >
+                View Original Post
+              </a>
+            ) : (
+              ""
+            )}
           </div>
 
           {/* Blog Content */}
