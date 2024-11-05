@@ -5,21 +5,14 @@
     "date": "April 2024 - September 2024",
     "company": "GolfPost AG",
     "type": "Working Student",
-    "skills": [
-      "Svelte,",
-      "Javascript, ",
-      "TailwindCSS, ",
-      "REST API, ",
-      "Figma, ",
-      "Git"
-    ],
+    "skills": ["Svelte,", "Javascript, ", "TailwindCSS, ", "REST API, ", "Git"],
     "location": "Cologne, Germany",
     "reference": "/docs/Golfpost.pdf",
     "description": [
-      "Developed a fantasy gaming web application using SvelteKit and Tailwind, creating components and modular functionalities, and integrating a RESTful API with live data",
-      "Developed core features for the fantasy application including Player and User dashboards, Player Picker, Tournament and League management tools and user authentication",
-      "Developed an end-to-end, members-exclusive company portfolio website, focusing on enhancing the user interface and integrating multi-language support",
-      "Collaborating with an agile team of developers, leveraging the Scrum methodology to ensure timely deployment of product"
+      "Developed a fantasy gaming web application with SvelteKit and Tailwind; created components, functionalities and integrated API endpoints",
+      "Developed core features for the application like dashboards, player picker, tournament and league panels for users",
+      "Developed the frontend of a members-exclusive company portfolio website; enhanced UI and added localization",
+      "Collaborated with an agile team of developers and external management to ensure timely completion of sprint goals and successful deployment"
     ]
   },
   {
@@ -32,7 +25,7 @@
       "Next.js, ",
       "TypeScript, ",
       "TailwindCSS, ",
-      "REST API, ",
+      "NodeJS, ",
       "PostgreSQL, ",
       "MongoDB, ",
       "Wordpress, ",
@@ -44,10 +37,10 @@
     "location": "Munich, Germany",
     "reference": "/docs/V4C.pdf",
     "description": [
-      "Worked on the design and development of large scale dynamic company website, including blog features, user and admin dashboards, customer support, and user authentication",
-      "Designed database schemas, developed and hosted relational and non-relational databases on Amazon AWS for managing user and company data, each with a distinct REST API endpoint for accessibility",
-      "Leveraged a microservice architecture with Docker for containerising Frontend, APIs, and Databases for enhanced scalability and faster deployment of the company website and its features",
-      "Maintained and managed a legacy company website on Wordpress, in communication with management to deploy custom plugins, performance optimisation and regular updates"
+      "Developed the frontend of a large-scale dynamic company website with Next.js. Features include blog section, user and admin dashboards, and authentication",
+      "Developed relational and non-relational databases with MySQL and MongoDB, and API endpoints with NodeJS",
+      "Leveraged Docker to containerize frontend, server, and databases for easier scalability and deployment",
+      "Collaborated with management to add features, plugins and optimize performance for legacy Wordpress website"
     ]
   },
   {
@@ -68,11 +61,10 @@
     "location": "Leipzig, Germany",
     "reference": "/docs/LeanERA.pdf",
     "description": [
-      "Supported Frontend Development team by working on design, development, and implementation of Progressive Web Application (PWA) and Mobile Applications using Vue, TailwindCSS and Ionic Framework.",
-      "Collaborated with Design, Project Management and QA Team during groom meetings to develop and implement components, functionalities, and features based on customer requirements.",
-      "Practiced pair programming to develop dynamic Nuxt-based responsive web applications, and fetch data from the CDN",
-      "Successfully developed and deployed a general-purpose customizable video chat module package for the company, compatible with mobile application projects built with Vue and Ionic.",
-      "Leveraged Typescript to maximise scalability, refactoring, team collaboration, developer experience and code maintainability."
+      "Worked on the frontend of MindCleanse, a cross-platform mobile application focused on mental health coaching with Vue.js, Ionic, Tailwind, Typescript and Pinia",
+      "Collaborated with agile team in sprint meetings to conceptualize user stories, and develop features and functionalities based on customer requirements",
+      "Practiced pair programming to rapidly develop a client website called OneHandBall",
+      "Developed a video chat module for MindCleanse; also compatible with other company applications as a library"
     ]
   },
   {
@@ -90,17 +82,17 @@
       "JavaScript, ",
       "TailwindCSS, ",
       "BootstrapCSS, ",
-      "HTML/CSS, ",
+      "HTML5/CSS3, ",
       "Figma, ",
       "Git"
     ],
     "location": "Bhubaneswar, India",
     "description": [
-      "Built responsive web applications, for small businesses and individual clients with ReactJS, NextJS, NodeJS, MongoDB, Javascript, TailwindCSS, BootstrapCSS and HTML/CSS.",
-      "Designed and pitched Web and Mobile application prototypes to clients and developers using Figma.",
-      "Responsible for developing and maintaining the startup's digital infrastructures, including relational and non-relational database clusters using MongoDB and MySQL.",
-      "Interacted with end-users to analyse user feedback, fix production issues and add new technical features, based on customer feedback.",
-      "Created and maintained technical documentation and user manuals for junior developers and end-users respectively."
+      "Built responsive web applications for small businesses and individual clients",
+      "Designed web and mobile application prototypes for clients and developers",
+      "Developed and maintained the startup's digital infrastructures, including relational and non-relational databases",
+      "Interacted with end-users to analyze feedback, fix production issues and add new technical features",
+      "Organised scrum meetings, sprint reviews, and supported Product Owner in managing sprint backlogs"
     ]
   }
 ]

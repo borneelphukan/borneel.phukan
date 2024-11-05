@@ -4,7 +4,7 @@ import path from "path";
 import matter from "gray-matter";
 import DefaultLayout from "@/layout/DefaultLayout";
 import BlogBanner from "@/components/Blog/BlogBanner";
-import BlogCrumbs from "@/components/BreadCrumb";
+import BlogCrumbs from "@/components/common/BreadCrumb";
 import BlogCard from "@/components/card/BlogCard";
 import Image from "next/image";
 

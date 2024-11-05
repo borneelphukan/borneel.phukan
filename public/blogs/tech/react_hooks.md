@@ -2,6 +2,7 @@
 author: "Borneel Bikash Phukan"
 title: "9 React Hooks that you should be aware of as a Frontend Developer"
 date: "1st April, 2024"
+link: "https://dev.to/borneelphukan/9-react-hooks-that-you-should-be-aware-of-as-a-frontend-developer-4c2m"
 description: "In React's ever-evolving landscape, mastering hooks is essential for frontend developers. From useState for state management to useId for unique IDs, this post explores ten crucial React hooks. With streamlined development, enhanced code readability, and optimized user experiences, these hooks unlock React's full potential. Whether you're new to React or a seasoned pro, mastering these tools is key for success in modern web development."
 ---
 

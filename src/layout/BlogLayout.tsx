@@ -1,11 +1,12 @@
 import Head from "next/head";
-import BreadCrumbs from "@/components/BreadCrumb";
+import BreadCrumbs from "@/components/common/BreadCrumb";
 
 type Props = {
   coverImage: string;
   title: string;
   author: string;
   date: string;
+  link: string;
   content: string;
 };
 
@@ -14,6 +15,7 @@ const BlogLayout = ({
   title,
   author,
   date,
+  link,
   content,
 }: Props) => {
   return (
@@ -58,6 +60,9 @@ const BlogLayout = ({
             <p className="text-gray-500 text-sm sm:text-base px-10">
               Posted on {date}
             </p>
+            <a href={link} className="text-blue-500 text-sm sm:text-base px-10">
+              View Original Post
+            </a>
           </div>
 
           {/* Blog Content */}

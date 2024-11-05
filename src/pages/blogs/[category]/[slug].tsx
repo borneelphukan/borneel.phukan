@@ -13,11 +13,19 @@ type Props = {
   title: string;
   author: string;
   date: string;
+  link: string;
   content: string;
   category: string;
 };
 
-const BlogPost = ({ coverImage, title, author, date, content }: Props) => {
+const BlogPost = ({
+  coverImage,
+  title,
+  author,
+  date,
+  link,
+  content,
+}: Props) => {
   const router = useRouter();
 
   if (router.isFallback) {
@@ -31,6 +39,7 @@ const BlogPost = ({ coverImage, title, author, date, content }: Props) => {
         title={title}
         author={author}
         date={date}
+        link={link}
         content={content}
       />
     </DefaultLayout>
@@ -85,6 +94,7 @@ export const getStaticProps: GetStaticProps = async (context) => {
       title: data.title,
       author: data.author,
       date: data.date,
+      link: data.link,
       content: contentHtml,
       category,
     },

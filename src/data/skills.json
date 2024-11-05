@@ -42,10 +42,6 @@
     },
     { "name": "OpenCV", "imageUrl": "/skills/machineLearning/opencv.png" },
     {
-      "name": "Keras",
-      "imageUrl": "/skills/machineLearning/keras.png"
-    },
-    {
       "name": "Scikit-Learn",
       "imageUrl": "/skills/machineLearning/scikit.png"
     },
