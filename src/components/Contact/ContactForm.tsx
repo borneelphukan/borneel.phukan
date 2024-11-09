@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import emailjs from "emailjs-com";
+import emailjs from "@emailjs/browser";
 import InputField from "../../components/common/InputField";
 import TextareaWithIcon from "../common/TextArea";
 import { useTranslation } from "react-i18next";
@@ -73,9 +73,7 @@ const ContactForm = () => {
   return (
     <div className="flex justify-center my-6 px-4">
       <div className="container mx-auto">
-
         <div className="flex flex-col lg:flex-row lg:space-x-8 space-y-8 lg:space-y-0">
-
           <div className="w-full lg:w-1/2">
             <h2 className="text-3xl font-bold text-center lg:text-left mb-6">
               {contactFormHeader}
