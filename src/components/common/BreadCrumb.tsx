@@ -7,7 +7,7 @@ const BreadCrumbs = () => {
 
   const categoryMapping: Record<string, string> = {
     tech: "Tech Blogs",
-    travel: "Travel Blogs",
+    //travel: "Travel Blogs",
     career: "Career Talks",
   };
 

@@ -17,8 +17,8 @@ const Category = ({ slug, title }: Props) => (
 export const Categories = () => {
   const categories: Props[] = [
     { slug: "tech", title: "Tech Blogs" },
-    // { slug: "travel", title: "Travel Blogs" },
-    // { slug: "career", title: "Career Talks" },
+    //{ slug: "travel", title: "Travel Blogs" },
+    { slug: "career", title: "Career Talks" },
   ];
   const { t } = useTranslation();
 
