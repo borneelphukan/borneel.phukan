@@ -145,9 +145,9 @@ const ContactForm = () => {
             <ToastContainer />
           </div>
           {/* Map Section */}
-          <div className="w-full lg:w-1/2">
+          {/* <div className="w-full lg:w-1/2">
             <MapWithLocation />
-          </div>
+          </div> */}
         </div>
       </div>
     </div>
