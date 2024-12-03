@@ -1,10 +1,12 @@
-import "intersection-observer"; // Import the polyfill for older browsers if needed
-import { useEffect, useRef } from "react";
+import "intersection-observer";
+import { useEffect, useRef, useState } from "react";
 import ProjectCard from "../card/ProjectCard";
 import projectsData from "@/data/projects.json";
+import Tabs from "../common/Tabs";
 
 const Projects = () => {
-  const cardsRef = useRef<Array<HTMLDivElement | null>>([]); // Define cardsRef as an array of nullable HTMLDivElements
+  const cardsRef = useRef<Array<HTMLDivElement | null>>([]);
+  const [filteredProjects, setFilteredProjects] = useState(projectsData);
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -22,24 +24,43 @@ const Projects = () => {
       { threshold: 0.1 }
     );
 
-    // Filter out any null values before observing
     const validElements = cardsRef.current.filter(
       (card): card is HTMLDivElement => card !== null
     );
     validElements.forEach((card) => observer.observe(card));
 
     return () => {
-      // Filter out any null values before unobserving
       validElements.forEach((card) => observer.unobserve(card));
     };
-  }, []);
+  }, [filteredProjects]);
+
+  const handleTabChange = (category: string) => {
+    if (category === "all") {
+      setFilteredProjects(projectsData);
+    } else {
+      setFilteredProjects(
+        projectsData.filter((project) => project.category === category)
+      );
+    }
+  };
 
   return (
     <div className="max-w-8xl text-lg p-5" id="Projects">
       <h1 className="text-4xl text-center font-semibold mb-3">PROJECTS</h1>
+
+      <Tabs
+        onTabChange={handleTabChange}
+        tabs={[
+          { id: "all", label: "All" },
+          { id: "frontend", label: "Frontend" },
+          { id: "fullstack", label: "Fullstack" },
+          { id: "machine-learning", label: "ML/AI" },
+        ]}
+      />
+
       <div className="p-2">
         <div className="grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-8 mt-10 mb-10">
-          {projectsData.map((project, index) => (
+          {filteredProjects.map((project, index) => (
             <div
               key={index}
               ref={(el) => (cardsRef.current[index] = el)}

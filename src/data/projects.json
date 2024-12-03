@@ -5,7 +5,8 @@
     "buttonText": "Open",
     "start": "April 2024",
     "end": "September 2024",
-    "link": "https://fantasy.golfpost.com/"
+    "link": "https://fantasy.golfpost.com/",
+    "category": "frontend"
   },
   {
     "title": "My Personal Website.",
@@ -13,7 +14,8 @@
     "buttonText": "Code",
     "start": " January 2024",
     "end": "Active",
-    "link": "https://github.com/borneelphukan/borneel.phukan"
+    "link": "https://github.com/borneelphukan/borneel.phukan",
+    "category": "frontend"
   },
   {
     "title": "BFit Fitness App",
@@ -21,7 +23,8 @@
     "buttonText": "Code",
     "start": "August 2024",
     "end": "Active",
-    "link": "https://github.com/borneelphukan/bfit-app.git"
+    "link": "https://github.com/borneelphukan/bfit-app.git",
+    "category": "fullstack"
   },
   {
     "title": "BDesign Corporate Theme Template",
@@ -29,7 +32,8 @@
     "buttonText": "Open",
     "start": "September 2023",
     "end": "Active",
-    "link": "https://bdesign-corporate.netlify.app/"
+    "link": "https://bdesign-corporate.netlify.app/",
+    "category": "frontend"
   },
   {
     "title": "BShop E-Commerce Website Template",
@@ -37,7 +41,8 @@
     "buttonText": "Open",
     "start": "May 2024",
     "end": "Active",
-    "link": "https://bshop-ecommerce.netlify.app/"
+    "link": "https://bshop-ecommerce.netlify.app/",
+    "category": "frontend"
   },
   {
     "title": "Facial Emotion Recognition",
@@ -45,6 +50,7 @@
     "buttonText": "Code",
     "start": "October 2019",
     "end": "January 2020",
-    "link": "https://github.com/borneelphukan/Facial-Emotion-Recognition.git"
+    "link": "https://github.com/borneelphukan/Facial-Emotion-Recognition.git",
+    "category": "machine-learning"
   }
 ]
