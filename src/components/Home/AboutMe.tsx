@@ -1,6 +1,5 @@
-
 import Image from "next/image";
-import Avatar from "../../../public/assets/borneel.png";
+import Avatar from "../../../public/assets/borneel-1.png";
 import { useTranslation } from "react-i18next";
 
 const AboutMe = () => {
@@ -12,7 +11,9 @@ const AboutMe = () => {
 
   return (
     <div className="p-4 md:p-10 mx-4 md:mx-10 md:mb-10">
-      <h1 className="text-4xl md:text-4xl mb-4 md:mb-10 text-center">{aboutme[0]}</h1>
+      <h1 className="text-4xl md:text-4xl mb-4 md:mb-10 text-center">
+        {aboutme[0]}
+      </h1>
 
       <p className="text-base md:text-base text-justify">{aboutme[1]}</p>
 
