@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Avatar from "../../../public/assets/borneel-1.png";
+import Avatar from "../../../public/assets/borneel.png";
 import { useTranslation } from "react-i18next";
 
 const AboutMe = () => {
