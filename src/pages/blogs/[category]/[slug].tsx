@@ -28,9 +28,7 @@ const BlogPost = ({
 }: Props) => {
   const router = useRouter();
 
-  if (router.isFallback) {
-    return <div>Loading...</div>;
-  }
+  if (router.isFallback) return <p>Loading...</p>;
 
   return (
     <DefaultLayout>
@@ -47,24 +45,19 @@ const BlogPost = ({
 };
 
 export const getStaticPaths: GetStaticPaths = async () => {
-  // const categories = ["tech"];
-  // const categories = ["tech", "travel", "career"];
-  const categories = ["tech", "career"];
+  const categories = ["tech", "career"]; // Add more categories as needed
 
   let paths: { params: { category: string; slug: string } }[] = [];
-
   categories.forEach((category) => {
     const blogDir = path.join(process.cwd(), `public/blogs/${category}`);
-    const files = fs.readdirSync(blogDir);
-
-    const categoryPaths = files.map((file) => ({
-      params: {
-        category,
-        slug: file.replace(".md", ""),
-      },
-    }));
-
-    paths = [...paths, ...categoryPaths];
+    if (fs.existsSync(blogDir)) {
+      const files = fs.readdirSync(blogDir);
+      paths = paths.concat(
+        files.map((file) => ({
+          params: { category, slug: file.replace(".md", "") },
+        }))
+      );
+    }
   });
 
   return { paths, fallback: true };
@@ -78,14 +71,8 @@ export const getStaticProps: GetStaticProps = async (context) => {
 
   const blogDir = path.join(process.cwd(), `public/blogs/${category}`);
   const filePath = path.join(blogDir, `${slug}.md`);
-
-  if (!fs.existsSync(filePath)) {
-    return { notFound: true };
-  }
-
   const fileContents = fs.readFileSync(filePath, "utf8");
   const { data, content } = matter(fileContents);
-
   const processedContent = await remark().use(html).process(content);
   const contentHtml = processedContent.toString();
 
