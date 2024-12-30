@@ -74,7 +74,7 @@ const BlogLayout = ({
 
           {/* Blog Content */}
           <div
-            className="container mx-auto px-10 text-base sm:text-lg md:text-lg lg:text-2xl text-justify space-y-6"
+            className="container mx-auto px-10 text-base sm:text-base md:text-base lg:text-base text-justify space-y-6"
             dangerouslySetInnerHTML={{ __html: content }}
           ></div>
         </div>
