@@ -55,7 +55,6 @@ export const getStaticProps: GetStaticProps = async (context) => {
   let folder = "";
   let display = "";
 
-  // Add if-else for each category
   if (category === "tech") {
     folder = "tech";
     display = "Tech";

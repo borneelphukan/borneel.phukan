@@ -1,5 +1,5 @@
-import Head from "next/head";
 import BreadCrumbs from "@/components/common/BreadCrumb";
+import VideoPlayer from "@/components/utils/VideoPlayer";
 
 type Props = {
   coverImage: string;
@@ -8,6 +8,7 @@ type Props = {
   date: string;
   link: string;
   content: string;
+  videoId?: string; // Add the optional videoId prop
 };
 
 const BlogLayout = ({
@@ -17,6 +18,7 @@ const BlogLayout = ({
   date,
   link,
   content,
+  videoId,
 }: Props) => {
   return (
     <div className="min-h-screen relative z-0">
@@ -71,6 +73,13 @@ const BlogLayout = ({
               ""
             )}
           </div>
+
+          {/* Video Player */}
+          {videoId && (
+            <div className="py-2">
+              <VideoPlayer videoId={videoId} />
+            </div>
+          )}
 
           {/* Blog Content */}
           <div

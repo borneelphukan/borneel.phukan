@@ -16,6 +16,7 @@ type Props = {
   link: string;
   content: string;
   category: string;
+  videoId?: string; // Add the optional videoId prop
 };
 
 const BlogPost = ({
@@ -25,6 +26,7 @@ const BlogPost = ({
   date,
   link,
   content,
+  videoId, // Destructure videoId
 }: Props) => {
   const router = useRouter();
 
@@ -39,6 +41,7 @@ const BlogPost = ({
         date={date}
         link={link}
         content={content}
+        videoId={videoId}
       />
     </DefaultLayout>
   );
@@ -85,6 +88,7 @@ export const getStaticProps: GetStaticProps = async (context) => {
       link: data.link,
       content: contentHtml,
       category,
+      videoId: data.videoId || null,
     },
   };
 };
