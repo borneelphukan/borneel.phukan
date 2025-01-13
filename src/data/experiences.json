@@ -1,10 +1,10 @@
 [
   {
     "image": "/experience/Graminate.png",
-    "title": "Frontend Developer",
+    "title": "CEO & Co-Founder",
     "date": "November 2024 - Present",
     "company": "Graminate Ltd.",
-    "type": "Working Student",
+    "type": "Startup Initiative",
     "skills": [
       "Svelte,",
       " Typescript,",
@@ -27,7 +27,7 @@
   {
     "image": "/experience/GolfPost.jpg",
     "title": "Frontend Developer",
-    "date": "April 2024 - September 2024",
+    "date": "April 2024 - Sept. 2024",
     "company": "GolfPost AG",
     "type": "Working Student",
     "skills": ["Svelte,", "Javascript, ", "TailwindCSS, ", "REST API, ", "Git"],
