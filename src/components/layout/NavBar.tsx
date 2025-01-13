@@ -18,7 +18,7 @@ const Navbar = () => {
   };
 
   useEffect(() => {
-    setSelectedLink("Home"); // Set the initial selected link here if needed.
+    setSelectedLink("Home");
   }, []);
 
   const toggleMobileMenu = () => {
@@ -98,7 +98,7 @@ const Navbar = () => {
           </Link>
           {showBlogNav && (
             <ul
-              className="absolute left-0 mt-1 text-sm px-5 bg-slate-100 border rounded border-white w-52 z-50"
+              className="absolute left-0 mt-6 text-sm px-5 bg-slate-100 border rounded border-white w-52 z-50"
               onMouseEnter={() => setShowBlogNav(true)}
               onMouseLeave={() => setShowBlogNav(false)}
               style={{ top: "80%" }}

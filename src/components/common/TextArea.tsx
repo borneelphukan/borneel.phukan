@@ -39,7 +39,7 @@ const TextareaWithIcon: React.FC<Props> = ({
 
   return (
     <div className="w-full">
-      <label htmlFor={id} className="block mb-1 text-sm font-medium">
+      <label htmlFor={id} className="block mb-1 text-sm font-medium ">
         {label}
       </label>
       <div className="relative flex items-start">

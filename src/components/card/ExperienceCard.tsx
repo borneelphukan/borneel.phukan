@@ -57,8 +57,8 @@ const ExperienceCard = (props: Props) => {
         </div>
       </div>
       <div>
-        <p className="text-base font-bold dark:text-black">Skills: </p>
-        <p className="text-base dark:text-black">{skills}</p>
+        <p className="text-base font-bold text-slate-600 ">Skills: </p>
+        <p className="text-base text-slate-600">{skills}</p>
       </div>
       <ul className="list-disc m-2 sm:m-3 md:m-5 text-base text-slate-600">
         {description.map((point, i) => (

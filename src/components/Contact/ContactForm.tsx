@@ -117,7 +117,7 @@ const ContactForm = () => {
               {/* Message Input */}
               <div className="mb-6">
                 <label
-                  className="block text-sm font-bold mb-2"
+                  className="block text-slate-600 text-sm font-bold mb-2"
                   htmlFor="message"
                 >
                   Message
