@@ -96,39 +96,6 @@ const Navbar = () => {
           >
             {navItems[3]}
           </Link>
-          {showBlogNav && (
-            <ul
-              className="absolute left-0 mt-6 text-sm px-5 bg-slate-100 border rounded border-white w-52 z-50"
-              onMouseEnter={() => setShowBlogNav(true)}
-              onMouseLeave={() => setShowBlogNav(false)}
-              style={{ top: "80%" }}
-            >
-              <li className="py-2">
-                <Link
-                  className="text-black hover:text-blue-400"
-                  href="/blogs/tech"
-                >
-                  Tech Blogs
-                </Link>
-              </li>
-              {/* <li className="py-2">
-                <Link
-                  className="text-black hover:text-blue-400"
-                  href="/blogs/travel"
-                >
-                  Travel Blogs
-                </Link>
-              </li> */}
-              <li className="py-2">
-                <Link
-                  className="text-black hover:text-blue-400"
-                  href="/blogs/career"
-                >
-                  Career Talks
-                </Link>
-              </li>
-            </ul>
-          )}
         </div>
 
         {/* Gallery */}
