@@ -84,7 +84,7 @@ i18n.use(initReactI18next).init({
         // Contact
         contactCardHeader: ["My Address", "My Availability", "Donate"],
         contactCardDescription: [
-          "Vettersstraße 70, Chemnitz 09126 Germany",
+          "Erich-Ollenhauer-Straße 2, 63263 Neu-Isenburg, Germany",
           "Set up an appointment on Calendly",
           "Like my work ? You can donate on Paypal",
         ],
@@ -174,7 +174,7 @@ i18n.use(initReactI18next).init({
         // Contact
         contactCardHeader: ["Meine Adresse", "Meine Verfügbarkeit", "Spenden"],
         contactCardDescription: [
-          "Vettersstraße 70, Chemnitz 09126 Deutschland",
+          "Erich-Ollenhauer-Straße 2, 63263 Neu-Isenburg, Deutschland",
           "Vereinbare einen Termin auf Calendly",
           "Gefällt dir meine Arbeit? Du kannst über PayPal spenden",
         ],
