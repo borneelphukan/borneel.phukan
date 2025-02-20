@@ -18,7 +18,7 @@
     ],
     "location": "Guwahati, India",
     "description": [
-      "Developing an ERP tool for streamlining agricultural industry of India, with a built-in CRM tool, Collaborator Finder, Marketplace and ",
+      "Developing an ERP tool for streamlining agricultural industry of India, with a built-in CRM tool, subsidiary Finder, Marketplace and Widget integrations",
       "Frontend contains a distinct web application and cross-platform mobile applications (iOS & Android) with a shared web backend built with Node.js with Express and hosted in AWS ECS",
       "Includes a Finder feature which allows tea growers to find registered distributors, exporters and factory owners",
       "Other planned feature include region based price indicators, agricultural scheme alert, farm tools recommendation, and AI tool for assisting in farming strategies or investigating backlogs"
@@ -113,11 +113,11 @@
     ],
     "location": "Bhubaneswar, India",
     "description": [
-      "Built responsive web applications for small businesses and individual clients",
-      "Designed web and mobile application prototypes for clients and developers",
-      "Developed and maintained the startup's digital infrastructures, including relational and non-relational databases",
-      "Interacted with end-users to analyze feedback, fix production issues and add new technical features",
-      "Organised scrum meetings, sprint reviews, and supported Product Owner in managing sprint backlogs"
+      "Developed and deployed responsive, SEO-optimized web applications for small and medium-sized businesses",
+      "Successfully developed and deployed the official website for our university’s annual festival KIITFEST 2019",
+      "Developed a marketplace with responsive design for a local flower store to immensely boost sales revenue",
+      "Supported end-users by designing Figma prototypes, analysing feedbacks, fixing production issues and adding new features",
+      "Created and maintained technical documentation and user manuals for junior developers and end-users respectively"
     ]
   }
 ]
