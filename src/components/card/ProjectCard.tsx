@@ -38,12 +38,14 @@ const ProjectCard = (props: Props) => {
       </div>
 
       <div className="flex mt-4">
-        <button
-          className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-1 px-5 rounded-xl"
-          onClick={openPublicationLink}
-        >
-          {buttonText}
-        </button>
+        {buttonText ? (
+          <button
+            className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-1 px-5 rounded-xl"
+            onClick={openPublicationLink}
+          >
+            {buttonText}
+          </button>
+        ) : null}
       </div>
     </div>
   );

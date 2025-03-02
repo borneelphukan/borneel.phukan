@@ -1,5 +1,14 @@
 [
   {
+    "title": "Graminate ERP",
+    "description": "An open-source ERP for small and medium-sized agriculture businesses, with built-in CRM, partner finder, Employees Management, Weather Monitor and AI-enabled guidance. Currently in development with plans for full-scale release with mobile apps in 2026.",
+    "buttonText": "",
+    "start": "November 2024",
+    "end": "Present",
+    "link": "",
+    "category": "fullstack"
+  },
+  {
     "title": "Golfpost Fantasy",
     "description": "A fantasy gaming web application developed using SvelteKit and Tailwind CSS, featuring modular components, live data integration via a RESTful API, and core functionalities such as Player and User dashboards, Player Picker, Tournament and League management tools, and user authentication.",
     "buttonText": "Open",
