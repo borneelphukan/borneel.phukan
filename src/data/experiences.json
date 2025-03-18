@@ -1,27 +1,26 @@
 [
   {
     "image": "/experience/Graminate.png",
-    "title": "CEO & Co-Founder",
+    "title": "Co-Founder",
     "date": "November 2024 - Present",
-    "company": "Graminate Ltd.",
-    "type": "Startup Initiative",
+    "company": "Graminate IT Solutions",
+    "type": "Bootstrapped Startup",
     "skills": [
-      "Svelte,",
+      "Next.js,",
       " Typescript,",
       " Tailwind,",
       " Node.js,",
       " Express,",
       " PostgreSQL,",
-      " MongoDB,",
       " AWS,",
       " Git"
     ],
     "location": "Guwahati, India",
     "description": [
-      "Developing an ERP tool for streamlining agricultural industry of India, with a built-in CRM tool, subsidiary Finder, Marketplace and Widget integrations",
-      "Frontend contains a distinct web application and cross-platform mobile applications (iOS & Android) with a shared web backend built with Node.js with Express and hosted in AWS ECS",
-      "Includes a Finder feature which allows tea growers to find registered distributors, exporters and factory owners",
-      "Other planned feature include region based price indicators, agricultural scheme alert, farm tools recommendation, and AI tool for assisting in farming strategies or investigating backlogs"
+      "Developing an agriculture-oriented SaaS Enterprise Resource Planning (ERP) application for agricultural startups and mid-size companies to streamline business processes",
+      "Pipeline products include cloud-based ERP Application and cross-platform (iOS & Android) native mobile applications",
+      "ERP features include a customisable Dashboard, built-in CRM, Kanban Ticket Manager, Labour Management, Budget Manager, Inventory Management, Vendor Finder and region-based Scheme Finder",
+      "Also managing and mentoring a team of software developers in providing quality-driven software outsourcing and end-to-end client products with strict adherence to deadlines and budgets"
     ]
   },
   {

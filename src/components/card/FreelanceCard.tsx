@@ -13,20 +13,15 @@ type Props = {
 const FreelanceCard = (props: Props) => {
   const { avatar, project, company, duration, info, link } = props;
   const [showAll, setShowAll] = useState<boolean>(false);
-  const [expandedIndex, setExpandedIndex] = useState<number | null>(null);
 
   const toggleShowAll = () => {
     setShowAll(!showAll);
   };
 
-  const toggleReadMore = (index: number) => {
-    setExpandedIndex(expandedIndex === index ? null : index);
-  };
-
-  const displayedInfo = showAll ? info : info.slice(0, 2);
+  const displayedInfo = showAll ? info : info.slice(0, 1);
 
   return (
-    <div className=" mx-4">
+    <div className="mx-4">
       <div className="max-w-md rounded overflow-hidden shadow-md bg-white py-10 px-5">
         <div className="mx-auto bg-white rounded-full flex items-center justify-center w-25 md:w-25 h-25 md:h-25">
           <Image
@@ -55,36 +50,11 @@ const FreelanceCard = (props: Props) => {
         </div>
 
         <div className="text-base text-slate-600 pl-6 mt-2">
-          {displayedInfo.map((point, index) => {
-            const isExpanded = expandedIndex === index;
-            const shouldTruncate = point.length > 100;
-            const truncatedText = point.substring(0, 100);
-
-            return (
-              <div
-                key={index}
-                className="transition-all duration-300 ease-in-out mb-2"
-              >
-                {shouldTruncate && !isExpanded ? (
-                  <span className="block overflow-hidden max-h-[4.5rem] transition-all duration-300 ease-in-out">
-                    {truncatedText}...
-                  </span>
-                ) : (
-                  <span className="block overflow-hidden max-h-full transition-all duration-300 ease-in-out">
-                    {point}
-                  </span>
-                )}
-                {shouldTruncate && (
-                  <button
-                    onClick={() => toggleReadMore(index)}
-                    className="text-blue-500 cursor-pointer focus:outline-none ml-2"
-                  >
-                    {isExpanded ? "Read Less" : "Read More"}
-                  </button>
-                )}
-              </div>
-            );
-          })}
+          {displayedInfo.map((point, index) => (
+            <div key={index} className="mb-2">
+              <span className="block">{point}</span>
+            </div>
+          ))}
           {info.length > 2 && (
             <button
               onClick={toggleShowAll}

@@ -1,20 +1,24 @@
 [
   {
-    "avatar": "/experience/Brandheiss.png",
+    "avatar": "/freelance/traddle-io.png",
     "project": "Traddle.io",
     "company": "Brandheiss, Leipzig 🇩🇪",
     "duration": "February 2024 - March 2024",
     "info": [
-      "Contributed in the development of functional UI for the online trading platform Traddle.io. Key features includes the Sidebar and Avatar Selection."
+      "Contributed to developing functional user interfaces for the online trading platform Traddle.io, enhancing usability and performance",
+      "Collaborated with cross-functional teams to implement new features, ensuring seamless integration with backend services",
+      "Optimized front-end code for better responsiveness and faster load times across devices"
     ]
   },
   {
-    "avatar": "/assets/icons/lab.svg",
-    "project": "Oyester - A Properietary Project",
-    "company": "Early Stage Startup, Bhubaneswar",
-    "duration": "October 2024 - Active",
+    "avatar": "/freelance/mindcleanse.jpeg",
+    "project": "Mindcleanse",
+    "company": "LeanERA, Leipzig 🇩🇪",
+    "duration": "September 2022 - January 2023",
     "info": [
-      "Developing the frontend of a B2C Data aggregration application, a properietary early stage startup project using the MERN stack."
+      "Designed and built all major UI screens for the MindCleanse app, including the Splash Screen, Login Screens, Settings Screen, and Main Dashboard, ensuring a cohesive and user-friendly experience",
+      "Focused on responsive design and accessibility, ensuring the app functions seamlessly across different devices and screen sizes",
+      "Collaborated with cross-functional teams to align UI development with project goals and integrate front-end components with backend systems"
     ]
   }
 ]

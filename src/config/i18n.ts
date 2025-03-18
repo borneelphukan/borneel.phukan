@@ -12,13 +12,13 @@ i18n.use(initReactI18next).init({
           "Services",
           "Blogs",
           "Gallery",
-          "Contact Me",
+          "Contact",
         ],
         // Home Page
         role: ["I am", "Software Developer", "#Open_to_Work"],
         panelHeader: "My Blogs",
         introduction:
-          "A Software Developer focusing on developing customer-oriented applications, designing impactful APIs, clean User Interfaces, and delivering successful projects to drive business growth and revenues.",
+          "A Software Developer focused on developing customer-oriented applications, designing impactful APIs, responsive UI, microservices and delivering successful projects to drive business growth and revenues.",
         aboutme: [
           "About Me",
           "Hi! I'm Borneel, a Software Developer committed to developing and delivering state-of-the-art full-stack web and mobile applications, secured APIs, and clean User Interfaces, all by leveraging suitable Agile Methodologies. My passion for developing impactful applications and contributing to technology growth has driven me to pursue a career in the field of web engineering. My contributions to open-source development on GitHub can provide you with a preliminary idea about my work and contributions so far.",
