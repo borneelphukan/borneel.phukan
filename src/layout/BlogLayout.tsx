@@ -8,7 +8,7 @@ type Props = {
   date: string;
   link: string;
   content: string;
-  videoId?: string; // Add the optional videoId prop
+  videoId?: string;
 };
 
 const BlogLayout = ({
