@@ -1,40 +1,15 @@
-import "intersection-observer"; // Import the polyfill for older browsers if needed
-import { useEffect, useRef } from "react";
+import "intersection-observer";
+import { useRef } from "react";
 import FreelanceCard from "../../card/FreelanceCard";
 import freelanceData from "@/data/freelance-data.json";
 import { useTranslation } from "react-i18next";
+import { useSlideInObserver } from "@/hooks/observers";
 
 const FreelanceStack = () => {
   const { t } = useTranslation();
-  const cardsRef = useRef<Array<HTMLDivElement | null>>([]); // Define cardsRef as an array of nullable HTMLDivElements
+  const cardsRef = useRef<Array<HTMLDivElement | null>>([]);
 
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add("opacity-100", "translate-y-0");
-            entry.target.classList.remove("opacity-0", "translate-y-10");
-          } else {
-            entry.target.classList.add("opacity-0", "translate-y-10");
-            entry.target.classList.remove("opacity-100", "translate-y-0");
-          }
-        });
-      },
-      { threshold: 0.1 }
-    );
-
-    // Filter out any null values before observing
-    const validElements = cardsRef.current.filter(
-      (card): card is HTMLDivElement => card !== null
-    );
-    validElements.forEach((card) => observer.observe(card));
-
-    return () => {
-      // Filter out any null values before unobserving
-      validElements.forEach((card) => observer.unobserve(card));
-    };
-  }, []);
+  useSlideInObserver(cardsRef);
 
   return (
     <div className="max-w-8xl text-lg mt-20 mx-5">

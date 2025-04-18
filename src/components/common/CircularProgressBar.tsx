@@ -7,7 +7,7 @@ const CircularScrollProgressBar = () => {
   const handleScrollToTop = () => {
     window.scrollTo({
       top: 0,
-      behavior: "smooth", // You can use "auto" for instant scroll
+      behavior: "smooth",
     });
   };
 
@@ -29,8 +29,8 @@ const CircularScrollProgressBar = () => {
   return (
     <div
       className="fixed z-50 bottom-20 right-10 flex items-center"
-      onClick={handleScrollToTop} // Add the click handler here
-      style={{ cursor: "pointer" }} // Change the cursor to a pointer
+      onClick={handleScrollToTop}
+      style={{ cursor: "pointer" }}
     >
       <div className="relative">
         <div className="w-10 h-10 relative ml-0">

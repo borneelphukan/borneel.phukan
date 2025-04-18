@@ -26,17 +26,14 @@ const DefaultLayout = ({ children }: { children: React.ReactNode }) => {
         <Loader />
       ) : (
         <div className="min-h-screen">
-          {/* Navbar */}
           <Navbar />
-          
-          {/* Add margin or padding to push the main content down if Navbar is fixed */}
-          <main className="pt-16"> {/* Adjust this value based on your Navbar height */}
+
+          <main className="pt-16">
             {children}
             <CircularProgressBar />
             <ThemeSwitch />
           </main>
 
-          {/* Footer */}
           <footer>
             <Footer />
           </footer>

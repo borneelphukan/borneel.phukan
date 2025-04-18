@@ -1,7 +1,8 @@
-import "intersection-observer"; // Import the polyfill for older browsers if needed
-import { useEffect, useRef } from "react";
+import "intersection-observer";
+import { useRef } from "react";
 import Card from "../card/Card";
 import { useTranslation } from "react-i18next";
+import { useIntersectionObserver } from "@/hooks/observers";
 
 const CardStack = () => {
   const { t } = useTranslation();
@@ -11,31 +12,7 @@ const CardStack = () => {
 
   const cardsRef = useRef<Array<HTMLDivElement | null>>([]);
 
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add("animate-bounceIn", "opacity-100");
-            entry.target.classList.remove("opacity-0");
-          } else {
-            entry.target.classList.remove("animate-bounceIn", "opacity-100");
-            entry.target.classList.add("opacity-0");
-          }
-        });
-      },
-      { threshold: 0.1 }
-    );
-
-    const validElements = cardsRef.current.filter(
-      (card): card is HTMLDivElement => card !== null
-    );
-    validElements.forEach((card) => observer.observe(card));
-
-    return () => {
-      validElements.forEach((card) => observer.unobserve(card));
-    };
-  }, []);
+  useIntersectionObserver(cardsRef);
 
   return (
     <div className="container px-auto overflow-hidden mx-auto -m-16 grid grid-cols-1 md:grid-cols-1 lg:grid-cols-3 gap-8 p-5 mb-10">
