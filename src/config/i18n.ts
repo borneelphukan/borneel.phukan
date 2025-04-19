@@ -49,7 +49,7 @@ i18n.use(initReactI18next).init({
           [
             "Fullstack Developer",
             "3+ years of experience in building Web Applications, Application Programming Interfaces (API), Microservices, UI/UX prototypes, everything following Agile Methodologies.",
-            "Javascript, Typescript, React, Vue, TailwindCSS, Bootstrap, PHP, Python, Flask, MySQL, MongoDB, C, C++",
+            "Typescript, Next.js, Nest.js, REST API, Postgresql, Tailwind, AWS, Git",
           ],
           [
             "Machine Learning",
@@ -138,7 +138,7 @@ i18n.use(initReactI18next).init({
           [
             "Fullstack-Entwickler",
             "Über 3 Jahre Erfahrung im Aufbau von Webanwendungen, Programmierschnittstellen (API), Microservices, UI/UX-Prototypen, alles nach agilen Methoden.",
-            "Javascript, Typescript, React, Vue, TailwindCSS, Bootstrap, PHP, Python, Flask, MySQL, MongoDB, C, C++",
+            "Typescript, Next.js, Nest.js, REST API, Postgresql, Tailwind, AWS, Git",
           ],
           [
             "Maschinelles Lernen",
