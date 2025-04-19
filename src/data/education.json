@@ -1,14 +1,16 @@
 [
-    {
+  {
     "image": "/education/TUC.png",
-    "degree": "MSc. in Web Engineering",
+    "degree": "Master of Science",
+    "course": "Web Engineering",
     "date": "Oct. 2021 - Dec. 2024",
     "university": "Technische Universität Chemnitz",
     "location": "Chemnitz, Germany"
   },
   {
     "image": "/education/KIIT.png",
-    "degree": "BTech. in Computer Science & System Engineering",
+    "degree": "Bachelor of Science",
+    "course": "Computer Science & Systems Engineering",
     "date": "July 2017 - August 2021",
     "university": "Kalinga Institute of Industrial Technology",
     "location": "Bhubaneswar, India"

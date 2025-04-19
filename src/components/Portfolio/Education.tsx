@@ -2,6 +2,11 @@ import "intersection-observer";
 import { useEffect, useRef } from "react";
 import Image from "next/image";
 import educations from "@/data/education.json";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faCalendarAlt,
+  faMapMarkerAlt,
+} from "@fortawesome/free-solid-svg-icons";
 
 const Education = () => {
   const cardsRef = useRef<HTMLDivElement[]>([]);
@@ -54,21 +59,39 @@ const Education = () => {
             </div>
 
             <div className="border bg-white w-full md:w-[calc(50%-2.5rem)] px-10 py-6 rounded-xl border-1 shadow-lg">
-              <div className="flex flex-col md:flex-row items-center justify-between space-x-2 mb-1">
-                <h1 className="font-bold max-w-sm text-center text-slate-600 md:text-left">
-                  {education.degree}
-                </h1>
-                <time className="font-caveat font-medium text-blue-400">
-                  {education.date}
-                </time>
-              </div>
-              <div className="flex flex-col md:flex-row items-center justify-between space-x-2">
-                <h1 className="font-base text-slate-600 md:text-left text-center">
-                  {education.university}
-                </h1>
-                <h2 className="font-base text-slate-600 whitespace-nowrap">
-                  {education.location}
-                </h2>
+              <div className="grid grid-cols-2 gap-4">
+                {/* Left Column */}
+                <div className="flex flex-col space-y-1">
+                  <h1 className="text-sm font-semibold text-blue-800 leading-tight">
+                    {education.degree}
+                  </h1>
+                  <h1 className=" font-bold text-gray-800 leading-tight">
+                    {education.course}
+                  </h1>
+                  <div className="flex items-center">
+                    <h2 className="text-base font-medium text-gray-600">
+                      {education.university}
+                    </h2>
+                  </div>
+                </div>
+
+                {/* Right Column */}
+                <div className="flex flex-col items-end">
+                  <div className="flex items-center text-sm text-gray-500 mb-2">
+                    <FontAwesomeIcon
+                      icon={faMapMarkerAlt}
+                      className="w-3 h-3 mr-1.5 text-gray-400"
+                    />
+                    <span>{education.location}</span>
+                  </div>
+                  <div className="flex items-center text-sm text-gray-500">
+                    <FontAwesomeIcon
+                      icon={faCalendarAlt}
+                      className="w-3 h-3 mr-1.5 text-gray-400"
+                    />
+                    <time>{education.date}</time>
+                  </div>
+                </div>
               </div>
             </div>
           </div>

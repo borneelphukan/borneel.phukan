@@ -24,12 +24,12 @@ const Experience = () => {
     );
 
     cardsRef.current.forEach((card) => {
-      if (card) observer.observe(card); // Ensure card is not null
+      if (card) observer.observe(card);
     });
 
     return () => {
       cardsRef.current.forEach((card) => {
-        if (card) observer.unobserve(card); // Add null check here
+        if (card) observer.unobserve(card);
       });
     };
   }, []);

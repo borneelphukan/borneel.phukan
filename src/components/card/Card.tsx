@@ -9,23 +9,25 @@ type Props = {
 
 const Card = ({ icon, title, content, skills }: Props) => {
   return (
-    <div className="max-w-xl h-full flex flex-col justify-between rounded overflow-hidden shadow-lg bg-white p-5">
-      <div className="text-4xl text-gray-600 px-5">
-        <i className={`text-4xl text-gray-500 fa ${icon} mb-4`}></i>
+    <div className="h-full flex flex-col rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300 ease-in-out bg-white">
+      <div className="p-6 bg-gradient-to-br from-blue-50 to-indigo-100 flex items-center justify-center">
+        <div className="bg-white rounded-full p-4 shadow-sm">
+          <i className={`text-3xl text-blue-600 fa ${icon}`}></i>
+        </div>
       </div>
 
-      <div className="px-6 flex-grow">
-        <h2 className="text-2xl text-gray-700 font-semibold mb-2">{title}</h2>
-        <p className="text-gray-700 font-light text-base text-justify ">
+      <div className="p-6 flex flex-col flex-grow">
+        <h3 className="text-xl font-semibold text-gray-800 mb-3">{title}</h3>
+        <p className="text-gray-600 text-base leading-relaxed flex-grow">
           {content}
         </p>
       </div>
 
-      <div className="px-6">
-        <h4 className="text-base text-gray-700 font-semibold">Skills</h4>
-        <p className="font-medium text-sm text-gray-700 text-justify">
-          {skills}
-        </p>
+      <div className="px-6 pb-6 pt-4 border-t border-gray-100 mt-auto">
+        <h4 className="text-sm font-semibold text-gray-500 uppercase tracking-wider mb-2">
+          Key Skills
+        </h4>
+        <p className="text-sm text-gray-700 leading-snug">{skills}</p>
       </div>
     </div>
   );
