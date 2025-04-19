@@ -18,49 +18,57 @@ const FreelanceCard = (props: Props) => {
     setShowAll(!showAll);
   };
 
-  const displayedInfo = showAll ? info : info.slice(0, 1);
+  const maxInitialInfoPoints = 2; // Show first 2 points initially
+  const displayedInfo = showAll ? info : info.slice(0, maxInitialInfoPoints);
+  const canShowMore = info.length > maxInitialInfoPoints;
 
   return (
-    <div className="mx-4">
-      <div className="max-w-md rounded overflow-hidden shadow-md bg-white py-10 px-5">
-        <div className="mx-auto bg-white rounded-full flex items-center justify-center w-25 md:w-25 h-25 md:h-25">
-          <Image
-            src={avatar}
-            alt={"FP"}
-            width={100}
-            height={100}
-            className="rounded-full transform transition-transform hover:scale-110"
-          />
-        </div>
-
-        <div className="px-6 py-2 flex flex-col items-center">
-          <h2 className="text-black text-normal font-semibold">
+    <div className="h-full flex p-2">
+      <div className="flex flex-col w-full rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300 ease-in-out bg-white">
+        <div className="p-6 flex flex-col items-center bg-gray-50 border-b border-gray-100">
+          <div className="mb-4 relative w-24 h-24">
+            <Image
+              src={avatar}
+              alt={`${company} Logo`}
+              fill
+              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+              className="rounded-full object-cover border-2 border-white shadow-sm"
+            />
+          </div>
+          <h2 className="text-lg font-semibold text-gray-900 text-center">
             {link ? (
-              <a href={link} target="_blank" rel="noopener noreferrer">
+              <a
+                href={link}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center hover:text-blue-600 transition-colors duration-200 group"
+              >
                 {project}
               </a>
             ) : (
               project
             )}
           </h2>
-          <p className="text-gray-700 text-md">{company}</p>
-          <time className="font-sm text-blue-400 text-right whitespace-nowrap">
+          <p className="text-sm text-gray-600 mt-1">{company}</p>
+          <time className="mt-1 text-xs font-medium text-blue-500 tracking-wide uppercase">
             {duration}
           </time>
         </div>
 
-        <div className="text-base text-slate-600 pl-6 mt-2">
-          {displayedInfo.map((point, index) => (
-            <div key={index} className="mb-2">
-              <span className="block">{point}</span>
-            </div>
-          ))}
-          {info.length > 2 && (
+        <div className="p-6 flex-grow flex flex-col">
+          <ul className="list-disc list-inside text-base text-gray-700 space-y-2 flex-grow">
+            {displayedInfo.map((point, index) => (
+              <li key={index}>{point}</li>
+            ))}
+          </ul>
+          {canShowMore && (
             <button
               onClick={toggleShowAll}
-              className="text-blue-500 cursor-pointer focus:outline-none mt-2"
+              className="text-sm text-blue-600 hover:text-blue-800 font-medium self-start mt-4 focus:outline-none focus:ring-2 focus:ring-blue-300 focus:ring-offset-2 rounded"
             >
-              {showAll ? "Show less" : "Show more"}
+              {showAll
+                ? "Show less"
+                : `Show more (${info.length - maxInitialInfoPoints} more)`}
             </button>
           )}
         </div>

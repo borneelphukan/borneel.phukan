@@ -1,6 +1,5 @@
 import { useState } from "react";
 import Image from "next/image";
-import RatingStars from "../common/RatingStars";
 
 type Props = {
   avatar: string;
@@ -17,33 +16,46 @@ const TestimonialsCard = (props: Props) => {
     setExpanded(!expanded);
   };
 
+  const shortCommentLength = 150;
+  const isLongComment = comment.length > shortCommentLength;
+
   return (
-    <div className=" mx-4 my-2">
-      <div className="max-w-xl rounded overflow-hidden shadow-lg bg-white py-10 px-5">
-        <div className="mx-auto bg-white rounded-full flex items-center justify-center w-25 md:w-25 h-25 md:h-25">
-          <Image
-            src={avatar}
-            alt="Avatar"
-            width={100}
-            height={100}
-            className="rounded-full transform transition-transform hover:scale-110"
-          />
+    <div className="h-full flex">
+      <div className="flex flex-col max-w-xl rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300 ease-in-out bg-white p-6 md:p-8 w-full">
+        <div className="flex items-center mb-5">
+          <div className="flex-shrink-0 mr-4">
+            <Image
+              src={avatar}
+              alt={`${name}'s Avatar`}
+              width={64}
+              height={64}
+              className="rounded-full border-2 border-gray-200 object-cover" // Added border
+            />
+          </div>
+          <div className="flex-grow">
+            <h3 className="text-lg font-semibold text-gray-900">{name}</h3>
+            <p className="text-sm text-gray-500">{role}</p>
+          </div>
         </div>
 
-        <div className="px-6 py-2">
-          <h2 className="text-black text-normal font-semibold">{name}</h2>
-          <p className="text-gray-700 text-sm">{role}</p>
-          <RatingStars numStars={stars} />
-          <p className="text-gray-700 text-base">
-            {expanded ? comment : `${comment.slice(0, 200)}.. `}
-            <span
-              className="text-blue-500 cursor-pointer"
-              onClick={toggleComment}
-            >
-              {expanded ? " Read less" : " Read more"}
-            </span>
+        <div className="flex-grow">
+          <p className="text-gray-700 text-base leading-relaxed">
+            {expanded
+              ? comment
+              : `${comment.slice(0, shortCommentLength)}${
+                  isLongComment ? "..." : ""
+                }`}
           </p>
         </div>
+
+        {isLongComment && (
+          <button
+            className="mt-4 text-sm text-blue-600 hover:text-blue-800 font-medium self-start transition-colors duration-200"
+            onClick={toggleComment}
+          >
+            {expanded ? "Read less" : "Read more"}
+          </button>
+        )}
       </div>
     </div>
   );

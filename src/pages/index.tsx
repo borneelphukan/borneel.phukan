@@ -35,7 +35,7 @@ const Home = () => {
 
   return (
     <DefaultLayout>
-      <div className="home-cover">
+      <div className="bg-[url('/banners/home-banner.png')] bg-cover bg-center h-full w-full">
         <div className="container mx-auto px-10">
           {/*Banner Goes Here*/}
           <div className="py-16 md:py-24 lg:py-32 xl:py-48 text-black">

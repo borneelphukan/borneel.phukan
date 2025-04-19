@@ -31,19 +31,6 @@
   }
 }
 
-/*
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-}
-*/
-
-/* Enable dark mode */
 .dark {
   --tw-bg-opacity: 1;
   background-color: rgba(1, 25, 41, var(--tw-bg-opacity));
@@ -63,7 +50,6 @@ body {
 .circular-progress-circle {
   fill: transparent;
   stroke: #f97316;
-  /* Orange color for progress bar */
   transition: stroke-dashoffset 0.3s;
 }
 
@@ -83,27 +69,4 @@ body {
 
 .circular-progress-container.visible {
   bottom: 60px;
-}
-
-.home-cover {
-  background-image: url("/banners/home-banner.png");
-  background-size: cover;
-  background-position: center;
-  height: 100%;
-}
-
-.service-cover {
-  background-image: url("/banners/service-banner.webp");
-  background-size: cover;
-  background-position: center;
-  height: 60vh;
-  /* Adjust as needed */
-}
-
-.blog-cover {
-  background-image: url("/banners/blog-banner.jpg");
-  background-size: cover;
-  background-position: center;
-  height: 40vh;
-  /* Adjust as needed */
 }

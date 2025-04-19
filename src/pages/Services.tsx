@@ -8,23 +8,26 @@ const Services = () => {
   const { t } = useTranslation();
   return (
     <DefaultLayout>
-      <div className="service-cover">
-        <div className="container mx-auto px-10">
-          <div className="py-10 md:py-10 lg:py-10 xl:py-10 text-black">
-            <div className="max-w-7xl mx-auto text-center">
-              <h1 className="my-5 md:my-10 md:text-5xl lg:text-5xl xl:text-5xl font-semibold text-3xl mb-4 text-white">
-                {t("serviceHeader")}
-              </h1>
+      <section className="relative isolate overflow-hidden bg-gray-900">
+        <img
+          src="/banners/service_banner.png"
+          alt="Services background"
+          className="absolute inset-0 -z-10 h-full w-full object-cover"
+        />
+        <div className="absolute inset-0 bg-gradient-to-t from-gray-900/70 via-gray-900/50 to-transparent -z-10"></div>
+        <div className="mx-auto max-w-7xl px-6 py-24 sm:py-32 lg:px-8">
+          <div className="mx-auto max-w-3xl text-center">
+            <h1 className="text-5xl font-bold tracking-tight text-white">
+              {t("serviceHeader")}
+            </h1>
 
-              <p className="text-base md:text-lg lg:text-xl text-gray-300 w-[50%] text-center mx-auto">
-                {t("serviceBanner")}
-              </p>
-            </div>
+            <p className="mt-6 text-lg leading-8 text-gray-200 sm:text-xl">
+              {t("serviceBanner")}
+            </p>
           </div>
         </div>
-      </div>
+      </section>
 
-      {/* Card Stack */}
       <CardStack />
       <FreelanceStack />
       <TestimonialCarousel />
