@@ -35,6 +35,7 @@ const Home = () => {
 
   return (
     <DefaultLayout>
+      {/* Banner section */}
       <div className="bg-[url('/banners/home-banner.png')] bg-cover bg-center h-full w-full">
         <div className="container mx-auto px-10">
           {/*Banner Goes Here*/}
@@ -66,17 +67,21 @@ const Home = () => {
           </div>
         </div>
       </div>
-      <div className="w-full flex flex-col md:flex-row lg:flex-row ">
-        <div className="my-8 md:w-4/5 lg:w-4/5">
-          <div className="p-4 md:p-10 mx-4 md:mx-10 md:mb-10">
-            <h1 className="text-4xl md:text-4xl mb-4 md:mb-10 text-center">
+
+      {/* About Me Section */}
+      <div className="w-full flex flex-col md:flex-row gap-8 lg:gap-12 p-4 md:p-8">
+        <div className="md:w-4/5 lg:w-4/5">
+          <div className="p-6 md:p-8 bg-white rounded-lg shadow-sm">
+            <h1 className="text-3xl md:text-4xl font-semibold mb-6 md:mb-8 text-center text-gray-900">
               {aboutme[0]}
             </h1>
 
-            <p className="text-base md:text-base text-justify">{aboutme[1]}</p>
+            <p className="text-base md:text-lg text-gray-700 text-left leading-relaxed mb-8">
+              {aboutme[1]}
+            </p>
 
-            <div className="flex flex-col md:flex-row items-center pt-4 md:pt-10">
-              <div className="h-60 w-60 mx-auto rounded-full flex items-center justify-center overflow-hidden">
+            <div className="flex flex-col md:flex-row items-center gap-6 md:gap-8">
+              <div className="flex-shrink-0 h-48 w-48 md:h-52 md:w-52 mx-auto md:mx-0 rounded-full flex items-center justify-center overflow-hidden border-4 border-gray-200">
                 <Image
                   src={"/assets/borneel.png"}
                   width={200}
@@ -85,19 +90,26 @@ const Home = () => {
                   className="w-full h-full object-cover"
                 />
               </div>
-              <div className="md:pl-20 flex-1">
-                <p className="font-bold text-lg md:text-xl">{aboutme[2]}</p>
-                <p className="text-base md:text-base text-justify">
+
+              <div className="flex-1 text-center md:text-left mt-4 md:mt-0">
+                <p className="font-semibold text-lg md:text-xl text-gray-800 mb-2">
+                  {aboutme[2]}
+                </p>
+
+                <p className="text-base md:text-lg text-gray-700 text-left leading-relaxed">
                   {aboutme[3]}
                 </p>
               </div>
             </div>
           </div>
         </div>
-        <div className="mb-10 mx-auto md:w-1/5 lg:w-1/5 md:ml-5 lg:ml-5 ">
-          <div className="py-1 px-10 md:p-10 text-center my-5 md:mr-20 md:my-20">
-            <h2 className="text-lg font-semibold mb-4">{t("panelHeader")}</h2>
-            <ul>
+
+        <div className="md:w-1/5 lg:w-1/5 mt-8 md:mt-0">
+          <div className="p-6 bg-gray-50 rounded-lg shadow-sm text-center h-full">
+            <h2 className="text-xl font-semibold mb-4 text-gray-800">
+              {t("panelHeader")}
+            </h2>
+            <ul className="space-y-2">
               {categories.map((category) => (
                 <Category
                   key={category.slug}
