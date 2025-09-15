@@ -18,12 +18,12 @@ i18n.use(initReactI18next).init({
         role: ["I am", "Software Developer", "#Open_to_Work"],
         panelHeader: "My Blogs",
         introduction:
-          "A Software Developer focused on developing customer-oriented applications, designing impactful APIs, responsive UI, microservices and delivering successful projects to drive business growth and revenues.",
+          "A Software Developer focused on developing customer-oriented applications, designing impactful APIs, responsive UI, AI microservices and delivering successful projects to drive business growth and revenues.",
         aboutme: [
           "About Me",
           "Hi! I'm Borneel, a Software Developer committed to developing and delivering state-of-the-art full-stack web and mobile applications, secured APIs, and clean User Interfaces, all by leveraging suitable Agile Methodologies. My passion for developing impactful applications and contributing to technology growth has driven me to pursue a career in the field of web engineering. My contributions to open-source development on GitHub can provide you with a preliminary idea about my work and contributions so far.",
           "Who am I?",
-          "I have over 3 years of experience in personal and industry projects. My expertise includes JavaScript/TypeScript, Next.js, React, Vue, Node.js, Python, and TailwindCSS. I actively share knowledge through blog posts and online platforms. I hold a master's degree in Web Engineering from Chemnitz University of Technology, Germany, and a bachelor's degree from Kalinga Institute of Industrial Technology, India. Additionally, I am a part-time photographer with a passion for travel, nature, and architecture photography. If you need a dedicated professional with creative flair and technical acumen, look no further.",
+          "I have 3+ years of experience in software development. My expertise includes JavaScript (TypeScript), Next.js, React (Next.js), Node.js (Nest.js), PostgreSQL, and TailwindCSS. I actively share knowledge through blog posts and online platforms. I hold a master's degree in Web Engineering from Chemnitz University of Technology, Germany, and a bachelor's degree from Kalinga Institute of Industrial Technology, India. Additionally, I am the founder of Graminate, an AI-powered SaaS platform serving agricultural startups in digitalising operations and production. If you need a dedicated and creative professional, look no further.",
         ],
         // Footer
         welcome:
@@ -111,7 +111,7 @@ i18n.use(initReactI18next).init({
           "Über mich",
           "Hallo! Ich bin Borneel, ein Softwareentwickler, der sich der Entwicklung und Bereitstellung modernster Full-Stack-Web- und mobilen Anwendungen, sicherer APIs und sauberer Benutzeroberflächen verschrieben hat, alles unter Nutzung geeigneter agiler Methoden. Meine Leidenschaft für die Entwicklung wirkungsvoller Anwendungen und meinen Beitrag zum technologischen Fortschritt hat mich dazu bewegt, eine Karriere im Bereich Web-Engineering zu verfolgen. Meine Beiträge zur Open-Source-Entwicklung auf GitHub können Ihnen einen ersten Eindruck von meiner Arbeit und meinen bisherigen Beiträgen vermitteln.",
           "Wer bin Ich?",
-          "Ich habe über 3 Jahre Erfahrung in persönlichen und industriellen Projekten. Mein Fachwissen umfasst JavaScript/TypeScript, Next.js, React, Vue, Node.js, Python und TailwindCSS. Ich teile mein Wissen aktiv durch Blogbeiträge und Online-Plattformen. Ich habe einen Master-Abschluss in Web Engineering von der Technischen Universität Chemnitz, Deutschland, und einen Bachelor-Abschluss vom Kalinga Institute of Industrial Technology, Indien. Außerdem bin ich Teilzeitfotograf mit einer Leidenschaft für Reise-, Natur- und Architekturfotografie. Wenn Sie einen engagierten Profi mit kreativem Gespür und technischem Scharfsinn suchen, sind Sie bei mir genau richtig.",
+          "Ich verfüge über mehr als 3 Jahre Erfahrung in der Softwareentwicklung. Meine Expertise umfasst JavaScript (TypeScript), Next.js, React (Next.js), Node.js (Nest.js), PostgreSQL und TailwindCSS. Ich teile mein Wissen aktiv in Blogbeiträgen und auf Online-Plattformen. Ich habe einen Master-Abschluss in Web Engineering von der Technischen Universität Chemnitz und einen Bachelor-Abschluss vom Kalinga Institute of Industrial Technology, Indien. Darüber hinaus bin ich Gründer von Graminate, einer KI-gestützten SaaS-Plattform, die landwirtschaftliche Startups bei der Digitalisierung von Betrieb und Produktion unterstützt. Wenn Sie einen engagierten und kreativen Experten suchen, sind Sie bei uns genau richtig",
         ],
         // Footer
         welcome:
