@@ -1,29 +1,5 @@
 [
   {
-    "image": "/experience/Pactos.png",
-    "title": "Software Developer",
-    "date": "October 2025 - Present",
-    "company": "Pactos.AI",
-    "type": "Internship",
-    "skills": [
-      "React",
-      " Typescript",
-      " NodeJS",
-      " Express",
-      " PostgreSQL",
-      " GCP",
-      " Git"
-    ],
-    "location": "Munich, Germany",
-    "description": [
-      "Developing and maintaining web applications end-to-end by building responsive and interactive frontend components and robust backend services, ensuring seamless functionality across platforms",
-      "Designing user-friendly interfaces with a focus on performance, accessibility, and scalability; delivering high-quality, maintainable code following best practices and version control workflows",
-      "Managing and integrating databases and APIs, including designing efficient database schemas, writing optimized queries, and building RESTful APIs",
-      "Ensuring code quality, performance, and scalability by writing comprehensive unit and integration tests, code reviews, and applying performance optimization techniques to handle high-traffic use cases",
-      "Deploying, monitoring, and maintaining cloud-based applications with cloud services, including hosting, database management, and CI/CD pipelines for automated builds and deployments"
-    ]
-  },
-  {
     "image": "/experience/Graminate.png",
     "title": "Software Developer",
     "date": "November 2024 - Present",
