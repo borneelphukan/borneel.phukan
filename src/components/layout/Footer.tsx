@@ -4,7 +4,6 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { faInstagram } from "@fortawesome/free-brands-svg-icons";
-import LanguageSelector from "../utils/LanguageSelector";
 import { useTranslation } from "react-i18next";
 
 const Footer = () => {
@@ -163,12 +162,9 @@ const Footer = () => {
       </div>
 
       {/* All Rights Reserved tagline */}
-      <div className="flex flex-col items-center">
-        <LanguageSelector />
-        <p className="mt-8 text-sm text-slate-400">
-          Borneel Bikash Phukan &copy; {new Date().getFullYear()} {t("rights")}
-        </p>
-      </div>
+      <p className="mt-2 text-sm text-slate-400">
+        Borneel Bikash Phukan &copy; {new Date().getFullYear()} {t("rights")}
+      </p>
     </footer>
   );
 };

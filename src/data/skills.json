@@ -5,7 +5,6 @@
 
     { "name": "TypeScript", "imageUrl": "/skills/programming/typescript.png" },
     { "name": "JavaScript", "imageUrl": "/skills/programming/javascript.png" },
-    { "name": "Php", "imageUrl": "/skills/programming/php.svg" },
     { "name": "Python", "imageUrl": "/skills/programming/python.webp" }
   ],
   "frontend": [
@@ -14,7 +13,6 @@
     { "name": "Next.js", "imageUrl": "/skills/frontend/next.webp" },
     { "name": "Svelte", "imageUrl": "/skills/frontend/svelte.png" },
     { "name": "Vue.js", "imageUrl": "/skills/frontend/vue.png" },
-    { "name": "Pinia.js", "imageUrl": "/skills/frontend/pinia.png" },
     { "name": "Nuxt.js", "imageUrl": "/skills/frontend/nuxt.png" },
     { "name": "Tailwind", "imageUrl": "/skills/frontend/tailwind.png" },
     { "name": "Bootstrap", "imageUrl": "/skills/frontend/bootstrap.svg" },
@@ -24,9 +22,9 @@
     { "name": "Express.js", "imageUrl": "/skills/backend/express.png" },
     { "name": "Node.js", "imageUrl": "/skills/backend/node.png" },
     { "name": "REST API", "imageUrl": "/skills/backend/restapi.svg" },
+    { "name": "PostgreSQL", "imageUrl": "/skills/backend/postgresql.svg" },
     { "name": "MySQL", "imageUrl": "/skills/backend/mysql.png" },
-    { "name": "MongoDB", "imageUrl": "/skills/backend/mongodb.svg" },
-    { "name": "PostgreSQL", "imageUrl": "/skills/backend/postgresql.svg" }
+    { "name": "MongoDB", "imageUrl": "/skills/backend/mongodb.svg" }
   ],
   "devops": [
     { "name": "Docker", "imageUrl": "/skills/devops/docker.png" },
@@ -57,7 +55,6 @@
 
   "tools": [
     { "name": "MS Office", "imageUrl": "/skills/tools/ms-office.png" },
-    { "name": "Slack", "imageUrl": "/skills/tools/slack.webp" },
     { "name": "DaVinci Resolve", "imageUrl": "/skills/tools/davinci.png" },
     { "name": "Photoshop", "imageUrl": "/skills/tools/photoshop.png" }
   ]
