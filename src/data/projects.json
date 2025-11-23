@@ -27,15 +27,6 @@
     "category": "frontend"
   },
   {
-    "title": "BFit Fitness App",
-    "description": "A cross-platform fitness mobile app currently being build with Nuxt.js, Typescript and Tailwind. Uses MongoDB and Nodejs for the backend functionalities, and currently under development",
-    "buttonText": "Code",
-    "start": "August 2024",
-    "end": "Active",
-    "link": "https://github.com/borneelphukan/bfit-app.git",
-    "category": "fullstack"
-  },
-  {
     "title": "BDesign Corporate Theme Template",
     "description": "Introducing my Next.js and TailwindCSS powered BDesign Corporate Website Template: A dynamic and visually appealing solution for businesses of all sizes. With customizable components and Responsive web views, this template empowers you to create a professional online presence effortlessly.",
     "buttonText": "Open",

@@ -8,10 +8,9 @@
     "skills": [
       "React",
       " Typescript",
-      " NodeJS",
-      " Express",
-      " PostgreSQL",
-      " GCP",
+      " tRPC",
+      " PayloadCMS",
+      " MongoDB",
       " Git"
     ],
     "location": "Munich, Germany",
@@ -60,32 +59,6 @@
       "Developed core features for the application like dashboards, player picker, tournament and league panels for users",
       "Developed the frontend of a members-exclusive company portfolio website; enhanced UI and added localization",
       "Collaborated with an agile team of developers and external management to ensure timely completion of sprint goals and successful deployment"
-    ]
-  },
-  {
-    "image": "/experience/V4C.png",
-    "title": "Web Developer",
-    "date": "March 2023 - July 2023",
-    "company": "V4C Management Consulting",
-    "type": "Working Student",
-    "skills": [
-      "Next.js",
-      "TypeScript",
-      "TailwindCSS",
-      "NodeJS",
-      "MongoDB",
-      "Wordpress",
-      "AWS",
-      "Figma",
-      "Git"
-    ],
-    "location": "Munich, Germany",
-    "reference": "/docs/V4C.pdf",
-    "description": [
-      "Developed the frontend of a large-scale dynamic company website with Next.js. Features include blog section, user and admin dashboards, and authentication",
-      "Developed relational and non-relational databases with MySQL and MongoDB, and API endpoints with NodeJS",
-      "Leveraged Docker to containerize frontend, server, and databases for easier scalability and deployment",
-      "Collaborated with management to add features, plugins and optimize performance for legacy Wordpress website"
     ]
   },
   {

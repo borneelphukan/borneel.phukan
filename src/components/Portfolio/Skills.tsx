@@ -42,27 +42,27 @@ const Skills = () => {
 
   const categories = [
     {
-      title: "Programming Languages",
+      title: "Core Programming Languages",
       data: programming,
       gridClasses: "grid-cols-4 md:grid-cols-4 lg:grid-cols-5",
     },
     {
-      title: "Frontend Tools",
+      title: "Frontend Development",
       data: frontend,
       gridClasses: "grid-cols-4 md:grid-cols-4 lg:grid-cols-5",
     },
     {
-      title: "Backend Tools",
+      title: "Backend Development",
       data: backend,
       gridClasses: "grid-cols-4 md:grid-cols-4 lg:grid-cols-5",
     },
     {
-      title: "DevOps Tools",
+      title: "DevOps & Project Management",
       data: devops,
       gridClasses: "grid-cols-4 md:grid-cols-4 lg:grid-cols-5",
     },
     {
-      title: "Maching Learning Tools",
+      title: "Maching Learning",
       data: machineLearning,
       gridClasses: "grid-cols-4 md:grid-cols-4 lg:grid-cols-5",
     },

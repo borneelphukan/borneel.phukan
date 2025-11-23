@@ -2,35 +2,34 @@
   "programming": [
     { "name": "HTML5", "imageUrl": "/skills/programming/html5.jpeg" },
     { "name": "CSS3", "imageUrl": "/skills/programming/css3.webp" },
-
     { "name": "TypeScript", "imageUrl": "/skills/programming/typescript.png" },
     { "name": "JavaScript", "imageUrl": "/skills/programming/javascript.png" },
     { "name": "Python", "imageUrl": "/skills/programming/python.webp" }
   ],
   "frontend": [
     { "name": "React", "imageUrl": "/skills/frontend/react.png" },
-    { "name": "Redux", "imageUrl": "/skills/frontend/redux.svg" },
     { "name": "Next.js", "imageUrl": "/skills/frontend/next.webp" },
     { "name": "Svelte", "imageUrl": "/skills/frontend/svelte.png" },
     { "name": "Vue.js", "imageUrl": "/skills/frontend/vue.png" },
     { "name": "Nuxt.js", "imageUrl": "/skills/frontend/nuxt.png" },
     { "name": "Tailwind", "imageUrl": "/skills/frontend/tailwind.png" },
-    { "name": "Bootstrap", "imageUrl": "/skills/frontend/bootstrap.svg" },
     { "name": "Figma", "imageUrl": "/skills/frontend/figma.png" }
   ],
   "backend": [
+    { "name": "Nest.js", "imageUrl": "/skills/backend/nest.svg" },
     { "name": "Express.js", "imageUrl": "/skills/backend/express.png" },
     { "name": "Node.js", "imageUrl": "/skills/backend/node.png" },
     { "name": "REST API", "imageUrl": "/skills/backend/restapi.svg" },
     { "name": "PostgreSQL", "imageUrl": "/skills/backend/postgresql.svg" },
-    { "name": "MySQL", "imageUrl": "/skills/backend/mysql.png" },
-    { "name": "MongoDB", "imageUrl": "/skills/backend/mongodb.svg" }
+    { "name": "MongoDB", "imageUrl": "/skills/backend/mongodb.svg" },
+    { "name": "Payload", "imageUrl": "/skills/backend/payload.png" }
   ],
   "devops": [
     { "name": "Docker", "imageUrl": "/skills/devops/docker.png" },
     { "name": "Git", "imageUrl": "/skills/devops/git.webp" },
     { "name": "GitHub", "imageUrl": "/skills/devops/github.png" },
-    { "name": "Jira", "imageUrl": "/skills/devops/jira.png" }
+    { "name": "Jira", "imageUrl": "/skills/devops/jira.png" },
+    { "name": "Linear", "imageUrl": "/skills/devops/linear.png" }
   ],
   "machineLearning": [
     {

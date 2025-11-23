@@ -57,12 +57,12 @@ const Home = () => {
               <p className="text-md md:text-lg lg:text-xl text-gray-300 max-w-[60%]">
                 {t("introduction")}
               </p>
-              <Button
+              {/* <Button
                 bgColor="black"
                 textColor="white"
                 text="Download CV"
                 file={"docs/CV.pdf"}
-              />
+              /> */}
             </div>
           </div>
         </div>

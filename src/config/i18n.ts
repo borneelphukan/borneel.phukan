@@ -15,7 +15,7 @@ i18n.use(initReactI18next).init({
           "Contact",
         ],
         // Home Page
-        role: ["I am", "Software Developer", "#Open_to_Work"],
+        role: ["I am", "Software Developer", "#Not_Open_to_Work"],
         panelHeader: "My Blogs",
         introduction:
           "A Software Developer focused on developing customer-oriented applications, designing impactful APIs, responsive UI, AI microservices and delivering successful projects to drive business growth and revenues.",
