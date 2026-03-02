@@ -1,6 +1,5 @@
 import { useState } from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faExternalLinkAlt } from "@fortawesome/free-solid-svg-icons";
+import OpenInNewIcon from '@mui/icons-material/OpenInNew';
 
 type Props = {
   title: string;
@@ -68,8 +67,7 @@ const ProjectCard = (props: Props) => {
             aria-label={`View details or visit link for ${title}`}
           >
             {buttonText}
-            <FontAwesomeIcon
-              icon={faExternalLinkAlt}
+            <OpenInNewIcon
               className="ml-2 h-3 w-3"
             />
           </button>

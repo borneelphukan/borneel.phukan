@@ -1,4 +1,7 @@
 import ContactCard from "../card/ContactCard";
+import MapIcon from '@mui/icons-material/Map';
+import CalendarMonthIcon from '@mui/icons-material/CalendarMonth';
+import AttachMoneyIcon from '@mui/icons-material/AttachMoney';
 
 
 const ContactDetails = () => {
@@ -14,18 +17,18 @@ const ContactDetails = () => {
       <div className="container px-auto text-center overflow-hidden mx-auto flex flex-grow">
         <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-3 gap-8 p-5">
           <ContactCard
-            icon="fa-light fa-map"
+            icon={MapIcon}
             title={contactCardHeader[0]}
             description={contactCardDescription[0]}
           />
           <ContactCard
-            icon="fa-light fa-calendar"
+            icon={CalendarMonthIcon}
             title={contactCardHeader[1]}
             description={contactCardDescription[1]}
             link="https://calendly.com/borneelphukan/30min"
           />
           <ContactCard
-            icon="fa-light fa-dollar"
+            icon={AttachMoneyIcon}
             title={contactCardHeader[2]}
             description={contactCardDescription[2]}
             link="https://www.paypal.com/paypalme/borneelphukan"

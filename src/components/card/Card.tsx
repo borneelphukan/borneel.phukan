@@ -1,18 +1,19 @@
-import "font-awesome/css/font-awesome.min.css";
+import { SvgIconComponent } from '@mui/icons-material';
 
 type Props = {
-  icon: string;
+  icon: SvgIconComponent;
   title: string;
   content: string;
   skills: string;
 };
 
-const Card = ({ icon, title, content, skills }: Props) => {
+const Card = (props: Props) => {
+  const { title, content, skills } = props;
   return (
     <div className="h-full flex flex-col rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300 ease-in-out bg-white">
       <div className="p-6 bg-gradient-to-br from-blue-50 to-indigo-100 flex items-center justify-center">
         <div className="bg-white rounded-full p-4 shadow-sm">
-          <i className={`text-3xl text-blue-600 fa ${icon}`}></i>
+          <props.icon className="text-blue-600" style={{ fontSize: '2.5rem' }} />
         </div>
       </div>
 

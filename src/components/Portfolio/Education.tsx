@@ -2,11 +2,8 @@ import "intersection-observer";
 import { useEffect, useRef } from "react";
 import Image from "next/image";
 import educations from "@/data/education.json";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faCalendarAlt,
-  faMapMarkerAlt,
-} from "@fortawesome/free-solid-svg-icons";
+import CalendarTodayIcon from '@mui/icons-material/CalendarToday';
+import LocationOnIcon from '@mui/icons-material/LocationOn';
 
 const Education = () => {
   const cardsRef = useRef<HTMLDivElement[]>([]);
@@ -78,15 +75,13 @@ const Education = () => {
                 {/* Right Column */}
                 <div className="flex flex-col items-end">
                   <div className="flex items-center text-sm text-gray-500 mb-2">
-                    <FontAwesomeIcon
-                      icon={faMapMarkerAlt}
+                    <LocationOnIcon
                       className="w-3 h-3 mr-1.5 text-gray-400"
                     />
                     <span>{education.location}</span>
                   </div>
                   <div className="flex items-center text-sm text-gray-500">
-                    <FontAwesomeIcon
-                      icon={faCalendarAlt}
+                    <CalendarTodayIcon
                       className="w-3 h-3 mr-1.5 text-gray-400"
                     />
                     <time>{education.date}</time>

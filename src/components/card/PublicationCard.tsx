@@ -1,10 +1,6 @@
 import { useState } from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-
-import {
-  faExternalLinkAlt,
-  faQuoteLeft,
-} from "@fortawesome/free-solid-svg-icons";
+import OpenInNewIcon from '@mui/icons-material/OpenInNew';
+import FormatQuoteIcon from '@mui/icons-material/FormatQuote';
 
 type Props = {
   paperName: string;
@@ -85,8 +81,7 @@ const PublicationCard = (props: Props) => {
         >
           {showPublication}
           {isLinkAvailable && (
-            <FontAwesomeIcon
-              icon={faExternalLinkAlt}
+            <OpenInNewIcon
               className="ml-2 h-3 w-3"
             />
           )}
@@ -95,8 +90,7 @@ const PublicationCard = (props: Props) => {
         {/* Citations Count */}
         {citations !== undefined && citations > 0 && (
           <div className="flex items-center text-sm text-gray-600">
-            <FontAwesomeIcon
-              icon={faQuoteLeft}
+            <FormatQuoteIcon
               className="mr-1.5 h-3 w-3 text-gray-400"
             />
             <span>

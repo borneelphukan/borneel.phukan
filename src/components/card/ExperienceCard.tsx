@@ -1,10 +1,7 @@
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faCalendarAlt,
-  faMapMarkerAlt,
-  faLink,
-  faCheckCircle,
-} from "@fortawesome/free-solid-svg-icons";
+import CalendarTodayIcon from '@mui/icons-material/CalendarToday';
+import LocationOnIcon from '@mui/icons-material/LocationOn';
+import LinkIcon from '@mui/icons-material/Link';
+import CheckCircleIcon from '@mui/icons-material/CheckCircle';
 
 type Props = {
   title: string;
@@ -42,15 +39,13 @@ const ExperienceCard = (props: Props) => {
         {/* Date, Location, Reference - Left aligned */}
         <div className="flex flex-col space-y-1">
           <div className="flex items-center text-sm text-gray-500">
-            <FontAwesomeIcon
-              icon={faCalendarAlt}
+            <CalendarTodayIcon
               className="w-3 h-3 mr-1.5 text-gray-400"
             />
             <time>{date}</time>
           </div>
           <div className="flex items-center text-sm text-gray-500">
-            <FontAwesomeIcon
-              icon={faMapMarkerAlt}
+            <LocationOnIcon
               className="w-3 h-3 mr-1.5 text-gray-400"
             />
             <span>{location}</span>
@@ -62,7 +57,7 @@ const ExperienceCard = (props: Props) => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <FontAwesomeIcon icon={faLink} className="w-3 h-3 mr-1.5" />
+              <LinkIcon className="w-3 h-3 mr-1.5" />
               Reference Letter
             </a>
           )}
@@ -92,8 +87,7 @@ const ExperienceCard = (props: Props) => {
           <ul className="space-y-1.5 text-sm text-gray-700 list-inside">
             {description.map((point, i) => (
               <li key={i} className="flex items-start">
-                <FontAwesomeIcon
-                  icon={faCheckCircle}
+                <CheckCircleIcon
                   className="w-3 h-3 mr-2 mt-0.5 text-green-500 flex-shrink-0"
                 />
                 <span>{point}</span>

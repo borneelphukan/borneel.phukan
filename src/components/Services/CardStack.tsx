@@ -1,5 +1,9 @@
 import { useRef } from "react";
 import Card from "../card/Card";
+import CodeIcon from '@mui/icons-material/Code';
+import StorageIcon from '@mui/icons-material/Storage';
+import CreateIcon from '@mui/icons-material/Create';
+import HelpOutlineIcon from '@mui/icons-material/HelpOutline';
 
 import { useIntersectionObserver } from "@/hooks/observers";
 
@@ -25,9 +29,9 @@ const CardStack = () => {
   const cardsRef = useRef<Array<HTMLDivElement | null>>([]);
   useIntersectionObserver(cardsRef);
 
-  const getIconByIndex = (index: number): string => {
-    const icons = ["fa-code", "fa-server", "fa-pencil"];
-    return icons[index % icons.length] || "fa-question-circle";
+  const getIconByIndex = (index: number) => {
+    const icons = [CodeIcon, StorageIcon, CreateIcon];
+    return icons[index % icons.length] || HelpOutlineIcon;
   };
 
   return (

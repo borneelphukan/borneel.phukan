@@ -1,9 +1,9 @@
 import Link from "next/link";
 import Image from "next/image";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons";
-import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
-import { faInstagram } from "@fortawesome/free-brands-svg-icons";
+import InstagramIcon from '@mui/icons-material/Instagram';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import GitHubIcon from '@mui/icons-material/GitHub';
+import EmailIcon from '@mui/icons-material/Email';
 
 
 const Footer = () => {
@@ -134,34 +134,30 @@ const Footer = () => {
                 href="https://www.instagram.com/borneel.phukan"
                 target="_blank"
               >
-                <FontAwesomeIcon
+                <InstagramIcon
                   className="mx-3 my-3 hover:text-blue-400"
-                  icon={faInstagram}
-                  size="2x"
+                  fontSize="large"
                 />
               </a>
               <a
                 href="https://www.linkedin.com/in/borneelphukan/"
                 target="_blank"
               >
-                <FontAwesomeIcon
+                <LinkedInIcon
                   className="mx-3 my-3 hover:text-blue-400"
-                  icon={faLinkedin}
-                  size="2x"
+                  fontSize="large"
                 />
               </a>
               <a href="https://github.com/borneelphukan" target="_blank">
-                <FontAwesomeIcon
+                <GitHubIcon
                   className="mx-3 my-3 hover:text-blue-400"
-                  icon={faGithub}
-                  size="2x"
+                  fontSize="large"
                 />
               </a>
               <a href="mailto:borneelphukan@gmail.com">
-                <FontAwesomeIcon
+                <EmailIcon
                   className="mx-3 my-3 hover:text-blue-400"
-                  icon={faEnvelope}
-                  size="2x"
+                  fontSize="large"
                 />
               </a>
             </div>
