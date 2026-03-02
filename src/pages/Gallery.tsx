@@ -200,7 +200,7 @@ const Gallery = () => {
           onClick={closeLightbox}
         >
           <div
-            className="relative bg-white dark:bg-gray-800 rounded-lg shadow-xl p-4 w-full max-w-4xl max-h-[90vh] flex flex-col animate-scaleUp"
+            className="relative bg-white rounded-lg shadow-xl p-4 w-full max-w-4xl max-h-[90vh] flex flex-col animate-scaleUp"
             onClick={(e) => e.stopPropagation()}
           >
             <div className="relative flex-shrink-0 mb-4 aspect-video">
@@ -213,13 +213,13 @@ const Gallery = () => {
               />
             </div>
 
-            <p className="text-center text-gray-700 dark:text-gray-300 text-sm md:text-base mb-4 flex-shrink-0">
+            <p className="text-center text-gray-700 text-sm md:text-base mb-4 flex-shrink-0">
               {images[currentIndex].caption}
             </p>
 
             <button
               onClick={closeLightbox}
-              className="absolute top-3 right-3 z-10 p-1.5 bg-gray-200/50 dark:bg-gray-600/50 hover:bg-gray-300/70 dark:hover:bg-gray-500/70 rounded-full text-gray-800 dark:text-gray-100 transition duration-150"
+              className="absolute top-3 right-3 z-10 p-1.5 bg-gray-200/50 hover:bg-gray-300/70 rounded-full text-gray-800 transition duration-150"
               aria-label="Close image viewer"
             >
               <CloseIcon className="h-5 w-5" />
@@ -227,7 +227,7 @@ const Gallery = () => {
 
             <button
               onClick={goToPrevious}
-              className="absolute left-2 sm:left-4 top-1/2 -translate-y-1/2 z-10 p-2 bg-gray-200/50 dark:bg-gray-600/50 hover:bg-gray-300/70 dark:hover:bg-gray-500/70 rounded-full text-gray-800 dark:text-gray-100 transition duration-150"
+              className="absolute left-2 sm:left-4 top-1/2 -translate-y-1/2 z-10 p-2 bg-gray-200/50 hover:bg-gray-300/70 rounded-full text-gray-800 transition duration-150"
               aria-label="Previous image"
             >
               <ChevronLeftIcon className="h-6 w-6" />
@@ -235,7 +235,7 @@ const Gallery = () => {
 
             <button
               onClick={goToNext}
-              className="absolute right-2 sm:right-4 top-1/2 -translate-y-1/2 z-10 p-2 bg-gray-200/50 dark:bg-gray-600/50 hover:bg-gray-300/70 dark:hover:bg-gray-500/70 rounded-full text-gray-800 dark:text-gray-100 transition duration-150"
+              className="absolute right-2 sm:right-4 top-1/2 -translate-y-1/2 z-10 p-2 bg-gray-200/50 hover:bg-gray-300/70 rounded-full text-gray-800 transition duration-150"
               aria-label="Next image"
             >
               <ChevronRightIcon className="h-6 w-6" />

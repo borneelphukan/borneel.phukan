@@ -27,7 +27,7 @@ const BreadCrumbs = () => {
         <li className="inline-flex items-center">
           <Link
             href="/"
-            className="inline-flex items-center text-sm font-semibold hover:text-white text-white dark:hover:text-orange"
+            className="inline-flex items-center text-sm font-semibold hover:text-white text-white"
           >
             Home
           </Link>

@@ -1,7 +1,6 @@
 import { useState, useEffect } from "react";
 import Head from "next/head";
 import Navbar from "@/components/layout/NavBar";
-import ThemeSwitch from "@/components/common/ThemeSwitch";
 import CircularProgressBar from "@/components/common/CircularProgressBar";
 import Footer from "@/components/layout/Footer";
 import Loader from "@/components/common/Loader";
@@ -28,10 +27,9 @@ const DefaultLayout = ({ children }: { children: React.ReactNode }) => {
         <div className="min-h-screen">
           <Navbar />
 
-          <main className="pt-16">
+          <main className="">
             {children}
             <CircularProgressBar />
-            <ThemeSwitch />
           </main>
 
           <footer>

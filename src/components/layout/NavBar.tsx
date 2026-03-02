@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { useRouter } from "next/router";
 import MenuIcon from "@mui/icons-material/Menu";
 import CloseIcon from "@mui/icons-material/Close";
 
@@ -18,13 +19,22 @@ const Navbar = () => {
     "Contact",
   ];
 
+  const router = useRouter();
+
   const handleLinkClick = (linkText: string) => {
     setSelectedLink(linkText);
   };
 
   useEffect(() => {
-    setSelectedLink("Home");
-  }, []);
+    const path = router.pathname;
+    if (path === "/") setSelectedLink("Home");
+    else if (path.toLowerCase().startsWith("/portfolio")) setSelectedLink("Portfolio");
+    else if (path.toLowerCase().startsWith("/services")) setSelectedLink("Services");
+    else if (path.toLowerCase().startsWith("/blogs")) setSelectedLink("Blogs");
+    else if (path.toLowerCase().startsWith("/gallery")) setSelectedLink("Gallery");
+    else if (path.toLowerCase().startsWith("/contact")) setSelectedLink("Contact");
+    else setSelectedLink("Home");
+  }, [router.pathname]);
 
   const toggleMobileMenu = () => {
     setShowMobileMenu((prevShowMobileMenu) => !prevShowMobileMenu);
@@ -64,9 +74,9 @@ const Navbar = () => {
         <Link
           href="/Portfolio"
           className={`text-white hover:text-gray-300 hover:after:content-[''] hover:after:block hover:after:h-[2px] hover:after:bg-blue-400 hover:after:w-full hover:after:mt-[10px] ${
-            selectedLink === "Portfolios" ? "after:content-[''] after:block after:w-full after:h-[2px] after:bg-blue-400 after:mt-[10px]" : ""
+            selectedLink === "Portfolio" ? "after:content-[''] after:block after:w-full after:h-[2px] after:bg-blue-400 after:mt-[10px]" : ""
           }`}
-          onClick={() => handleLinkClick("Portfolios")}
+          onClick={() => handleLinkClick("Portfolio")}
         >
           {navItems[1]}
         </Link>

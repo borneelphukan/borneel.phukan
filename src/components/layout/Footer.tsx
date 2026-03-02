@@ -16,7 +16,7 @@ const Footer = () => {
       "Publication",
       "Projects",
     ],
-    ["Services", "Testimonials", "Blogs", "Gallery", "Contact Me"],
+    ["Services", "Blogs", "Gallery", "Contact Me"],
     ["Social"],
   ];
 
