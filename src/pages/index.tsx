@@ -2,7 +2,8 @@ import DefaultLayout from "@/layout/DefaultLayout";
 import Image from "next/image";
 
 import Link from "next/link";
-
+import { TestimonialCarousel } from "@/components/carousel/TestimonialCarousel";
+import Skills from "@/components/Portfolio/Skills";
 type CategoryProps = {
   slug: string;
   title: string;
@@ -119,6 +120,8 @@ const Home = () => {
           </div>
         </div>
       </div>
+      <Skills />
+      <TestimonialCarousel />
     </DefaultLayout>
   );
 };

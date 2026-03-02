@@ -1,6 +1,5 @@
 import DefaultLayout from "@/layout/DefaultLayout";
 import CardStack from "@/components/Services/CardStack";
-import { TestimonialCarousel } from "@/components/carousel/TestimonialCarousel";
 import FreelanceStack from "@/components/Services/Freelance/FreelanceStack";
 
 
@@ -30,7 +29,6 @@ const Services = () => {
 
       <CardStack />
       <FreelanceStack />
-      <TestimonialCarousel />
     </DefaultLayout>
   );
 };

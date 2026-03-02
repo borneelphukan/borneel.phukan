@@ -4,87 +4,105 @@ import skillsData from "@/data/skills.json";
 const SkillCategory = ({
   title,
   skills,
-  gridClasses,
 }: {
   title: string;
   skills: { name: string; imageUrl: string }[];
-  gridClasses: string;
 }) => (
-  <div className="col-span-1 m-2">
-    <h2 className="text-xl md:text-2xl font-semibold mb-3">{title}</h2>
-    <div
-      className={`grid ${gridClasses} gap-x-6 gap-y-8 sm:gap-x-8 md:gap-x-10 lg:gap-x-12`}
-    >
-      {skills.map(({ name, imageUrl }, index) => (
-        <div
-          key={index}
-          className="rounded-full w-12 h-12 sm:w-16 sm:h-16 m-1 sm:m-2 lg:m-3"
-        >
-          <Image
-            height={80}
-            width={80}
-            src={imageUrl}
-            alt={name}
-            className="rounded-full w-full h-full transform transition-transform hover:scale-110"
-          />
-          <div className="flex items-center justify-center text-xs sm:text-sm md:text-base mt-2">
-            {name}
+  <div className="col-span-1 m-2 overflow-hidden">
+    <h2 className="text-xl md:text-2xl font-semibold mb-6 text-gray-800">{title}</h2>
+    <div className="relative flex overflow-hidden mask-horizontal-gradient py-4">
+      <div className="flex w-max animate-scroll-horizontal gap-8 sm:gap-12 pr-8 sm:pr-12 cursor-pointer">
+        {[...skills, ...skills, ...skills, ...skills].map(({ name, imageUrl }, index) => (
+          <div
+            key={index}
+            className="flex flex-col items-center justify-center min-w-[80px]"
+          >
+            <div className="rounded-full w-14 h-14 sm:w-20 sm:h-20 mb-3 flex items-center justify-center">
+              <Image
+                height={60}
+                width={60}
+                src={imageUrl}
+                alt={name}
+                className="w-10 h-10 sm:w-12 sm:h-12 transform transition-transform duration-300 hover:scale-110 object-contain"
+              />
+            </div>
+            <div className="flex items-center justify-center text-xs sm:text-sm font-medium text-gray-600 text-center">
+              {name}
+            </div>
           </div>
-        </div>
-      ))}
+        ))}
+      </div>
     </div>
   </div>
 );
 
 const Skills = () => {
-  const { programming, frontend, backend, devops, machineLearning, tools } =
+  const { programming, frontend, backend, devops, tools } =
     skillsData;
 
   const categories = [
     {
-      title: "Core Programming Languages",
+      title: "Programming Tools",
       data: programming,
-      gridClasses: "grid-cols-4 md:grid-cols-4 lg:grid-cols-5",
     },
     {
-      title: "Frontend Development",
+      title: "Frontend Tools",
       data: frontend,
-      gridClasses: "grid-cols-4 md:grid-cols-4 lg:grid-cols-5",
     },
     {
-      title: "Backend Development",
+      title: "Backend Tools",
       data: backend,
-      gridClasses: "grid-cols-4 md:grid-cols-4 lg:grid-cols-5",
     },
     {
-      title: "DevOps & Project Management",
+      title: "DevOps & Product Management",
       data: devops,
-      gridClasses: "grid-cols-4 md:grid-cols-4 lg:grid-cols-5",
     },
     {
-      title: "Maching Learning",
-      data: machineLearning,
-      gridClasses: "grid-cols-4 md:grid-cols-4 lg:grid-cols-5",
-    },
-    {
-      title: "Other Tools",
+      title: "Creative Tools",
       data: tools,
-      gridClasses: "grid-cols-3 sm:grid-cols-4 md:grid-cols-4 lg:grid-cols-5",
     },
   ];
 
   return (
-    <div className="max-w-8xl text-lg p-5" id="Skills">
-      <h1 className="text-4xl text-center font-semibold mb-10">SKILLS</h1>
+    <div 
+      className="bg-[#f8f9fa] sm:py-12 text-lg" 
+      id="Skills"
+    >
+      <div className="mx-auto max-w-4xl text-center flex flex-col items-center mb-12 sm:mb-16">
+        <div className="flex justify-center items-center gap-4 mb-6 mt-4">
+          <div className="w-16 h-[2px] bg-black"></div>
+          <p className="text-base font-medium tracking-[0.2em] text-black uppercase">Tools</p>
+        </div>
+        
+        <h2 className="text-4xl font-medium sm:text-4xl lg:text-4xl tracking-normal">
+          My toolstack.
+        </h2>
+      </div>
 
-      <div className="container md:p-10 lg:p-10 mx-auto">
+      <style>{`
+        @keyframes scrollHorizontal {
+          0% { transform: translateX(0); }
+          100% { transform: translateX(-50%); } 
+        }
+        .animate-scroll-horizontal {
+          animation: scrollHorizontal 25s linear infinite;
+        }
+        .animate-scroll-horizontal:hover {
+          animation-play-state: paused;
+        }
+        .mask-horizontal-gradient {
+          mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+          -webkit-mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+        }
+      `}</style>
+
+      <div className="container md:p-10 lg:p-10 mx-auto px-5">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
           {categories.map((category, index) => (
             <SkillCategory
               key={index}
               title={category.title}
               skills={category.data}
-              gridClasses={category.gridClasses}
             />
           ))}
         </div>

@@ -12,8 +12,7 @@
     { "name": "Svelte", "imageUrl": "/skills/frontend/svelte.png" },
     { "name": "Vue.js", "imageUrl": "/skills/frontend/vue.png" },
     { "name": "Nuxt.js", "imageUrl": "/skills/frontend/nuxt.png" },
-    { "name": "Tailwind", "imageUrl": "/skills/frontend/tailwind.png" },
-    { "name": "Figma", "imageUrl": "/skills/frontend/figma.png" }
+    { "name": "Tailwind", "imageUrl": "/skills/frontend/tailwind.png" }
   ],
   "backend": [
     { "name": "Nest.js", "imageUrl": "/skills/backend/nest.svg" },
@@ -31,30 +30,11 @@
     { "name": "Jira", "imageUrl": "/skills/devops/jira.png" },
     { "name": "Linear", "imageUrl": "/skills/devops/linear.png" }
   ],
-  "machineLearning": [
-    {
-      "name": "Tensorflow",
-      "imageUrl": "/skills/machineLearning/tensorflow.png"
-    },
-    { "name": "OpenCV", "imageUrl": "/skills/machineLearning/opencv.png" },
-    {
-      "name": "Scikit-Learn",
-      "imageUrl": "/skills/machineLearning/scikit.png"
-    },
-    {
-      "name": "Pandas",
-      "imageUrl": "/skills/machineLearning/pandas.svg"
-    },
-    {
-      "name": "Matplotlib",
-      "imageUrl": "/skills/machineLearning/matplotlib.png"
-    },
-    { "name": "Numpy", "imageUrl": "/skills/machineLearning/numpy.webp" }
-  ],
 
   "tools": [
     { "name": "MS Office", "imageUrl": "/skills/tools/ms-office.png" },
     { "name": "DaVinci Resolve", "imageUrl": "/skills/tools/davinci.png" },
-    { "name": "Photoshop", "imageUrl": "/skills/tools/photoshop.png" }
+    { "name": "Photoshop", "imageUrl": "/skills/tools/photoshop.png" },
+    { "name": "Figma", "imageUrl": "/skills/tools/figma.png" }
   ]
 }
