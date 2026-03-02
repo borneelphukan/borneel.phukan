@@ -2,6 +2,9 @@ import DefaultLayout from "@/layout/DefaultLayout";
 
 import { useState, useEffect, useCallback } from "react";
 import Image from "next/image";
+import CloseIcon from '@mui/icons-material/Close';
+import ChevronLeftIcon from '@mui/icons-material/ChevronLeft';
+import ChevronRightIcon from '@mui/icons-material/ChevronRight';
 
 const images = [
   {
@@ -219,20 +222,7 @@ const Gallery = () => {
               className="absolute top-3 right-3 z-10 p-1.5 bg-gray-200/50 dark:bg-gray-600/50 hover:bg-gray-300/70 dark:hover:bg-gray-500/70 rounded-full text-gray-800 dark:text-gray-100 transition duration-150"
               aria-label="Close image viewer"
             >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                className="h-5 w-5"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-                strokeWidth={2}
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  d="M6 18L18 6M6 6l12 12"
-                />
-              </svg>
+              <CloseIcon className="h-5 w-5" />
             </button>
 
             <button
@@ -240,20 +230,7 @@ const Gallery = () => {
               className="absolute left-2 sm:left-4 top-1/2 -translate-y-1/2 z-10 p-2 bg-gray-200/50 dark:bg-gray-600/50 hover:bg-gray-300/70 dark:hover:bg-gray-500/70 rounded-full text-gray-800 dark:text-gray-100 transition duration-150"
               aria-label="Previous image"
             >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                className="h-6 w-6"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-                strokeWidth={2}
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  d="M15 19l-7-7 7-7"
-                />
-              </svg>
+              <ChevronLeftIcon className="h-6 w-6" />
             </button>
 
             <button
@@ -261,20 +238,7 @@ const Gallery = () => {
               className="absolute right-2 sm:right-4 top-1/2 -translate-y-1/2 z-10 p-2 bg-gray-200/50 dark:bg-gray-600/50 hover:bg-gray-300/70 dark:hover:bg-gray-500/70 rounded-full text-gray-800 dark:text-gray-100 transition duration-150"
               aria-label="Next image"
             >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                className="h-6 w-6"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-                strokeWidth={2}
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  d="M9 5l7 7-7 7"
-                />
-              </svg>
+              <ChevronRightIcon className="h-6 w-6" />
             </button>
           </div>
         </div>
