@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { useRouter } from "next/router";
+import ChevronRightIcon from '@mui/icons-material/ChevronRight';
 
 const BreadCrumbs = () => {
   const router = useRouter();
@@ -35,21 +36,7 @@ const BreadCrumbs = () => {
         {/* Blogs Link */}
         {router.pathname.startsWith("/blogs") && (
           <li className="inline-flex items-center">
-            <svg
-              className="w-3 h-3 text-gray-400"
-              aria-hidden="true"
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 6 10"
-            >
-              <path
-                stroke="currentColor"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="2"
-                d="m1 9 4-4-4-4"
-              />
-            </svg>
+            <ChevronRightIcon className="w-5 h-5 text-gray-400" />
             <Link
               href="/blogs"
               className="ml-1 text-sm font-semibold md:ml-2 text-white"
@@ -62,21 +49,7 @@ const BreadCrumbs = () => {
         {/* Render Category Link if present */}
         {normalizedCategory && (
           <li className="inline-flex items-center">
-            <svg
-              className="w-3 h-3 text-gray-400"
-              aria-hidden="true"
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 6 10"
-            >
-              <path
-                stroke="currentColor"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="2"
-                d="m1 9 4-4-4-4"
-              />
-            </svg>
+            <ChevronRightIcon className="w-5 h-5 text-gray-400" />
             <Link
               href={`/blogs/${normalizedCategory}`}
               className="ml-1 text-sm font-semibold md:ml-2 text-white"

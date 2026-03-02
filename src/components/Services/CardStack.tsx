@@ -1,16 +1,26 @@
 import { useRef } from "react";
 import Card from "../card/Card";
-import { useTranslation } from "react-i18next";
+
 import { useIntersectionObserver } from "@/hooks/observers";
 
 const CardStack = () => {
-  const { t } = useTranslation();
-
-  const serviceCardData: string[][] =
-    (t("serviceCard", {
-      returnObjects: true,
-      defaultValue: [],
-    }) as string[][]) || [];
+  const serviceCardData = [
+    [
+      "Fullstack Developer",
+      "3+ years of experience in building Web Applications, Application Programming Interfaces (API), Microservices, UI/UX prototypes, everything following Agile Methodologies.",
+      "Typescript, Next.js, Nest.js, REST API, Postgresql, Tailwind, AWS, Git",
+    ],
+    [
+      "Machine Learning",
+      "Experiences with developing, training and optimizing machine learning models and deep learning (CNN, RNN) models powered by Computer Vision. Possess a research publication and various projects.",
+      "Tensorflow, OpenCV, ScikitLearn, Matplotlib, Pytorch",
+    ],
+    [
+      "Content Writing",
+      "A voracious freelance writer obsessed with writing technical and current affairs content in English, including content for websites, blogs, technical reviews, and academic papers.",
+      "Blog Writing, Technical Writing, Copywriting, Ghost Writing, Creative writing, Email Marketing Content",
+    ],
+  ];
 
   const cardsRef = useRef<Array<HTMLDivElement | null>>([]);
   useIntersectionObserver(cardsRef);

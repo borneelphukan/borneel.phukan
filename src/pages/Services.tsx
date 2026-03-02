@@ -2,10 +2,10 @@ import DefaultLayout from "@/layout/DefaultLayout";
 import CardStack from "@/components/Services/CardStack";
 import { TestimonialCarousel } from "@/components/carousel/TestimonialCarousel";
 import FreelanceStack from "@/components/Services/Freelance/FreelanceStack";
-import { useTranslation } from "react-i18next";
+
 
 const Services = () => {
-  const { t } = useTranslation();
+
   return (
     <DefaultLayout>
       <section className="relative isolate overflow-hidden bg-gray-900">
@@ -18,11 +18,11 @@ const Services = () => {
         <div className="mx-auto max-w-7xl px-6 py-24 sm:py-32 lg:px-8">
           <div className="mx-auto max-w-3xl text-center">
             <h1 className="text-5xl font-bold tracking-tight text-white">
-              {t("serviceHeader")}
+              Services
             </h1>
 
             <p className="mt-6 text-lg leading-8 text-gray-200 sm:text-xl">
-              {t("serviceBanner")}
+              When I am not engaged in personal projects, I might be freelancing for a reputable company or startup, and I could potentially contribute to your project as well.
             </p>
           </div>
         </div>

@@ -1,5 +1,5 @@
 import DefaultLayout from "@/layout/DefaultLayout";
-import { useTranslation } from "react-i18next";
+
 import { useState, useEffect, useCallback } from "react";
 import Image from "next/image";
 
@@ -70,13 +70,16 @@ const images = [
 ];
 
 const Gallery = () => {
-  const { t } = useTranslation();
-  const galleryStatement: string[] = t("galleryStatement", {
-    returnObjects: true,
-  }) as string[];
-  const galleryHeader: string[] = t("galleryHeader", {
-    returnObjects: true,
-  }) as string[];
+  const galleryStatement = [
+    "Physical prints of photos can leave a stronger impression compared to their digital counterparts. Feel free to",
+    "reach out",
+    "if you would like a hard copy. If you do, you would be the pioneer to mention this, which would be quite remarkable!",
+  ];
+  const galleryHeader = [
+    "Interested in",
+    "Photography ?",
+    "The world through my lenses",
+  ];
 
   const [currentIndex, setCurrentIndex] = useState<number | null>(null);
 

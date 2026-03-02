@@ -3,11 +3,11 @@ import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 import TestimonialsCard from "../../components/card/TestimonialsCard";
 import testimonialsData from "@/data/testimonials.json";
-import { useTranslation } from "react-i18next";
+
 import { useCounterAnimation } from "@/hooks/animations";
 
 export const TestimonialCarousel = () => {
-  const { t } = useTranslation();
+
   const clientCount = useCounterAnimation(testimonialsData.length, 100);
 
   const settings = {
@@ -50,13 +50,13 @@ export const TestimonialCarousel = () => {
             <span className="font-bold text-xl align-middle mr-1">
               {clientCount}{" "}
             </span>
-            {t("reviewSuperHeader")}
+            Happy Clients
           </p>
           <h2 className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-            {t("reviewHeader")}
+            Customer Reviews
           </h2>
           <p className="mt-6 text-lg leading-8 text-gray-600">
-            {t("reviewSubHeader")}
+            Explore the testimonials of clients who puts their trust on my works
           </p>
         </div>
 

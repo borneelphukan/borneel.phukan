@@ -4,13 +4,21 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { faInstagram } from "@fortawesome/free-brands-svg-icons";
-import { useTranslation } from "react-i18next";
+
 
 const Footer = () => {
-  const { t } = useTranslation();
-  const links: string[] = t("links", {
-    returnObjects: true,
-  }) as string[];
+  const links = [
+    [
+      "Portfolio",
+      "Experiences",
+      "Education",
+      "Skills",
+      "Publication",
+      "Projects",
+    ],
+    ["Services", "Testimonials", "Blogs", "Gallery", "Contact Me"],
+    ["Social"],
+  ];
 
   return (
     <footer className="bg-gray-950 text-white text-center py-8">
@@ -28,7 +36,7 @@ const Footer = () => {
               />
             </h2>
             <p className="text-sm text-left text-slate-300 leading-6">
-              {t("welcome")}
+              Welcome to my personal website, where I proudly showcase my strengths and skills. Explore my journey, accomplishments, and occasional blog posts. Thank you for visiting!
             </p>
           </div>
 
@@ -163,7 +171,7 @@ const Footer = () => {
 
       {/* All Rights Reserved tagline */}
       <p className="mt-2 text-sm text-slate-400">
-        Borneel Bikash Phukan &copy; {new Date().getFullYear()} {t("rights")}
+        Borneel Bikash Phukan &copy; {new Date().getFullYear()} All Rights Reserved
       </p>
     </footer>
   );

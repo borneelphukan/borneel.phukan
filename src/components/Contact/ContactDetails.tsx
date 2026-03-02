@@ -1,15 +1,13 @@
 import ContactCard from "../card/ContactCard";
-import { useTranslation } from "react-i18next";
+
 
 const ContactDetails = () => {
-  const { t } = useTranslation();
-  const contactCardHeader: string[] = t("contactCardHeader", {
-    returnObjects: true,
-  }) as string[];
-
-  const contactCardDescription: string[] = t("contactCardDescription", {
-    returnObjects: true,
-  }) as string[];
+  const contactCardHeader = ["My Address", "My Availability", "Donate"];
+  const contactCardDescription = [
+    "Erich-Ollenhauer-Straße 2, 63263 Neu-Isenburg, Germany",
+    "Set up an appointment on Calendly",
+    "Like my work ? You can donate on Paypal",
+  ];
 
   return (
     <div className="pt-20 justify-center my-3">

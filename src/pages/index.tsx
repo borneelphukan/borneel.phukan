@@ -1,7 +1,6 @@
 import DefaultLayout from "@/layout/DefaultLayout";
-import Button from "@/components/buttons/Button";
 import Image from "next/image";
-import { useTranslation } from "react-i18next";
+
 import Link from "next/link";
 
 type CategoryProps = {
@@ -24,14 +23,13 @@ const Category = ({ slug, title }: CategoryProps) => (
 );
 
 const Home = () => {
-  const { t } = useTranslation();
-  const role: string[] = t("role", {
-    returnObjects: true,
-  }) as string[];
-
-  const aboutme: string[] = t("aboutme", {
-    returnObjects: true,
-  }) as string[];
+  const role = ["I am", "Software Developer", "#Open_to_Work"];
+  const aboutme = [
+    "About Me",
+    "Hi! I'm Borneel, a Software Developer committed to developing and delivering state-of-the-art full-stack web and mobile applications, secured APIs, and clean User Interfaces, all by leveraging suitable Agile Methodologies. My passion for developing impactful applications and contributing to technology growth has driven me to pursue a career in the field of web engineering. My contributions to open-source development on GitHub can provide you with a preliminary idea about my work and contributions so far.",
+    "Who am I?",
+    "I have 3+ years of experience in software development. My expertise includes JavaScript (TypeScript), Next.js, React (Next.js), Node.js (Nest.js), PostgreSQL, and TailwindCSS. I actively share knowledge through blog posts and online platforms. I hold a master's degree in Web Engineering from Chemnitz University of Technology, Germany, and a bachelor's degree from Kalinga Institute of Industrial Technology, India. Additionally, I am the founder of Graminate, an AI-powered SaaS platform serving agricultural startups in digitalising operations and production. If you need a dedicated and creative professional, look no further.",
+  ];
 
   return (
     <DefaultLayout>
@@ -55,7 +53,7 @@ const Home = () => {
                 {role[2]}
               </h1>
               <p className="text-md md:text-lg lg:text-xl text-gray-300 max-w-[60%]">
-                {t("introduction")}
+                A Software Developer focused on developing customer-oriented applications, designing impactful APIs, responsive UI, AI microservices and delivering successful projects to drive business growth and revenues.
               </p>
               {/* <Button
                 bgColor="black"
@@ -107,7 +105,7 @@ const Home = () => {
         <div className="md:w-1/5 lg:w-1/5 mt-8 md:mt-0">
           <div className="p-6 bg-gray-50 rounded-lg shadow-sm text-center h-full">
             <h2 className="text-xl font-semibold mb-4 text-gray-800">
-              {t("panelHeader")}
+              My Blogs
             </h2>
             <ul className="space-y-2">
               {categories.map((category) => (

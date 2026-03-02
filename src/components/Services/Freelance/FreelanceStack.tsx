@@ -2,11 +2,11 @@ import "intersection-observer";
 import { useRef } from "react";
 import FreelanceCard from "../../card/FreelanceCard";
 import freelanceData from "@/data/freelance-data.json";
-import { useTranslation } from "react-i18next";
+
 import { useSlideInObserver } from "@/hooks/observers";
 
 const FreelanceStack = () => {
-  const { t } = useTranslation();
+
   const cardsRef = useRef<Array<HTMLDivElement | null>>([]);
 
   useSlideInObserver(cardsRef);
@@ -16,10 +16,10 @@ const FreelanceStack = () => {
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col mx-auto max-w-2xl text-center">
           <p className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-            {t("clientProjectHeader")}
+            Client Projects
           </p>
           <h2 className="text-base font-semibold mt-2 text-blue-600 uppercase tracking-wide">
-            {t("clientProjectsBanner")}
+            Have a look at my contributions to client projects
           </h2>
         </div>
 

@@ -1,17 +1,22 @@
 import { useState, useEffect } from "react";
-import { useTranslation } from "react-i18next";
 import Image from "next/image";
 import Link from "next/link";
+import MenuIcon from "@mui/icons-material/Menu";
+import CloseIcon from "@mui/icons-material/Close";
 
 const Navbar = () => {
   const [selectedLink, setSelectedLink] = useState<string | null>(null);
   const [showMobileMenu, setShowMobileMenu] = useState<boolean>(false);
   const [showBlogNav, setShowBlogNav] = useState<boolean>(false);
   const [showMobileBlogNav, setMobileBlogNav] = useState<boolean>(false);
-  const { t } = useTranslation();
-  const navItems: string[] = t("navItems", {
-    returnObjects: true,
-  }) as string[];
+  const navItems = [
+    "Home",
+    "Portfolio",
+    "Services",
+    "Blogs",
+    "Gallery",
+    "Contact",
+  ];
 
   const handleLinkClick = (linkText: string) => {
     setSelectedLink(linkText);
@@ -46,10 +51,9 @@ const Navbar = () => {
       {/* Navigation Links */}
       <div className="hidden lg:flex justify-center space-x-8 my-4">
         <Link
-          id="strike"
           href="/"
-          className={`text-white hover:text-gray-300 ${
-            selectedLink === "Home" ? "selected" : ""
+          className={`text-white hover:text-gray-300 hover:after:content-[''] hover:after:block hover:after:h-[2px] hover:after:bg-blue-400 hover:after:w-full hover:after:mt-[10px] ${
+            selectedLink === "Home" ? "after:content-[''] after:block after:w-full after:h-[2px] after:bg-blue-400 after:mt-[10px]" : ""
           }`}
           onClick={() => handleLinkClick("Home")}
         >
@@ -58,10 +62,9 @@ const Navbar = () => {
 
         {/* Portfolio */}
         <Link
-          id="strike"
           href="/Portfolio"
-          className={`text-white hover:text-gray-300 ${
-            selectedLink === "Portfolios" ? "selected" : ""
+          className={`text-white hover:text-gray-300 hover:after:content-[''] hover:after:block hover:after:h-[2px] hover:after:bg-blue-400 hover:after:w-full hover:after:mt-[10px] ${
+            selectedLink === "Portfolios" ? "after:content-[''] after:block after:w-full after:h-[2px] after:bg-blue-400 after:mt-[10px]" : ""
           }`}
           onClick={() => handleLinkClick("Portfolios")}
         >
@@ -70,10 +73,9 @@ const Navbar = () => {
 
         {/* Services */}
         <Link
-          id="strike"
           href="/Services"
-          className={`text-white hover:text-gray-300 ${
-            selectedLink === "Services" ? "selected" : ""
+          className={`text-white hover:text-gray-300 hover:after:content-[''] hover:after:block hover:after:h-[2px] hover:after:bg-blue-400 hover:after:w-full hover:after:mt-[10px] ${
+            selectedLink === "Services" ? "after:content-[''] after:block after:w-full after:h-[2px] after:bg-blue-400 after:mt-[10px]" : ""
           }`}
           onClick={() => handleLinkClick("Services")}
         >
@@ -87,10 +89,9 @@ const Navbar = () => {
           onMouseLeave={() => setShowBlogNav(false)}
         >
           <Link
-            id="strike"
             href="/blogs"
-            className={`text-white hover:text-gray-300 ${
-              selectedLink === "Blogs" ? "selected" : ""
+            className={`text-white hover:text-gray-300 hover:after:content-[''] hover:after:block hover:after:h-[2px] hover:after:bg-blue-400 hover:after:w-full hover:after:mt-[10px] ${
+              selectedLink === "Blogs" ? "after:content-[''] after:block after:w-full after:h-[2px] after:bg-blue-400 after:mt-[10px]" : ""
             }`}
             onClick={() => handleLinkClick("Blogs")}
           >
@@ -100,10 +101,9 @@ const Navbar = () => {
 
         {/* Gallery */}
         <Link
-          id="strike"
           href="/Gallery"
-          className={`text-white hover:text-gray-300 ${
-            selectedLink === "Gallery" ? "selected" : ""
+          className={`text-white hover:text-gray-300 hover:after:content-[''] hover:after:block hover:after:h-[2px] hover:after:bg-blue-400 hover:after:w-full hover:after:mt-[10px] ${
+            selectedLink === "Gallery" ? "after:content-[''] after:block after:w-full after:h-[2px] after:bg-blue-400 after:mt-[10px]" : ""
           }`}
           onClick={() => handleLinkClick("Gallery")}
         >
@@ -113,10 +113,9 @@ const Navbar = () => {
         {/* Contact */}
         <div className="flex justify-center">
           <Link
-            id="strike"
             href="/Contact"
-            className={`text-white hover:text-gray-300 ${
-              selectedLink === "Contact" ? "selected" : ""
+            className={`text-white hover:text-gray-300 hover:after:content-[''] hover:after:block hover:after:h-[2px] hover:after:bg-blue-400 hover:after:w-full hover:after:mt-[10px] ${
+              selectedLink === "Contact" ? "after:content-[''] after:block after:w-full after:h-[2px] after:bg-blue-400 after:mt-[10px]" : ""
             }`}
             onClick={() => handleLinkClick("Contact")}
           >
@@ -134,7 +133,7 @@ const Navbar = () => {
         <Link
           href="/"
           className={`text-white hover:text-gray-300 text-center ${
-            selectedLink === "Home" ? "selected" : ""
+            selectedLink === "Home" ? "after:content-[''] after:block after:w-full after:h-[2px] after:bg-blue-400 after:mt-[10px]" : ""
           }`}
           onClick={() => {
             handleLinkClick("Home");
@@ -149,7 +148,7 @@ const Navbar = () => {
           <Link
             href="/Portfolio"
             className={`text-white hover:text-blue-400 text-center ${
-              selectedLink === "Portfolio" ? "selected" : ""
+              selectedLink === "Portfolio" ? "after:content-[''] after:block after:w-full after:h-[2px] after:bg-blue-400 after:mt-[10px]" : ""
             }`}
             onClick={() => {
               handleLinkClick("Portfolio");
@@ -165,7 +164,7 @@ const Navbar = () => {
           <Link
             href="/Services"
             className={`text-white hover:text-blue-400 text-center ${
-              selectedLink === "Services" ? "selected" : ""
+              selectedLink === "Services" ? "after:content-[''] after:block after:w-full after:h-[2px] after:bg-blue-400 after:mt-[10px]" : ""
             }`}
             onClick={() => {
               handleLinkClick("Services");
@@ -180,7 +179,7 @@ const Navbar = () => {
           <Link
             href="/blogs"
             className={`text-white hover:text-blue-400 text-center ${
-              selectedLink === "Blogs" ? "selected" : ""
+              selectedLink === "Blogs" ? "after:content-[''] after:block after:w-full after:h-[2px] after:bg-blue-400 after:mt-[10px]" : ""
             }`}
             onClick={() => {
               handleLinkClick("Blogs");
@@ -224,7 +223,7 @@ const Navbar = () => {
           <Link
             href="/Gallery"
             className={`text-white hover:text-blue-400 text-center ${
-              selectedLink === "Gallery" ? "selected" : ""
+              selectedLink === "Gallery" ? "after:content-[''] after:block after:w-full after:h-[2px] after:bg-blue-400 after:mt-[10px]" : ""
             }`}
             onClick={() => {
               handleLinkClick("Gallery");
@@ -239,7 +238,7 @@ const Navbar = () => {
           <Link
             href="/Contact"
             className={`text-white ${
-              selectedLink === "Contact" ? "selected" : ""
+              selectedLink === "Contact" ? "after:content-[''] after:block after:w-full after:h-[2px] after:bg-blue-400 after:mt-[10px]" : ""
             }`}
             onClick={() => {
               handleLinkClick("Contact");
@@ -258,45 +257,13 @@ const Navbar = () => {
           className="text-white hover:text-blue-400 focus:outline-none pb-2"
           aria-label="Open Mobile Menu"
         >
-          <svg className="h-6 w-6 fill-current" viewBox="0 0 24 24">
-            {showMobileMenu ? (
-              <path
-                fillRule="evenodd"
-                clipRule="evenodd"
-                d="M1 5h22v2H1V5zm0 7h22v2H1v-2zm0 7h22v2H1v-2z"
-              />
-            ) : (
-              <path
-                fillRule="evenodd"
-                clipRule="evenodd"
-                d="M1 5h22v2H1V5zm0 7h22v2H1v-2zm0 7h22v2H1v-2z"
-              />
-            )}
-          </svg>
+          {showMobileMenu ? (
+            <CloseIcon className="h-6 w-6 fill-current" />
+          ) : (
+            <MenuIcon className="h-6 w-6 fill-current" />
+          )}
         </button>
       </div>
-
-      {/* Style for the underline */}
-      <style jsx>
-        {`
-          .selected::after {
-            content: "";
-            display: block;
-            width: 100%;
-            height: 2px;
-            background-color: #60a5fa;
-            margin-top: 10px;
-          }
-          #strike:hover::after {
-            content: "";
-            display: block;
-            width: 100%;
-            height: 2px;
-            background-color: #60a5fa;
-            margin-top: 10px;
-          }
-        `}
-      </style>
     </nav>
   );
 };

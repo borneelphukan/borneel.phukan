@@ -4,14 +4,11 @@ import "react-toastify/dist/ReactToastify.css";
 import emailjs from "@emailjs/browser";
 import InputField from "../../components/common/InputField";
 import TextareaWithIcon from "../common/TextArea";
-import { useTranslation } from "react-i18next";
+
 import MapWithLocation from "@/services/MapWithLocation";
 
 const ContactForm = () => {
-  const { t } = useTranslation();
-  const contactFormHeader: string[] = t("contactFormHeader", {
-    returnObjects: true,
-  }) as string[];
+  const contactFormHeader = "Get in Touch";
   const [formData, setFormData] = useState({
     firstName: "",
     lastName: "",
