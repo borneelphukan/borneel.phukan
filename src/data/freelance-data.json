@@ -8,8 +8,8 @@
       "/freelance/compro-5.webp"
     ],
     "tags": ["React", "Typescript", "TailwindCSS", "PayloadCMS", "ShadcnUI", "Zod Schema", "tRPC", "Storybook"],
-    "title": "Compliance Pro - A sports-engagement platform for Golf enthuasist to participate and earn choice-based rewards",
-    "description": "Migrated and redesigned the massive legacy platform to a modern Next.js stack, dramatically accelerating load times and improving the overall user experience."
+    "title": "Compliance Pro - A compliance management platform of contracts for staffing providers across across Europe",
+    "description": "Took end-to-end ownership of the architectural overhaul of the platform’s component library, which established the core design system, and implemented features that significantly increased development speed for a successful product launch. Additionally, I led the stabilization and performance optimization of V1, increasing system reliability, fostering client trust, and driving higher product adoption across the European staffing market."
   },
   {
     "images": [
@@ -20,18 +20,18 @@
     ],
     "tags": ["Svelte", "TailwindCSS", "TypeScript"],
     "title": "Golfpost Fantasy - A sports-engagement platform for Golf enthuasist to participate and earn choice-based rewards",
-    "description": "Migrated and redesigned the massive legacy platform to a modern Next.js stack, dramatically accelerating load times and improving the overall user experience."
+    "description": "Led the frontend transformation of Golfpost’s legacy web platform into a high-performance, mobile-first experience with a responsive component library. Collaborated with the team to architect interactive UI prototypes and implement specialized frontend features, ensuring consistent on-time delivery and iterative UX enhancements. These strategic interface improvements directly resulted in a 50% surge in user engagement."
   },
   {
     "images": ["/freelance/mindcleanse-1.png", "/freelance/mindcleanse-2.png"],
-    "tags": ["Vue", "TailwindCSS", "Pinia", "Vite"],
-    "title": "Scaling E-commerce Ecosystem for High-Volume Global Traffics",
-    "description": "Redesigned the entire backend architecture using microservices to handle over 100k requests per minute during peak sales season reliably."
+    "tags": ["Vue", "TailwindCSS", "Pinia", "Ionic Framework", "Vite"],
+    "title": "MindCleanse - A mental health coaching app for a premiere mental health coach based in Leipzig. ",
+    "description": "Collaborated within a cross-functional team of developers, designers, and product managers to engineer a pixel-perfect frontend for MindCleanse using the Ionic framework on Vue. I took end-to-end ownership of architecting a high-performance, indigenous video calling module, designed for MindCleanse but built with a modular architecture to be reusable across the company’s broader product ecosystem."
   },
-    {
+  {
     "images": ["/freelance/traddle-1.png", "/freelance/traddle-2.png", "/freelance/traddle-3.png"],
     "tags": ["React", "Redux", "Styled Components"],
-    "title": "Turning Prototypes into Products - Developed a functional and a stable MVP version of Traddle.io",
+    "title": "Traddle.io - Developed a functional and a stable MVP version of Traddle.io",
     "description": "Traddle.io was an interactive trading platform for stocks and crypto where users can create communities, live track performances in the European Stock Market while simultaneously discuss within communities and trade together."
   }
 ]

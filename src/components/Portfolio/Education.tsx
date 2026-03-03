@@ -84,7 +84,7 @@ const Education = () => {
           {educations.map((education, index) => (
             <div
               key={index}
-              ref={(el) => (cardsRef.current[index] = el as HTMLDivElement)}
+              ref={(el) => { cardsRef.current[index] = el as HTMLDivElement; }}
               className="relative flex flex-col sm:flex-row items-center sm:items-stretch gap-4 sm:gap-8 group opacity-0 translate-y-10 transition-all transform duration-700 ease-in-out"
             >
               {/* Timeline Line Container */}
