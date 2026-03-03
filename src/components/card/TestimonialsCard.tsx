@@ -4,7 +4,6 @@ type Props = {
   avatar: string;
   name: string;
   comment: string;
-  stars: number;
   role: string;
 };
 

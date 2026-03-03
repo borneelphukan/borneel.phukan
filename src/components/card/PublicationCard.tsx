@@ -1,6 +1,7 @@
 import { useState } from "react";
 import OpenInNewIcon from '@mui/icons-material/OpenInNew';
 import FormatQuoteIcon from '@mui/icons-material/FormatQuote';
+import Button from "../common/Button";
 
 type Props = {
   paperName: string;
@@ -71,21 +72,18 @@ const PublicationCard = (props: Props) => {
       </div>
 
       <div className="flex flex-col sm:flex-row items-center justify-between mt-auto pt-4 border-t border-gray-100">
-        <button
-          className={`inline-flex items-center bg-blue-600 hover:bg-blue-700 text-white font-medium text-sm py-2 px-4 rounded-full transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 ${
-            !isLinkAvailable ? "opacity-50 cursor-not-allowed" : ""
-          } mb-3 sm:mb-0`}
+        <Button
+          variant="primary"
+          className="mb-3 sm:mb-0"
           onClick={openPublicationLink}
           disabled={!isLinkAvailable}
           aria-label={`Read or view ${paperName}`}
+          icon={isLinkAvailable ? {
+            right: <OpenInNewIcon className="ml-2 h-3 w-3" />
+          } : undefined}
         >
           {showPublication}
-          {isLinkAvailable && (
-            <OpenInNewIcon
-              className="ml-2 h-3 w-3"
-            />
-          )}
-        </button>
+        </Button>
 
         {/* Citations Count */}
         {citations !== undefined && citations > 0 && (

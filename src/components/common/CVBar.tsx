@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Image from "next/image";
+import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
+import Button from "./Button";
 
 const CVBar = () => {
   const [scrolledPastSkills, setScrolledPastSkills] = useState(false);
@@ -16,7 +18,7 @@ const CVBar = () => {
     };
 
     window.addEventListener("scroll", handleScroll, { passive: true });
-    handleScroll(); // init on mount
+    handleScroll();
 
     return () => {
       window.removeEventListener("scroll", handleScroll);
@@ -49,30 +51,23 @@ const CVBar = () => {
           Borneel Bikash Phukan
         </span>
       </div>
-      <a
+      <Button
+        variant="secondary"
         href="/docs/CV.pdf"
         target="_blank"
         rel="noopener noreferrer"
-        className={`flex items-center gap-2 px-4 py-2 md:px-5 md:py-2.5 rounded-full font-medium transition-all text-sm md:text-base mr-1 ${
+        onClick={() => {}}
+        className={`mr-1 ${
           scrolledPastSkills
             ? "bg-gray-900 text-white hover:bg-gray-800"
             : "bg-white text-gray-900 hover:bg-gray-100"
         }`}
+        icon={{
+          right: <ArrowForwardIcon className={`w-4 h-4 md:w-5 md:h-5 ${scrolledPastSkills ? "text-white" : "text-gray-900"}`} />
+        }}
       >
-        View Resume
-        <svg
-          className={`w-4 h-4 md:w-5 md:h-5 ${scrolledPastSkills ? "text-white" : "text-gray-900"}`}
-          fill="none"
-          stroke="currentColor"
-          viewBox="0 0 24 24"
-          strokeWidth="1.5"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-        >
-          <line x1="5" y1="12" x2="19" y2="12"></line>
-          <polyline points="12 5 19 12 12 19"></polyline>
-        </svg>
-      </a>
+        Open CV
+      </Button>
     </div>
   );
 };

@@ -6,6 +6,10 @@ import { TestimonialCarousel } from "@/components/carousel/TestimonialCarousel";
 import Skills from "@/components/Portfolio/Skills";
 import FreelanceStack from "@/components/Services/Freelance/FreelanceStack";
 import CVBar from "@/components/common/CVBar";
+import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import { SiUpwork } from "react-icons/si";
+import Button from "@/components/common/Button";
 type CategoryProps = {
   slug: string;
   title: string;
@@ -138,7 +142,7 @@ const Home = () => {
       </div>
 
       {/* Services Banner exactly cloned from Services.tsx */}
-      <section id="Services" className="sticky top-0 -z-10 flex flex-col items-center justify-center h-[100vh] w-full overflow-hidden bg-gray-900">
+      <section id="Services" className="sticky top-0 z-0 flex flex-col items-center justify-center h-[100vh] w-full overflow-hidden bg-gray-900">
         <Image
           src="/banners/service_banner.png"
           alt="Services background"
@@ -161,19 +165,36 @@ const Home = () => {
             </p>
 
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-6">
-              <a
-                href="https://www.upwork.com/"
+              <Button
+                variant="transparent"
+                href="https://www.upwork.com/freelancers/~01b548e4441bd9620c?mp_source=share"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="group flex items-center justify-center gap-3 px-8 py-4 bg-white/10 hover:bg-[#14a800] backdrop-blur-md border border-white/20 hover:border-[#14a800] rounded-full transition-all duration-300 shadow-lg hover:shadow-[#14a800]/50 w-full sm:w-auto"
+                onClick={() => {}}
+                className="hover:bg-[#14a800] hover:border-[#14a800] hover:shadow-[#14a800]/50"
+                icon={{
+                  right: <ArrowForwardIcon className="w-5 h-5 text-white transform group-hover:translate-x-1 transition-transform duration-300" />
+                }}
               >
-                <span className="text-white font-semibold tracking-wide md:text-lg">Hire on Upwork</span>
-                <svg className="w-5 h-5 text-white transform group-hover:translate-x-1 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                  <path d="M5 12h14"></path>
-                  <path d="M12 5l7 7-7 7"></path>
-                </svg>
-              </a>
-
+                <span className="flex items-center">
+                  Hire on <SiUpwork className="ml-2 w-5 h-5 md:w-6 md:h-6" />
+                </span>
+              </Button>
+              <Button
+                variant="transparent"
+                href="https://www.linkedin.com/in/borneelphukan/"
+                target="_blank"
+                rel="noopener noreferrer"
+                onClick={() => {}}
+                className="hover:bg-[#0a66c2] hover:border-[#0a66c2] hover:shadow-[#0a66c2]/50"
+                icon={{
+                  right: <ArrowForwardIcon className="w-5 h-5 text-white transform group-hover:translate-x-1 transition-transform duration-300" />
+                }}
+              >
+                <span className="flex items-center">
+                  Message on <LinkedInIcon className="ml-1 w-6 h-6 md:w-7 md:h-7" />
+                </span>
+              </Button>
             </div>
           </div>
         </div>

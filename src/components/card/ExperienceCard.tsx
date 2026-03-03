@@ -6,7 +6,6 @@ import CheckCircleIcon from '@mui/icons-material/CheckCircle';
 type Props = {
   title: string;
   company: string;
-  type: string;
   date: string;
   location: string;
   reference?: string;
@@ -19,7 +18,6 @@ const ExperienceCard = (props: Props) => {
   const {
     title,
     company,
-    type,
     date,
     location,
     reference,
@@ -28,12 +26,11 @@ const ExperienceCard = (props: Props) => {
   } = props;
 
   return (
-    <div className="border bg-white w-full sm:w-[calc(90%-2.5rem)] md:w-[calc(50%-2.5rem)] px-4 sm:px-6 md:px-10 py-6 rounded-xl border-1 shadow-md">
+    <div className="border bg-white w-full px-4 sm:px-6 md:px-10 py-6 rounded-xl border-1 shadow-md">
      <div className="flex flex-col sm:flex-row items-center justify-between space-x-2 sm:space-x-4 md:items-start md:justify-between">
         <div className="mb-3">
           <h3 className="text-lg font-semibold text-gray-800 mb-1">{title}</h3>
           <p className="text-md font-medium text-gray-700">{company}</p>
-          <p className="text-sm text-gray-500">({type})</p>
         </div>
 
         {/* Date, Location, Reference - Left aligned */}

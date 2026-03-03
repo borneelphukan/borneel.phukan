@@ -1,5 +1,6 @@
 import { useState } from "react";
 import OpenInNewIcon from '@mui/icons-material/OpenInNew';
+import Button from "../common/Button";
 
 type Props = {
   title: string;
@@ -58,19 +59,17 @@ const ProjectCard = (props: Props) => {
 
       {showButton && (
         <div className="mt-auto pt-4 border-t border-gray-100">
-          <button
-            className={`inline-flex items-center bg-blue-500 hover:bg-blue-700 text-white font-medium text-sm py-2 px-4 rounded-full transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 ${
-              !isLinkAvailable ? "opacity-50 cursor-not-allowed" : ""
-            }`}
+          <Button
+            variant="primary"
             onClick={openProjectLink}
             disabled={!isLinkAvailable}
             aria-label={`View details or visit link for ${title}`}
+            icon={{
+              right: <OpenInNewIcon className="ml-2 h-3 w-3" />
+            }}
           >
             {buttonText}
-            <OpenInNewIcon
-              className="ml-2 h-3 w-3"
-            />
-          </button>
+          </Button>
         </div>
       )}
     </div>

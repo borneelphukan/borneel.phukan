@@ -4,14 +4,13 @@
     "title": "Software Developer",
     "date": "October 2025 - Present",
     "company": "Pactos.AI",
-    "type": "Internship",
     "skills": [
       "React",
-      " Typescript",
-      " tRPC",
-      " PayloadCMS",
-      " MongoDB",
-      " Git"
+      "Typescript",
+      "tRPC",
+      "PayloadCMS",
+      "MongoDB",
+      "Git"
     ],
     "location": "Munich, Germany",
     "description": [
@@ -26,7 +25,6 @@
     "title": "Software Developer",
     "date": "November 2024 - Present",
     "company": "Graminate IT Solutions",
-    "type": "Part Time",
     "skills": [
       "Next.js",
       " Typescript",
@@ -50,7 +48,6 @@
     "title": "Frontend Developer",
     "date": "April 2024 - Sept. 2024",
     "company": "GolfPost AG",
-    "type": "Working Student",
     "skills": ["Svelte", "Javascript", "TailwindCSS", "REST API", "Git"],
     "location": "Cologne, Germany",
     "reference": "/docs/Golfpost.pdf",
@@ -66,7 +63,6 @@
     "title": "Frontend Developer",
     "date": "Aug 2022 - Jan 2023",
     "company": "LeanERA",
-    "type": "Working Student",
     "skills": [
       "TypeScript",
       "Vue.js",
@@ -89,7 +85,6 @@
     "title": "Fullstack Developer",
     "date": "July 2019 - July 2020",
     "company": "Codepth .LLC",
-    "type": "Co-Founder",
     "skills": [
       "ReactJS",
       "NodeJS",
