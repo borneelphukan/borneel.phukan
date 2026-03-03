@@ -13,7 +13,6 @@ const Navbar = () => {
   const navItems = [
     "Home",
     "Portfolio",
-    "Services",
     "Blogs",
     "Contact",
   ];
@@ -28,7 +27,6 @@ const Navbar = () => {
     const path = router.pathname;
     if (path === "/") setSelectedLink("Home");
     else if (path.toLowerCase().startsWith("/portfolio")) setSelectedLink("Portfolio");
-    else if (path.toLowerCase().startsWith("/services")) setSelectedLink("Services");
     else if (path.toLowerCase().startsWith("/blogs")) setSelectedLink("Blogs");
     else if (path.toLowerCase().startsWith("/contact")) setSelectedLink("Contact");
     else setSelectedLink("Home");
@@ -79,17 +77,6 @@ const Navbar = () => {
           {navItems[1]}
         </Link>
 
-        {/* Services */}
-        <Link
-          href="/Services"
-          className={`text-white hover:text-gray-300 hover:after:content-[''] hover:after:block hover:after:h-[2px] hover:after:bg-blue-400 hover:after:w-full hover:after:mt-[10px] ${
-            selectedLink === "Services" ? "after:content-[''] after:block after:w-full after:h-[2px] after:bg-blue-400 after:mt-[10px]" : ""
-          }`}
-          onClick={() => handleLinkClick("Services")}
-        >
-          {navItems[2]}
-        </Link>
-
         {/* Blogs */}
         <div
           className="relative"
@@ -103,7 +90,7 @@ const Navbar = () => {
             }`}
             onClick={() => handleLinkClick("Blogs")}
           >
-            {navItems[3]}
+            {navItems[2]}
           </Link>
         </div>
 
@@ -116,7 +103,7 @@ const Navbar = () => {
             }`}
             onClick={() => handleLinkClick("Contact")}
           >
-            {navItems[4]}
+            {navItems[3]}
           </Link>
         </div>
       </div>
@@ -156,21 +143,6 @@ const Navbar = () => {
           </Link>
         </div>
 
-        {/* Services */}
-        <div className="relative">
-          <Link
-            href="/Services"
-            className={`text-white hover:text-blue-400 text-center ${
-              selectedLink === "Services" ? "after:content-[''] after:block after:w-full after:h-[2px] after:bg-blue-400 after:mt-[10px]" : ""
-            }`}
-            onClick={() => {
-              handleLinkClick("Services");
-            }}
-          >
-            {navItems[2]}
-          </Link>
-        </div>
-
         {/* Blogs */}
         <div className="relative">
           <Link
@@ -183,7 +155,7 @@ const Navbar = () => {
               toggleBlogNav();
             }}
           >
-            {navItems[3]}
+            {navItems[2]}
           </Link>
           {showMobileBlogNav && (
             <ul className="relative left-0 mt-2 text-sm px-5  w-full">
@@ -226,7 +198,7 @@ const Navbar = () => {
               toggleMobileMenu();
             }}
           >
-            {navItems[4]}
+            {navItems[3]}
           </Link>
         </div>
       </div>
