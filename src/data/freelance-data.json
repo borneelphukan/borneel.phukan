@@ -1,14 +1,25 @@
 [
   {
-    "image": "/freelance/traddle.png",
-    "tags": ["React", "Redux", "Styled Components"],
-    "title": "Turning Prototypes into Products - Developed a functional and a stable MVP version of Traddle.io",
-    "description": "Traddle.io was an interactive trading platform for stocks and crypto where users can create communities, live track performances in the European Stock Market while simultaneously discuss within communities and trade together."
+    "images": [
+      "/freelance/golfpost-0.png",
+      "/freelance/golfpost-1.png",
+      "/freelance/golfpost-2.png",
+      "/freelance/golfpost-3.png"
+    ],
+    "tags": ["Svelte", "TailwindCSS", "TypeScript"],
+    "title": "Revamping Golfpost - The Largest Community for Golfers in Germany",
+    "description": "Migrated and redesigned the massive legacy platform to a modern Next.js stack, dramatically accelerating load times and improving the overall user experience."
   },
   {
-    "image": "/freelance/mindcleanse.png",
+    "images": ["/freelance/mindcleanse-1.png", "/freelance/mindcleanse-2.png"],
     "tags": ["Vue", "TailwindCSS", "Pinia", "Vite"],
     "title": "Scaling E-commerce Ecosystem for High-Volume Global Traffics",
     "description": "Redesigned the entire backend architecture using microservices to handle over 100k requests per minute during peak sales season reliably."
+  },
+    {
+    "images": ["/freelance/traddle-1.png", "/freelance/traddle-2.png", "/freelance/traddle-3.png"],
+    "tags": ["React", "Redux", "Styled Components"],
+    "title": "Turning Prototypes into Products - Developed a functional and a stable MVP version of Traddle.io",
+    "description": "Traddle.io was an interactive trading platform for stocks and crypto where users can create communities, live track performances in the European Stock Market while simultaneously discuss within communities and trade together."
   }
 ]

@@ -34,7 +34,7 @@ const CVBar = () => {
       <div className="flex items-center gap-3">
         <div className="h-10 w-10 md:h-12 md:w-12 rounded-full overflow-hidden border border-white/20 ml-1 bg-gray-200">
           <Image
-            src={"/assets/borneel.jpg"}
+            src={"/assets/borneel.png"}
             width={48}
             height={48}
             alt="Avatar"

@@ -83,14 +83,18 @@ const Home = () => {
               {/* Right Side: Content */}
               <div className="w-full md:w-3/5 p-8 md:p-12 lg:p-14 flex flex-col justify-center">
                 <h2 className="text-3xl md:text-4xl lg:text-[2.5rem] font-bold text-gray-800 mb-4 tracking-tight leading-tight">
-                  Who am I as a <span className="text-[#3b82f6]">Developer</span>?
+                  Who am I as a <span className="text-[#3b82f6]">Developer </span>?
                 </h2>
                 
-                <p className="text-gray-500 font-light leading-relaxed mb-10 text-sm md:text-base lg:text-lg">
-                Product design for me is a responsibility- not just to users, but to the systems they interact with everyday. I focus on creating experiences that are intentional scalable, and grounded on research for real user needs because clarity is not decoration, it is impact.
+                <p className="text-gray-500 font-light leading-relaxed mb-5 text-sm md:text-base lg:text-lg">
+                Software development for me is not just writing code, but a critical responsibility. My goal is to build fail-safe, scalable, and user-centric applications that solve real-world problems and drive business growth.
                 </p>
 
-                <div className="grid grid-cols-2 gap-y-10 gap-x-6">
+                <p className="text-gray-500 font-light leading-relaxed mb-5 text-sm md:text-base lg:text-lg">
+                I approach every project with a problem-solving mindset, focusing on delivering high-quality, maintainable code that aligns with business objectives.
+                </p>
+
+                <div className="grid grid-cols-2 gap-y-5 gap-x-6">
                   <div className="flex flex-col">
                     <span className="text-gray-500 text-sm md:text-base mb-1 tracking-wide">Years of Experience</span>
                     <span className="text-4xl md:text-5xl font-bold text-gray-800">5+</span>
