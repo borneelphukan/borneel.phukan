@@ -68,14 +68,15 @@ const Skills = () => {
       className="bg-[#f8f9fa] sm:py-12 text-lg" 
       id="Skills"
     >
-      <div className="mx-auto max-w-4xl text-center flex flex-col items-center mb-12 sm:mb-16">
-        <div className="flex justify-center items-center gap-4 mb-6 mt-4">
-          <div className="w-16 h-[2px] bg-black"></div>
-          <p className="text-base font-medium tracking-[0.2em] text-black uppercase">Tools</p>
+      <div className="flex flex-col mx-auto w-full relative sm:px-6 lg:px-8 mb-16">
+        <div className="flex items-center gap-4 mb-8 mt-2 lg:ml-8">
+          <div className="h-[3px] w-12 md:w-16 bg-gray-900"></div>
+          <span className="text-sm md:text-base font-medium tracking-[0.2em] text-gray-900 uppercase">
+            Tools
+          </span>
         </div>
-        
-        <h2 className="text-4xl font-medium sm:text-4xl lg:text-4xl tracking-normal">
-          My toolstack.
+         <h2 className="text-3xl font-medium sm:text-3xl lg:text-3xl tracking-normal">
+          My toolstack
         </h2>
       </div>
 

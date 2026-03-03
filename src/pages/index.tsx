@@ -5,7 +5,6 @@ import Link from "next/link";
 import { TestimonialCarousel } from "@/components/carousel/TestimonialCarousel";
 import Skills from "@/components/Portfolio/Skills";
 import FreelanceStack from "@/components/Services/Freelance/FreelanceStack";
-import CVBar from "@/components/common/CVBar";
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import { SiUpwork } from "react-icons/si";
@@ -32,9 +31,6 @@ const Category = ({ slug, title }: CategoryProps) => (
 const Home = () => {
   return (
     <DefaultLayout>
-      {/* Sticky Bar */}
-      <CVBar />
-
       {/* Banner section */}
       <div className="sticky top-0 -z-10 h-[100vh] w-full bg-[url('/banners/home-banner.png')] bg-cover bg-center flex items-center justify-center overflow-hidden">
         {/* Vertical subtle column lines */}
@@ -192,7 +188,7 @@ const Home = () => {
                 }}
               >
                 <span className="flex items-center">
-                  Message on <LinkedInIcon className="ml-1 w-6 h-6 md:w-7 md:h-7" />
+                  Connect on <LinkedInIcon className="ml-1 w-6 h-6 md:w-7 md:h-7" />
                 </span>
               </Button>
             </div>

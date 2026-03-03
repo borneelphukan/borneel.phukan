@@ -1,4 +1,16 @@
 [
+    {
+    "images": [
+      "/freelance/compro-1.webp",
+      "/freelance/compro-2.webp",
+      "/freelance/compro-3.webp",
+      "/freelance/compro-4.webp",
+      "/freelance/compro-5.webp"
+    ],
+    "tags": ["React", "Typescript", "TailwindCSS", "PayloadCMS", "ShadcnUI", "Zod Schema", "tRPC", "Storybook"],
+    "title": "Compliance Pro - A sports-engagement platform for Golf enthuasist to participate and earn choice-based rewards",
+    "description": "Migrated and redesigned the massive legacy platform to a modern Next.js stack, dramatically accelerating load times and improving the overall user experience."
+  },
   {
     "images": [
       "/freelance/golfpost-0.png",

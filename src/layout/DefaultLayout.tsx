@@ -4,6 +4,7 @@ import Navbar from "@/components/layout/NavBar";
 import CircularProgressBar from "@/components/common/CircularProgressBar";
 import Footer from "@/components/layout/Footer";
 import Loader from "@/components/common/Loader";
+import CVBar from "@/components/common/CVBar";
 
 const DefaultLayout = ({ children }: { children: React.ReactNode }) => {
   const [isLoading, setIsLoading] = useState(true);
@@ -24,7 +25,8 @@ const DefaultLayout = ({ children }: { children: React.ReactNode }) => {
       {isLoading ? (
         <Loader />
       ) : (
-        <div className="min-h-screen">
+        <div className="min-h-screen relative">
+          <CVBar />
           <Navbar />
 
           <main className="">

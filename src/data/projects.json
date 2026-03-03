@@ -1,21 +1,12 @@
 [
   {
-    "title": "Graminate ERP",
-    "description": "An open-source ERP for small and medium-sized agriculture businesses, with built-in CRM, partner finder, Employees Management, Weather Monitor and AI-enabled guidance. Currently in development with plans for full-scale release with mobile apps in 2026.",
+    "title": "Graminate",
+    "description": "An open-source SaaS platform for small and medium-sized agriculture businesses, with built-in CRM, partner finder, Employees Management, Weather Monitor and AI-enabled guidance. Currently in development with plans for full-scale release with mobile apps in 2026.",
     "buttonText": "",
     "start": "November 2024",
     "end": "Present",
     "link": "",
     "category": "fullstack"
-  },
-  {
-    "title": "Golfpost Fantasy",
-    "description": "A fantasy gaming web application developed using SvelteKit and Tailwind CSS, featuring modular components, live data integration via a RESTful API, and core functionalities such as Player and User dashboards, Player Picker, Tournament and League management tools, and user authentication.",
-    "buttonText": "Open",
-    "start": "April 2024",
-    "end": "September 2024",
-    "link": "https://fantasy.golfpost.com/",
-    "category": "frontend"
   },
   {
     "title": "My Personal Website.",
@@ -24,24 +15,6 @@
     "start": " January 2024",
     "end": "Active",
     "link": "https://github.com/borneelphukan/borneel.phukan",
-    "category": "frontend"
-  },
-  {
-    "title": "BDesign Corporate Theme Template",
-    "description": "Introducing my Next.js and TailwindCSS powered BDesign Corporate Website Template: A dynamic and visually appealing solution for businesses of all sizes. With customizable components and Responsive web views, this template empowers you to create a professional online presence effortlessly.",
-    "buttonText": "Open",
-    "start": "September 2023",
-    "end": "Active",
-    "link": "https://bdesign-corporate.netlify.app/",
-    "category": "frontend"
-  },
-  {
-    "title": "BShop E-Commerce Website Template",
-    "description": "Introducing BShop Ecommerce Template – the ultimate solution for your online store. Built with Next.js, TailwindCSS, and Typescript, it offers a sleek design and seamless performance. Elevate your E-Commerce game effortlessly, with BShop – where style meets functionality for a standout online shopping experience.",
-    "buttonText": "Open",
-    "start": "May 2024",
-    "end": "Active",
-    "link": "https://bshop-ecommerce.netlify.app/",
     "category": "frontend"
   },
   {

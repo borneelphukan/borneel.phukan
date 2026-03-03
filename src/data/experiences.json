@@ -1,8 +1,31 @@
 [
+    {
+    "image": "/experience/Graminate.png",
+    "title": "Software Developer",
+    "date": "November 2024 - Present",
+    "company": "Graminate IT Solutions",
+    "skills": [
+      "Next.js",
+      "Typescript",
+      "Tailwind",
+      "Nest.js",
+      "PostgreSQL",
+      "Prisma",
+      "AWS",
+      "Git"
+    ],
+    "location": "Guwahati, India",
+    "description": [
+      "Developing an agriculture-oriented SaaS Enterprise Resource Planning (ERP) application for agricultural startups and mid-size companies to streamline business processes",
+      "Pipeline products include cloud-based ERP Application and cross-platform (iOS & Android) native mobile applications",
+      "ERP features include a customisable Dashboard, built-in CRM, Kanban Ticket Manager, Labour Management, Budget Manager, Inventory Management, Vendor Finder and region-based Scheme Finder",
+      "Collaborating with potential clients to develop Poultry, Fishery and Animal Husbandry dashboards and features for the complete ERP application"
+    ]
+  },
   {
     "image": "/experience/Pactos.png",
     "title": "Software Developer",
-    "date": "October 2025 - Present",
+    "date": "October 2025 - March 2026",
     "company": "Pactos.AI",
     "skills": [
       "React",
@@ -21,32 +44,9 @@
     ]
   },
   {
-    "image": "/experience/Graminate.png",
-    "title": "Software Developer",
-    "date": "November 2024 - Present",
-    "company": "Graminate IT Solutions",
-    "skills": [
-      "Next.js",
-      " Typescript",
-      " Tailwind",
-      " Node.js",
-      " Express",
-      " PostgreSQL",
-      " AWS",
-      " Git"
-    ],
-    "location": "Guwahati, India",
-    "description": [
-      "Developing an agriculture-oriented SaaS Enterprise Resource Planning (ERP) application for agricultural startups and mid-size companies to streamline business processes",
-      "Pipeline products include cloud-based ERP Application and cross-platform (iOS & Android) native mobile applications",
-      "ERP features include a customisable Dashboard, built-in CRM, Kanban Ticket Manager, Labour Management, Budget Manager, Inventory Management, Vendor Finder and region-based Scheme Finder",
-      "Collaborating with potential clients to develop Poultry, Fishery and Animal Husbandry dashboards and features for the complete ERP application"
-    ]
-  },
-  {
     "image": "/experience/GolfPost.jpg",
     "title": "Frontend Developer",
-    "date": "April 2024 - Sept. 2024",
+    "date": "April 2024 - March 2025",
     "company": "GolfPost AG",
     "skills": ["Svelte", "Javascript", "TailwindCSS", "REST API", "Git"],
     "location": "Cologne, Germany",
@@ -56,6 +56,21 @@
       "Developed core features for the application like dashboards, player picker, tournament and league panels for users",
       "Developed the frontend of a members-exclusive company portfolio website; enhanced UI and added localization",
       "Collaborated with an agile team of developers and external management to ensure timely completion of sprint goals and successful deployment"
+    ]
+  },
+    {
+    "image": "/experience/V4C.png",
+    "title": "Fullstack Developer",
+    "date": "March 2023 - March 2024",
+    "company": "Values4Change Management Consulting GmbH",
+    "skills": ["Next.js", "Nest.js", "PostgreSQL", "Prisma", "Typescript", "TailwindCSS", "REST API",  "Git"],
+    "location": "Munich, Germany",
+    "reference": "/docs/V4C.pdf",
+    "description": [
+      "Extended the company-wide infrastructure by developing key features such as a blog section, user authentication and admin dashboards, and customer support, significantly increasing user traffic to the company homepage",
+      "Extended and optimised existing relational databases to support new functionalities, ensuring seamless data integration with API endpoints",
+      "Enhanced the existing system of web applications by implementing a microservices architecture with containerised and scalable applications",
+      "Managed and optimised the legacy company landing page with WordPress, by collaborating with management to add custom features, plugins, and optimise performances"
     ]
   },
   {

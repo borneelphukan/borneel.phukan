@@ -45,8 +45,18 @@ const Projects = () => {
   };
 
   return (
-    <div className="max-w-8xl text-lg p-5" id="Projects">
-      <h1 className="text-4xl text-center font-semibold mb-3">PROJECTS</h1>
+    <div className="max-w-8xl text-lg p-5 mt-10" id="Projects">
+      <div className="flex flex-col mx-auto w-full relative sm:px-6 lg:px-8 mb-10">
+        <div className="flex items-center gap-4 mb-8 mt-2 lg:ml-8">
+          <div className="h-[3px] w-12 md:w-16 bg-gray-900"></div>
+          <span className="text-sm md:text-base font-medium tracking-[0.2em] text-gray-900 uppercase">
+            Showcase
+          </span>
+        </div>
+         <h2 className="text-3xl font-medium sm:text-3xl lg:text-3xl tracking-normal">
+          My Project Initiatives
+        </h2>
+      </div>
 
       <Tabs
         onTabChange={handleTabChange}
