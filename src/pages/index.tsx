@@ -4,6 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { TestimonialCarousel } from "@/components/carousel/TestimonialCarousel";
 import Skills from "@/components/Portfolio/Skills";
+import CVBar from "@/components/common/CVBar";
 type CategoryProps = {
   slug: string;
   title: string;
@@ -27,34 +28,7 @@ const Home = () => {
   return (
     <DefaultLayout>
       {/* Sticky Bar */}
-      <div className="fixed top-4 left-1/2 -translate-x-1/2 z-[100] w-[95%] max-w-3xl bg-[#1e2e3e]/80 backdrop-blur-md border border-white/10 rounded-full pl-2 pr-2 py-2 flex flex-row items-center justify-between shadow-2xl">
-        <div className="flex items-center gap-3">
-          <div className="h-10 w-10 md:h-12 md:w-12 rounded-full overflow-hidden border border-white/20 ml-1 bg-gray-200">
-            <Image
-              src={"/assets/borneel.png"}
-              width={48}
-              height={48}
-              alt="Avatar"
-              className="w-full h-full object-cover"
-            />
-          </div>
-          <span className="text-white text-base md:text-lg font-medium tracking-wide">
-            Borneel Bikash Phukan
-          </span>
-        </div>
-        <a
-          href="/docs/CV.pdf"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="bg-white text-gray-900 hover:bg-gray-100 flex items-center gap-2 px-4 py-2 md:px-5 md:py-2.5 rounded-full font-medium transition-all text-sm md:text-base mr-1"
-        >
-          View Resume
-          <svg className="w-4 h-4 md:w-5 md:h-5 text-gray-900" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
-            <line x1="5" y1="12" x2="19" y2="12"></line>
-            <polyline points="12 5 19 12 12 19"></polyline>
-          </svg>
-        </a>
-      </div>
+      <CVBar />
 
       {/* Banner section */}
       <div className="sticky top-0 -z-10 h-[100vh] w-full bg-[url('/banners/home-banner.png')] bg-cover bg-center flex items-center justify-center overflow-hidden">

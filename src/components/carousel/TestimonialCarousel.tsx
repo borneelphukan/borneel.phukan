@@ -1,5 +1,6 @@
 import TestimonialsCard from "../../components/card/TestimonialsCard";
 import testimonialsData from "@/data/testimonials.json";
+import Image from "next/image";
 
 import { useCounterAnimation } from "@/hooks/animations";
 
@@ -32,7 +33,7 @@ export const TestimonialCarousel = () => {
           <div className="flex flex-col sm:flex-row items-center justify-center gap-6 sm:gap-8">
             <div className="flex -space-x-2">
               {testimonialsData.slice(0, 4).map((item, i) => (
-                <img key={i} className="inline-block h-12 w-12 sm:h-12 sm:w-12 rounded-full ring-4 ring-[#f8f9fa] object-cover object-top" src={item.avatar} alt={item.name} />
+                <Image key={i} width={48} height={48} className="inline-block h-12 w-12 sm:h-12 sm:w-12 rounded-full ring-4 ring-[#f8f9fa] object-cover object-top" src={item.avatar} alt={item.name} />
               ))}
               <div className="flex items-center justify-center h-12 w-12 sm:h-12 sm:w-12 rounded-full ring-4 ring-[#f8f9fa] bg-[#4ab0ff] text-white text-3xl font-light z-10 relative">
                 +

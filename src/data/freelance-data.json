@@ -1,24 +1,14 @@
 [
   {
-    "avatar": "/freelance/traddle-io.png",
-    "project": "Traddle.io",
-    "company": "Brandheiss, Leipzig 🇩🇪",
-    "duration": "February 2024 - March 2024",
-    "info": [
-      "Contributed to developing functional user interfaces for the online trading platform Traddle.io, enhancing usability and performance",
-      "Collaborated with cross-functional teams to implement new features, ensuring seamless integration with backend services",
-      "Optimized front-end code for better responsiveness and faster load times across devices"
-    ]
+    "image": "/freelance/traddle.png",
+    "tags": ["React", "Redux", "Styled Components"],
+    "title": "Turning Prototypes into Products - Developed a functional and a stable MVP version of Traddle.io",
+    "description": "Traddle.io was an interactive trading platform for stocks and crypto where users can create communities, live track performances in the European Stock Market while simultaneously discuss within communities and trade together."
   },
   {
-    "avatar": "/freelance/mindcleanse.jpeg",
-    "project": "Mindcleanse",
-    "company": "LeanERA, Leipzig 🇩🇪",
-    "duration": "September 2022 - January 2023",
-    "info": [
-      "Designed and built all major UI screens for the MindCleanse app, including the Splash Screen, Login Screens, Settings Screen, and Main Dashboard, ensuring a cohesive and user-friendly experience",
-      "Focused on responsive design and accessibility, ensuring the app functions seamlessly across different devices and screen sizes",
-      "Collaborated with cross-functional teams to align UI development with project goals and integrate front-end components with backend systems"
-    ]
+    "image": "/freelance/mindcleanse.png",
+    "tags": ["Vue", "TailwindCSS", "Pinia", "Vite"],
+    "title": "Scaling E-commerce Ecosystem for High-Volume Global Traffics",
+    "description": "Redesigned the entire backend architecture using microservices to handle over 100k requests per minute during peak sales season reliably."
   }
 ]

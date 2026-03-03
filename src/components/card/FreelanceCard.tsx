@@ -1,79 +1,111 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Image from "next/image";
+import { createPortal } from "react-dom";
 
 type Props = {
-  avatar: string;
-  project: string;
-  company: string;
-  duration: string;
-  info: string[];
-  link?: string;
+  image: string;
+  tags: string[];
+  title: string;
+  description: string;
 };
 
-const FreelanceCard = (props: Props) => {
-  const { avatar, project, company, duration, info, link } = props;
-  const [showAll, setShowAll] = useState<boolean>(false);
+const FreelanceCard = ({ image, tags, title, description }: Props) => {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [mounted, setMounted] = useState(false);
 
-  const toggleShowAll = () => {
-    setShowAll(!showAll);
-  };
+  // Set mounted state for portal support
+  useEffect(() => {
+    setMounted(true);
+  }, []);
 
-  const maxInitialInfoPoints = 2; // Show first 2 points initially
-  const displayedInfo = showAll ? info : info.slice(0, maxInitialInfoPoints);
-  const canShowMore = info.length > maxInitialInfoPoints;
+  // Prevent background scrolling when modal is open
+  useEffect(() => {
+    if (isModalOpen) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "unset";
+    }
+    return () => {
+      document.body.style.overflow = "unset";
+    };
+  }, [isModalOpen]);
+
+  // Close modal on escape key
+  useEffect(() => {
+    const handleKeyDown = (e: KeyboardEvent) => {
+      if (e.key === "Escape" && isModalOpen) {
+        setIsModalOpen(false);
+      }
+    };
+    window.addEventListener("keydown", handleKeyDown);
+    return () => window.removeEventListener("keydown", handleKeyDown);
+  }, [isModalOpen]);
+
+  const modalContent = isModalOpen && mounted ? createPortal(
+    <div 
+      className="fixed inset-0 z-[9999] flex items-center justify-center p-4 sm:p-8 bg-black/70 backdrop-blur-sm cursor-zoom-out"
+      onClick={() => setIsModalOpen(false)}
+      style={{ animation: "fadeIn 0.2s ease-out forwards" }}
+    >
+      {/* Using inline-block so the container shrink-wraps the exact dimensions of the image */}
+      <div 
+        className="relative inline-flex justify-center shadow-2xl rounded-xl" 
+        onClick={(e) => e.stopPropagation()}
+        style={{ animation: "scaleUp 0.3s ease-out forwards", cursor: "default" }}
+      >
+        <img 
+          src={image} 
+          alt={title} 
+          className="w-auto max-w-[100vw] sm:max-w-5xl max-h-[85vh] rounded-xl sm:rounded-2xl object-contain bg-black/20" 
+        />
+      </div>
+    </div>,
+    document.body
+  ) : null;
 
   return (
-    <div className="h-full flex p-2">
-      <div className="flex flex-col w-full rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300 ease-in-out bg-white">
-        <div className="p-6 flex flex-col items-center bg-gray-50 border-b border-gray-100">
-          <div className="mb-4 relative w-24 h-24">
-            <Image
-              src={avatar}
-              alt={`${company} Logo`}
-              fill
-              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-              className="rounded-full object-cover border-2 border-white shadow-sm"
-            />
-          </div>
-          <h2 className="text-lg font-semibold text-gray-900 text-center">
-            {link ? (
-              <a
-                href={link}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center hover:text-blue-600 transition-colors duration-200 group"
-              >
-                {project}
-              </a>
-            ) : (
-              project
-            )}
-          </h2>
-          <p className="text-sm text-gray-600 mt-1">{company}</p>
-          <time className="mt-1 text-xs font-medium text-blue-500 tracking-wide uppercase">
-            {duration}
-          </time>
+    <>
+      <div className="flex flex-col w-full h-full group p-4 md:p-6 hover:-translate-y-2 transition-transform duration-500">
+        {/* Image container */}
+        <div 
+          className="relative w-full aspect-[4/3] rounded-3xl overflow-hidden bg-gray-100 mb-6 shadow-md group-hover:shadow-2xl transition-shadow duration-500 cursor-zoom-in"
+          onClick={() => setIsModalOpen(true)}
+        >
+          <Image
+            src={image}
+            alt={title}
+            fill
+            sizes="(max-width: 768px) 100vw, 50vw"
+            className="object-cover group-hover:scale-105 transition-transform duration-500 ease-in-out"
+          />
         </div>
 
-        <div className="p-6 flex-grow flex flex-col">
-          <ul className="list-disc list-inside text-base text-gray-700 space-y-2 flex-grow">
-            {displayedInfo.map((point, index) => (
-              <li key={index}>{point}</li>
-            ))}
-          </ul>
-          {canShowMore && (
-            <button
-              onClick={toggleShowAll}
-              className="text-sm text-blue-600 hover:text-blue-800 font-medium self-start mt-4 focus:outline-none focus:ring-2 focus:ring-blue-300 focus:ring-offset-2 rounded"
+        {/* Tags */}
+        <div className="flex flex-wrap gap-2 mb-4">
+          {tags.map((tag, index) => (
+            <span
+              key={index}
+              className="px-3 py-1.5 bg-blue-50 text-blue-600 rounded-md text-sm font-semibold tracking-wide"
             >
-              {showAll
-                ? "Show less"
-                : `Show more (${info.length - maxInitialInfoPoints} more)`}
-            </button>
-          )}
+              {tag}
+            </span>
+          ))}
         </div>
+
+        {/* Title */}
+        <h3 className="text-2xl md:text-[1.75rem] font-bold text-[#202020] leading-snug mb-4 group-hover:text-blue-600 transition-colors duration-300">
+          {title}
+        </h3>
+
+        {/* Description */}
+        <p className="text-[#6b7280] text-base md:text-[1.1rem] leading-relaxed">
+          {description}
+        </p>
       </div>
-    </div>
+
+      {/* Render the portal natively outside the DOM hierarchy */}
+      {modalContent}
+    </>
   );
 };
 
