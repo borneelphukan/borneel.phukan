@@ -16,7 +16,7 @@ const Footer = () => {
       "Publication",
       "Projects",
     ],
-    ["Services", "Blogs", "Gallery", "Contact Me"],
+    ["Explore", "Services", "Blogs", "Contact"],
     ["Social"],
   ];
 
@@ -94,7 +94,7 @@ const Footer = () => {
               <li className="py-1">
                 <Link
                   className="text-sm text-slate-300 hover:text-blue-400"
-                  href="/Services#Testinomials"
+                  href="/Services"
                 >
                   {links[1][1]}
                 </Link>
@@ -102,7 +102,7 @@ const Footer = () => {
               <li className="py-1">
                 <Link
                   className="text-sm text-slate-300 hover:text-blue-400"
-                  href="/blogs/"
+                  href="/blogs"
                 >
                   {links[1][2]}
                 </Link>
@@ -110,17 +110,9 @@ const Footer = () => {
               <li className="py-1">
                 <Link
                   className="text-sm text-slate-300 hover:text-blue-400"
-                  href="/Gallery"
-                >
-                  {links[1][3]}
-                </Link>
-              </li>
-              <li className="py-1">
-                <Link
-                  className="text-sm text-slate-300 hover:text-blue-400"
                   href="/Contact"
                 >
-                  {links[1][4]}
+                  {links[1][3]}
                 </Link>
               </li>
             </ul>

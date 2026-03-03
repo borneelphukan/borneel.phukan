@@ -15,7 +15,6 @@ const Navbar = () => {
     "Portfolio",
     "Services",
     "Blogs",
-    "Gallery",
     "Contact",
   ];
 
@@ -31,7 +30,6 @@ const Navbar = () => {
     else if (path.toLowerCase().startsWith("/portfolio")) setSelectedLink("Portfolio");
     else if (path.toLowerCase().startsWith("/services")) setSelectedLink("Services");
     else if (path.toLowerCase().startsWith("/blogs")) setSelectedLink("Blogs");
-    else if (path.toLowerCase().startsWith("/gallery")) setSelectedLink("Gallery");
     else if (path.toLowerCase().startsWith("/contact")) setSelectedLink("Contact");
     else setSelectedLink("Home");
   }, [router.pathname]);
@@ -109,17 +107,6 @@ const Navbar = () => {
           </Link>
         </div>
 
-        {/* Gallery */}
-        <Link
-          href="/Gallery"
-          className={`text-white hover:text-gray-300 hover:after:content-[''] hover:after:block hover:after:h-[2px] hover:after:bg-blue-400 hover:after:w-full hover:after:mt-[10px] ${
-            selectedLink === "Gallery" ? "after:content-[''] after:block after:w-full after:h-[2px] after:bg-blue-400 after:mt-[10px]" : ""
-          }`}
-          onClick={() => handleLinkClick("Gallery")}
-        >
-          {navItems[4]}
-        </Link>
-
         {/* Contact */}
         <div className="flex justify-center">
           <Link
@@ -129,7 +116,7 @@ const Navbar = () => {
             }`}
             onClick={() => handleLinkClick("Contact")}
           >
-            {navItems[5]}
+            {navItems[4]}
           </Link>
         </div>
       </div>
@@ -228,22 +215,6 @@ const Navbar = () => {
           )}
         </div>
 
-        {/* Gallery */}
-        <div className="relative">
-          <Link
-            href="/Gallery"
-            className={`text-white hover:text-blue-400 text-center ${
-              selectedLink === "Gallery" ? "after:content-[''] after:block after:w-full after:h-[2px] after:bg-blue-400 after:mt-[10px]" : ""
-            }`}
-            onClick={() => {
-              handleLinkClick("Gallery");
-              toggleMobileMenu();
-            }}
-          >
-            {navItems[4]}
-          </Link>
-        </div>
-
         <div className="relative">
           <Link
             href="/Contact"
@@ -255,7 +226,7 @@ const Navbar = () => {
               toggleMobileMenu();
             }}
           >
-            {navItems[5]}
+            {navItems[4]}
           </Link>
         </div>
       </div>

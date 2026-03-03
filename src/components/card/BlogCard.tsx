@@ -18,38 +18,41 @@ const BlogCard = ({
   link,
 }: Props) => {
   return (
-    <div className="container mx-auto my-8 max-w-screen-lg">
-      <a href={link}>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 rounded-md shadow-md relative">
-          <div className="col-span-1 md:col-span-1 items-center justify-center overflow-hidden mx-auto">
-            <Image
-              src={imageUrl}
-              alt="Blog Image"
-              width={450}
-              height={450}
-              className="rounded-t-md hover:scale-125 transition-all duration-500 cursor-pointer w-full h-full object-cover"
-            />
-          </div>
+    <a 
+      href={link} 
+      className="flex flex-col w-full h-full group p-4 md:p-6 hover:-translate-y-2 transition-transform duration-500 cursor-pointer"
+    >
+      {/* Image container */}
+      <div className="relative w-full aspect-[4/3] rounded-3xl overflow-hidden bg-gray-100 mb-6 shadow-md group-hover:shadow-2xl transition-shadow duration-500">
+        <Image
+          src={imageUrl}
+          alt={title}
+          fill
+          sizes="(max-width: 768px) 100vw, 50vw"
+          className="object-cover group-hover:scale-105 transition-transform duration-500 ease-in-out"
+        />
+      </div>
 
-          <div className="col-span-1 md:col-span-1 m-10">
-            <div className="flex flex-col h-full">
-              <div className="justify-center">
-                <p className="text-gray-500">{author}</p>
-              </div>
-              <h1 className="text-2xl font-bold my-2 justify-center">
-                {title}
-              </h1>
-              <p className="text-sm font-semibold mb-2">{date}</p>
-              <p className="justify-center">
-                <div className="inline-flex items-center text-sm font-normal">
-                  {description}
-                </div>
-              </p>
-            </div>
-          </div>
-        </div>
-      </a>
-    </div>
+      {/* Meta tags (Author & Date) */}
+      <div className="flex flex-wrap gap-2 mb-4">
+        <span className="px-3 py-1.5 bg-blue-50 text-blue-600 rounded-md text-sm font-semibold tracking-wide">
+          {author}
+        </span>
+        <span className="px-3 py-1.5 bg-gray-100 text-gray-600 rounded-md text-sm font-semibold tracking-wide">
+          {date}
+        </span>
+      </div>
+
+      {/* Title */}
+      <h3 className="text-2xl md:text-[1.75rem] font-bold text-[#202020] leading-snug mb-3 group-hover:text-blue-600 transition-colors duration-300">
+        {title}
+      </h3>
+
+      {/* Description */}
+      <p className="text-[#6b7280] text-base md:text-[1.1rem] leading-relaxed line-clamp-3">
+        {description}
+      </p>
+    </a>
   );
 };
 
