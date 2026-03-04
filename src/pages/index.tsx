@@ -59,7 +59,7 @@ const Home = () => {
               I am a <span className="font-medium">Software Developer</span>.
             </p>
             <p className="text-gray-400 text-base md:text-lg lg:text-xl font-light leading-relaxed text-center">
-              Focused on developing customer-oriented applications, designing impactful APIs, responsive UI, AI microservices and delivering successful projects to drive business growth and revenues.
+              5+ years of building customer-centric SaaS and mobile applications. From crafting core platform components to optimizing GenAI-driven features and backend API performances, I bridge the gap between complex engineering and tangible business growth.
             </p>
           </div>
         </div>
@@ -88,11 +88,11 @@ const Home = () => {
                 </h2>
                 
                 <p className="text-gray-500 font-light leading-relaxed mb-5 text-sm md:text-base lg:text-lg">
-                Software development for me is not just writing code, but a critical responsibility. My goal is to build fail-safe, scalable, and user-centric applications that solve real-world problems and drive business growth.
+                Software development for me is not just about writing code, but a critical responsibility. My goal is to build fail-safe, scalable, and user-centric applications that solve real-world problems and drive business growth.
                 </p>
 
                 <p className="text-gray-500 font-light leading-relaxed mb-5 text-sm md:text-base lg:text-lg">
-                I approach every project with a problem-solving mindset, focusing on delivering high-quality, maintainable code that aligns with business objectives.
+                I approach every project with an organized problem-solving mindset, focusing on structured paradigm and delivering high-quality, maintainable code that aligns with business objectives.
                 </p>
 
                 <div className="grid grid-cols-2 gap-y-5 gap-x-6">
@@ -156,9 +156,28 @@ const Home = () => {
               Services I Offer
             </h1>
 
-            <p className="text-lg leading-relaxed text-gray-200 sm:text-xl md:text-2xl drop-shadow-lg font-light mb-12">
-              When I am not engaged in personal projects, I might be freelancing for a reputable company or startup, and I could potentially contribute to your project as well.
+            <p className="text-lg leading-relaxed text-gray-200 sm:text-lg md:text-xl font-light mb-6">
+              With 5+ years of experience as a Software Developer across different industries, I have been actively freelancing for growing startups across the world, building features and shipping code that benefits my clients. 
             </p>
+
+            <p className="text-lg leading-relaxed text-gray-200 sm:text-lg md:text-xl font-light mb-4">
+              Following are the fields that I offer as a freelancer:
+            </p>
+
+            <ul className="flex flex-col sm:flex-row flex-wrap justify-center items-center gap-6 sm:gap-10 text-gray-200 text-lg md:text-xl font-light mb-10 w-full list-none">
+              <li className="flex items-center gap-3">
+                <span className="w-2 h-2 rounded-full bg-blue-500"></span>
+                UI/UX Design
+              </li>
+              <li className="flex items-center gap-3">
+                <span className="w-2 h-2 rounded-full bg-blue-500"></span>
+                Software Development
+              </li>
+              <li className="flex items-center gap-3">
+                <span className="w-2 h-2 rounded-full bg-blue-500"></span>
+                Product Management
+              </li>
+            </ul>
 
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-6">
               <Button

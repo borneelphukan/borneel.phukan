@@ -10,11 +10,7 @@ const DefaultLayout = ({ children }: { children: React.ReactNode }) => {
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
-    const loadingTimeout = setTimeout(() => {
-      setIsLoading(false);
-    }, 2000);
-
-    return () => clearTimeout(loadingTimeout);
+    // Rely immediately on Loader completing to hide it
   }, []);
 
   return (
@@ -23,7 +19,7 @@ const DefaultLayout = ({ children }: { children: React.ReactNode }) => {
         <title>Welcome | Borneel Bikash Phukan</title>
       </Head>
       {isLoading ? (
-        <Loader />
+        <Loader onComplete={() => setIsLoading(false)} />
       ) : (
         <div className="min-h-screen relative">
           <CVBar />

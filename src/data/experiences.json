@@ -1,9 +1,9 @@
 [
-    {
+  {
     "image": "/experience/Graminate.png",
     "title": "Software Developer",
-    "date": "November 2024 - Present",
-    "company": "Graminate IT Solutions",
+    "date": "April 2025 - Present",
+    "company": "Graminate",
     "skills": [
       "Next.js",
       "Typescript",
@@ -37,10 +37,11 @@
     ],
     "location": "Munich, Germany",
     "description": [
-      "Developing and maintaining web applications end-to-end by building responsive and interactive frontend components and robust backend services, ensuring seamless functionality across platforms",
-      "Designing user-friendly interfaces with a focus on performance, accessibility, and scalability; delivering high-quality, maintainable code following best practices and version control workflows",
-      "Managing and integrating databases and APIs, writing optimized queries, and building RESTful APIs",
-      "Ensuring code quality, performance, and scalability by writing comprehensive unit and integration tests, code reviews, and applying performance optimization techniques to handle high-traffic use cases"
+      "Core contributor to the development of ComPro, a centralized compliance monitoring platform featuring a user-friendly interface tailored for staffing providers across the DACH region.",
+      "Architected a standardized UI component library using Storybook, streamlining the development lifecycle for the Pactos product suite and ensuring 100% design-to-code consistency.",
+      "Engineered high-performance optimizations post-v1 launch, achieving a 99.8% reduction in API response times (from 12s to 20ms) and significantly decreasing Payload CMS load times.",
+      "Optimized operational overhead by designing a sophisticated caching and data-fetching strategy for the NorthData API, resulting in a measurable reduction in third-party integration costs.",
+      "Ensured platform reliability by resolving mission-critical production bottlenecks and managing seamless deployments across multi-tier (Test, Staging, Production) environments under tight deadlines"
     ]
   },
   {
