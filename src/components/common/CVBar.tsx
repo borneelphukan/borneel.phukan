@@ -53,7 +53,7 @@ const CVBar = () => {
       </div>
       <Button
         variant="secondary"
-        href="/docs/CV.pdf"
+        href="/docs/CV_Borneel.pdf"
         target="_blank"
         rel="noopener noreferrer"
         onClick={() => {}}

@@ -36,11 +36,11 @@ const InputField: React.FC<Props> = ({
   const fieldClass = useMemo(() => {
     switch (statusType) {
       case "error":
-        return "border border-gray-400 placeholder-gray-300 text-sm rounded-md block w-full p-2.5 focus:outline-none focus:ring-1 focus:ring-red-200";
+        return "border border-red-300 bg-white/50 backdrop-blur-md placeholder-gray-400 text-slate-700 text-sm rounded-xl block w-full p-3 focus:outline-none focus:ring-2 focus:ring-red-200 transition-all duration-300 shadow-sm";
       case "disabled":
-        return "border border-gray-400 opacity-50 placeholder-gray-300 text-sm rounded-md block w-full p-2.5 focus:outline-none focus:ring-1 focus:ring-red-200";
+        return "border border-gray-200 bg-gray-100/50 backdrop-blur-md opacity-50 placeholder-gray-400 text-slate-700 text-sm rounded-xl block w-full p-3 focus:outline-none transition-all duration-300 shadow-sm";
       default:
-        return "border border-gray-400 placeholder-gray-300 text-sm rounded-md block w-full p-2.5 focus:outline-none focus:ring-1";
+        return "border border-gray-200 bg-white/50 hover:bg-white/80 backdrop-blur-md placeholder-gray-400 text-slate-700 text-sm rounded-xl block w-full p-3 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:border-transparent transition-all duration-300 shadow-sm";
     }
   }, [statusType]);
 
@@ -51,13 +51,13 @@ const InputField: React.FC<Props> = ({
     <div className="w-full">
       <label
         htmlFor={calendar ? "calendar" : password ? "password" : id}
-        className="block mb-1 text-sm font-medium "
+        className="block mb-2 text-sm font-semibold text-slate-700 tracking-wide"
       >
         {label}
       </label>
       <div className="relative flex items-center">
         <input
-          className={`${fieldClass} ${iconPos} py-2 px-4 h-12 rounded bg-transparent`} // bg-transparent added here
+          className={`${fieldClass} ${iconPos} h-12`}
           disabled={isDisabled}
           type={calendar ? "date" : password ? "password" : inputType}
           id={id}

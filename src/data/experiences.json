@@ -52,11 +52,10 @@
     "skills": ["Svelte", "Javascript", "TailwindCSS", "REST API", "Git"],
     "location": "Cologne, Germany",
     "reference": "/docs/Golfpost.pdf",
-    "description": [
-      "Developed a fantasy gaming web application with SvelteKit and Tailwind; created components, functionalities and integrated API endpoints",
-      "Developed core features for the application like dashboards, player picker, tournament and league panels for users",
-      "Developed the frontend of a members-exclusive company portfolio website; enhanced UI and added localization",
-      "Collaborated with an agile team of developers and external management to ensure timely completion of sprint goals and successful deployment"
+    "description": ["Spearheaded the core frontend development of Golfpost Fantasy, a social sports-engagement platform for golf enthuasist to participate in predictive gaming and earn choice-based rewards",
+    "Architected and maintained a foundational UI component library, prioritizing modular reusability, mobile responsiveness, and a consistent code paradigm to accelerate the development lifecycle",
+    "Directed the UI/UX strategy and rapid prototyping for the mobile-native version of Golfpost Fantasy; collaborated across teams to implement impactful layout designs, increasing engagement by 60%",
+    "Fostered a learning culture by organizing and facilitating internal technical workshops. Conducted code reviews and created comprehensive documentation to standardize best practices across the team"
     ]
   },
     {
@@ -68,10 +67,11 @@
     "location": "Munich, Germany",
     "reference": "/docs/V4C.pdf",
     "description": [
-      "Extended the company-wide infrastructure by developing key features such as a blog section, user authentication and admin dashboards, and customer support, significantly increasing user traffic to the company homepage",
-      "Extended and optimised existing relational databases to support new functionalities, ensuring seamless data integration with API endpoints",
-      "Enhanced the existing system of web applications by implementing a microservices architecture with containerised and scalable applications",
-      "Managed and optimised the legacy company landing page with WordPress, by collaborating with management to add custom features, plugins, and optimise performances"
+      "Engineered an internal AI-driven consultancy management platform for consultants, designed to analyze client performance metrics and identify key drivers for KPI optimization.",
+      "Architected and optimized secure, high-performance RESTful API endpoints, achieving a 60% increase in load handling capacity and significantly reducing latency through advanced caching and database tuning.",
+      "Strengthened platform stability by resolving critical software defects and implementing a rigorous code review process, which accelerated deployment cycles and reduced long-term maintenance costs.",
+      "Integrated Large Language Model (LLM) capabilities to automate data processing, add agentic capabilities and provide predictive analytics for identifying customer trends.",
+      "Managed and extended legacy WordPress infrastructure, developing custom plugins and bespoke content management solutions to ensure continuous operational uptime."
     ]
   },
   {

@@ -4,6 +4,7 @@ import "react-toastify/dist/ReactToastify.css";
 import emailjs from "@emailjs/browser";
 import InputField from "../../components/common/InputField";
 import TextareaWithIcon from "../common/TextArea";
+import Button from "../../components/common/Button";
 
 import MapWithLocation from "@/services/MapWithLocation";
 
@@ -77,7 +78,7 @@ const ContactForm = () => {
             </h2>
             <form
               onSubmit={handleSubmit}
-              className="w-full bg-white border shadow-lg rounded px-6 py-8"
+              className="w-full bg-white/80 backdrop-blur-md border border-white/20 shadow-sm rounded-2xl px-6 py-8"
             >
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
                 {/* First Name Input */}
@@ -113,13 +114,8 @@ const ContactForm = () => {
 
               {/* Message Input */}
               <div className="mb-6">
-                <label
-                  className="block text-slate-600 text-sm font-bold mb-2"
-                  htmlFor="message"
-                >
-                  Message
-                </label>
                 <TextareaWithIcon
+                  label="Message"
                   value={formData.message}
                   onChange={handleChange}
                   id="message"
@@ -131,12 +127,13 @@ const ContactForm = () => {
 
               {/* Submit Button */}
               <div className="flex justify-center lg:justify-start">
-                <button
-                  className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-6 rounded focus:outline-none focus:shadow-outline"
+                <Button
+                  variant="primary"
+                  className="px-8 py-3 w-full lg:w-auto text-base shadow-lg shadow-blue-500/30 hover:shadow-blue-500/50 hover:-translate-y-0.5"
                   type="submit"
                 >
-                  Send
-                </button>
+                  Send Message
+                </Button>
               </div>
             </form>
             <ToastContainer />
