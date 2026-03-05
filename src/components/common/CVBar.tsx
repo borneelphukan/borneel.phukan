@@ -48,7 +48,7 @@ const CVBar = () => {
             scrolledPastSkills ? "text-gray-900" : "text-white"
           }`}
         >
-          Borneel Bikash Phukan
+          Borneel B. Phukan
         </span>
       </div>
       <Button
@@ -62,9 +62,6 @@ const CVBar = () => {
             ? "bg-gray-900 text-white hover:bg-gray-800"
             : "bg-white text-gray-900 hover:bg-gray-100"
         }`}
-        icon={{
-          right: <ArrowForwardIcon className={`w-4 h-4 md:w-5 md:h-5 ${scrolledPastSkills ? "text-white" : "text-gray-900"}`} />
-        }}
       >
         Open CV
       </Button>

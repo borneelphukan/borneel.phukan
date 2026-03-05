@@ -138,7 +138,7 @@ const Home = () => {
       </div>
 
       {/* Services Banner exactly cloned from Services.tsx */}
-      <section id="Services" className="sticky top-0 z-0 flex flex-col items-center justify-center h-[100vh] w-full overflow-hidden bg-gray-900">
+      <section id="Services" className="sticky top-0 z-0 flex flex-col items-center justify-center h-[100vh] pb-[20vh] md:pb-0 w-full overflow-hidden bg-gray-900">
         <Image
           src="/banners/service_banner.png"
           alt="Services background"
