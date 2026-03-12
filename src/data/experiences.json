@@ -1,31 +1,9 @@
 [
-  {
-    "image": "/experience/Graminate.png",
-    "title": "Software Developer",
-    "date": "April 2025 - Present",
-    "company": "Graminate",
-    "skills": [
-      "Next.js",
-      "Typescript",
-      "Tailwind",
-      "Nest.js",
-      "PostgreSQL",
-      "Prisma",
-      "AWS",
-      "Git"
-    ],
-    "location": "Guwahati, India",
-    "description": [
-      "Developing an agriculture-oriented SaaS Enterprise Resource Planning (ERP) application for agricultural startups and mid-size companies to streamline business processes",
-      "Pipeline products include cloud-based ERP Application and cross-platform (iOS & Android) native mobile applications",
-      "ERP features include a customisable Dashboard, built-in CRM, Kanban Ticket Manager, Labour Management, Budget Manager, Inventory Management, Vendor Finder and region-based Scheme Finder",
-      "Collaborating with potential clients to develop Poultry, Fishery and Animal Husbandry dashboards and features for the complete ERP application"
-    ]
-  },
+  
   {
     "image": "/experience/Pactos.png",
     "title": "Software Developer",
-    "date": "October 2025 - March 2026",
+    "date": "October 2025 - Present",
     "company": "Pactos.AI",
     "skills": [
       "React",
