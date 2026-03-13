@@ -24,7 +24,7 @@ const FreelanceStack = () => {
             </span>
           </div>
           <h2 className="text-4xl font-medium sm:text-4xl lg:text-4xl tracking-normal">
-            Stuff I&apos;ve done.
+            Client projects delivered.
           </h2>
         </div>
 

@@ -1,4 +1,14 @@
-[
+[{
+    "images": [
+      "/freelance/legacy-1.png",
+      "/freelance/legacy-2.png",
+      "/freelance/legacy-3.png",
+      "/freelance/legacy-4.webp"
+    ],
+    "tags": ["Next.js", "Nest.js", "Typescript", "TailwindCSS", "PostgreSQL"],
+    "title": "Legacy Apartment Management System - A custom society-owned management platform for day-to-day activities of Legacy Society",
+    "description": "Collaborated with the core society members of The Legacy Housing Society to understand requirements and pain points of managing a society, and designed and implemented a full-stack web application to streamline and automate the management of day-to-day activities of the society.  "
+  },
     {
     "images": [
       "/freelance/compro-1.webp",
