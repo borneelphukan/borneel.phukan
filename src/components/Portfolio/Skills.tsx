@@ -42,20 +42,20 @@ const Skills = () => {
 
   const categories = [
     {
-      title: "Programming Tools",
-      data: programming,
+      title: "Product Management & Ops",
+      data: devops,
+    },
+    {
+      title: "Backend & Systems",
+      data: backend,
     },
     {
       title: "Frontend Tools",
       data: frontend,
     },
     {
-      title: "Backend Tools",
-      data: backend,
-    },
-    {
-      title: "DevOps & Product Management",
-      data: devops,
+      title: "Programming Languages",
+      data: programming,
     },
     {
       title: "Creative Tools",

@@ -50,16 +50,16 @@ const Home = () => {
             I&apos;m
           </h2>
 
-          <h1 className="text-center text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-black text-[#e2e4e9] uppercase tracking-tighter leading-none mb-10 w-full drop-shadow-2xl">
+          <h1 className="text-center text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-black text-[#e2e4e9] uppercase tracking-tighter leading-none mb-10 w-full drop-shadow-2xl">
             Borneel Bikash Phukan
           </h1>
           
           <div className="text-center max-w-3xl mx-auto flex flex-col items-center">
             <p className="text-gray-200 text-lg md:text-xl lg:text-2xl mb-3 font-light">
-              I am a <span className="font-medium">Software Developer</span>.
+              Technical Product Manager & Fullstack (Typescript) Developer
             </p>
             <p className="text-gray-400 text-base md:text-lg lg:text-xl font-light leading-relaxed text-center">
-              5+ years of building customer-centric SaaS and mobile applications. From crafting core platform components to optimizing GenAI-driven features and backend API performances, I bridge the gap between complex engineering and tangible business growth.
+              4+ years of leading cross-functional teams to build customer-centric SaaS and mobile applications. From defining product roadmaps to optimizing GenAI-driven features and API performance, I bridge the gap between complex engineering and strategic business growth.
             </p>
           </div>
         </div>
@@ -84,15 +84,15 @@ const Home = () => {
               {/* Right Side: Content */}
               <div className="w-full md:w-3/5 p-8 md:p-12 lg:p-14 flex flex-col justify-center">
                 <h2 className="text-3xl md:text-4xl lg:text-[2.5rem] font-bold text-gray-800 mb-4 tracking-tight leading-tight">
-                  Who am I as a <span className="text-[#3b82f6]">Developer </span>?
+                  Who am I as a <span className="text-[#3b82f6]">Product Manager </span>?
                 </h2>
                 
                 <p className="text-gray-500 font-light leading-relaxed mb-5 text-sm md:text-base lg:text-lg">
-                Software development for me is not just about writing code, but a critical responsibility. My goal is to build fail-safe, scalable, and user-centric applications that solve real-world problems and drive business growth.
+                For me, product management is about bridging the gap between technical possibility and business impact. My goal is to build scalable, user-centric products that align engineering excellence with strategic growth objectives.
                 </p>
 
                 <p className="text-gray-500 font-light leading-relaxed mb-5 text-sm md:text-base lg:text-lg">
-                I approach every project with an organized problem-solving mindset, focusing on structured paradigm and delivering high-quality, maintainable code that aligns with business objectives.
+                I leverage my deep technical background to lead cross-functional teams, translate complex requirements into actionable roadmaps, and ensure we ship products that solve real user pain points and drive sustainable business value.
                 </p>
 
                 <div className="grid grid-cols-2 gap-y-5 gap-x-6">
@@ -109,8 +109,8 @@ const Home = () => {
                     <span className="text-4xl md:text-5xl font-bold text-gray-800">15+</span>
                   </div>
                   <div className="flex flex-col">
-                    <span className="text-gray-500 text-sm md:text-base mb-1 tracking-wide">Hours of Coding</span>
-                    <span className="text-4xl md:text-5xl font-bold text-gray-800">60000+</span>
+                    <span className="text-gray-500 text-sm md:text-base mb-1 tracking-wide">Products & Features Shipped</span>
+                    <span className="text-4xl md:text-5xl font-bold text-gray-800">50+</span>
                   </div>
                 </div>
               </div>
@@ -157,7 +157,7 @@ const Home = () => {
             </h1>
 
             <p className="text-lg leading-relaxed text-gray-200 sm:text-lg md:text-xl font-light mb-6">
-              With 5+ years of experience as a Software Developer across different industries, I have been actively freelancing for growing startups across the world, building features and shipping code that benefits my clients. 
+              With 5+ years of experience bridging Engineering and Product, I help startups scale by defining clear product strategies and leading technical execution that delivers measurable impact. 
             </p>
 
             <p className="text-lg leading-relaxed text-gray-200 sm:text-lg md:text-xl font-light mb-4">
@@ -167,15 +167,15 @@ const Home = () => {
             <ul className="flex flex-col sm:flex-row flex-wrap justify-center items-center gap-6 sm:gap-10 text-gray-200 text-lg md:text-xl font-light mb-10 w-full list-none">
               <li className="flex items-center gap-3">
                 <span className="w-2 h-2 rounded-full bg-blue-500"></span>
-                UI/UX Design
+                Product Strategy
               </li>
               <li className="flex items-center gap-3">
                 <span className="w-2 h-2 rounded-full bg-blue-500"></span>
-                Software Development
+                Roadmap & Backlog Management
               </li>
               <li className="flex items-center gap-3">
                 <span className="w-2 h-2 rounded-full bg-blue-500"></span>
-                Product Management
+                Technical Consultation
               </li>
             </ul>
 
