@@ -3,8 +3,8 @@ import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
 import DefaultLayout from "@/layout/DefaultLayout";
-import BlogBanner from "@/components/Blog/BlogBanner";
-import BlogCrumbs from "@/components/common/BreadCrumb";
+import BlogBanner from "@/components/banner";
+import BlogCrumbs from "@/components/breadcrumb";
 import BlogCard from "@/components/card/BlogCard";
 import { getR2Url } from "@/config/r2";
 

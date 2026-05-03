@@ -1,10 +1,10 @@
 import { useState, useEffect } from "react";
 import Head from "next/head";
 import Navbar from "@/components/layout/NavBar";
-import CircularProgressBar from "@/components/common/CircularProgressBar";
+import CircularProgressBar from "@/components/layout/CircularProgressBar";
 import Footer from "@/components/layout/Footer";
-import Loader from "@/components/common/Loader";
-import CVBar from "@/components/common/CVBar";
+import Loader from "@/components/loader";
+import CVBar from "@/components/layout/CVBar";
 
 const DefaultLayout = ({ children }: { children: React.ReactNode }) => {
   const [isLoading, setIsLoading] = useState(true);

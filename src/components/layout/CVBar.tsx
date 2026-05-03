@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import Image from "next/image";
-import Button from "./Button";
+import Button from "../button";
 import { getR2Url } from "@/config/r2";
 
 const CVBar = () => {

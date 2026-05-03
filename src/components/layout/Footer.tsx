@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import { Icon } from "@/components/common/Icon";
+import { Icon } from "@/components/icon";
 
 const Footer = () => {
   const links = [

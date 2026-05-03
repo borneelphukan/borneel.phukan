@@ -1,7 +1,7 @@
-import { S3Client, ListObjectsV2Command, GetObjectCommand, PutObjectCommand } from "@aws-sdk/client-s3";
+import { S3Client, ListObjectsV2Command, GetObjectCommand } from "@aws-sdk/client-s3";
 
 export const r2Client = new S3Client({
-  region: "auto", // R2 automatically determines the bucket region
+  region: "auto",
   endpoint: process.env.R2_ENDPOINT,
   credentials: {
     accessKeyId: process.env.R2_ACCESS_KEY_ID || "",
@@ -11,10 +11,6 @@ export const r2Client = new S3Client({
 
 const BUCKET_NAME = process.env.R2_BUCKET_NAME || "";
 
-/**
- * Lists all objects within a specific folder/prefix in the R2 bucket.
- * @param folderName The name of the folder or prefix (e.g., 'blogs', 'images/')
- */
 export async function listFilesInFolder(folderName: string) {
   const prefix = folderName.endsWith("/") ? folderName : `${folderName}/`;
   
@@ -32,10 +28,6 @@ export async function listFilesInFolder(folderName: string) {
   }
 }
 
-/**
- * Fetches an object from the R2 bucket.
- * @param key The object key (e.g., 'blogs/my-post.md')
- */
 export async function getFile(key: string) {
   const command = new GetObjectCommand({
     Bucket: BUCKET_NAME,
@@ -51,9 +43,6 @@ export async function getFile(key: string) {
   }
 }
 
-/**
- * Converts a stream into a string. Useful for reading text/markdown from R2.
- */
 export async function streamToString(stream: any): Promise<string> {
   const chunks: any[] = [];
   return new Promise((resolve, reject) => {

@@ -3,11 +3,11 @@ import Image from "next/image";
 import { getR2Url } from "@/config/r2";
 
 import Link from "next/link";
-import { TestimonialCarousel } from "@/components/carousel/TestimonialCarousel";
+import { TestimonialCarousel } from "@/components/carousel";
 import Skills from "@/components/Portfolio/Skills";
 import FreelanceStack from "@/components/Services/Freelance/FreelanceStack";
-import { Icon } from "@/components/common/Icon";
-import Button from "@/components/common/Button";
+import { Icon } from "@/components/icon";
+import Button from "@/components/button";
 type CategoryProps = {
   slug: string;
   title: string;
@@ -32,9 +32,16 @@ const Home = () => {
     <DefaultLayout>
       {/* Banner section */}
       <div 
-        className="sticky top-0 -z-10 h-[100vh] w-full bg-cover bg-center flex items-center justify-center overflow-hidden"
-        style={{ backgroundImage: `url('${getR2Url("banners/home-banner.png")}')` }}
+        className="sticky top-0 -z-10 h-[100vh] w-full flex items-center justify-center overflow-hidden"
       >
+        <Image
+          src={getR2Url("banners/home-banner.png")}
+          alt="Home Banner"
+          fill
+          priority
+          unoptimized={true}
+          className="absolute inset-0 object-cover"
+        />
         {/* Vertical subtle column lines */}
         <div className="absolute inset-0 bg-[linear-gradient(to_right,#ffffff03_1px,transparent_1px)] bg-[size:12.5vw_100%]"></div>
         

@@ -2,7 +2,7 @@ import "intersection-observer";
 import { useEffect, useRef, useState } from "react";
 import ProjectCard from "../card/ProjectCard";
 import projectsData from "@/data/projects.json";
-import Tabs from "../common/Tabs";
+import Tabs from "../tabs";
 
 const Projects = () => {
   const cardsRef = useRef<Array<HTMLDivElement | null>>([]);

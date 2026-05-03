@@ -1,6 +1,6 @@
-import BlogBanner from "@/components/Blog/BlogBanner";
+import BlogBanner from "@/components/banner";
 import DefaultLayout from "@/layout/DefaultLayout";
-import BreadCrumbs from "@/components/common/BreadCrumb";
+import BreadCrumbs from "@/components/breadcrumb";
 import BlogCategoryCard from "@/components/card/BlogCategoryCard";
 
 const Blogs = () => {

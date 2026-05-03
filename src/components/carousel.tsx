@@ -1,4 +1,4 @@
-import TestimonialsCard from "../../components/card/TestimonialsCard";
+import TestimonialsCard from "./card/TestimonialsCard";
 import testimonialsData from "@/data/testimonials.json";
 import Image from "next/image";
 

@@ -1,6 +1,6 @@
 import { useState } from "react";
 import OpenInNewIcon from '@mui/icons-material/OpenInNew';
-import Button from "../common/Button";
+import Button from "../button";
 
 type Props = {
   title: string;

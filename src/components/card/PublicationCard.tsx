@@ -1,7 +1,7 @@
 import { useState } from "react";
 import OpenInNewIcon from '@mui/icons-material/OpenInNew';
 import FormatQuoteIcon from '@mui/icons-material/FormatQuote';
-import Button from "../common/Button";
+import Button from "../button";
 
 type Props = {
   paperName: string;

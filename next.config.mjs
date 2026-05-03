@@ -16,6 +16,9 @@ const nextConfig = {
       },
     ],
   },
+  env: {
+    R2_PUBLIC_URL: process.env.NEXT_PUBLIC_R2_PUBLIC_URL || process.env.R2_PUBLIC_URL,
+  },
 };
 
 export default nextConfig;

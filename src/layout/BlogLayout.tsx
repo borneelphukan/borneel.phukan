@@ -1,4 +1,4 @@
-import BreadCrumbs from "@/components/common/BreadCrumb";
+import BreadCrumbs from "@/components/breadcrumb";
 import VideoPlayer from "@/components/utils/VideoPlayer";
 
 type Props = {

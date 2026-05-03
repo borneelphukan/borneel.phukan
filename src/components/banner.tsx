@@ -1,4 +1,5 @@
 import { ReactNode } from "react";
+import Image from "next/image";
 import { getR2Url } from "@/config/r2";
 
 type Props = {
@@ -7,11 +8,16 @@ type Props = {
 
 const BlogBanner = ({ children }: Props) => {
   return (
-    <div 
-      className="bg-cover bg-center h-[40vh] w-full"
-      style={{ backgroundImage: `url('${getR2Url("banners/blog-banner.jpg")}')` }}
-    >
-      <div className="container mx-auto px-10">
+    <div className="relative h-[40vh] w-full overflow-hidden">
+      <Image
+        src={getR2Url("banners/blog-banner.jpg")}
+        alt="Blog Banner"
+        fill
+        priority
+        unoptimized={true}
+        className="absolute inset-0 object-cover bg-center"
+      />
+      <div className="relative z-10 container mx-auto px-10">
         {/*Banner Goes Here*/}
         <div className="py-10 md:py-10 lg:py-10 xl:py-10">
           <div className="max-w-7xl mx-auto text-center text-white">

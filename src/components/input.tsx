@@ -18,7 +18,7 @@ type Props = {
   id: string;
 };
 
-const InputField: React.FC<Props> = ({
+const Input: React.FC<Props> = ({
   label = "",
   placeholder,
   optionalMessage,
@@ -93,4 +93,4 @@ const InputField: React.FC<Props> = ({
   );
 };
 
-export default InputField;
+export default Input;

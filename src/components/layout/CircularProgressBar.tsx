@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { Icon } from "@/components/common/Icon";
+import { Icon } from "@/components/icon";
 
 const CircularScrollProgressBar = () => {
   const [progress, setProgress] = useState(0);

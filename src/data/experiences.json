@@ -14,6 +14,7 @@
       "Git"
     ],
     "location": "Munich, Germany",
+    "reference": "https://pub-0a2eeceea05f4b00bc0da29be0d52d0d.r2.dev/docs/Pactos.pdf",
     "description": [
       "Core contributor to the development of ComPro, a centralized compliance monitoring platform featuring a user-friendly interface tailored for staffing providers across the DACH region.",
       "Architected a standardized UI component library using Storybook, streamlining the development lifecycle for the Pactos product suite and ensuring 100% design-to-code consistency.",

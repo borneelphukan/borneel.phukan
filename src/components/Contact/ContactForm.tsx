@@ -2,11 +2,9 @@ import { useState } from "react";
 import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import emailjs from "@emailjs/browser";
-import InputField from "../../components/common/InputField";
-import TextareaWithIcon from "../common/TextArea";
-import Button from "../../components/common/Button";
-
-import MapWithLocation from "@/services/MapWithLocation";
+import Input from "../input";
+import TextArea from "../textarea";
+import Button from "../button";
 
 const ContactForm = () => {
   const contactFormHeader = "Get in Touch";
@@ -82,7 +80,7 @@ const ContactForm = () => {
             >
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
                 {/* First Name Input */}
-                <InputField
+                <Input
                   label="First Name"
                   placeholder="Enter your first name"
                   value={formData.firstName}
@@ -91,7 +89,7 @@ const ContactForm = () => {
                 />
 
                 {/* Last Name Input */}
-                <InputField
+                <Input
                   label="Last Name"
                   placeholder="Enter your last name"
                   value={formData.lastName}
@@ -102,7 +100,7 @@ const ContactForm = () => {
 
               {/* Email Address Input */}
               <div className="mb-6">
-                <InputField
+                <Input
                   label="Email Address"
                   placeholder="Enter your email"
                   value={formData.email}
@@ -114,7 +112,7 @@ const ContactForm = () => {
 
               {/* Message Input */}
               <div className="mb-6">
-                <TextareaWithIcon
+                <TextArea
                   label="Message"
                   value={formData.message}
                   onChange={handleChange}
@@ -138,10 +136,7 @@ const ContactForm = () => {
             </form>
             <ToastContainer />
           </div>
-          {/* Map Section */}
-          {/* <div className="w-full lg:w-1/2">
-            <MapWithLocation />
-          </div> */}
+
         </div>
       </div>
     </div>
