@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import Image from "next/image";
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 import Button from "./Button";
+import { getR2Url } from "@/config/r2";
 
 const CVBar = () => {
   const [scrolledPastSkills, setScrolledPastSkills] = useState(false);
@@ -36,7 +37,7 @@ const CVBar = () => {
       <div className="flex items-center gap-3">
         <div className="h-10 w-10 md:h-12 md:w-12 rounded-full overflow-hidden border border-white/20 ml-1 bg-gray-200">
           <Image
-            src={`${process.env.R2_PUBLIC_URL || "https://pub-0a2eeceea05f4b00bc0da29be0d52d0d.r2.dev"}/assets/borneel.png`}
+            src={getR2Url("assets/borneel.png")}
             width={48}
             height={48}
             alt="Avatar"

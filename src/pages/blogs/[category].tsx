@@ -6,6 +6,7 @@ import DefaultLayout from "@/layout/DefaultLayout";
 import BlogBanner from "@/components/Blog/BlogBanner";
 import BlogCrumbs from "@/components/common/BreadCrumb";
 import BlogCard from "@/components/card/BlogCard";
+import { getR2Url } from "@/config/r2";
 
 type Props = {
   category: string;
@@ -30,7 +31,7 @@ const BlogSection = ({ category, blogs = [] }: Props) => {
             <BlogCard
               key={blog.slug}
               link={`/blogs/${category.toLowerCase()}/${blog.slug}`}
-              imageUrl={`/thumbnails/${blog.slug}.jpg`}
+              imageUrl={getR2Url(`thumbnails/${blog.slug}.jpg`)}
               author={blog.author}
               date={blog.date}
               title={blog.title}

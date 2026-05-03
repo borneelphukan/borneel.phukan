@@ -1,4 +1,5 @@
 import { ReactNode } from "react";
+import { getR2Url } from "@/config/r2";
 
 type Props = {
   children: ReactNode;
@@ -8,7 +9,7 @@ const BlogBanner = ({ children }: Props) => {
   return (
     <div 
       className="bg-cover bg-center h-[40vh] w-full"
-      style={{ backgroundImage: "url('https://pub-0a2eeceea05f4b00bc0da29be0d52d0d.r2.dev/banners/blog-banner.jpg')" }}
+      style={{ backgroundImage: `url('${getR2Url("banners/blog-banner.jpg")}')` }}
     >
       <div className="container mx-auto px-10">
         {/*Banner Goes Here*/}

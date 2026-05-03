@@ -42,7 +42,7 @@ const Skills = () => {
 
   const categories = [
     {
-      title: "Product Management & Ops",
+      title: "DevOps",
       data: devops,
     },
     {
@@ -58,7 +58,7 @@ const Skills = () => {
       data: programming,
     },
     {
-      title: "Creative Tools",
+      title: "Tools",
       data: tools,
     },
   ];

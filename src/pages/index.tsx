@@ -1,5 +1,6 @@
 import DefaultLayout from "@/layout/DefaultLayout";
 import Image from "next/image";
+import { getR2Url } from "@/config/r2";
 
 import Link from "next/link";
 import { TestimonialCarousel } from "@/components/carousel/TestimonialCarousel";
@@ -34,7 +35,7 @@ const Home = () => {
       {/* Banner section */}
       <div 
         className="sticky top-0 -z-10 h-[100vh] w-full bg-cover bg-center flex items-center justify-center overflow-hidden"
-        style={{ backgroundImage: "url('https://pub-0a2eeceea05f4b00bc0da29be0d52d0d.r2.dev/banners/home-banner.png')" }}
+        style={{ backgroundImage: `url('${getR2Url("banners/home-banner.png")}')` }}
       >
         {/* Vertical subtle column lines */}
         <div className="absolute inset-0 bg-[linear-gradient(to_right,#ffffff03_1px,transparent_1px)] bg-[size:12.5vw_100%]"></div>
@@ -53,13 +54,13 @@ const Home = () => {
             I&apos;m
           </h2>
 
-          <h1 className="text-center text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-black text-[#e2e4e9] uppercase tracking-tighter leading-none mb-10 w-full drop-shadow-2xl">
+          <h1 className="text-center text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-black text-[#e2e4e9] uppercase tracking-tighter leading-none mb-5 w-full drop-shadow-2xl">
             Borneel Bikash Phukan
           </h1>
           
           <div className="text-center max-w-3xl mx-auto flex flex-col items-center">
             <p className="text-gray-200 text-lg md:text-xl lg:text-2xl mb-3 font-light">
-              Technical Product Manager & Fullstack (Typescript) Developer
+              Software Developer
             </p>
             <p className="text-gray-400 text-base md:text-lg lg:text-xl font-light leading-relaxed text-center">
               4+ years of leading cross-functional teams to build customer-centric SaaS and mobile applications. From defining product roadmaps to optimizing GenAI-driven features and API performance, I bridge the gap between complex engineering and strategic business growth.
@@ -76,7 +77,7 @@ const Home = () => {
               {/* Left Side: Image */}
               <div className="w-full md:w-2/5 flex-shrink-0 relative bg-gray-100">
                 <Image
-                  src="https://pub-0a2eeceea05f4b00bc0da29be0d52d0d.r2.dev/assets/borneel.jpg"
+                  src={getR2Url("assets/borneel.jpg")}
                   width={600}
                   height={800}
                   alt="Your Avatar"
@@ -143,7 +144,7 @@ const Home = () => {
       {/* Services Banner exactly cloned from Services.tsx */}
       <section id="Services" className="sticky top-0 z-0 flex flex-col items-center justify-center h-[100vh] pb-[20vh] md:pb-0 w-full overflow-hidden bg-gray-900">
         <Image
-          src="https://pub-0a2eeceea05f4b00bc0da29be0d52d0d.r2.dev/banners/service_banner.png"
+          src={getR2Url("banners/service_banner.png")}
           alt="Services background"
           fill
           priority

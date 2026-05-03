@@ -7,6 +7,7 @@ import DefaultLayout from "@/layout/DefaultLayout";
 import BlogLayout from "@/layout/BlogLayout";
 import { GetStaticProps, GetStaticPaths } from "next";
 import { useRouter } from "next/router";
+import { getR2Url } from "@/config/r2";
 
 type Props = {
   coverImage: string;
@@ -81,7 +82,7 @@ export const getStaticProps: GetStaticProps = async (context) => {
 
   return {
     props: {
-      coverImage: `/thumbnails/${slug}.jpg`,
+      coverImage: getR2Url(`thumbnails/${slug}.jpg`),
       title: data.title,
       author: data.author,
       date: data.date,
