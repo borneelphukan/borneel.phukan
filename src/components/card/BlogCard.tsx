@@ -18,40 +18,59 @@ const BlogCard = ({
   link,
 }: Props) => {
   return (
-    <a 
-      href={link} 
-      className="flex flex-col w-full h-full group p-4 md:p-6 hover:-translate-y-2 transition-transform duration-500 cursor-pointer"
+    <a
+      href={link}
+      className="group flex flex-col bg-white rounded-2xl overflow-hidden border border-gray-100 shadow-sm hover:shadow-xl transition-all duration-500 ease-out hover:-translate-y-1"
     >
       {/* Image container */}
-      <div className="relative w-full aspect-[4/3] rounded-3xl overflow-hidden bg-gray-100 mb-6 shadow-md group-hover:shadow-2xl transition-shadow duration-500">
+      <div className="relative w-full aspect-[16/10] overflow-hidden bg-gray-50">
         <Image
           src={imageUrl}
           alt={title}
           fill
-          sizes="(max-width: 768px) 100vw, 50vw"
-          className="object-cover group-hover:scale-105 transition-transform duration-500 ease-in-out"
+          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+          className="object-cover transition-transform duration-700 ease-out group-hover:scale-105"
         />
+        {/* Gradient overlay on hover */}
+        <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
       </div>
 
-      {/* Meta tags (Author & Date) */}
-      <div className="flex flex-wrap gap-2 mb-4">
-        <span className="px-3 py-1.5 bg-blue-50 text-blue-600 rounded-md text-sm font-semibold tracking-wide">
-          {author}
-        </span>
-        <span className="px-3 py-1.5 bg-gray-100 text-gray-600 rounded-md text-sm font-semibold tracking-wide">
-          {date}
-        </span>
+      {/* Content */}
+      <div className="flex flex-col flex-grow p-5 md:p-6">
+        {/* Meta */}
+        <div className="flex items-center gap-3 mb-4 text-sm">
+          <span className="inline-flex items-center gap-1.5 text-gray-500 font-medium">
+            <span className="w-1.5 h-1.5 rounded-full bg-blue-500 shrink-0" />
+            {author}
+          </span>
+          <span className="text-gray-300">·</span>
+          <time className="text-gray-400 font-normal">{date}</time>
+        </div>
+
+        {/* Title */}
+        <h3 className="text-lg md:text-xl font-bold text-gray-900 leading-snug mb-2 group-hover:text-blue-600 transition-colors duration-300 line-clamp-2">
+          {title}
+        </h3>
+
+        {/* Description */}
+        <p className="text-gray-500 text-sm md:text-[0.938rem] leading-relaxed line-clamp-3 mb-5 flex-grow">
+          {description}
+        </p>
+
+        {/* CTA */}
+        <div className="flex items-center text-blue-600 text-sm font-semibold mt-auto">
+          <span className="group-hover:mr-2 transition-all duration-300">Read Article</span>
+          <svg
+            className="w-4 h-4 opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-300"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+            strokeWidth={2.5}
+          >
+            <path strokeLinecap="round" strokeLinejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6" />
+          </svg>
+        </div>
       </div>
-
-      {/* Title */}
-      <h3 className="text-2xl md:text-[1.75rem] font-bold text-[#202020] leading-snug mb-3 group-hover:text-blue-600 transition-colors duration-300">
-        {title}
-      </h3>
-
-      {/* Description */}
-      <p className="text-[#6b7280] text-base md:text-[1.1rem] leading-relaxed line-clamp-3">
-        {description}
-      </p>
     </a>
   );
 };

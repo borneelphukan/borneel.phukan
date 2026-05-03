@@ -22,12 +22,12 @@ const BreadCrumbs = () => {
 
   return (
     <nav className="flex" aria-label="Breadcrumb">
-      <ol className="container inline-flex items-center space-x-1 md:space-x-3 md:pl-20 pl-4">
+      <ol className="inline-flex items-center gap-1 bg-white/10 backdrop-blur-md rounded-full px-4 py-2 border border-white/10">
         {/* Home Link */}
         <li className="inline-flex items-center">
           <Link
             href="/"
-            className="inline-flex items-center text-sm font-semibold hover:text-white text-white"
+            className="inline-flex items-center text-sm font-medium text-white/70 hover:text-white transition-colors duration-200"
           >
             Home
           </Link>
@@ -36,10 +36,10 @@ const BreadCrumbs = () => {
         {/* Blogs Link */}
         {router.pathname.startsWith("/blogs") && (
           <li className="inline-flex items-center">
-            <ChevronRightIcon className="w-5 h-5 text-gray-400" />
+            <ChevronRightIcon className="w-4 h-4 text-white/30" />
             <Link
               href="/blogs"
-              className="ml-1 text-sm font-semibold md:ml-2 text-white"
+              className="ml-1 text-sm font-medium text-white/70 hover:text-white transition-colors duration-200"
             >
               Blogs
             </Link>
@@ -49,10 +49,10 @@ const BreadCrumbs = () => {
         {/* Render Category Link if present */}
         {normalizedCategory && (
           <li className="inline-flex items-center">
-            <ChevronRightIcon className="w-5 h-5 text-gray-400" />
+            <ChevronRightIcon className="w-4 h-4 text-white/30" />
             <Link
               href={`/blogs/${normalizedCategory}`}
-              className="ml-1 text-sm font-semibold md:ml-2 text-white"
+              className="ml-1 text-sm font-medium text-white transition-colors duration-200"
             >
               {categoryTitle}
             </Link>

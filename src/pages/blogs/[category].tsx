@@ -79,7 +79,7 @@ export const getStaticProps: GetStaticProps = async (context) => {
     return { props: { category: display, blogs: [] } };
   }
 
-  const files = fs.readdirSync(blogDir);
+  const files = fs.readdirSync(blogDir).filter((file) => file.endsWith(".md"));
   const blogs = files.map((filename) => {
     const filePath = path.join(blogDir, filename);
     const fileContents = fs.readFileSync(filePath, "utf8");

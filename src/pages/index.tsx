@@ -65,7 +65,7 @@ const Home = () => {
           
           <div className="text-center max-w-3xl mx-auto flex flex-col items-center">
             <p className="text-gray-200 text-lg md:text-xl lg:text-2xl mb-3 font-light">
-              Software Developer
+              Software Developer & ML Engineer
             </p>
             <p className="text-gray-400 text-base md:text-lg lg:text-xl font-light leading-relaxed text-center">
               4+ years of leading cross-functional teams to build customer-centric SaaS and mobile applications. From defining product roadmaps to optimizing GenAI-driven features and API performance, I bridge the gap between complex engineering and strategic business growth.

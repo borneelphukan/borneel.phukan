@@ -9,6 +9,15 @@
     "category": "fullstack"
   },
   {
+    "title": "Legacy-Apartment Management Portal",
+    "description": "A full-stack web application designed to streamline operations for property owners and managers. The platform features robust user authentication, tenant management, real-time notifications, maintenance tracking, and detailed reporting dashboards.",
+    "buttonText": "Link",
+    "start": "March 2026",
+    "end": "April 2026",
+    "link": "https://thelegacyapartment.co.in/",
+    "category": "fullstack"
+  },
+  {
     "title": "My Personal Website.",
     "description": "A professional portfolio with Next.js and Tailwind CSS, featuring a responsive design, blog, comprehensive portfolio, client testimonials, and services. User-centric with a dark theme, it's an effective platform for showcasing work and attracting clients.",
     "buttonText": "Code",

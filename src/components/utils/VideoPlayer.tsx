@@ -8,10 +8,10 @@ const VideoPlayer = ({ videoId }: Props) => {
   const embedUrl = `https://www.youtube.com/embed/${videoId}`;
 
   return (
-    <div className="container mx-auto p-5">
-      <div className="relative w-full" style={{ height: "75vh" }}>
+    <div className="w-full">
+      <div className="relative w-full aspect-video">
         <iframe
-          className="absolute top-0 left-0 w-full h-full"
+          className="absolute top-0 left-0 w-full h-full rounded-2xl"
           src={embedUrl}
           title="YouTube Video Player"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
