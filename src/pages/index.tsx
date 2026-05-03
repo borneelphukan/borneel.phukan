@@ -6,9 +6,7 @@ import Link from "next/link";
 import { TestimonialCarousel } from "@/components/carousel/TestimonialCarousel";
 import Skills from "@/components/Portfolio/Skills";
 import FreelanceStack from "@/components/Services/Freelance/FreelanceStack";
-import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
-import LinkedInIcon from "@mui/icons-material/LinkedIn";
-import { SiUpwork } from "react-icons/si";
+import { Icon } from "@/components/common/Icon";
 import Button from "@/components/common/Button";
 type CategoryProps = {
   slug: string;
@@ -88,11 +86,11 @@ const Home = () => {
               {/* Right Side: Content */}
               <div className="w-full md:w-3/5 p-8 md:p-12 lg:p-14 flex flex-col justify-center">
                 <h2 className="text-3xl md:text-4xl lg:text-[2.5rem] font-bold text-gray-800 mb-4 tracking-tight leading-tight">
-                  Who am I as a <span className="text-[#3b82f6]">Product Manager </span>?
+                  Who am I as a <span className="text-[#3b82f6]">Software Developer </span>?
                 </h2>
                 
                 <p className="text-gray-500 font-light leading-relaxed mb-5 text-sm md:text-base lg:text-lg">
-                For me, product management is about bridging the gap between technical possibility and business impact. My goal is to build scalable, user-centric products that align engineering excellence with strategic growth objectives.
+                For me, software development is about bridging the gap between technical possibility and business impact. My goal is to build scalable, user-centric products that align engineering excellence with strategic growth objectives.
                 </p>
 
                 <p className="text-gray-500 font-light leading-relaxed mb-5 text-sm md:text-base lg:text-lg">
@@ -192,11 +190,11 @@ const Home = () => {
                 onClick={() => {}}
                 className="hover:bg-[#14a800] hover:border-[#14a800] hover:shadow-[#14a800]/50"
                 icon={{
-                  right: <ArrowForwardIcon className="w-5 h-5 text-white transform group-hover:translate-x-1 transition-transform duration-300" />
+                  right: <Icon type="ArrowForward" className="w-5 h-5 text-white transform group-hover:translate-x-1 transition-transform duration-300" />
                 }}
               >
                 <span className="flex items-center">
-                  Hire on <SiUpwork className="ml-2 w-5 h-5 md:w-6 md:h-6" />
+                  Hire on Upwork
                 </span>
               </Button>
               <Button
@@ -207,11 +205,11 @@ const Home = () => {
                 onClick={() => {}}
                 className="hover:bg-[#0a66c2] hover:border-[#0a66c2] hover:shadow-[#0a66c2]/50"
                 icon={{
-                  right: <ArrowForwardIcon className="w-5 h-5 text-white transform group-hover:translate-x-1 transition-transform duration-300" />
+                  right: <Icon type="ArrowForward" className="w-5 h-5 text-white transform group-hover:translate-x-1 transition-transform duration-300" />
                 }}
               >
                 <span className="flex items-center">
-                  Connect on <LinkedInIcon className="ml-1 w-6 h-6 md:w-7 md:h-7" />
+                  Linkedin
                 </span>
               </Button>
             </div>

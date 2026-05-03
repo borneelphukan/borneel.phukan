@@ -1,10 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import InstagramIcon from '@mui/icons-material/Instagram';
-import LinkedInIcon from '@mui/icons-material/LinkedIn';
-import GitHubIcon from '@mui/icons-material/GitHub';
-import EmailIcon from '@mui/icons-material/Email';
-
+import { Icon } from "@/components/common/Icon";
 
 const Footer = () => {
   const links = [
@@ -109,30 +105,34 @@ const Footer = () => {
                 href="https://www.instagram.com/borneel.phukan"
                 target="_blank"
               >
-                <InstagramIcon
-                  className="mx-3 my-3 hover:text-blue-400"
-                  fontSize="large"
+                <Icon
+                  type="Instagram"
+                  size="lg"
+                  className="mx-3 my-3 hover:text-blue-400 text-3xl"
                 />
               </a>
               <a
                 href="https://www.linkedin.com/in/borneelphukan/"
                 target="_blank"
               >
-                <LinkedInIcon
-                  className="mx-3 my-3 hover:text-blue-400"
-                  fontSize="large"
+                <Icon
+                  type="LinkedIn"
+                  size="lg"
+                  className="mx-3 my-3 hover:text-blue-400 text-3xl"
                 />
               </a>
               <a href="https://github.com/borneelphukan" target="_blank">
-                <GitHubIcon
-                  className="mx-3 my-3 hover:text-blue-400"
-                  fontSize="large"
+                <Icon
+                  type="GitHub"
+                  size="lg"
+                  className="mx-3 my-3 hover:text-blue-400 text-3xl"
                 />
               </a>
               <a href="mailto:borneelphukan@gmail.com">
-                <EmailIcon
-                  className="mx-3 my-3 hover:text-blue-400"
-                  fontSize="large"
+                <Icon
+                  type="Email"
+                  size="lg"
+                  className="mx-3 my-3 hover:text-blue-400 text-3xl"
                 />
               </a>
             </div>

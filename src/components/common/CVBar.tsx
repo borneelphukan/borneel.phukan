@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import Image from "next/image";
-import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 import Button from "./Button";
 import { getR2Url } from "@/config/r2";
 
@@ -54,7 +53,7 @@ const CVBar = () => {
       </div>
       <Button
         variant="secondary"
-        href="/docs/CV_Borneel.pdf"
+        href={getR2Url("docs/CV_Borneel.pdf")}
         target="_blank"
         rel="noopener noreferrer"
         onClick={() => {}}

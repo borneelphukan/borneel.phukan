@@ -8,8 +8,6 @@
   --background-end-rgb: 255, 255, 255;
 }
 
-
-
 .cursor-blink::after {
   content: "_"; /* Horizontal cursor */
   animation: blink 1s infinite;

@@ -29,7 +29,7 @@
     "company": "GolfPost AG",
     "skills": ["Svelte", "Javascript", "TailwindCSS", "REST API", "Git"],
     "location": "Cologne, Germany",
-    "reference": "/docs/Golfpost.pdf",
+    "reference": "https://pub-0a2eeceea05f4b00bc0da29be0d52d0d.r2.dev/docs/Golfpost.pdf",
     "description": ["Spearheaded the core frontend development of Golfpost Fantasy, a social sports-engagement platform for golf enthuasist to participate in predictive gaming and earn choice-based rewards",
     "Architected and maintained a foundational UI component library, prioritizing modular reusability, mobile responsiveness, and a consistent code paradigm to accelerate the development lifecycle",
     "Directed the UI/UX strategy and rapid prototyping for the mobile-native version of Golfpost Fantasy; collaborated across teams to implement impactful layout designs, increasing engagement by 60%",
@@ -43,7 +43,7 @@
     "company": "Values4Change Management Consulting GmbH",
     "skills": ["Next.js", "Nest.js", "PostgreSQL", "Prisma", "Typescript", "TailwindCSS", "REST API",  "Git"],
     "location": "Munich, Germany",
-    "reference": "/docs/V4C.pdf",
+    "reference": "https://pub-0a2eeceea05f4b00bc0da29be0d52d0d.r2.dev/docs/V4C.pdf",
     "description": [
       "Engineered an internal AI-driven consultancy management platform for consultants, designed to analyze client performance metrics and identify key drivers for KPI optimization.",
       "Architected and optimized secure, high-performance RESTful API endpoints, achieving a 60% increase in load handling capacity and significantly reducing latency through advanced caching and database tuning.",
@@ -66,7 +66,7 @@
       "Git"
     ],
     "location": "Leipzig, Germany",
-    "reference": "/docs/LeanERA.pdf",
+    "reference": "https://pub-0a2eeceea05f4b00bc0da29be0d52d0d.r2.dev/docs/LeanERA.pdf",
     "description": [
       "Worked on the frontend of MindCleanse, a cross-platform mobile application focused on mental health coaching with Vue.js, Ionic, Tailwind, Typescript and Pinia",
       "Collaborated with agile team in sprint meetings to conceptualize user stories, and develop features and functionalities based on customer requirements",

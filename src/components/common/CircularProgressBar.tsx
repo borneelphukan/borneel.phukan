@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { FaArrowUp } from "react-icons/fa";
+import { Icon } from "@/components/common/Icon";
 
 const CircularScrollProgressBar = () => {
   const [progress, setProgress] = useState(0);
@@ -19,10 +19,8 @@ const CircularScrollProgressBar = () => {
       const scrollY = window.scrollY;
       const totalScrollHeight = document.documentElement.scrollHeight - window.innerHeight;
       
-      // Determine visibility
       setIsVisible(scrollY > 150);
-
-      // Calculate percentage clamped between 0 and 100
+      
       const percentage = totalScrollHeight > 0 
         ? Math.min(100, Math.max(0, (scrollY / totalScrollHeight) * 100))
         : 0;
@@ -32,17 +30,13 @@ const CircularScrollProgressBar = () => {
     };
 
     const handleScroll = () => {
-      // Use requestAnimationFrame for high-performance scroll handling without layout thrashing
       if (!ticking) {
         window.requestAnimationFrame(updateProgress);
         ticking = true;
       }
     };
 
-    // Passive listener gives another performance boost
     window.addEventListener("scroll", handleScroll, { passive: true });
-    
-    // Initial check
     updateProgress();
 
     return () => {
@@ -66,8 +60,7 @@ const CircularScrollProgressBar = () => {
             cy="50%"
             r="44%"
             fill="transparent"
-            stroke="#e5e7eb" // gray-200
-            strokeWidth="8%"
+            strokeWidth="4%"
           />
           {/* Active progress circle */}
           <circle
@@ -75,16 +68,16 @@ const CircularScrollProgressBar = () => {
             cy="50%"
             r="44%"
             fill="transparent"
-            stroke="#3b82f6" // blue-500
-            strokeWidth="8%"
+            stroke="#3b82f6"
+            strokeWidth="4%"
             strokeLinecap="round"
-            pathLength="100" // Simplifies dashboard array math greatly!
+            pathLength="100" 
             strokeDasharray="100"
             strokeDashoffset={100 - progress}
           />
         </svg>
         <div className="w-9 h-9 md:w-10 md:h-10 bg-white/90 backdrop-blur border border-gray-100 shadow-sm rounded-full flex items-center justify-center z-10 group-hover:bg-gray-100 transition-colors">
-          <FaArrowUp className="text-gray-800 text-sm md:text-base group-hover:-translate-y-0.5 transition-transform" />
+          <Icon type="ArrowUpward" className="text-gray-800 text-sm md:text-base flex items-center justify-center group-hover:-translate-y-0.5 transition-transform" />
         </div>
       </div>
     </div>
