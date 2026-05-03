@@ -6,7 +6,10 @@ type Props = {
 
 const BlogBanner = ({ children }: Props) => {
   return (
-    <div className="bg-[url('/banners/blog-banner.jpg')] bg-cover bg-center h-[40vh] w-full">
+    <div 
+      className="bg-cover bg-center h-[40vh] w-full"
+      style={{ backgroundImage: "url('https://pub-0a2eeceea05f4b00bc0da29be0d52d0d.r2.dev/banners/blog-banner.jpg')" }}
+    >
       <div className="container mx-auto px-10">
         {/*Banner Goes Here*/}
         <div className="py-10 md:py-10 lg:py-10 xl:py-10">

@@ -1,6 +1,6 @@
 [
   {
-    "image": "/education/TUC.png",
+    "image": "https://pub-0a2eeceea05f4b00bc0da29be0d52d0d.r2.dev/education/TUC.png",
     "degree": "Master of Science",
     "course": "Web Engineering",
     "date": "Oct. 2021 - Dec. 2024",
@@ -8,7 +8,7 @@
     "location": "Chemnitz, Germany"
   },
   {
-    "image": "/education/KIIT.png",
+    "image": "https://pub-0a2eeceea05f4b00bc0da29be0d52d0d.r2.dev/education/KIIT.png",
     "degree": "Bachelor of Science",
     "course": "Computer Science & Systems Engineering",
     "date": "July 2017 - August 2021",

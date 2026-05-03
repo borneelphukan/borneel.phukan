@@ -32,7 +32,10 @@ const Home = () => {
   return (
     <DefaultLayout>
       {/* Banner section */}
-      <div className="sticky top-0 -z-10 h-[100vh] w-full bg-[url('/banners/home-banner.png')] bg-cover bg-center flex items-center justify-center overflow-hidden">
+      <div 
+        className="sticky top-0 -z-10 h-[100vh] w-full bg-cover bg-center flex items-center justify-center overflow-hidden"
+        style={{ backgroundImage: "url('https://pub-0a2eeceea05f4b00bc0da29be0d52d0d.r2.dev/banners/home-banner.png')" }}
+      >
         {/* Vertical subtle column lines */}
         <div className="absolute inset-0 bg-[linear-gradient(to_right,#ffffff03_1px,transparent_1px)] bg-[size:12.5vw_100%]"></div>
         
@@ -73,7 +76,7 @@ const Home = () => {
               {/* Left Side: Image */}
               <div className="w-full md:w-2/5 flex-shrink-0 relative bg-gray-100">
                 <Image
-                  src={"/assets/borneel.jpg"}
+                  src="https://pub-0a2eeceea05f4b00bc0da29be0d52d0d.r2.dev/assets/borneel.jpg"
                   width={600}
                   height={800}
                   alt="Your Avatar"
@@ -140,7 +143,7 @@ const Home = () => {
       {/* Services Banner exactly cloned from Services.tsx */}
       <section id="Services" className="sticky top-0 z-0 flex flex-col items-center justify-center h-[100vh] pb-[20vh] md:pb-0 w-full overflow-hidden bg-gray-900">
         <Image
-          src="/banners/service_banner.png"
+          src="https://pub-0a2eeceea05f4b00bc0da29be0d52d0d.r2.dev/banners/service_banner.png"
           alt="Services background"
           fill
           priority

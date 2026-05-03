@@ -1,7 +1,7 @@
 [
   
   {
-    "image": "/experience/Pactos.png",
+    "image": "https://pub-0a2eeceea05f4b00bc0da29be0d52d0d.r2.dev/experience/Pactos.png",
     "title": "Software Developer",
     "date": "October 2025 - March 2026",
     "company": "Pactos.AI",
@@ -23,7 +23,7 @@
     ]
   },
   {
-    "image": "/experience/GolfPost.jpg",
+    "image": "https://pub-0a2eeceea05f4b00bc0da29be0d52d0d.r2.dev/experience/GolfPost.jpg",
     "title": "Frontend Developer",
     "date": "April 2024 - March 2025",
     "company": "GolfPost AG",
@@ -37,7 +37,7 @@
     ]
   },
     {
-    "image": "/experience/V4C.png",
+    "image": "https://pub-0a2eeceea05f4b00bc0da29be0d52d0d.r2.dev/experience/V4C.png",
     "title": "Fullstack Developer",
     "date": "March 2023 - March 2024",
     "company": "Values4Change Management Consulting GmbH",
@@ -53,7 +53,7 @@
     ]
   },
   {
-    "image": "/experience/LeanERA.png",
+    "image": "https://pub-0a2eeceea05f4b00bc0da29be0d52d0d.r2.dev/experience/LeanERA.png",
     "title": "Frontend Developer",
     "date": "Aug 2022 - Jan 2023",
     "company": "LeanERA",
@@ -75,7 +75,7 @@
     ]
   },
   {
-    "image": "/experience/Codepth.jpeg",
+    "image": "https://pub-0a2eeceea05f4b00bc0da29be0d52d0d.r2.dev/experience/Codepth.jpeg",
     "title": "Fullstack Developer",
     "date": "July 2019 - July 2020",
     "company": "Codepth .LLC",
