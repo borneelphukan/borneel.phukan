@@ -35,7 +35,7 @@ const Home = () => {
         className="sticky top-0 -z-10 h-[100vh] w-full flex items-center justify-center overflow-hidden"
       >
         <Image
-          src={getR2Url("banners/home-banner.png")}
+          src={"https://pub-0a2eeceea05f4b00bc0da29be0d52d0d.r2.dev/banners/home-banner.png"}
           alt="Home Banner"
           fill
           priority
@@ -82,7 +82,7 @@ const Home = () => {
               {/* Left Side: Image */}
               <div className="w-full md:w-2/5 flex-shrink-0 relative bg-gray-100">
                 <Image
-                  src={getR2Url("assets/borneel.jpg")}
+                  src={"https://pub-0a2eeceea05f4b00bc0da29be0d52d0d.r2.dev/assets/borneel.jpg"}
                   width={600}
                   height={800}
                   alt="Your Avatar"
@@ -149,7 +149,7 @@ const Home = () => {
       {/* Services Banner exactly cloned from Services.tsx */}
       <section id="Services" className="sticky top-0 z-0 flex flex-col items-center justify-center h-[100vh] pb-[20vh] md:pb-0 w-full overflow-hidden bg-gray-900">
         <Image
-          src={getR2Url("banners/service_banner.png")}
+          src={"https://pub-0a2eeceea05f4b00bc0da29be0d52d0d.r2.dev/banners/service_banner.png"}
           alt="Services background"
           fill
           priority

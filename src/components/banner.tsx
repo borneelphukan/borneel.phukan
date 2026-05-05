@@ -1,6 +1,5 @@
 import { ReactNode } from "react";
 import Image from "next/image";
-import { getR2Url } from "@/config/r2";
 
 type Props = {
   children: ReactNode;
@@ -17,7 +16,7 @@ const BlogBanner = ({
     <div className="relative min-h-[300px] sm:min-h-[320px] md:h-[44vh] w-full overflow-hidden flex items-center justify-center p-4">
       {/* Background image */}
       <Image
-        src={getR2Url("banners/blog-banner.jpg")}
+        src={"https://pub-0a2eeceea05f4b00bc0da29be0d52d0d.r2.dev/banners/blog-banner.jpg"}
         alt="Blog Banner"
         fill
         priority
