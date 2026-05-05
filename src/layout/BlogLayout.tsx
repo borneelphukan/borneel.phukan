@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { OpenInNew } from "@mui/icons-material";
 import BreadCrumbs from "@/components/breadcrumb";
 import VideoPlayer from "@/components/utils/VideoPlayer";
 import { Icon } from "@/components/icon";
@@ -81,7 +82,7 @@ const BlogLayout = ({
                 className="inline-flex items-center gap-1 text-xs sm:text-sm font-semibold text-blue-600 hover:text-blue-700 hover:underline transition-all duration-200"
               >
                 <span>Read Original</span>
-                <Icon type="OpenInNew" size="sm" />
+                <Icon type={OpenInNew} size="sm" />
               </a>
             </div>
           )}

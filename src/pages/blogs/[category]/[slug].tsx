@@ -66,7 +66,7 @@ export const getStaticPaths: GetStaticPaths = async () => {
   categories.forEach((category) => {
     const blogDir = path.join(process.cwd(), `public/blogs/${category}`);
     if (fs.existsSync(blogDir)) {
-      const files = fs.readdirSync(blogDir);
+      const files = fs.readdirSync(blogDir).filter((file) => file.endsWith(".md"));
       paths = paths.concat(
         files.map((file) => ({
           params: { category, slug: file.replace(".md", "") },

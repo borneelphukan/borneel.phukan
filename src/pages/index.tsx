@@ -1,4 +1,5 @@
 import DefaultLayout from "@/layout/DefaultLayout";
+import { ArrowForward } from "@mui/icons-material";
 import Image from "next/image";
 import { getR2Url } from "@/config/r2";
 
@@ -197,7 +198,7 @@ const Home = () => {
                 onClick={() => {}}
                 className="hover:bg-[#14a800] hover:border-[#14a800] hover:shadow-[#14a800]/50"
                 icon={{
-                  right: <Icon type="ArrowForward" className="w-5 h-5 text-white transform group-hover:translate-x-1 transition-transform duration-300" />
+                  right: <Icon type={ArrowForward} className="w-5 h-5 text-white transform group-hover:translate-x-1 transition-transform duration-300" />
                 }}
               >
                 <span className="flex items-center">
@@ -212,7 +213,7 @@ const Home = () => {
                 onClick={() => {}}
                 className="hover:bg-[#0a66c2] hover:border-[#0a66c2] hover:shadow-[#0a66c2]/50"
                 icon={{
-                  right: <Icon type="ArrowForward" className="w-5 h-5 text-white transform group-hover:translate-x-1 transition-transform duration-300" />
+                  right: <Icon type={ArrowForward} className="w-5 h-5 text-white transform group-hover:translate-x-1 transition-transform duration-300" />
                 }}
               >
                 <span className="flex items-center">

@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { ArrowUpward } from "@mui/icons-material";
 import { Icon } from "@/components/icon";
 
 const CircularScrollProgressBar = () => {
@@ -77,7 +78,7 @@ const CircularScrollProgressBar = () => {
           />
         </svg>
         <div className="w-9 h-9 md:w-10 md:h-10 bg-white/90 backdrop-blur border border-gray-100 shadow-sm rounded-full flex items-center justify-center z-10 group-hover:bg-gray-100 transition-colors">
-          <Icon type="ArrowUpward" className="text-gray-800 text-sm md:text-base flex items-center justify-center group-hover:-translate-y-0.5 transition-transform" />
+          <Icon type={ArrowUpward} className="text-gray-800 text-sm md:text-base flex items-center justify-center group-hover:-translate-y-0.5 transition-transform" />
         </div>
       </div>
     </div>

@@ -1,18 +1,17 @@
-import * as MuiIcons from "@mui/icons-material";
 import { forwardRef } from "react";
+import { SvgIconProps } from "@mui/material";
 
-export type IconType = keyof typeof MuiIcons;
 export type IconColor = 'primary' | 'secondary' | 'default';
 export type IconSize = 'lg' | 'md' | 'base' | 'sm' | 'xs';
 
 export interface IconProps extends React.ComponentPropsWithoutRef<"span"> {
-  type: IconType;
+  type: React.ElementType<SvgIconProps>;
   color?: IconColor;
   size?: IconSize;
 }
 
 const Icon = forwardRef<HTMLElement, IconProps>(
-  ({ type, color = 'default', size = 'md', className = "", ...props }, ref) => {
+  ({ type: MuiIconComponent, color = 'default', size = 'md', className = "", ...props }, ref) => {
     
     const colorClasses: Record<IconColor, string> = {
       primary: "text-brand-green",
@@ -27,8 +26,6 @@ const Icon = forwardRef<HTMLElement, IconProps>(
       sm: "text-sm",
       xs: "text-xs",
     };
-
-    const MuiIconComponent = MuiIcons[type];
 
     if (!MuiIconComponent) return null;
 

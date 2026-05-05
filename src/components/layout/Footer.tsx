@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
+import { Instagram, LinkedIn, GitHub, Email } from "@mui/icons-material";
 import { Icon } from "@/components/icon";
 
 const Footer = () => {
@@ -106,7 +107,7 @@ const Footer = () => {
                 target="_blank"
               >
                 <Icon
-                  type="Instagram"
+                  type={Instagram}
                   size="lg"
                   className="mx-3 my-3 hover:text-blue-400 text-3xl"
                 />
@@ -116,21 +117,21 @@ const Footer = () => {
                 target="_blank"
               >
                 <Icon
-                  type="LinkedIn"
+                  type={LinkedIn}
                   size="lg"
                   className="mx-3 my-3 hover:text-blue-400 text-3xl"
                 />
               </a>
               <a href="https://github.com/borneelphukan" target="_blank">
                 <Icon
-                  type="GitHub"
+                  type={GitHub}
                   size="lg"
                   className="mx-3 my-3 hover:text-blue-400 text-3xl"
                 />
               </a>
               <a href="mailto:borneelphukan@gmail.com">
                 <Icon
-                  type="Email"
+                  type={Email}
                   size="lg"
                   className="mx-3 my-3 hover:text-blue-400 text-3xl"
                 />

@@ -1,4 +1,5 @@
 import { useMemo } from "react";
+import { Message, ErrorOutline } from "@mui/icons-material";
 import { Icon } from "./icon";
 
 type Props = {
@@ -56,12 +57,12 @@ const TextArea: React.FC<Props> = ({
 
         {icon === "left" && (
           <span className="absolute left-2.5 top-3.5 flex items-center">
-            <Icon type="Message" className={`w-5 h-5 ${iconColor}`} />
+            <Icon type={Message} className={`w-5 h-5 ${iconColor}`} />
           </span>
         )}
         {icon === "right" && (
           <span className="absolute right-2.5 top-3.5 flex items-center">
-            <Icon type="Message" className={`w-5 h-5 ${iconColor}`} />
+            <Icon type={Message} className={`w-5 h-5 ${iconColor}`} />
           </span>
         )}
       </div>
@@ -69,7 +70,7 @@ const TextArea: React.FC<Props> = ({
       {type === "error" && (
         <div className="flex items-center mt-1">
           <span className="font-medium mr-1.5 flex items-center">
-            <Icon type="ErrorOutline" className="w-5 h-5 text-red-400" />
+            <Icon type={ErrorOutline} className="w-5 h-5 text-red-400" />
           </span>
           <p className="text-sm text-red-500 font-medium">{errorMessage}</p>
         </div>
