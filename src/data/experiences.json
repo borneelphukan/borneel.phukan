@@ -1,5 +1,20 @@
 [
-  
+    {
+    "image": "https://pub-0a2eeceea05f4b00bc0da29be0d52d0d.r2.dev/experience/Graminate.png",
+    "title": "Founding Engineer",
+    "date": "April 2026 - Present",
+    "company": "Graminate AgroTech (Early-Stage Venture)",
+    "skills": [
+      "Typescript", "Next.js", "Nest.js", "Tailwind", "Postgresql", "Prisma", "React Native", "LiteLLM", "Koyeb"
+    ],
+    "location": "Guwahati, India",
+    "description": [
+      "Developing an ERP end-to-end for agricultural businesses with Assam Agricultural University to bring AI-powered agriculture management to medium and large-scale agricultural business in rural India",
+      "Integrated LiteLLM for the AI-automation of CRM, domain modules, prediction of KPIs, forecast of output based on weather and natural events",
+      "Implemented Role-Based Access Control (RBAC) with granular permission management for admin users managing client requests and monitoring user activities",
+      "Developing an integrated marketplace for Producers (Poultry, Cattle Rearing, Apiculture, Floriculture) to sell produce directly to registered Sellers within the platform"
+    ]
+  },
   {
     "image": "https://pub-0a2eeceea05f4b00bc0da29be0d52d0d.r2.dev/experience/Pactos.png",
     "title": "Software Developer",

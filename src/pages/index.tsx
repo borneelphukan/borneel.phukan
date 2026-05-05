@@ -66,7 +66,7 @@ const Home = () => {
           
           <div className="text-center max-w-3xl mx-auto flex flex-col items-center">
             <p className="text-gray-200 text-lg md:text-xl lg:text-2xl mb-3 font-light">
-              Software Developer & ML Engineer
+              Fullstack (AI-Focused) Software Developer
             </p>
             <p className="text-gray-400 text-base md:text-lg lg:text-xl font-light leading-relaxed text-center">
               4+ years of leading cross-functional teams to build customer-centric SaaS and mobile applications. From defining product roadmaps to optimizing GenAI-driven features and API performance, I bridge the gap between complex engineering and strategic business growth.
@@ -108,19 +108,15 @@ const Home = () => {
                 <div className="grid grid-cols-2 gap-y-5 gap-x-6">
                   <div className="flex flex-col">
                     <span className="text-gray-500 text-sm md:text-base mb-1 tracking-wide">Years of Experience</span>
-                    <span className="text-4xl md:text-5xl font-bold text-gray-800">5+</span>
+                    <span className="text-4xl md:text-5xl font-bold text-gray-800">4</span>
                   </div>
                   <div className="flex flex-col">
                     <span className="text-gray-500 text-sm md:text-base mb-1 tracking-wide">Clients</span>
-                    <span className="text-4xl md:text-5xl font-bold text-gray-800">10+</span>
+                    <span className="text-4xl md:text-5xl font-bold text-gray-800">8</span>
                   </div>
                   <div className="flex flex-col">
                     <span className="text-gray-500 text-sm md:text-base mb-1 tracking-wide">Projects Completed</span>
-                    <span className="text-4xl md:text-5xl font-bold text-gray-800">15+</span>
-                  </div>
-                  <div className="flex flex-col">
-                    <span className="text-gray-500 text-sm md:text-base mb-1 tracking-wide">Products & Features Shipped</span>
-                    <span className="text-4xl md:text-5xl font-bold text-gray-800">50+</span>
+                    <span className="text-4xl md:text-5xl font-bold text-gray-800">10</span>
                   </div>
                 </div>
               </div>
